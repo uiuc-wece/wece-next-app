@@ -1,0 +1,46 @@
+.committee-content {
+    width: 80vw;
+    margin: auto;
+}
+
+.committee-text {
+    font-family: 'Roboto';
+    padding-top: 20px;
+}
+
+.committee-text h4 {
+    width: 40vw;
+    margin: auto;
+    padding: 5px;
+    background-color: #2eb6ad; 
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'IBM Plex Mono';
+}
+
+.section-body {
+    width: 50vw;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: transparent !important;
+    border-radius: 0;
+    color: #ffffff;
+    border-left-color: #ffffff;
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
+.committee-text p {
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .committee-text {
+        /* height: 500px; */
+        padding-top: 50px;
+    }
+}
