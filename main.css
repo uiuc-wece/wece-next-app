@@ -1,0 +1,152 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: #dee3e3; */
+    background-color: #20272f;
+    color: #ffffff;
+    font-family: 'Roboto';
+}
+
+#container {
+  min-height: 100vh;
+  position: relative;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.content {
+  padding-bottom: 60px;
+}
+
+.section {
+  padding: 2em;
+}
+
+h3 {
+  font-family: 'IBM Plex Mono';
+  font-size: 6vw;
+  color: #ffffff;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 4.5vw;
+}
+
+.section-title {
+  padding: 0;
+  margin: 0;
+}
+
+.section-top {
+  padding-top: 5vw;
+}
+
+.section-title h3 {
+  overflow: hidden;
+  /* border-right: .15em solid #ffffff; */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation:
+  typing 3.5s steps(22, end) infinite
+  /* blink-caret .5s step-end infinite; */
+}
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ffffff }
+} */
+
+.section-body {
+  color: #20272f;
+  background-color: #dee3e3;
+  border-bottom: 4px solid #bec3c3;
+  padding: 4vw 8vw;
+  margin: 4vw;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+.section-body p {
+  font-family: 'Roboto';
+  font-size: 2.2vw;
+}
+
+.button {
+  padding-top: 2vw;
+  text-align: center;
+}
+
+.link-btn {
+  padding: 1.5vw 3vw;
+  background-color: #2eb6ad;
+  color: #ffffff;
+  border-radius: 2vw;
+  font-family: 'IBM Plex Mono';
+  font-size: 3vw;
+}
+
+.link-btn:hover {
+  color: #ffffff;
+  background-color: #29a39b;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .section-top {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-body p {
+    font-size: .8em;
+  }
+  h4 {
+    font-size: 20px;
+    min-width: 200px;
+  }
+  .link-btn {
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .6em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .section-body p {
+    font-size: 1.1em;
+  }
+  .link-btn {
+    font-size: 1.5em;
+    padding: .5em 1em;
+    border-radius: .6em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-size: 4em;
+  }
+  .section-body {
+    padding: 4vw 5vw;
+  }
+  .section {
+    padding: 0 10vw;
+  }
+}

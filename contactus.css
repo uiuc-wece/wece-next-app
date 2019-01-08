@@ -1,0 +1,49 @@
+h2 {
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.section-body:hover {
+    background-color: #2eb6ad;
+    border-bottom: 4px solid #29a39b;
+    color: #ffffff;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box:hover>.icon {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.icon {
+    padding-left: 2vw;
+    width: 200px;
+    height: 200px;
+    color: #ffffff;
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
