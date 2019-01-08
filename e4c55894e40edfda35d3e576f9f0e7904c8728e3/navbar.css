@@ -1,0 +1,73 @@
+.navbar {
+  color: #dee3e3;
+  background-color: #20272f;
+  font-family: 'IBM Plex Mono';
+  font-size: .8em;
+}
+
+.navbar-brand {
+  margin-right: 5px;
+  opacity: .9;
+}
+
+.navbar-brand:hover {
+  opacity: 1;
+}
+
+.left-navbar img {
+  opacity: .6;
+}
+
+.left-navbar img:hover {
+  opacity: 1;
+}
+
+.left-navbar {
+  display: inline-block;
+}
+
+.left-navbar li {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.right-navbar > .navbar-nav {
+  padding-right: 1em;
+  text-align: right;
+  float: right;
+}
+
+.navbar-nav > li > a:hover {
+  color: #ffffff !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  opacity: 0.8;
+}
+
+.navbar-toggler:hover {
+  opacity: 1;
+}
+
+.dropdown-menu {
+  background-color: #dee3e3;
+}
+
+.dropdown-item {
+  color: #20272f;
+  font-size: .8em;
+}
+
+.sticky-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
