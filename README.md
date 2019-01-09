@@ -1,2 +1,2 @@
 # weceweb
-Code for UIUC's WECE website (wece.ece.illinois.edu)
+Code for UIUC's WECE website (<a>wece.ece.illinois.edu<a>)
