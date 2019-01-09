@@ -1,2 +1,2 @@
 # weceweb
-Code for WECE <a href="wece.ece.illinois.edu">website</a>
+Code for WECE <a href="https://wece.ece.illinois.edu">website</a>
