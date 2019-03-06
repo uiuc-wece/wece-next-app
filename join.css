@@ -1,0 +1,8 @@
+#submit-form {
+    padding: 5px 40px;
+}
+
+#submit-form:hover {
+    background-color: #2eb6ad;
+    color: #ffffff;
+}
