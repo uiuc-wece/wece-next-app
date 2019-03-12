@@ -8,7 +8,7 @@
     "watch": "webpack -d --watch",
     "build": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
     "dev": "webpack-dev-server --content-base dist/ --history-api-fallback --open",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b master -d dist",
     "predeploy": "npm run build"
   },
   "repository": {
