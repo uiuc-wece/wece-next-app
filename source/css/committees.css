@@ -3,18 +3,18 @@
     margin: auto;
 }
 
-.section-body {
+.section-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.section-body p {
+.section-flex p {
     width: 500px;
 }
 
-.section-body figcaption {
+.section-flex figcaption {
     text-align: center;
     font-size: 2vw;
 }
@@ -50,13 +50,13 @@
 }
 
 @media screen and (max-width: 600px) {
-    .section-body figcaption {
+    .section-flex figcaption {
         font-size: .7em;
     }
 }
 
 @media screen and (min-width: 800px) {
-    .section-body figcaption {
+    .section-flex figcaption {
         font-size: .9em;
     }
 }
