@@ -131,21 +131,6 @@ h6 {
     font-family: 'Roboto';
 }
 
-#join-us {
-    margin: auto;
-    width: 60%;
-    text-align: center;
-    font-family: 'IBM Plex Mono';
-    background-color: #2eb6ad;
-    border-bottom: 4px solid #29a39b;
-}
-
-#join-us:hover {
-    background-color: #29a39b;
-    border-bottom: 4px solid #248f88;
-    color: #ffffff;
-}
-
 a:hover {
     text-decoration: none;
 }
