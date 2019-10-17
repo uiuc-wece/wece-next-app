@@ -1,115 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women in ECE | University of Illinois at Urbana-Champaign</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Women in ECE | University of Illinois at Urbana-Champaign</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- google analytics -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-  <!-- google analytics -->
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga("create", "UA-100562254-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    ga('create', 'UA-100562254-1', 'auto');
-    ga('send', 'pageview');
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="committees.css" />
+    <script>
+      $(function() {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
 
-  </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="committees.css">
-  <script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-      $("#footer").load("footer.html");
-    });
-  </script>
-</head>
-
-<body>
-  <div id="container">
-    <div id="navbar"></div>
-    <div class="content">
-      <div class="container-fluid section">
-        <div class="section-title section-top">
-          <h3 class="text-center">Committees_</h3>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Academic</h4>
-            <div class="section-body">
-              <p>The Academic committee is so awesome!</p>
+  <body>
+    <div id="container">
+      <div id="navbar"></div>
+      <div class="content">
+        <div class="container-fluid section">
+          <div class="section-title section-top">
+            <h3 class="text-center">Committees_</h3>
+          </div>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Academic</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/saisita.JPG" />
+                  <figcaption>Saisita Maddirala</figcaption>
+                </figure>
+                <p>
+                  The Academic Committee organizes and hosts workshops and
+                  panels catered to improving academic success for ECE students.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Infrastructure</h4>
-            <div class="section-body">
-              <p>The Infrastructure committee is very coolbeans.</p>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Infrastructure</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/eugenia.jpg" />
+                  <figcaption>Eugenia Chen</figcaption>
+                </figure>
+                <p>
+                  The Infrastructure Commitee develops and updates the WECE
+                  website as well as sends weekly newsletters. In addition, we
+                  are always looking to improve the workflow of WECE through
+                  developing ways to manage our data better!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Mentorship</h4>
-            <div class="section-body">
-              <p>The Mentorship committee is pretty great.</p>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Marketing</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/aditi.jpg" />
+                  <figcaption>Aditi Panwar</figcaption>
+                </figure>
+                <p>
+                  The Marketing Committee advertises WECE events and creatively
+                  supports the events through banners, posters and logos. We
+                  help expand WECE's presence on campus through social media by
+                  showcasing the wonderful events we have to help students
+                  academically, professionally and personally. We also oversee
+                  the design of WECE logo, apparel, newsletter and the website.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Outreach</h4>
-            <div class="section-body">
-              <p>The Outreach committee is bomb.</p>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Mentorship</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/kelly.JPG" />
+                  <figcaption>Kelly Dunleavy</figcaption>
+                </figure>
+                <p>
+                  The WECE Mentorship Committee strives to build a welcoming and
+                  supportive community within ECE! We foster mentorship through
+                  a Peer Mentorship Program, Lean In Discussions, a Professional
+                  Mentorship Program and Graduate Student mentorship.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Public Image</h4>
-            <div class="section-body">
-              <p>The Public Image Committee is amazing.</p>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Outreach</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/elisa.JPG" />
+                  <figcaption>Elisa Krause</figcaption>
+                </figure>
+                <p>
+                  The outreach committee works with the surrounding community to
+                  teach kids about ECE!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Social</h4>
-            <div class="section-body">
-              <p>The Social Committee is astounding.</p>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Social</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/maram.jpg" />
+                  <figcaption>Maram Safi</figcaption>
+                </figure>
+                <p>
+                  Social Committee is all about fostering relationships. Whether
+                  those relationships are friendships or professional
+                  connections, we are here to get to know each other and social
+                  committee is a great way to do that!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="committee-content">
-          <div class="committee-text">
-            <h4 class="text-center">Technical</h4>
-            <div class="section-body">
-              <p>The Technical Committee will knock your socks off.</p>
+          <div class="committee-content">
+            <div class="committee-text">
+              <h4 class="text-center">Technical</h4>
+              <div class="section-body">
+                <figure>
+                  <img class="committee-img" src="../imgs/board/pakhi.JPG" />
+                  <figcaption>Pakhi Gupta</figcaption>
+                </figure>
+                <figure>
+                  <img class="committee-img" src="../imgs/board/sarah.jpg" />
+                  <figcaption>Sarah Angelbeck</figcaption>
+                </figure>
+                <p>
+                  The WECE technical committee works on a project which is
+                  presented at the Engineering Open House in March. The
+                  technical committee also organizes technical workshops to
+                  teach skills relevant in the industry. We aim to provide
+                  valuable technical experiences for promoting involvement and
+                  building resume.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="footer"></div>
     </div>
-    <div id="footer"></div>
-  </div>
-</body>
-
+  </body>
 </html>
