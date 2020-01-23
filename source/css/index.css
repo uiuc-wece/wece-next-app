@@ -98,7 +98,7 @@ path {
 #staff-pic-popup>img {
     z-index: 1;
     margin-top: -10vw;
-    width: 60vw;
+    width: 65vw;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
