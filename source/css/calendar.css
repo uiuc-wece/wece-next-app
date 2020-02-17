@@ -1,0 +1,9 @@
+.event-card {
+  color: #20272f;
+  background-color: #2eb6ad;
+  border-bottom: 4px solid #29a39b;
+  padding: 4vw 8vw;
+  margin: 4vw;
+  border-radius: 5px;
+  opacity: .8;
+}
