@@ -1,0 +1,26 @@
+.footer {
+  overflow: hidden;
+  background-color: #dee3e3;
+  font-family: "IBM Plex Mono";
+  min-height: 40px;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+}
+
+.navbar-text-left {
+  padding: 0;
+}
+
+.navbar-text-left {
+  font-size: 0.5em;
+  color: #20272f !important;
+  margin: 5px;
+}
+
+.navbar-text-right {
+  font-size: 0.6em;
+  color: #20272f !important;
+  padding: 0;
+  padding-left: 5px;
+}
