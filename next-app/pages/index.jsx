@@ -1,6 +1,8 @@
 import EventCarousel from "../components/carousel";
 import Layout from "../components/layout";
 import LinesSvg from "../components/lines.svg";
+import SectionBody from "../components/sectionbody";
+import SectionButton from "../components/sectionbutton";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Home.module.css";
 
@@ -64,7 +66,7 @@ export default function Home() {
           </div>
           <Container fluid className="section">
             <SectionHead title="About_"></SectionHead>
-            <div className="section-body">
+            <SectionBody>
               <p>
                 <span
                   style={{
@@ -82,42 +84,39 @@ export default function Home() {
                 to build communities amongst ourselves by hosting social,
                 technical, outreach, and professional events.
               </p>
-              <div className="button">
-                <a href="about.html" className="link-btn">
-                  Learn More
-                </a>
-              </div>
-            </div>
+              <SectionButton
+                buttonText="Learn More"
+                buttonLink="about.html"
+              ></SectionButton>
+            </SectionBody>
             <SectionHead title="Events_"></SectionHead>
             <div class="section-body">
               <EventCarousel></EventCarousel>
             </div>
             <SectionHead title="Committees_"></SectionHead>
-            <div className="section-body">
+            <SectionBody>
               <p>
                 WECE has SEVEN different committees you can join and be a part
                 of! Get involved with technical projects, mentor elementary
                 students, plan fun events, and more!
               </p>
-              <div className="button">
-                <a href="committees.html" className="link-btn">
-                  Learn More
-                </a>
-              </div>
-            </div>
+              <SectionButton
+                buttonText="Learn More"
+                buttonLink="committees.html"
+              ></SectionButton>
+            </SectionBody>
             <SectionHead title="Join Us_"></SectionHead>
-            <div className="section-body">
+            <SectionBody>
               <p>
                 If you are interested in learning more about WECE, fill out the
                 form below to get added to our mailing list! An email with
                 events and updates will be sent out every week.
               </p>
-              <div className="button">
-                <a href="join.html" className="link-btn">
-                  Join us!
-                </a>
-              </div>
-            </div>
+              <SectionButton
+                buttonText="Join us!"
+                buttonLink="join.html"
+              ></SectionButton>
+            </SectionBody>
           </Container>
           {/*<Container fluid className="section">
                 <div className={styles["section-head"]}>
