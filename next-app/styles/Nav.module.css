@@ -1,0 +1,103 @@
+.navbar {
+  color: #dee3e3 !important;
+  background-color: #20272f !important;
+  font-family: "IBM Plex Mono";
+  font-size: 0.8em;
+  border-bottom: 2px solid #2eb6ad;
+}
+
+.wece-brand {
+  margin-right: 5px;
+  opacity: 0.9;
+}
+
+.wece-brand:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .wece-brand {
+    width: 80px;
+  }
+
+  .wece-brand > img {
+    width: 70px;
+    height: auto;
+  }
+}
+
+.nav-img {
+  opacity: 0.6;
+}
+
+.nav-img:hover {
+  opacity: 1;
+}
+
+.left-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+}
+
+.left-navbar-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
+  margin-left: 20px;
+}
+
+.left-navbar-link {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .left-navbar {
+    margin-left: 15px;
+  }
+
+  .left-navbar-imgs {
+    margin-left: 10px;
+  }
+}
+
+.right-navbar {
+  padding-right: 1em;
+  text-align: right;
+  float: right;
+}
+
+.navbar-nav > li > a:hover {
+  color: #ffffff !important;
+}
+
+.custom-toggler {
+  opacity: 0.8;
+  border: none !important;
+}
+
+.custom-toggler:focus {
+  outline: none !important;
+}
+
+.custom-toggler:hover {
+  opacity: 1;
+}
+
+.dropdown-item {
+  color: #20272f;
+  font-size: 0.8em;
+}
+
+.dropdown-item:hover {
+  background-color: #ceedec;
+}
+
+.sticky-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
