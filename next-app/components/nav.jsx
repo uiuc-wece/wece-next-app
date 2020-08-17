@@ -13,7 +13,7 @@ export default function CustomNavbar() {
         className={styles["navbar"]}
       >
         <div className={styles["left-navbar"]}>
-          <Navbar.Brand href="index.html" className={styles["wece-brand"]}>
+          <Navbar.Brand href="/" className={styles["wece-brand"]}>
             <img
               src="imgs/wece-logo-h-white.png"
               height="30px"
@@ -64,19 +64,19 @@ export default function CustomNavbar() {
             <NavDropdown title="About">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="about.html"
+                href="/about"
               >
                 Who We Are
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="board.html"
+                href="/board"
               >
                 Board Members
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="committees.html"
+                href="/committees"
               >
                 Committees
               </NavDropdown.Item>
@@ -85,19 +85,19 @@ export default function CustomNavbar() {
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="sponsors.html"
+                href="/sponsors"
               >
                 2018-19
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="resumebook.html"
+                href="/resumebook"
               >
                 Resume Book
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="contactus.html">Contact Us</Nav.Link>
-            <Nav.Link href="join.html">Join</Nav.Link>
+            <Nav.Link href="/contactus">Contact Us</Nav.Link>
+            <Nav.Link href="/join">Join</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
