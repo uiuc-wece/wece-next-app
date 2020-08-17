@@ -35,7 +35,7 @@ export default function Home() {
   });
   return (
     <Layout>
-      <LinesSvg></LinesSvg>
+      <LinesSvg />
       <div className="content">
         <Container fluid>
           <div className={styles.title}>
@@ -64,7 +64,7 @@ export default function Home() {
           />
         </div>
         <Container fluid className="section">
-          <SectionHead title="About_" top={false}></SectionHead>
+          <SectionHead title="About_" top={false} />
           <SectionBody>
             <p>
               <span
@@ -83,38 +83,29 @@ export default function Home() {
               communities amongst ourselves by hosting social, technical,
               outreach, and professional events.
             </p>
-            <SectionButton
-              buttonText="Learn More"
-              buttonLink="about"
-            ></SectionButton>
+            <SectionButton buttonText="Learn More" buttonLink="about" />
           </SectionBody>
-          <SectionHead title="Events_" top={false}></SectionHead>
+          <SectionHead title="Events_" top={false} />
           <SectionBody>
             <EventCarousel></EventCarousel>
           </SectionBody>
-          <SectionHead title="Committees_" top={false}></SectionHead>
+          <SectionHead title="Committees_" top={false} />
           <SectionBody>
             <p>
               WECE has SEVEN different committees you can join and be a part of!
               Get involved with technical projects, mentor elementary students,
               plan fun events, and more!
             </p>
-            <SectionButton
-              buttonText="Learn More"
-              buttonLink="committees"
-            ></SectionButton>
+            <SectionButton buttonText="Learn More" buttonLink="committees" />
           </SectionBody>
-          <SectionHead title="Join Us_" top={false}></SectionHead>
+          <SectionHead title="Join Us_" top={false} />
           <SectionBody>
             <p>
               If you are interested in learning more about WECE, fill out the
               form below to get added to our mailing list! An email with events
               and updates will be sent out every week.
             </p>
-            <SectionButton
-              buttonText="Join us!"
-              buttonLink="join"
-            ></SectionButton>
+            <SectionButton buttonText="Join us!" buttonLink="join" />
           </SectionBody>
         </Container>
         {/*<Container fluid className="section">
