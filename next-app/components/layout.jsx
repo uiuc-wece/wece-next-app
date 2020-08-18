@@ -23,9 +23,13 @@ export default function Layout({
           crossorigin="anonymous"
         />
       </Head>
-      <CustomNavbar></CustomNavbar>
-      <div className="page">{children}</div>
-      <Footer></Footer>
+      <div className="page">
+        <div id="container">
+          <CustomNavbar></CustomNavbar>
+          {children}
+          <Footer></Footer>
+        </div>
+      </div>
     </>
   );
 }
