@@ -1,0 +1,42 @@
+.section-body {
+  color: #20272f;
+  background-color: #dee3e3;
+  border-bottom: 4px solid #bec3c3;
+  padding: 4vw 8vw;
+  margin: 4vw;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.section-hover-body:hover {
+  background-color: #2eb6ad;
+  border-bottom: 4px solid #29a39b;
+  color: #ffffff;
+}
+
+.section-body p {
+  font-family: "Roboto";
+  font-size: 2.2vw;
+}
+
+.section-link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .section-body p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .section-body p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-body {
+    padding: 4vw 5vw;
+  }
+}
