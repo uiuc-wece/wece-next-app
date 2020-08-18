@@ -1,0 +1,40 @@
+.main-sponsor {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.sponsor-level {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+
+.donor-names {
+  font-family: "Roboto";
+  color: #20272f;
+  text-align: center;
+}
+
+.section-body {
+  margin-top: 30px;
+}
+
+.sponsor-link:hover {
+  text-decoration: none;
+}
+
+.sponsor-button {
+  color: #20272f;
+  background-color: #dee3e3;
+  border-bottom: 4px solid #bec3c3;
+  padding: 4vw 8vw;
+  margin: 4vw;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.sponsor-button:hover {
+  background-color: #2eb6ad;
+  border-bottom: 4px solid #29a39b;
+}
