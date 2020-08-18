@@ -21,6 +21,14 @@
   padding: 2em;
 }
 
+h1 {
+  font-size: 9vw;
+}
+
+h2 {
+  font-size: 7.5vw;
+}
+
 h3 {
   font-family: "IBM Plex Mono";
   font-size: 6vw;
@@ -46,103 +54,6 @@ a:hover {
   text-decoration: none;
 }
 
-.section-head {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.section-top {
-  padding-top: 5vw;
-}
-
-.section-title h3 {
-  font-size: 6vw;
-  overflow: hidden;
-  border-right: 0.05em solid #ffffff;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.2em;
-  animation: typing 3.5s steps(22, end) infinite,
-    blink-caret 3.5s step-end infinite;
-}
-
-/* https://css-tricks.com/snippets/css/typewriter-effect/ */
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  5% {
-    border-color: #ffffff;
-  }
-  10% {
-    border-color: transparent;
-  }
-  15% {
-    border-color: #ffffff;
-  }
-  20% {
-    border-color: transparent;
-  }
-  25% {
-    border-color: #ffffff;
-  }
-  30% {
-    border-color: transparent;
-  }
-  35% {
-    border-color: #ffffff;
-  }
-  40% {
-    border-color: transparent;
-  }
-  45% {
-    border-color: #ffffff;
-  }
-  50% {
-    border-color: transparent;
-  }
-  55% {
-    border-color: #ffffff;
-  }
-  60% {
-    border-color: transparent;
-  }
-  65% {
-    border-color: #ffffff;
-  }
-}
-
-.section-body {
-  color: #20272f;
-  background-color: #dee3e3;
-  border-bottom: 4px solid #bec3c3;
-  padding: 4vw 8vw;
-  margin: 4vw;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-
-.section-body p {
-  font-family: "Roboto";
-  font-size: 2.2vw;
-}
-
 .button {
   padding-top: 2vw;
   text-align: center;
@@ -163,15 +74,18 @@ a:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
-  .section-top {
-    padding-top: 60px;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .section-body p {
     font-size: 0.8em;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
   }
   h4 {
     font-size: 20px;
@@ -199,20 +113,44 @@ a:hover {
     padding: 0.5em 1em;
     border-radius: 0.6em;
   }
+  h1 {
+    font-size: 3.5em !important;
+  }
+  h2 {
+    font-size: 3em !important;
+  }
+  h3 {
+    font-size: 2.5em !important;
+  }
   h4 {
-    font-size: 2em;
+    font-size: 2em !important;
   }
   h5 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
   h6 {
-    font-size: 1.25em;
+    font-size: 1.25em !important;
   }
 }
 
 @media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3.5em !important;
+  }
+  h2 {
+    font-size: 3em !important;
+  }
   h3 {
-    font-size: 4em;
+    font-size: 2.75em !important;
+  }
+  h4 {
+    font-size: 2.25em !important;
+  }
+  h5 {
+    font-size: 1.75em !important;
+  }
+  h6 {
+    font-size: 1.5em !important;
   }
   .section-body {
     padding: 4vw 5vw;
