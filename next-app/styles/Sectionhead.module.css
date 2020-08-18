@@ -1,0 +1,87 @@
+.section-head {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-top {
+  padding-top: 8vw;
+}
+
+@media screen and (max-width: 500px) {
+  .section-top {
+    padding-top: 60px;
+  }
+}
+
+.section-title h3 {
+  font-size: 6vw;
+  overflow: hidden;
+  border-right: 0.05em solid #ffffff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  animation: typing 3.5s steps(22, end) infinite,
+    blink-caret 3.5s step-end infinite;
+}
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  5% {
+    border-color: #ffffff;
+  }
+  10% {
+    border-color: transparent;
+  }
+  15% {
+    border-color: #ffffff;
+  }
+  20% {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #ffffff;
+  }
+  30% {
+    border-color: transparent;
+  }
+  35% {
+    border-color: #ffffff;
+  }
+  40% {
+    border-color: transparent;
+  }
+  45% {
+    border-color: #ffffff;
+  }
+  50% {
+    border-color: transparent;
+  }
+  55% {
+    border-color: #ffffff;
+  }
+  60% {
+    border-color: transparent;
+  }
+  65% {
+    border-color: #ffffff;
+  }
+}
