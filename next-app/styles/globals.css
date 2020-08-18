@@ -8,15 +8,9 @@
   font-family: "Roboto";
 }
 
-.container {
+#container {
   min-height: 100vh;
   position: relative;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .content {
