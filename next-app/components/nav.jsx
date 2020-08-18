@@ -81,7 +81,7 @@ export default function CustomNavbar() {
                 Committees
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="events.html">Events</Nav.Link>
+            <Nav.Link href="/calendar">Events</Nav.Link>
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
