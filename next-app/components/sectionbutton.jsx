@@ -1,10 +1,12 @@
+import styles from "../styles/Sectionbutton.module.css";
+
 import Link from "next/link";
 
 export default function SectionButton({ buttonText, buttonLink }) {
   return (
-    <div className="button">
+    <div className={styles["button"]}>
       <Link href={buttonLink}>
-        <a className="link-btn">{buttonText}</a>
+        <a className={styles["link-btn"]}>{buttonText}</a>
       </Link>
     </div>
   );

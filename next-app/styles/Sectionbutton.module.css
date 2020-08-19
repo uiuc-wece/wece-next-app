@@ -1,0 +1,35 @@
+.button {
+  padding-top: 2vw;
+  text-align: center;
+}
+
+.link-btn {
+  padding: 1.5vw 3vw;
+  background-color: #2eb6ad;
+  color: #ffffff;
+  border-radius: 2vw;
+  font-family: "IBM Plex Mono";
+  font-size: 3vw;
+}
+
+.link-btn:hover {
+  color: #ffffff;
+  background-color: #29a39b;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .link-btn {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 0.6em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .link-btn {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 0.6em;
+  }
+}
