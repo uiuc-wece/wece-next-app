@@ -9,7 +9,7 @@ export default function Sponsors() {
   return (
     <Layout>
       <div className="content">
-        <Container fluid className="section">
+        <Container className="section">
           <SectionHead title="WECE Sponsor_" top={true} />
           <SectionBody
             hoverEffect={true}
