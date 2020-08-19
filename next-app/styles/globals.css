@@ -55,9 +55,6 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .section-body p {
-    font-size: 0.8em;
-  }
   h1 {
     font-size: 32px;
   }
@@ -80,9 +77,6 @@ a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .section-body p {
-    font-size: 1.1em;
-  }
   h1 {
     font-size: 3.5em !important;
   }
@@ -121,9 +115,6 @@ a:hover {
   }
   h6 {
     font-size: 1.5em !important;
-  }
-  .section-body {
-    padding: 4vw 5vw;
   }
   .section {
     padding: 0 10vw;
