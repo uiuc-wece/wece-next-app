@@ -37,7 +37,7 @@ export default function Home() {
     <Layout>
       <LinesSvg />
       <div className="content">
-        <Container fluid>
+        <Container>
           <div className={styles.title}>
             <div className={styles["front-img"]}>
               <Image
@@ -63,7 +63,7 @@ export default function Home() {
             src="imgs/board2019-20.png"
           />
         </div>
-        <Container fluid className="section">
+        <Container className="section">
           <SectionHead title="About_" top={false} />
           <SectionBody>
             <p>

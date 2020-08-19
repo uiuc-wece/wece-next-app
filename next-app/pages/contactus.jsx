@@ -9,7 +9,7 @@ export default function ContactUs() {
   return (
     <Layout>
       <div className="content">
-        <Container fluid className="section">
+        <Container className="section">
           <SectionHead title="Contact Us_" top={true} />
           <SectionBody
             hoverEffect={true}

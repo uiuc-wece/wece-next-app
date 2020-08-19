@@ -10,7 +10,7 @@ export default function Committees() {
   return (
     <Layout>
       <div className="content">
-        <Container fluid className="section">
+        <Container className="section">
           <SectionHead title="Committees_" top={true} />
           <SectionBody>
             <p>
