@@ -9,12 +9,12 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-export default function Join() {
+export default function Unsubscribe() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
     const url =
-      "https://script.google.com/macros/s/AKfycbz1yXFCt7nFu-zpkEfLgMtQjXEMgN_aV_GXVbQ3-guQxRwmhAE/exec";
+      "https://script.google.com/macros/s/AKfycbwyS4Us0lkzSDiFNLrikWOyYTSrAqYvqXhWRfw20l4fR6HtkGg/exec";
 
     const form = event.currentTarget;
 
@@ -34,7 +34,7 @@ export default function Join() {
         const result = await axios
           .post(url, formData)
           .then((response) => {
-            alert("Your netID was recorded. Thanks!");
+            alert("You have successfully unsubscribed.");
           })
           .catch((error) => {
             alert("Error: " + error.message);
@@ -53,14 +53,11 @@ export default function Join() {
     <Layout>
       <div className="content">
         <Container className="section">
-          <SectionHead title="Join WECE_" top={true} />
+          <SectionHead title="Unsubscribe_" top={true} />
           <SectionBody>
-            <p>
-              Sign up here to get weekly newsletters with general meetings,
-              upcoming events, and more.
-            </p>
+            <p>Enter your netID to unsubscribe from the WECE mailing list.</p>
             <Form
-              name="join-form"
+              name="unsubscribe-form"
               noValidate
               validated={validated}
               onSubmit={handleSubmit}
@@ -76,53 +73,6 @@ export default function Join() {
                 <Form.Control.Feedback type="invalid">
                   Please enter your NetID.
                 </Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group controlId="formCommitteeInput">
-                <Form.Label>
-                  Check the committees you are interested in:
-                </Form.Label>
-                <Form.Check
-                  type="checkbox"
-                  name="academic"
-                  value="academic"
-                  label="Academic"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="infrastructure"
-                  value="infrastructure"
-                  label="Infrastructure"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="mentorship"
-                  value="mentorship"
-                  label="Mentorship"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="outreach"
-                  value="outreach"
-                  label="Outreach"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="marketing"
-                  value="marketing"
-                  label="Marketing"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="social"
-                  value="social"
-                  label="Social"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="technical"
-                  value="technical"
-                  label="Technical"
-                />
               </Form.Group>
               <Button id={styles["submit-form"]} type="submit">
                 Submit
