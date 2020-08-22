@@ -89,12 +89,12 @@ export default function CustomNavbar() {
               >
                 2018-19
               </NavDropdown.Item>
-              <NavDropdown.Item
+              {/* <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/resumebook"
               >
                 Resume Book
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
