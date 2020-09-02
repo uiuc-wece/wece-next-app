@@ -115,7 +115,7 @@ export default function Join() {
                   Please enter your last name.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group controlId="formCommitteeInput">
+              {/* <Form.Group controlId="formCommitteeInput">
                 <Form.Label>
                   Check the committees you are interested in:
                 </Form.Label>
@@ -133,6 +133,12 @@ export default function Join() {
                 />
                 <Form.Check
                   type="checkbox"
+                  name="marketing"
+                  value="marketing"
+                  label="Marketing"
+                />
+                <Form.Check
+                  type="checkbox"
                   name="mentorship"
                   value="mentorship"
                   label="Mentorship"
@@ -142,12 +148,6 @@ export default function Join() {
                   name="outreach"
                   value="outreach"
                   label="Outreach"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="marketing"
-                  value="marketing"
-                  label="Marketing"
                 />
                 <Form.Check
                   type="checkbox"
@@ -161,7 +161,7 @@ export default function Join() {
                   value="technical"
                   label="Technical"
                 />
-              </Form.Group>
+              </Form.Group> */}
               <Button id={styles["submit-form"]} type="submit">
                 Submit
               </Button>
