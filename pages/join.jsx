@@ -9,12 +9,16 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import { config } from "../constants.js";
+
 export default function Join() {
   const [validated, setValidated] = useState(false);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (event) => {
-    const url =
-      "https://script.google.com/macros/s/AKfycbz1yXFCt7nFu-zpkEfLgMtQjXEMgN_aV_GXVbQ3-guQxRwmhAE/exec";
+    const url = config.url.API_URL + "/subscriber";
 
     const form = event.currentTarget;
 
@@ -26,15 +30,19 @@ export default function Join() {
       event.preventDefault();
       setValidated(true);
 
-      const formData = new FormData(form);
       const inputs = form.querySelectorAll("input");
       inputs.forEach((input) => (input.disabled = true));
 
       const postJoinRequest = async () => {
         const result = await axios
-          .post(url, formData)
+          .post(url, {
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+          })
           .then((response) => {
-            alert("Your netID was recorded. Thanks!");
+            alert("You have been subscribed to the newsletter. Thanks!");
+            console.log(response);
           })
           .catch((error) => {
             alert("Error: " + error.message);
@@ -65,19 +73,49 @@ export default function Join() {
               validated={validated}
               onSubmit={handleSubmit}
             >
-              <Form.Group controlId="formNetId">
-                <Form.Label>NetId</Form.Label>
+              <Form.Group>
+                <Form.Label>Email</Form.Label>
                 <Form.Control
                   required
                   type="text"
-                  name="netID"
-                  placeholder="Enter NetId"
+                  name="email"
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <Form.Control.Feedback type="invalid">
-                  Please enter your NetID.
+                  Please enter your email.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group controlId="formCommitteeInput">
+              <Form.Group>
+                <Form.Label>First Name</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  name="first name"
+                  placeholder="First Name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your first name.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Last Name</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  name="last name"
+                  placeholder="Last Name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your last name.
+                </Form.Control.Feedback>
+              </Form.Group>
+              {/* <Form.Group controlId="formCommitteeInput">
                 <Form.Label>
                   Check the committees you are interested in:
                 </Form.Label>
@@ -95,6 +133,12 @@ export default function Join() {
                 />
                 <Form.Check
                   type="checkbox"
+                  name="marketing"
+                  value="marketing"
+                  label="Marketing"
+                />
+                <Form.Check
+                  type="checkbox"
                   name="mentorship"
                   value="mentorship"
                   label="Mentorship"
@@ -104,12 +148,6 @@ export default function Join() {
                   name="outreach"
                   value="outreach"
                   label="Outreach"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="marketing"
-                  value="marketing"
-                  label="Marketing"
                 />
                 <Form.Check
                   type="checkbox"
@@ -123,7 +161,7 @@ export default function Join() {
                   value="technical"
                   label="Technical"
                 />
-              </Form.Group>
+              </Form.Group> */}
               <Button id={styles["submit-form"]} type="submit">
                 Submit
               </Button>

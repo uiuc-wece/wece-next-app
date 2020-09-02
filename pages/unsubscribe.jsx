@@ -9,12 +9,14 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import { config } from "../constants.js";
+
 export default function Unsubscribe() {
   const [validated, setValidated] = useState(false);
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (event) => {
-    const url =
-      "https://script.google.com/macros/s/AKfycbwyS4Us0lkzSDiFNLrikWOyYTSrAqYvqXhWRfw20l4fR6HtkGg/exec";
+    const url = config.url.API_URL + "/subscriber";
 
     const form = event.currentTarget;
 
@@ -26,15 +28,15 @@ export default function Unsubscribe() {
       event.preventDefault();
       setValidated(true);
 
-      const formData = new FormData(form);
       const inputs = form.querySelectorAll("input");
       inputs.forEach((input) => (input.disabled = true));
 
       const postJoinRequest = async () => {
         const result = await axios
-          .post(url, formData)
+          .put(url, { email: email })
           .then((response) => {
             alert("You have successfully unsubscribed.");
+            console.log(response);
           })
           .catch((error) => {
             alert("Error: " + error.message);
@@ -55,7 +57,7 @@ export default function Unsubscribe() {
         <Container className="section">
           <SectionHead title="Unsubscribe_" top={true} />
           <SectionBody>
-            <p>Enter your netID to unsubscribe from the WECE mailing list.</p>
+            <p>Enter your email to unsubscribe from the WECE mailing list.</p>
             <Form
               name="unsubscribe-form"
               noValidate
@@ -63,15 +65,17 @@ export default function Unsubscribe() {
               onSubmit={handleSubmit}
             >
               <Form.Group controlId="formNetId">
-                <Form.Label>NetId</Form.Label>
+                <Form.Label>Email</Form.Label>
                 <Form.Control
                   required
                   type="text"
-                  name="netID"
-                  placeholder="Enter NetId"
+                  name="email"
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <Form.Control.Feedback type="invalid">
-                  Please enter your NetID.
+                  Please enter your email.
                 </Form.Control.Feedback>
               </Form.Group>
               <Button id={styles["submit-form"]} type="submit">
