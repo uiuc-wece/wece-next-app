@@ -9,6 +9,8 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import { config } from "../constants.js";
+
 export default function Join() {
   const [validated, setValidated] = useState(false);
   const [firstName, setFirstName] = useState("");
@@ -16,7 +18,7 @@ export default function Join() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (event) => {
-    const url = "https://localhost:3000/api/subscriber";
+    const url = config.url.API_URL + "/subscriber";
 
     const form = event.currentTarget;
 
