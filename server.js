@@ -1,4 +1,5 @@
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const express = require("express");
 const next = require("next");
 
@@ -19,6 +20,7 @@ nextApp.prepare().then(() => {
         })
     );
     app.use(bodyParser.json());
+    app.use(cors(corsOptions));
     app.use("/api", router);
 
     app.get("*", (req, res) => {
