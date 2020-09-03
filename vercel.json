@@ -1,0 +1,38 @@
+{
+    "version": 2,
+    "github": {
+        "enabled": false
+    },
+    "build": {
+        "env": {
+            "API_URL": "@api_url"
+        }
+    },
+    "env": {
+        "MONGODB_URL": "@mongodb_url",
+        "MAILERLITE_API_KEY": "@mailerlite_api_key",
+        "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+    },
+    "builds": [{
+            "src": "./package.json",
+            "use": "@now/next"
+        },
+        {
+            "src": "./server.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [{
+            "src": "/api/(.*)",
+            "headers": {
+                "cache-control": "s-maxage=0"
+            },
+            "dest": "./server.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1",
+            "continue": true
+        }
+    ]
+}
