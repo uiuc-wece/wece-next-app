@@ -9,14 +9,14 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import { config } from "../constants.js";
+import { base_url } from "../constants.js";
 
 export default function Unsubscribe() {
   const [validated, setValidated] = useState(false);
   const [email, setEmail] = useState("");
 
   const handleSubmit = (event) => {
-    const url = config.url.API_URL + "/subscriber";
+    const url = base_url + "/subscriber";
 
     const form = event.currentTarget;
 
