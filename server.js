@@ -20,7 +20,7 @@ nextApp.prepare().then(() => {
         })
     );
     app.use(bodyParser.json());
-    app.use(cors(corsOptions));
+    app.use(cors());
     app.use("/api", router);
 
     app.get("*", (req, res) => {
