@@ -40,11 +40,7 @@ export default function Home() {
         <Container>
           <div className={styles.title}>
             <div className={styles["front-img"]}>
-              <Image
-                fluid
-                src="imgs/wece-logo-white.png"
-                alt="wece-logo-white"
-              />
+              <Image src="imgs/wece-logo-white.png" alt="wece-logo-white" />
             </div>
           </div>
           <div className={styles.subheading}>
