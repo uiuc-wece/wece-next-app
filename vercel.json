@@ -23,19 +23,6 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [{
-            "src": "/api/(.*)",
-            "headers": {
-                "cache-control": "s-maxage=0"
-            },
-            "dest": "./server.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/$1",
-            "continue": true
-        }
-    ],
     "rewrites": [{
         "source": "/api/(.*)",
         "destination": "./server.js"
