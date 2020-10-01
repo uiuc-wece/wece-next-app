@@ -1,30 +1,58 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Clone the repository
+
+First, clone the project.
+
+```bash
+git clone https://github.com/uiuc-wece/wece-next-app.git
+```
+
 ## Getting Started
 
-First, run the development server:
+Then, install packages. Inside the repository, run the following:
+
+```bash
+npm install
+```
+
+To run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Client
 
-## Learn More
+### /public
+Contains static images and pages.
+`/imgs` has all the images for the website.
+`/newsletterarchive` has the HTML files for all WECE newsletters.
 
-To learn more about Next.js, take a look at the following resources:
+###  /pages
+Contains the pages of the website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### /components
+Contains the React components used to build pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### /styles
+Contains the css files for each of the pages and components.
 
-## Deploy on Vercel
+### /data
+Contains static data used to populate pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### server.js
+This is the file that starts the custom Express server for the WECE website. All routes are served out of `/api`.
+
+### constants.js
+This file exports `base_url` that sets the base url for endpoints.
+
+### /server/database
+Inside is the setup for the MongoDB database.
+
+### /server/routes
+This folder contains all routes for the server where routes are served from `/api/{route_name}`.
