@@ -1,3 +1,9 @@
+<!--
+How to name the pull request:
+If still a work in progress, add [WIP] to the beginning of the name.
+Name the pull request with a succint description of the changes made.
+-->
+
 ## Status:
 
 <!--
