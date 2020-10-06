@@ -1,15 +1,15 @@
 export default {
   board: [
     {
-      name: "Richa Vijayvergiya",
+      name: "Maram Safi",
       role: "President",
       major: "Electrical Engineering",
-      year: "Senior",
-      spiritAnimal: "panda bear",
-      hobbies: "dancing, singing, and photography",
+      year: "Junior",
+      spiritAnimal: "blue whale",
+      hobbies: "Playing soccer, reading, and cooking",
       quote:
-        "\"You're allowed to scream, you're allowed to cry, but do not give up.\"",
-      img: "imgs/board/richa.JPG",
+        "\"A rose is a rose is a rose\"",
+      img: "imgs/board/maram.JPG",
     },
     {
       name: "Pooja Kankani",
