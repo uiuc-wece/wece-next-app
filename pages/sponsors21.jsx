@@ -26,25 +26,18 @@ export default function Sponsors21() {
             <h3 className={styles["donor-names"]}>
               Chevron Technology Ventures
             </h3>
+            <SectionBody hoverEffect={true} link="https://www.intel.com/">
+            <h3 className={styles["donor-names"]}>Intel</h3>
+          </SectionBody>
           </SectionBody>
           <h2 className={styles["sponsor-level"]}>Gold level $1000+</h2>
           <SectionBody hoverEffect={true} link="https://www.bp.com/">
             <h3 className={styles["donor-names"]}>BP</h3>
           </SectionBody>
-          <SectionBody hoverEffect={true} link="https://www.micron.com/">
-            <h3 className={styles["donor-names"]}>Micron</h3>
+          <h2 className={styles["sponsor-level"]}>Bronze level</h2> 
+          <SectionBody hoverEffect={true} link="https://www.capitalone.com/">
+            <h3 className={styles["donor-names"]}>Capital One</h3>
           </SectionBody>
-          <SectionBody hoverEffect={true} link="https://usa.visa.com/">
-            <h3 className={styles["donor-names"]}>Visa</h3>
-          </SectionBody>
-          <SectionBody hoverEffect={true} link="https://www.zillow.com/">
-            <h3 className={styles["donor-names"]}>Zillow</h3>
-          </SectionBody>
-          <h2 className={styles["sponsor-level"]}>Silver level $500+</h2>
-          <SectionBody hoverEffect={true} link="https://www.accenture.com">
-            <h3 className={styles["donor-names"]}>Accenture</h3>
-          </SectionBody>
-          {/* <h2 className="sponsor-level">Bronze level</h2> */}
         </Container>
       </div>
     </Layout>
