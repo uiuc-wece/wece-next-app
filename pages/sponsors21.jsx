@@ -19,21 +19,10 @@ export default function Sponsors21() {
           </SectionBody>
           <SectionHead title="Donors_" top={true} />
           <h2 className={styles["sponsor-level"]}>Platinum level $2000+</h2>
-          <SectionBody
-            hoverEffect={true}
-            link="https://www.chevron.com/technology/technology-ventures"
-          >
-            <h3 className={styles["donor-names"]}>
-              Chevron Technology Ventures
-            </h3>
             <SectionBody hoverEffect={true} link="https://www.intel.com/">
             <h3 className={styles["donor-names"]}>Intel</h3>
           </SectionBody>
-          </SectionBody>
           <h2 className={styles["sponsor-level"]}>Gold level $1000+</h2>
-          <SectionBody hoverEffect={true} link="https://www.bp.com/">
-            <h3 className={styles["donor-names"]}>BP</h3>
-          </SectionBody>
           <h2 className={styles["sponsor-level"]}>Bronze level</h2> 
           <SectionBody hoverEffect={true} link="https://www.capitalone.com/">
             <h3 className={styles["donor-names"]}>Capital One</h3>
