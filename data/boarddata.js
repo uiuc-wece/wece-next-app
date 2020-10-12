@@ -27,11 +27,11 @@ export default {
       role: "Corporate Relations Co-Vice President",
       major: "Computer Engineering",
       year: "Junior",
-      spiritAnimal: "",
-      hobbies: "",
+      spiritAnimal: "sloth",
+      hobbies: "embroidery, hiking, rock climbing, finding cute coffee shops",
       quote:
-        '',
-      img: "",
+        '“If people are doubting how far you can go, go so far that you can’t hear them anymore.” – Michele Ruiz',
+      img: "imgs/board/saaniya.JPG",
     },
     {
       name: "Kelly Dunleavy",
@@ -55,13 +55,13 @@ export default {
       img: "imgs/board/shannon.jpg",
     },
     {
-      name: "Pooja Bhagchandani",
+      name: "Kamal Bhagchandani",
       role: "Academic Director",
       major: "Computer Engineering",
       year: "Junior",
-      spiritAnimal: "",
-      hobbies: "",
-      quote: '',
+      spiritAnimal: "puppy",
+      hobbies: "golf, painting, starbucks, chipotle",
+      quote: 'Every song ends thats no reason not to enjoy the music',
       img: "imgs/board/pooja.jpeg",
     },
     {
