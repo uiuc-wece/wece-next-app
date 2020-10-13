@@ -30,7 +30,7 @@ export default {
       spiritAnimal: "sloth",
       hobbies: "embroidery, hiking, rock climbing, finding cute coffee shops",
       quote:
-        '“If people are doubting how far you can go, go so far that you can’t hear them anymore.” – Michele Ruiz',
+        '"If people are doubting how far you can go, go so far that you can’t hear them anymore." – Michele Ruiz',
       img: "imgs/board/saaniya.JPG",
     },
     {
@@ -51,7 +51,7 @@ export default {
       spiritAnimal: "wolf",
       hobbies: "biking, playing card games, and watching movies",
       quote:
-        '"Today was good. Today was fun. Tomorrow is another one” – Dr. Seuss',
+        '"Today was good. Today was fun. Tomorrow is another one" – Dr. Seuss',
       img: "imgs/board/shannon.jpg",
     },
     {
@@ -61,7 +61,7 @@ export default {
       year: "Junior",
       spiritAnimal: "puppy",
       hobbies: "golf, painting, starbucks, chipotle",
-      quote: 'Every song ends thats no reason not to enjoy the music',
+      quote: '"Every song ends thats no reason not to enjoy the music"',
       img: "imgs/board/pooja.jpeg",
     },
     {
@@ -106,7 +106,7 @@ export default {
       spiritAnimal: "panda",
       hobbies: "piano, composing",
       quote:
-        '“Vouloir c’est pouvoir” - French proverb',
+        '"Vouloir c’est pouvoir" - French proverb',
       img: "imgs/board/tala.jpeg",
     },
     {
@@ -116,7 +116,7 @@ export default {
       year: "Sophomore",
       spiritAnimal: "deer",
       hobbies: "drinking iced coffee, going out to eat brunch, playing tennis, watching New Girl, and  spending time with the people I love",
-      quote: 'Better an oops than a what if!',
+      quote: '"Better an oops than a what if!"',
       img: "imgs/board/navi.png",
     },
     {
@@ -137,7 +137,7 @@ export default {
       spiritAnimal: "The sharks that eat underwater internet cables",
       hobbies: "In my free time, I enjoy playing Sitar and exploring the outdoors. I am interested in Space Systems.",
       quote:
-        '"Progress comes not only in great leaps but also hundreds of small steps" --Walter Isaacson',
+        '"Progress comes not only in great leaps but also hundreds of small steps" -Walter Isaacson',
       img: "imgs/board/keerat.jpg",
     },
   ],
