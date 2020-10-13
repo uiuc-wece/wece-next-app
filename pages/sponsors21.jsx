@@ -10,8 +10,7 @@ export default function Sponsors21() {
     <Layout>
       <div className="content">
         <Container className="section">
-          <SectionHead title="WECE Sponsor_" top={true} />
-          <SectionHead title="Donors_" top={true} />
+          <SectionHead title="Sponsors_" top={true} />
           <h2 className={styles["sponsor-level"]}>Platinum level $2000+</h2>
             <SectionBody hoverEffect={true} link="https://www.intel.com/">
             <h3 className={styles["donor-names"]}>Intel</h3>
