@@ -7,9 +7,8 @@ export default {
       year: "Junior",
       spiritAnimal: "blue whale",
       hobbies: "playing soccer, reading, and cooking",
-      quote:
-        "\"A rose is a rose is a rose\"",
-      img: "imgs/board/maram.JPG",
+      quote: '"A rose is a rose is a rose"',
+      img: "imgs/board/maram.jpg",
     },
     {
       name: "Sarah Angelbeck",
@@ -40,8 +39,9 @@ export default {
       year: "Junior",
       spiritAnimal: "sloth",
       hobbies: "running, coffee brewing, listening to music & watching movies",
-      quote: '"Kindness is the language which the deaf can hear and the blind can see."',
-      img: "imgs/board/kelly.jpg",
+      quote:
+        '"Kindness is the language which the deaf can hear and the blind can see."',
+      img: "imgs/board/kelly.JPG",
     },
     {
       name: "Shannon Lin",
@@ -81,11 +81,10 @@ export default {
       major: "Electrical Engineering",
       year: "Senior",
       spiritAnimal: "turtle",
-      hobbies:
-        "dancing, painting, watching Brooklyn Nine-Nine",
+      hobbies: "dancing, painting, watching Brooklyn Nine-Nine",
       quote:
         '"Winners are not those who never fail, but those who never quit." - Edwin Louis Cole',
-      img: "imgs/board/rutu.jpg",
+      img: "imgs/board/rutu.JPG",
     },
     {
       name: "Megan Heinhold",
@@ -105,8 +104,7 @@ export default {
       year: "Sophomore",
       spiritAnimal: "panda",
       hobbies: "piano, composing",
-      quote:
-        '"Vouloir c’est pouvoir" - French proverb',
+      quote: '"Vouloir c’est pouvoir" - French proverb',
       img: "imgs/board/tala.jpeg",
     },
     {
@@ -115,7 +113,8 @@ export default {
       major: "Computer Engineering",
       year: "Sophomore",
       spiritAnimal: "deer",
-      hobbies: "drinking iced coffee, going out to eat brunch, playing tennis, watching New Girl, and  spending time with the people I love",
+      hobbies:
+        "drinking iced coffee, going out to eat brunch, playing tennis, watching New Girl, and  spending time with the people I love",
       quote: '"Better an oops than a what if!"',
       img: "imgs/board/navi.png",
     },
@@ -135,10 +134,11 @@ export default {
       major: "Computer Engineering",
       year: "Junior",
       spiritAnimal: "The sharks that eat underwater internet cables",
-      hobbies: "In my free time, I enjoy playing Sitar and exploring the outdoors. I am interested in Space Systems.",
+      hobbies:
+        "In my free time, I enjoy playing Sitar and exploring the outdoors. I am interested in Space Systems.",
       quote:
         '"Progress comes not only in great leaps but also hundreds of small steps" -Walter Isaacson',
-      img: "imgs/board/keerat.jpg",
+      img: "imgs/board/keerat.JPG",
     },
   ],
 };
