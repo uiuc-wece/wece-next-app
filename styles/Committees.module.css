@@ -38,9 +38,9 @@
   width: 40vw;
   margin: auto;
   padding: 5px;
-  background-color: #2eb6ad;
+  background-color: var(--accent-color);
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--light-text-color);
   font-family: "IBM Plex Mono";
 }
 

@@ -18,7 +18,7 @@
 .section-title h3 {
   font-size: 6vw;
   overflow: hidden;
-  border-right: 0.05em solid #ffffff;
+  border-right: 0.05em solid var(--light-text-color);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.2em;
@@ -46,42 +46,42 @@
     border-color: transparent;
   }
   5% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
   10% {
     border-color: transparent;
   }
   15% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
   20% {
     border-color: transparent;
   }
   25% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
   30% {
     border-color: transparent;
   }
   35% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
   40% {
     border-color: transparent;
   }
   45% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
   50% {
     border-color: transparent;
   }
   55% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
   60% {
     border-color: transparent;
   }
   65% {
-    border-color: #ffffff;
+    border-color: var(--light-text-color);
   }
 }

@@ -1,7 +1,7 @@
 .section-body {
-  color: #20272f;
-  background-color: #dee3e3;
-  border-bottom: 4px solid #bec3c3;
+  color: var(--dark-text-color);
+  background-color: var(--neutral-color);
+  border-bottom: 4px solid var(--neutral-color-shadow);
   padding: 4vw 8vw;
   margin: 4vw;
   border-radius: 10px;
@@ -9,9 +9,9 @@
 }
 
 .section-hover-body:hover {
-  background-color: #2eb6ad;
-  border-bottom: 4px solid #29a39b;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  border-bottom: 4px solid var(--accent-color-shadow);
+  color: var(--light-text-color);
 }
 
 .section-body p {

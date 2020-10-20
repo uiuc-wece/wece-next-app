@@ -1,9 +1,9 @@
 .navbar {
   color: #dee3e3 !important;
-  background-color: #20272f !important;
+  background-color: var(--dark-text-color) !important;
   font-family: "IBM Plex Mono";
   font-size: 0.8em;
-  border-bottom: 2px solid #2eb6ad;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .wece-brand {
@@ -71,7 +71,7 @@
 }
 
 .navbar-nav > li > a:hover {
-  color: #ffffff !important;
+  color: var(--light-text-color) !important;
 }
 
 .custom-toggler {
@@ -88,12 +88,12 @@
 }
 
 .dropdown-item {
-  color: #20272f;
+  color: var(--dark-text-color);
   font-size: 0.8em;
 }
 
 .dropdown-item:hover {
-  background-color: #ceedec;
+  background-color: var(--accent-color-light);
 }
 
 .sticky-top {
