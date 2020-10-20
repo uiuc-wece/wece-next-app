@@ -1,9 +1,11 @@
 /* variables */
 html {
   /* colors */
+  --accent-color-light: #98e6e1;
   --accent-color: #2eb6ad;
   --accent-color-shadow: #0e968d;
   --accent-text-color: #175b56;
+  --neutral-color-light: #ffffff;
   --neutral-color: #dee3e3;
   --neutral-color-shadow: #bec3c3;
   --dark-background-color: #20272f;
@@ -19,9 +21,9 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* background-color: #dee3e3; */
-  background-color: #20272f;
-  color: #ffffff;
+  /* background-color: var(--neutral-color); */
+  background-color: var(--dark-background-color);
+  color: var(--light-text-color);
   font-family: "Roboto";
 }
 

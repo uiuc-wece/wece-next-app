@@ -1,6 +1,6 @@
 .footer {
   overflow: hidden;
-  background-color: #dee3e3;
+  background-color: var(--neutral-color);
   font-family: "IBM Plex Mono";
   min-height: 40px;
   width: 100%;
@@ -17,13 +17,13 @@
 
 .navbar-text-left {
   font-size: 0.5em;
-  color: #20272f !important;
+  color: var(--dark-text-color) !important;
   margin: 5px;
 }
 
 .navbar-text-right {
   font-size: 0.6em;
-  color: #20272f !important;
+  color: var(--dark-text-color) !important;
   padding: 0;
   padding-left: 5px;
 }

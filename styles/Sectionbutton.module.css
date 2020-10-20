@@ -5,16 +5,16 @@
 
 .link-btn {
   padding: 1.5vw 3vw;
-  background-color: #2eb6ad;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
   border-radius: 2vw;
   font-family: "IBM Plex Mono";
   font-size: 3vw;
 }
 
 .link-btn:hover {
-  color: #ffffff;
-  background-color: #29a39b;
+  color: var(--light-text-color);
+  background-color: var(--accent-color-shadow);
   text-decoration: none;
 }
 

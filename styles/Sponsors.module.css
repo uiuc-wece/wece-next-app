@@ -12,6 +12,6 @@
 
 .donor-names {
   font-family: "Roboto";
-  color: #20272f;
+  color: var(--dark-text-color);
   text-align: center;
 }
