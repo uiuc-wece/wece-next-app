@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: #2eb6ad;
+  stroke: var(--accent-color);
   stroke-width: 0.3em;
   stroke-miterlimit: 5;
 }
@@ -109,8 +109,8 @@
   width: 80%;
   padding: 2vw;
   margin: auto;
-  border-bottom: 4px solid #0e968d;
-  background-color: #2eb6ad;
+  border-bottom: 4px solid var(--accent-color-shadow);
+  background-color: var(--accent-color);
   border-radius: 10px;
   z-index: 2;
 }
@@ -125,7 +125,7 @@
 
 .uiuc-subheading {
   font-size: 3.5vw;
-  color: #175b56;
+  color: var(--accent-text-color);
   font-family: "Roboto";
   text-align: center;
 }
