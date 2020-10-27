@@ -8,10 +8,9 @@ html {
   --neutral-color-light: #ffffff;
   --neutral-color: #dee3e3;
   --neutral-color-shadow: #bec3c3;
-  --dark-background-color: #20272f;
+  --dark-background-color: #022b3a;
   --light-text-color: #ffffff;
-  --dark-text-color: #20272f;
-  --dark-new-color: #022b3a;
+  --dark-text-color: #022b3a;
 
   /* font families */
   --sans-serif-font: "Roboto";
@@ -29,7 +28,7 @@ html {
   margin: 0;
   padding: 0;
   /* background-color: var(--neutral-color); */
-  background-color: var(--dark-new-color);  
+  background-color: var(--dark-background-color);  
   color: var(--light-text-color);
   font-family: "Roboto";
 }
