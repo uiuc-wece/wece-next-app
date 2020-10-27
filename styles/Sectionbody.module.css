@@ -10,7 +10,6 @@
 
 .section-hover-body:hover {
   background-color: var(--accent-color);
-  border-bottom: 4px solid var(--accent-color-shadow);
   color: var(--light-text-color);
 }
 
