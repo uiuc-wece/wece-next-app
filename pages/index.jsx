@@ -37,21 +37,23 @@ export default function Home() {
     <Layout>
       <LinesSvg />
       <div className="content">
-        <Container>
-          <div className={styles.title}>
-            <div className={styles["front-img"]}>
-              <Image src="imgs/wece-logo-white.png" alt="wece-logo-white" />
+        <div className="top">
+          <Container>
+            <div className={styles.title}>
+              <div className={styles["front-img"]}>
+                <Image src="imgs/wece-logo-white.png" alt="wece-logo-white" />
+              </div>
             </div>
-          </div>
-          <div className={styles.subheading}>
-            <h4 className={styles["wece-title"]}>
-              Women in Electrical and Computer Engineering
-            </h4>
-            <h6 className={styles["uiuc-subheading"]}>
-              University of Illinois Urbana-Champaign
-            </h6>
-          </div>
-        </Container>
+            <div className={styles.subheading}>
+              <h4 className={styles["wece-title"]}>
+                Women in Electrical and Computer Engineering
+              </h4>
+              <h6 className={styles["uiuc-subheading"]}>
+                University of Illinois Urbana-Champaign
+              </h6>
+            </div>
+          </Container>
+        </div>
         <div className={styles["staff-pic-popup"]} id="staff-pic-popup">
           <img
             className={`${styles["img-center"]} ${styles["staff-pic"]}`}
