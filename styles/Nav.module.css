@@ -3,6 +3,7 @@
   background-color: var(--dark-text-color) !important;
   font-family: "IBM Plex Mono";
   font-size: 0.8em;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .wece-brand {
