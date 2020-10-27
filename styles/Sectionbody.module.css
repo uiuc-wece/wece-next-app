@@ -1,7 +1,6 @@
 .section-body {
   color: var(--dark-text-color);
   background-color: var(--neutral-color);
-  /*border-bottom: 4px solid var(--neutral-color-shadow);*/
   padding: 4vw 8vw;
   margin: 4vw;
   border-radius: 10px;
