@@ -1,11 +1,12 @@
 .section-body {
   color: var(--dark-text-color);
   background-color: var(--neutral-color);
-  border-bottom: 4px solid var(--neutral-color-shadow);
+  /*border-bottom: 4px solid var(--neutral-color-shadow);*/
   padding: 4vw 8vw;
   margin: 4vw;
   border-radius: 10px;
   opacity: 0.8;
+  box-shadow: 10px 10px 5px 3px #161a20;
 }
 
 .section-hover-body:hover {
