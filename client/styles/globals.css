@@ -1,10 +1,14 @@
 /* variables */
 html {
   /* colors */
-  --accent-color-light: #98e6e1;
-  --accent-color: #2eb6ad;
-  --accent-color-shadow: #0e968d;
-  --accent-text-color: #175b56;
+  --accent-color-light: #fcd5d5;
+  --accent-color: #ff6b6b;
+  --accent-color-shadow: #fc5a5a;
+  --accent-text-color: #ac1313;
+  --accent-2-color-light: #d6fed6;
+  --accent-2-color: #ace8ac;
+  --accent-2-color-shadow: #78c178;
+  --accent-2-text-color: #285428;
   --neutral-color-light: #ffffff;
   --neutral-color: #dee3e3;
   --neutral-color-shadow: #bec3c3;

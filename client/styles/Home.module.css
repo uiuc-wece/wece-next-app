@@ -23,6 +23,7 @@
   height: 100%;
   fill: none;
   stroke: var(--accent-color);
+  opacity: 0.5;
   stroke-width: 0.3em;
   stroke-miterlimit: 5;
 }
