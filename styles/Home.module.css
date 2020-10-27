@@ -115,8 +115,6 @@
   width: 80%;
   padding: 2vw;
   margin: auto;
-  /*border-bottom: 4px solid var(--accent-color-shadow);*/
-  /*background-color: var(--accent-color);*/
   border-radius: 10px;
   z-index: 2;
 }
