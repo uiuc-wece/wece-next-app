@@ -91,7 +91,7 @@ export default function Calendar() {
   return (
     <Layout>
       <div className="content">
-        <Container fluid className="section">
+        <Container className="section">
           <SectionHead title="Events_" top={true} />
           <div id="events">
             {events
@@ -99,7 +99,7 @@ export default function Calendar() {
                   <a key={e.id} href={e.htmlLink} target="_blank">
                     <div className={styles["event-card"]}>
                       <h4>{e.summary}</h4>
-                      <h5>{e.locationString}</h5>
+                      <h6>{e.locationString}</h6>
                       <h6>{e.dateString}</h6>
                     </div>
                   </a>
