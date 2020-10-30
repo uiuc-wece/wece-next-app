@@ -7,7 +7,7 @@
 /coverage
 
 # next.js
-/client/next-app/.next/
+/client/.next/
 /out/
 
 # production
