@@ -58,7 +58,7 @@ export default function Home() {
           <img
             className={`${styles["img-center"]} ${styles["staff-pic"]}`}
             id="staff-pic"
-            src="imgs/board2019-20.png"
+            src="imgs/board2019-20-green.png"
           />
         </div>
         <Container className="section">
@@ -67,7 +67,7 @@ export default function Home() {
             <p>
               <span
                 style={{
-                  color: "#2eb6ad",
+                  color: "#ff6b6b",
                   fontWeight: 600,
                   fontFamily: "IBM Plex Mono",
                 }}
