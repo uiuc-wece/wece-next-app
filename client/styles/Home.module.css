@@ -6,10 +6,14 @@
   z-index: 0;
 }
 
-.top
-{
-  background: rgb(2,43,58);
-  background: linear-gradient(90deg, rgba(2,43,58,1) 22%, rgba(172,232,172,1) 100%, rgba(255,107,107,1) 100%);
+.top {
+  background: rgb(2, 43, 58);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 43, 58, 1) 22%,
+    rgba(172, 232, 172, 1) 100%,
+    rgba(255, 107, 107, 1) 100%
+  );
 }
 
 @media screen and (max-width: 600px) {
@@ -22,8 +26,8 @@
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: var(--accent-color);
-  opacity: 0.5;
+  stroke: var(--accent-2-color-shadow);
+  opacity: 0.8;
   stroke-width: 0.3em;
   stroke-miterlimit: 5;
 }
@@ -112,7 +116,7 @@
 }
 
 .subheading {
-  position: relative; /* z-index only applies to positioned elements*/ 
+  position: relative; /* z-index only applies to positioned elements*/
   width: 80%;
   padding: 2vw;
   margin: auto;
