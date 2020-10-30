@@ -1,33 +1,40 @@
 {
-    "version": 2,
-    "github": {
-        "enabled": false
-    },
-    "build": {
-        "env": {
-            "API_URL": "@api_url",
-            "MONGODB_URL": "@mongodb_url",
-            "MAILERLITE_API_KEY": "@mailerlite_api_key",
-            "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
-        }
-    },
+  "version": 2,
+  "github": {
+    "enabled": false
+  },
+  "build": {
     "env": {
-        "API_URL": "@api_url",
-        "MONGODB_URL": "@mongodb_url",
-        "MAILERLITE_API_KEY": "@mailerlite_api_key",
-        "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+      "API_URL": "@api_url",
+      "MONGODB_URL": "@mongodb_url",
+      "MAILERLITE_API_KEY": "@mailerlite_api_key",
+      "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+    }
+  },
+  "env": {
+    "API_URL": "@api_url",
+    "MONGODB_URL": "@mongodb_url",
+    "MAILERLITE_API_KEY": "@mailerlite_api_key",
+    "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+  },
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/next"
     },
-    "builds": [{
-            "src": "./package.json",
-            "use": "@vercel/next"
-        },
-        {
-            "src": "./server.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "rewrites": [{
-        "source": "/api/(.*)",
-        "destination": "./server.js"
-    }]
+    {
+      "src": "api/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/client/$1"
+    }
+  ]
 }
