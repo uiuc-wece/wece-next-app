@@ -91,15 +91,21 @@ export default function Calendar() {
   return (
     <Layout>
       <div className="content">
-        <Container fluid className="section">
+        <Container className="section">
           <SectionHead title="Events_" top={true} />
           <div id="events">
             {events
-              ? events.map((e) => (
+              ? events.map((e, ind) => (
                   <a key={e.id} href={e.htmlLink} target="_blank">
-                    <div className={styles["event-card"]}>
+                    <div
+                      className={
+                        ind % 2 == 1
+                          ? `${styles["event-card"]} ${styles["alternate-color"]}`
+                          : `${styles["event-card"]}`
+                      }
+                    >
                       <h4>{e.summary}</h4>
-                      <h5>{e.locationString}</h5>
+                      <h6>{e.locationString}</h6>
                       <h6>{e.dateString}</h6>
                     </div>
                   </a>
