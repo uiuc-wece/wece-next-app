@@ -37,7 +37,7 @@ export default function Home() {
     <Layout>
       <LinesSvg />
       <div className="content">
-        <div className="top">
+        <div className={styles["top"]}>
           <Container>
             <div className={styles.title}>
               <div className={styles["front-img"]}>
