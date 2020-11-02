@@ -4,5 +4,15 @@
   padding: 4vw 8vw;
   margin: 4vw;
   border-radius: 5px;
-  opacity: 0.8;
+  word-wrap: break-word;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.alternate-color {
+  background-image: linear-gradient(
+    0deg,
+    var(--accent-color-light),
+    var(--accent-color-light)
+  );
+  background-blend-mode: overlay;
 }
