@@ -5,7 +5,7 @@
   margin: 4vw;
   border-radius: 10px;
   opacity: 0.8;
-  box-shadow: 10px 10px 5px 3px #161a20;
+  box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.5);
 }
 
 .section-hover-body:hover {
