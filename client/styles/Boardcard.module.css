@@ -58,8 +58,12 @@
   width: 500px;
   height: 450px;
   border-radius: 20px;
-  background: var(--accent-color);
+  background: var(--accent-2-color-shadow);
   color: var(--light-text-color);
+}
+
+.active.img-card:hover .exec-text {
+  background-color: var(--accent-2-color-shadow);
 }
 
 .exec-text h5 {
@@ -124,7 +128,7 @@
 
 .flip-category {
   font-family: "IBM Plex Mono";
-  background-color: var(--accent-color-light);
+  background-color: var(--accent-2-color-light);
   padding-left: 5px;
   padding-right: 5px;
 }

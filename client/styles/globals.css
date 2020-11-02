@@ -1,10 +1,14 @@
 /* variables */
 html {
   /* colors */
-  --accent-color-light: #98e6e1;
-  --accent-color: #2eb6ad;
-  --accent-color-shadow: #0e968d;
-  --accent-text-color: #175b56;
+  --accent-color-light: #fcd5d5;
+  --accent-color: #ff6b6b;
+  --accent-color-shadow: #fc5a5a;
+  --accent-text-color: #ac1313;
+  --accent-2-color-light: #d6fed6;
+  --accent-2-color: #ace8ac;
+  --accent-2-color-shadow: #78c178;
+  --accent-2-text-color: #285428;
   --neutral-color-light: #ffffff;
   --neutral-color: #dee3e3;
   --neutral-color-shadow: #bec3c3;
@@ -17,18 +21,12 @@ html {
   --serif-font: "IBM Plex Mono";
 }
 
-.top
-{
-  background: rgb(255,107,107);
-  background: linear-gradient(160deg, rgba(255,107,107,1) 4%, rgba(215,97,99,1) 13%, rgba(96,67,76,1) 44%, rgba(2,43,58,1) 80%);
-}
-
 .page {
   height: 100%;
   margin: 0;
   padding: 0;
   /* background-color: var(--neutral-color); */
-  background-color: var(--dark-background-color);  
+  background-color: var(--dark-background-color);
   color: var(--light-text-color);
   font-family: "Roboto";
 }
