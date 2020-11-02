@@ -95,9 +95,15 @@ export default function Calendar() {
           <SectionHead title="Events_" top={true} />
           <div id="events">
             {events
-              ? events.map((e) => (
+              ? events.map((e, ind) => (
                   <a key={e.id} href={e.htmlLink} target="_blank">
-                    <div className={styles["event-card"]}>
+                    <div
+                      className={
+                        ind % 2 == 1
+                          ? `${styles["event-card"]} ${styles["alternate-color"]}`
+                          : `${styles["event-card"]}`
+                      }
+                    >
                       <h4>{e.summary}</h4>
                       <h6>{e.locationString}</h6>
                       <h6>{e.dateString}</h6>
