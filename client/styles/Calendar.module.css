@@ -1,9 +1,17 @@
 .event-card {
   color: var(--dark-text-color);
-  background-color: var(--accent-2-color);
+  background-color: var(--accent-color);
   padding: 4vw 8vw;
   margin: 4vw;
   border-radius: 5px;
-  opacity: 0.8;
   word-wrap: break-word;
+}
+
+.alternate-color {
+  background-image: linear-gradient(
+    0deg,
+    var(--accent-color-light),
+    var(--accent-color-light)
+  );
+  background-blend-mode: overlay;
 }
