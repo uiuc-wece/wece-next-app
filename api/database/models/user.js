@@ -21,8 +21,8 @@ var UserSchema = new mongoose.Schema({
   graduationDate: { type: Date },
   totalPoints: { type: Number },
   eventsAttended: [{ type: String }], // list of event keys
-  committees: { type: String },
-  blogposts: { type: String },
+  committees: [{ type: String }],
+  blogposts: [{ type: String }], // list of blogpost ids
   profileImage: { data: Buffer, contentType: String },
 });
 
