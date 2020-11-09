@@ -7,7 +7,9 @@
     "dev": "next",
     "build": "next build",
     "start": "NODE_ENV=production node -r dotenv/config server.js -p $PORT",
-    "export": "next export"
+    "export": "next export",
+    "storybook": "start-storybook -p 6006 -s ./ --no-dll",
+    "build-storybook": "build-storybook --no-dll"
   },
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
@@ -17,5 +19,14 @@
     "react": "16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
+    "@storybook/react": "^6.0.28",
+    "babel-loader": "^8.1.0",
+    "react-is": "^17.0.1"
   }
 }
