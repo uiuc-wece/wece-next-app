@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import styles from "../styles/Footer.module.css";
 
