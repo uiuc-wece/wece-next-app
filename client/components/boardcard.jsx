@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../styles/Boardcard.module.css";
 
 export default function BoardCard({

@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../styles/Sectionbody.module.css";
 
 function SectionLink({ children, link = "" }) {
