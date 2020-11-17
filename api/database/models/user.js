@@ -1,5 +1,5 @@
 // Load required packages
-import mongoose from "mongoose";
+var mongoose = require("mongoose");
 
 // Define our user schema
 var UserSchema = new mongoose.Schema({
@@ -27,4 +27,4 @@ var UserSchema = new mongoose.Schema({
 });
 
 // Export the Mongoose model
-export default mongoose.model("User", UserSchema);
+module.exports.default = mongoose.model("User", UserSchema);

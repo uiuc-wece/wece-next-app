@@ -1,11 +1,12 @@
-import mongoose from "mongoose";
+var mongoose = require("mongoose");
 
 var BlogpostSchema = new mongoose.Schema({
   title: { type: String },
-  authors: [{ type: String }], // list of user ids
-  committeeTags: [{ type: String }],
-  tags: [{ type: String }],
+  authors: [String], // list of user ids
+  committeeTags: [String],
+  tags: [String],
   content: { type: String },
 });
 
-export default mongoose.model("Blogpost", BlogpostSchema);
+const Blogpost = mongoose.model("Blogpost", BlogpostSchema);
+module.exports = Blogpost;
