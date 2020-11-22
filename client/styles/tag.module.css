@@ -1,0 +1,19 @@
+.button {
+    padding-top: 2vw;
+    text-align: center;
+  }
+  
+  .link-btn {
+    padding: 1.5vw 3vw;
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    border-radius: 2vw;
+    font-family: "IBM Plex Mono";
+    font-size: 3vw;
+  }
+  
+  .link-btn:hover {
+    color: var(--light-text-color);
+    background-color: var(--accent-color-shadow);
+    text-decoration: none;
+  }
