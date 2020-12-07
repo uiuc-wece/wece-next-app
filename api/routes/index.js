@@ -18,7 +18,7 @@ router.delete("/user/:id", deleteUser);
 router.post("/user", createUser);
 router.put("/user/:id", updateUser);
 
-router.get("/blogpost/:id", getBlogpost);
+router.get("/blogpost", getBlogpost);
 router.delete("/blogpost/:id", deleteBlogpost);
 router.post("/blogpost", createBlogpost);
 router.put("/blogpost/:id", updateBlogpost);
