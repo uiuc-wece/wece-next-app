@@ -20,9 +20,9 @@ var UserSchema = new mongoose.Schema({
   joinDate: { type: Date }, // join date to weceweb portal
   graduationDate: { type: Date },
   totalPoints: { type: Number },
-  eventsAttended: [{ type: String }], // list of event keys
-  committees: [{ type: String }],
-  blogposts: [{ type: String }], // list of blogpost ids
+  eventsAttended: [String], // list of event keys
+  committees: [String],
+  blogposts: [String], // list of blogpost ids
   profileImage: { data: Buffer, contentType: String },
 });
 
