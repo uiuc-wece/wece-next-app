@@ -17,15 +17,19 @@ export default function Join() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [modalSubscribed, setModalSubscribed] = useState(false);
   const [modalError, setModalError] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const toggleSubscribed = () => setModalSubscribed(!modalSubscribed);
   const toggleError = () => setModalError(!modalError);
 
   const handleSubmit = (event) => {
-    const url = base_url + "/subscriber";
+    const subscribeUrl = base_url + "/subscriber";
+    const registerUrl = base_url + "/register";
 
     const form = event.currentTarget;
 
@@ -40,27 +44,35 @@ export default function Join() {
       const inputs = form.querySelectorAll("input");
       inputs.forEach((input) => (input.disabled = true));
 
-      const postJoinRequest = async () => {
-        await axios
-          .post(url, {
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-          })
-          .then((response) => {
-            toggleSubscribed();
-          })
-          .catch((error) => {
-            setErrorMessage(error.message);
-            toggleError();
-          })
-          .finally(() => {
-            inputs.forEach((input) => (input.disabled = false));
-            setValidated(false);
-          });
-      };
+      const subscribeRequest = axios.post(subscribeUrl, {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+      });
+      const registerRequest = axios.post(registerUrl, {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+        accountType: "MEMBER",
+        joinDate: Date.now(),
+      });
 
-      postJoinRequest();
+      Promise.all([subscribeRequest, registerRequest])
+        .then((responses) => {
+          setSuccessMessage(
+            "You have successfully created a WECE account and subscribed to the WECE newsletter!"
+          );
+          toggleSubscribed();
+        })
+        .catch((errors) => {
+          setErrorMessage(errors.response.data);
+          toggleError();
+        })
+        .finally(() => {
+          inputs.forEach((input) => (input.disabled = false));
+          setValidated(false);
+        });
     }
   };
 
@@ -71,8 +83,8 @@ export default function Join() {
           <SectionHead title="Join WECE_" top={true} />
           <SectionBody>
             <p>
-              Sign up here to get weekly newsletters with general meetings,
-              upcoming events, and more.
+              Sign up here to create an account, get weekly newsletters with
+              general meetings, upcoming events, and more.
             </p>
             <Form
               name="join-form"
@@ -89,6 +101,8 @@ export default function Join() {
                   placeholder="Enter Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  isValid={email && email.indexOf("@") != -1}
+                  isInvalid={email && email.indexOf("@") == -1}
                 />
                 <Form.Control.Feedback type="invalid">
                   Please enter your email.
@@ -103,6 +117,7 @@ export default function Join() {
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
+                  isValid={firstName}
                 />
                 <Form.Control.Feedback type="invalid">
                   Please enter your first name.
@@ -117,9 +132,42 @@ export default function Join() {
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
+                  isValid={lastName}
                 />
                 <Form.Control.Feedback type="invalid">
                   Please enter your last name.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  required
+                  type="password"
+                  name="password"
+                  placeholder="Enter password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  isValid={password}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your password.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Confirm Password</Form.Label>
+                <Form.Control
+                  required
+                  type="password"
+                  name="confirm password"
+                  placeholder="Confirm password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  pattern={"^" + password + "$"}
+                  isValid={confirmPassword && password === confirmPassword}
+                  isInvalid={confirmPassword && password !== confirmPassword}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Passwords do not match.
                 </Form.Control.Feedback>
               </Form.Group>
               {/* <Form.Group controlId="formCommitteeInput">
@@ -174,13 +222,11 @@ export default function Join() {
               </Button>
             </Form>
             <Modal show={modalSubscribed} onHide={toggleSubscribed}>
-              <Modal.Header closeButton>Successfully subscribed</Modal.Header>
-              <Modal.Body>
-                Thank you for subscribing to the WECE newsletter!
-              </Modal.Body>
+              <Modal.Header closeButton>Success</Modal.Header>
+              <Modal.Body>{successMessage}</Modal.Body>
             </Modal>
             <Modal show={modalError} onHide={toggleError}>
-              <Modal.Header closeButton>Error subscribing</Modal.Header>
+              <Modal.Header closeButton>Error</Modal.Header>
               <Modal.Body>{errorMessage}</Modal.Body>
             </Modal>
           </SectionBody>
