@@ -9,6 +9,7 @@ import { logout } from "../apihelper.js";
 
 const CustomNavbar = () => {
   const authenticated = useSelector((state) => state.authenticated);
+  const firstName = useSelector((state) => state.firstName);
 
   const router = useRouter();
   const logoutUser = () => {
@@ -126,6 +127,10 @@ const CustomNavbar = () => {
                 title="Account"
                 className={styles["account-dropdown"]}
               >
+                <NavDropdown.ItemText className={styles["dropdown-item-text"]}>
+                  {"Welcome " + firstName + "!"}
+                </NavDropdown.ItemText>
+                <NavDropdown.Divider />
                 <NavDropdown.Item
                   className={styles["dropdown-item"]}
                   href="/account"

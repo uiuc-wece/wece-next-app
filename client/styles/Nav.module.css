@@ -87,6 +87,11 @@
   opacity: 1;
 }
 
+.dropdown-item-text {
+  color: var(--dark-text-color) !important;
+  font-size: 0.8em;
+}
+
 .dropdown-item {
   color: var(--dark-text-color) !important;
   font-size: 0.8em;
