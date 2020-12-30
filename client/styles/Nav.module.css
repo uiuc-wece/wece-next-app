@@ -96,6 +96,31 @@
   background-color: var(--accent-color-light) !important;
 }
 
+.login {
+  background-color: var(--accent-2-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: var(--dark-text-color) !important;
+}
+
+.account-dropdown > a {
+  display: inline-block !important;
+  background-color: var(--accent-2-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  color: var(--dark-text-color) !important;
+}
+
+.account-dropdown > div {
+  left: auto;
+  right: 0;
+}
+
 .sticky-top {
   position: fixed;
   width: 100%;
