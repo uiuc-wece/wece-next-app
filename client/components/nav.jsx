@@ -1,10 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styles from "../styles/Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-export default function CustomNavbar() {
+const CustomNavbar = () => {
+  const authenticated = useSelector((state) => state.authenticated);
   return (
     <>
       <Navbar
@@ -105,9 +107,13 @@ export default function CustomNavbar() {
             </NavDropdown>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
+            {!authenticated && <Nav.Link href="/login">Login</Nav.Link>}
+            {authenticated && <Nav.Link href="/account">Account</Nav.Link>}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     </>
   );
-}
+};
+
+export default CustomNavbar;
