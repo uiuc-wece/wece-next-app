@@ -1,20 +1,20 @@
 import React from "react";
-import YourComponent from "../components/tag.jsx";
+import Tag from "../components/tag.jsx";
 
 export default {
   title: "Components/tag",
-  component: tag,
+  component: Tag,
 };
 
-const Template = (args) => <tag {...args} />;
+const Template = (args) => <Tag {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Infrastructure = Template.bind({});
+Infrastructure.args = {
   word: "Infrastructure"
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Academic = Template.bind({});
+Academic.args = {
   word: "Academic"
 }
 
