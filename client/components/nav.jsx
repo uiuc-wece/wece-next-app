@@ -1,12 +1,21 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
 import styles from "../styles/Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { logout } from "../apihelper.js";
 
 const CustomNavbar = () => {
   const authenticated = useSelector((state) => state.authenticated);
+
+  const router = useRouter();
+  const logoutUser = () => {
+    logout();
+    router.push("/");
+  };
+
   return (
     <>
       <Navbar
@@ -107,8 +116,31 @@ const CustomNavbar = () => {
             </NavDropdown>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
-            {!authenticated && <Nav.Link href="/login">Login</Nav.Link>}
-            {authenticated && <Nav.Link href="/account">Account</Nav.Link>}
+            {!authenticated && (
+              <Nav.Link href="/login" className={styles["login"]}>
+                Login
+              </Nav.Link>
+            )}
+            {authenticated && (
+              <NavDropdown
+                title="Account"
+                className={styles["account-dropdown"]}
+              >
+                <NavDropdown.Item
+                  className={styles["dropdown-item"]}
+                  href="/account"
+                >
+                  Dashboard
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  className={styles["dropdown-item"]}
+                  onClick={logoutUser}
+                >
+                  Logout
+                </NavDropdown.Item>
+              </NavDropdown>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
