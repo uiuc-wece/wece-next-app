@@ -1,9 +1,7 @@
-import styles from "../styles/tag.module.css";
+import styles from "../styles/Tag.module.css";
 import React from "react";
-export default function tag({word}) {
+export default function Tag({word}) {
     return (
-      <div className={styles["button"]}>
-          <a className={styles["link-btn"]}>{buttonText}</a>
-      </div>
+          <a className={styles["tag_style"]}>{word}</a>
     );
   }
