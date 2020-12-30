@@ -36,7 +36,7 @@
 
 .left-navbar {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin-left: 30px;
@@ -44,7 +44,7 @@
 
 .left-navbar-imgs {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin-left: 20px;
@@ -88,12 +88,12 @@
 }
 
 .dropdown-item {
-  color: var(--dark-text-color);
+  color: var(--dark-text-color) !important;
   font-size: 0.8em;
 }
 
 .dropdown-item:hover {
-  background-color: var(--accent-color-light);
+  background-color: var(--accent-color-light) !important;
 }
 
 .sticky-top {
