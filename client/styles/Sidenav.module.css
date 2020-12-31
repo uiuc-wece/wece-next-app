@@ -1,0 +1,60 @@
+.side-nav {
+  background-color: var(--accent-2-color);
+  color: var(--neutral-color-light);
+  transition: all 0.6s ease-in-out;
+  width: 200px;
+  z-index: 998;
+  margin-top: 60px;
+  padding-top: 60px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.side-nav.active {
+  margin-left: -140px;
+}
+
+.profile {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--accent-2-color-shadow);
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  height: 80px;
+  font-size: 50px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  height: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-item {
+  padding-left: 20px !important;
+  width: 100%;
+  color: var(--dark-text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.side-nav.active > .menu > .menu-item {
+  text-align: right;
+  padding-right: 16px !important;
+}
+
+.menu-item:hover {
+  background-color: var(--neutral-color-light);
+  color: var(--dark-text-color);
+}
