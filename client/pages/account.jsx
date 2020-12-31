@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import AccountLayout from "../components/accountlayout";
 import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
 
@@ -16,7 +16,7 @@ const Account = () => {
     router.push("/login");
   }
   return (
-    <Layout>
+    <AccountLayout>
       <div className="container">
         <div className="content">
           <Container fluid className="section">
@@ -25,7 +25,7 @@ const Account = () => {
           </Container>
         </div>
       </div>
-    </Layout>
+    </AccountLayout>
   );
 };
 
