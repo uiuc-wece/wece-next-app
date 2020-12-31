@@ -1,0 +1,19 @@
+.name {
+  font-size: 32px;
+}
+
+.account-type {
+  padding-top: 10px;
+  font-size: 18px;
+  color: var(--accent-2-color);
+}
+
+.points {
+  font-size: 40px;
+  color: var(--accent-color);
+}
+
+.points-text {
+  color: var(--neutral-color-light);
+  font-size: 32px;
+}
