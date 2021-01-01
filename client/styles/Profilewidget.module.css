@@ -98,8 +98,29 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .profile-left {
+    margin: 5px;
+  }
+
+  .profile-right {
+    margin: 5px;
+  }
+
   .profile-image {
     width: 100px;
     height: 100px;
+  }
+
+  .education-divider {
+    display: none;
+  }
+
+  .education {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .graduation {
+    flex-wrap: wrap;
   }
 }
