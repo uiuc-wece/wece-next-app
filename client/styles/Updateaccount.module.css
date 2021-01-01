@@ -1,0 +1,21 @@
+.title {
+  text-align: left;
+  font-size: 20px;
+  color: var(--neutral-color-light);
+}
+
+.form-divider {
+  border-top: 1px solid var(--neutral-color);
+}
+
+.form-input > input {
+  border: none;
+  background-color: var(--dark-background-color) !important;
+  color: var(--neutral-color-light) !important;
+  opacity: 0.8;
+}
+
+.submit-button {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
