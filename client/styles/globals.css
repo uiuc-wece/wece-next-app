@@ -78,6 +78,17 @@ a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 300px) {
+  .container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .section {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 32px;
