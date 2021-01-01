@@ -18,6 +18,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
   margin: 10px;
 }
 
@@ -139,6 +140,24 @@
   border-radius: 6px;
   background-color: var(--accent-2-color-light);
   color: var(--accent-2-text-color);
+}
+
+.right-division {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-color-shadow);
+  margin-top: 0.5em;
+}
+
+.points {
+  letter-spacing: 0.1em;
+}
+
+.points-number {
+  color: var(--accent-color);
 }
 
 .image-modal-header {
