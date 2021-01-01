@@ -15,6 +15,13 @@
   opacity: 0.8;
 }
 
+.form-input > select {
+  border: 1.5px solid var(--neutral-color-shadow);
+  background-color: var(--dark-background-color) !important;
+  color: var(--neutral-color-light) !important;
+  opacity: 0.8;
+}
+
 .submit-button {
   background-color: var(--accent-color) !important;
   border-color: var(--accent-color) !important;

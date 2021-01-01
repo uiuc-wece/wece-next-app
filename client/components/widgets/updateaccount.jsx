@@ -3,9 +3,10 @@ import styles from "../../styles/Updateaccount.module.css";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
@@ -18,6 +19,9 @@ const UpdateAccountWidget = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [major, setMajor] = useState("");
+  const [graduationDate, setGraduationDate] = useState("");
+  const [studentStatus, setStudentStatus] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [modalSuccess, setModalSuccess] = useState(false);
@@ -27,6 +31,22 @@ const UpdateAccountWidget = () => {
   const existEmail = useSelector((state) => state.email);
   const existFirstName = useSelector((state) => state.firstName);
   const existLastName = useSelector((state) => state.lastName);
+  const existMajor = useSelector((state) => state.major);
+  let existGraduationDate = useSelector((state) => state.graduationDate);
+  const existStudentStatus = useSelector((state) => state.studentStatus);
+
+  useEffect(() => {
+    if (existGraduationDate) {
+      existGraduationDate = new Date(existGraduationDate);
+      const dateString =
+        existGraduationDate.getFullYear() +
+        "-" +
+        (existGraduationDate.getMonth() + 1 < 10
+          ? "0" + (existGraduationDate.getMonth() + 1)
+          : existGraduationDate.getMonth() + 1);
+      setGraduationDate(dateString);
+    }
+  }, [existGraduationDate]);
 
   const toggleSuccess = () => setModalSuccess(!modalSuccess);
   const toggleError = () => setModalError(!modalError);
@@ -36,7 +56,6 @@ const UpdateAccountWidget = () => {
     const formValues = arrElements
       .filter((elem) => elem.name.length > 0)
       .map((x) => {
-        const { typeMismatch } = x.validity;
         const { name, type, value } = x;
         return {
           name,
@@ -90,11 +109,21 @@ const UpdateAccountWidget = () => {
         requests.push(unsubscribeRequest);
       }
 
+      let formattedGraduationDate = new Date();
+      formattedGraduationDate =
+        graduationDate +
+        "-01T" +
+        formattedGraduationDate.toTimeString().slice(0, 8);
+
       const newProfile = {
         firstName: firstName != "" ? firstName : null,
         lastName: lastName != "" ? lastName : null,
         email: email != "" ? email : null,
         password: password != "" ? password : null,
+        major: major != "" ? major : null,
+        graduationDate:
+          graduationDate != "" ? new Date(formattedGraduationDate) : null,
+        studentStatus: studentStatus != "" ? studentStatus : null,
       };
 
       const updateProfileRequest = axios.put(updateUrl, newProfile, {
@@ -149,32 +178,75 @@ const UpdateAccountWidget = () => {
             </Form.Control.Feedback>
           </div>
         </Form.Group>
+        <Form.Row>
+          <Form.Group as={Col} md="6">
+            <Form.Label>First Name</Form.Label>
+            <div className={styles["form-input"]}>
+              <Form.Control
+                type="text"
+                name="first name"
+                placeholder={existFirstName}
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                isInvalid={!firstName && !existFirstName}
+              />
+            </div>
+          </Form.Group>
+          <Form.Group as={Col} md="6">
+            <Form.Label>Last Name</Form.Label>
+            <div className={styles["form-input"]}>
+              <Form.Control
+                type="text"
+                name="last name"
+                placeholder={existLastName}
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                isInvalid={!lastName && !existLastName}
+              />
+            </div>
+          </Form.Group>
+        </Form.Row>
         <Form.Group>
-          <Form.Label>First Name</Form.Label>
+          <Form.Label>Major</Form.Label>
           <div className={styles["form-input"]}>
             <Form.Control
               type="text"
-              name="first name"
-              placeholder={existFirstName}
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              isInvalid={!firstName && !existFirstName}
+              name="major"
+              placeholder={existMajor}
+              value={major}
+              onChange={(e) => setMajor(e.target.value)}
             />
           </div>
         </Form.Group>
-        <Form.Group>
-          <Form.Label>Last Name</Form.Label>
-          <div className={styles["form-input"]}>
-            <Form.Control
-              type="text"
-              name="last name"
-              placeholder={existLastName}
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              isInvalid={!lastName && !existLastName}
-            />
-          </div>
-        </Form.Group>
+        <Form.Row>
+          <Form.Group as={Col} md="6">
+            <Form.Label>Student Status</Form.Label>
+            <div className={styles["form-input"]}>
+              <Form.Control
+                as="select"
+                name="student status"
+                defaultValue={existStudentStatus}
+                onChange={(e) => setStudentStatus(e.target.value)}
+              >
+                <option>UNDERGRADUATE</option>
+                <option>GRADUATE</option>
+                <option>ALUMNI</option>
+                <option>NONE</option>
+              </Form.Control>
+            </div>
+          </Form.Group>
+          <Form.Group as={Col} md="6">
+            <Form.Label>Graduation Date</Form.Label>
+            <div className={styles["form-input"]}>
+              <Form.Control
+                type="month"
+                name="month"
+                value={graduationDate}
+                onChange={(e) => setGraduationDate(e.target.value)}
+              />
+            </div>
+          </Form.Group>
+        </Form.Row>
         <Form.Group>
           <Form.Label>Change Password</Form.Label>
           <div className={styles["form-input"]}>
