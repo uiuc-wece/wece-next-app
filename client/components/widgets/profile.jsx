@@ -27,6 +27,7 @@ const ProfileWidget = () => {
     major,
     graduationDate,
     profileImage,
+    totalPoints,
   } = useSelector((state) => state);
 
   const toggle = () => setModal(!modal);
@@ -118,6 +119,11 @@ const ProfileWidget = () => {
             <div className={styles["graduation-date"]}>
               {formattedGraduationDate}
             </div>
+          </div>
+          <hr className={styles["right-division"]} />
+          <div className={styles["points"]}>
+            <span className={styles["points-number"]}>{totalPoints}</span>{" "}
+            points
           </div>
         </div>
       </div>
