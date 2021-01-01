@@ -40,7 +40,7 @@ const UserSchema = new mongoose.Schema(
     eventsAttended: [String], // list of event keys
     committees: [String],
     blogposts: [String], // list of blogpost ids
-    profileImage: { data: Buffer, contentType: String },
+    profileImage: { type: String },
   },
   { strict: false }
 );
