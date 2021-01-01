@@ -22,11 +22,55 @@
 }
 
 .profile-image {
+  position: relative;
   width: 150px;
   height: 150px;
+  border-radius: 150px;
   border: 5px solid var(--accent-color);
+}
+
+.camera {
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: var(--accent-color-light);
+  opacity: 0;
+  z-index: 2;
+}
+
+.profile-image > img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+.profile-image:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-background-color-muted);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.profile-image:hover {
+  cursor: pointer;
+}
+
+.profile-image:hover:after {
+  opacity: 0.5;
+}
+
+.profile-image:hover .camera {
+  opacity: 0.8;
 }
 
 .name {
@@ -95,6 +139,31 @@
   border-radius: 6px;
   background-color: var(--accent-2-color-light);
   color: var(--accent-2-text-color);
+}
+
+.image-modal-header {
+  font-family: "Roboto";
+  border-bottom: 1px solid var(--neutral-color-shadow) !important;
+}
+
+.image-modal {
+  font-family: "Roboto";
+}
+
+.image-modal input {
+  letter-spacing: 0.1em;
+}
+
+#submit-form {
+  margin-top: 20px;
+  background-color: var(--accent-color-light);
+  border: 1px solid var(--accent-color-shadow);
+  color: var(--accent-text-color);
+}
+
+#submit-form:hover {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color-shadow);
 }
 
 @media only screen and (max-width: 480px) {
