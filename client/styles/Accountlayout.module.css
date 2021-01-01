@@ -3,10 +3,15 @@
   flex-wrap: nowrap;
   align-items: stretch;
   align-content: stretch;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex-shrink: 0;
 }
 
 .main {
   margin-top: 60px;
   width: 100%;
+  flex-shrink: 2;
 }

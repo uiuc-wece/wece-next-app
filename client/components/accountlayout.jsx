@@ -30,7 +30,7 @@ export default function AccountLayout({
         <div id="container">
           <div className={styles["wrapper"]}>
             <CustomNavbar />
-            <SideNavbar />
+            <SideNavbar className={styles["sidebar"]} />
             <div className={styles["main"]}>{children}</div>
             <Footer />
           </div>
