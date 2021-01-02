@@ -51,8 +51,33 @@ async function updateUser(req, res, next) {
   return res.status(404).send(new Error("Not logged in."));
 }
 
+async function updateUserById(req, res, next) {
+  if (req.user) {
+    try {
+      const id = req.params.id;
+      let updatedUser = req.body;
+      Object.keys(updatedUser).forEach(
+        (key) => updatedUser[key] == null && delete updatedUser[key]
+      );
+      const { accountType, studentStatus, totalPoints } = updatedUser;
+
+      await User.findByIdAndUpdate(id, {
+        accountType,
+        studentStatus,
+        totalPoints,
+      });
+      return res.status(200).send();
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  console.log("404");
+  return res.status(404).send(new Error("Not logged in."));
+}
+
 module.exports = {
   getAllUsers: getAllUsers,
   getUser: getUser,
   updateUser: updateUser,
+  updateUserById: updateUserById,
 };
