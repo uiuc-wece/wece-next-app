@@ -162,7 +162,7 @@ const UpdateAccountWidget = () => {
         onSubmit={handleSubmit}
       >
         <Form.Group>
-          <Form.Label>Email</Form.Label>
+          <Form.Label className={styles["form-label"]}>Email</Form.Label>
           <div className={styles["form-input"]}>
             <Form.Control
               type="email"
@@ -180,7 +180,7 @@ const UpdateAccountWidget = () => {
         </Form.Group>
         <Form.Row>
           <Form.Group as={Col} md="6">
-            <Form.Label>First Name</Form.Label>
+            <Form.Label className={styles["form-label"]}>First Name</Form.Label>
             <div className={styles["form-input"]}>
               <Form.Control
                 type="text"
@@ -193,7 +193,7 @@ const UpdateAccountWidget = () => {
             </div>
           </Form.Group>
           <Form.Group as={Col} md="6">
-            <Form.Label>Last Name</Form.Label>
+            <Form.Label className={styles["form-label"]}>Last Name</Form.Label>
             <div className={styles["form-input"]}>
               <Form.Control
                 type="text"
@@ -207,7 +207,7 @@ const UpdateAccountWidget = () => {
           </Form.Group>
         </Form.Row>
         <Form.Group>
-          <Form.Label>Major</Form.Label>
+          <Form.Label className={styles["form-label"]}>Major</Form.Label>
           <div className={styles["form-input"]}>
             <Form.Control
               type="text"
@@ -220,7 +220,9 @@ const UpdateAccountWidget = () => {
         </Form.Group>
         <Form.Row>
           <Form.Group as={Col} md="6">
-            <Form.Label>Student Status</Form.Label>
+            <Form.Label className={styles["form-label"]}>
+              Student Status
+            </Form.Label>
             <div className={styles["form-input"]}>
               <Form.Control
                 as="select"
@@ -236,7 +238,9 @@ const UpdateAccountWidget = () => {
             </div>
           </Form.Group>
           <Form.Group as={Col} md="6">
-            <Form.Label>Graduation Date</Form.Label>
+            <Form.Label className={styles["form-label"]}>
+              Graduation Date
+            </Form.Label>
             <div className={styles["form-input"]}>
               <Form.Control
                 type="month"
@@ -248,7 +252,9 @@ const UpdateAccountWidget = () => {
           </Form.Group>
         </Form.Row>
         <Form.Group>
-          <Form.Label>Change Password</Form.Label>
+          <Form.Label className={styles["form-label"]}>
+            Change Password
+          </Form.Label>
           <div className={styles["form-input"]}>
             <Form.Control
               type="password"
