@@ -14,4 +14,5 @@
   margin-top: 60px;
   width: 100%;
   flex-shrink: 2;
+  overflow: auto;
 }
