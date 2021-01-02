@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import {
@@ -19,6 +19,7 @@ const SideNavbar = () => {
   const firstName = useSelector((state) => state.firstName);
   const lastName = useSelector((state) => state.lastName);
   const profileImage = useSelector((state) => state.profileImage);
+  const firstRender = useRef(true);
 
   const router = useRouter();
   const logoutUser = () => {
@@ -31,6 +32,12 @@ const SideNavbar = () => {
   };
 
   useEffect(() => {
+    if (firstRender.current) {
+      if (window.innerWidth < 750) {
+        setActive(true);
+      }
+      firstRender.current = false;
+    }
     window.addEventListener(
       "resize",
       () => {
