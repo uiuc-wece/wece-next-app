@@ -114,12 +114,16 @@ const ProfileWidget = () => {
         </div>
         <div className={styles["profile-right"]}>
           {education()}
-          <div className={styles["graduation"]}>
-            Graduation{" "}
-            <div className={styles["graduation-date"]}>
-              {formattedGraduationDate}
+          {graduationDate ? (
+            <div className={styles["graduation"]}>
+              Graduation{" "}
+              <div className={styles["graduation-date"]}>
+                {formattedGraduationDate}
+              </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
           <hr className={styles["right-division"]} />
           <div className={styles["points"]}>
             <span className={styles["points-number"]}>{totalPoints}</span>{" "}
