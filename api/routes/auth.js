@@ -38,18 +38,19 @@ async function register(req, res, next) {
 
   try {
     // Check if user exists
-    const user = User.findOne({ email: email });
+    const user = await User.findOne({ email: email });
     if (user) {
-      res.status(409).send("User already exists.");
+      console.log(user);
+      return res.status(409).send("User already exists.");
     }
     // Hash password before saving in database
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(newUser.password, salt);
     newUser.password = hash;
     await newUser.save();
-    res.send(newUser);
+    return res.status(201).send(newUser);
   } catch (err) {
-    res.status(500).send(err);
+    return res.status(500).send(err);
   }
 }
 
