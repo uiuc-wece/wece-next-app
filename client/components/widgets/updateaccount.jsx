@@ -230,10 +230,10 @@ const UpdateAccountWidget = () => {
                 defaultValue={existStudentStatus}
                 onChange={(e) => setStudentStatus(e.target.value)}
               >
+                <option>NONE</option>
                 <option>UNDERGRADUATE</option>
                 <option>GRADUATE</option>
                 <option>ALUMNI</option>
-                <option>NONE</option>
               </Form.Control>
             </div>
           </Form.Group>
