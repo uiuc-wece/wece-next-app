@@ -30,6 +30,7 @@ async function addSubscriber(req, res) {
       })
       .catch((error) => {
         console.log("Error: " + error);
+        res.status(400).send("Newsletter subscription failed.");
       });
   } catch (err) {
     res.status(400).json({
