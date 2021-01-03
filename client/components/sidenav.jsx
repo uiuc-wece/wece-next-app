@@ -8,6 +8,7 @@ import {
   BiUserCircle,
   BiHomeAlt,
 } from "react-icons/bi";
+import { FiUsers } from "react-icons/fi";
 import styles from "../styles/Sidenav.module.css";
 import Image from "react-bootstrap/Image";
 import Navbar from "react-bootstrap/Navbar";
@@ -19,6 +20,7 @@ const SideNavbar = () => {
   const firstName = useSelector((state) => state.firstName);
   const lastName = useSelector((state) => state.lastName);
   const profileImage = useSelector((state) => state.profileImage);
+  const accountType = useSelector((state) => state.accountType);
   const firstRender = useRef(true);
 
   const router = useRouter();
@@ -91,6 +93,13 @@ const SideNavbar = () => {
           <Nav.Link className={styles["menu-item"]} href="/profile">
             <BiUserCircle /> {active ? "" : <p>Profile</p>}
           </Nav.Link>
+          {accountType === "ADMIN" || accountType === "BOARD" ? (
+            <Nav.Link className={styles["menu-item"]} href="/members">
+              <FiUsers /> {active ? "" : <p>Members</p>}
+            </Nav.Link>
+          ) : (
+            ""
+          )}
           <Nav.Link className={styles["menu-item"]} onClick={logoutUser}>
             <BiLogOutCircle /> {active ? "" : <p>Logout</p>}
           </Nav.Link>
