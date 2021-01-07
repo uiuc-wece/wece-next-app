@@ -1,11 +1,11 @@
 import React from "react";
-import YourComponent from "../components/yourcomponent.jsx";
+import listOfTags from "../components/listOfTags.jsx";
 
 export default {
-  title: "Components/YourComponent",
-  component: YourComponent,
+  title: "Components/listOfTags",
+  component: listOfTags,
 };
 
-const Template = (args) => <YourComponent {...args} />;
+const Template = (args) => <listOfTags {...args} />;
 
 export const Primary = Template.bind({});
