@@ -2,6 +2,7 @@
   background: #eee;
   border-radius: 3px 0 0 3px;
   color: #999;
+  font-family: "IBM Plex Mono", monospace;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -24,11 +25,11 @@
 }
 
 .tag_style:hover {
-  background-color: var(--dark-background-color);
+  background-color: var(--accent-color-shadow);
   color: white !important;
 }
 
 .tag_style:hover::after {
-   border-left-color: var(--dark-background-color); 
+   border-left-color: var(--accent-color-shadow);
 
 }
