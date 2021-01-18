@@ -55,7 +55,7 @@ export default {
       img: "imgs/board/shannon.jpg",
     },
     {
-      name: "Kamal Bhagchandani",
+      name: "Pooja Bhagchandani",
       role: "Academic Director",
       major: "Computer Engineering",
       year: "Junior",
