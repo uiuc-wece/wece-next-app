@@ -19,6 +19,7 @@ const {
 } = require("./blogpost.js");
 const { login, register, logout } = require("./auth.js");
 const { requireBoardStatus } = require("../passport/authmiddleware.js");
+const { sendPasswordResetEmail } = require("./sendgrid.js");
 
 router.post("/subscriber", addSubscriber);
 router.put("/subscriber", unsubscribe);
@@ -36,5 +37,7 @@ router.put("/blogpost/:id", updateBlogpost);
 router.post("/login", login);
 router.post("/register", register);
 router.get("/logout", logout);
+
+router.post("/sendpasswordreset", sendPasswordResetEmail);
 
 module.exports = router;

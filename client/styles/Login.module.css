@@ -1,0 +1,17 @@
+.forgot-password-text {
+  color: var(--accent-color);
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 3px;
+  width: fit-content;
+  transition: 0.2s all;
+}
+
+.forgot-password-text:hover {
+  background-color: var(--neutral-color-shadow-light);
+}
+
+.help-text {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
