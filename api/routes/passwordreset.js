@@ -22,7 +22,7 @@ async function sendPasswordResetEmail(req, res) {
     dynamicTemplateData: {
       password_code: code,
       // password_link: "https://wece.ece.illinois.edu/resetpassword",
-      password_link: "http://localhost:3000/resetpassword",
+      password_link: "https://wece-next-app.weceuiuc.vercel.app/resetpassword",
     },
   };
   try {
