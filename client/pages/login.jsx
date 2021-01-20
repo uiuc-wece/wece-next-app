@@ -22,10 +22,12 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [modalLogin, setModalLogin] = useState(false);
+  const [modalEmail, setModalEmail] = useState(false);
   const [modalError, setModalError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
   const toggleLogin = () => setModalLogin(!modalLogin);
+  const toggleEmail = () => setModalEmail(!modalEmail);
   const toggleError = () => setModalError(!modalError);
 
   const router = useRouter();
@@ -73,12 +75,14 @@ const Login = () => {
               withCredentials: true,
             }
           )
-          .then((response) => {
+          .then((_) => {
             toggleLogin();
             refreshAuth();
           })
           .catch((error) => {
-            setErrorMessage(error.response.data);
+            if (Object.keys(error.response.data).length > 0) {
+              setErrorMessage(error.response.data);
+            }
             toggleError();
           })
           .finally(() => {
@@ -100,7 +104,7 @@ const Login = () => {
   };
 
   const handleForgotSubmit = (event) => {
-    const url = base_url + "/sendpasswordreset";
+    const url = base_url + "/passwordreset/send";
 
     const form = event.currentTarget;
 
@@ -129,11 +133,14 @@ const Login = () => {
               withCredentials: true,
             }
           )
-          .then((response) => {
-            console.log(response);
+          .then((_) => {
+            toggleEmail();
           })
           .catch((error) => {
-            console.log(error);
+            if (Object.keys(error.response.data).length > 0) {
+              setErrorMessage(error.response.data);
+            }
+            toggleError();
           })
           .finally(() => {
             inputs.forEach((input) => (input.disabled = false));
@@ -195,7 +202,7 @@ const Login = () => {
                   Please enter your password.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Button id={styles["submit-form"]} type="submit">
+              <Button className={styles["submit-form"]} type="submit">
                 Submit
               </Button>
             </Form>
@@ -223,7 +230,7 @@ const Login = () => {
                   Please enter your email.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Button id={styles["submit-form"]} type="submit">
+              <Button className={styles["submit-form"]} type="submit">
                 Submit
               </Button>
             </Form>
@@ -231,8 +238,12 @@ const Login = () => {
               <Modal.Header closeButton>Successfully logged in</Modal.Header>
               <Modal.Body>You have logged in.</Modal.Body>
             </Modal>
+            <Modal show={modalEmail} onHide={toggleEmail} onExited={redirect}>
+              <Modal.Header closeButton>Email sent</Modal.Header>
+              <Modal.Body>Email sent to {email}.</Modal.Body>
+            </Modal>
             <Modal show={modalError} onHide={toggleError}>
-              <Modal.Header closeButton>Error logging in</Modal.Header>
+              <Modal.Header closeButton>Error</Modal.Header>
               <Modal.Body>{errorMessage}</Modal.Body>
             </Modal>
           </SectionBody>
