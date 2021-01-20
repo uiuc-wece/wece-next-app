@@ -31,11 +31,24 @@ async function updateUser(req, res, next) {
       let profileImage;
       if (req.file) {
         // contains image file
+        // upload new image
         const image = await cloudinary.uploader.upload(req.file.path, {
           width: 400,
           height: 600,
           crop: "fill",
         });
+
+        // delete old image
+        const oldUser = await User.findById(id);
+        const imgUrl = oldUser.profileImage;
+        const publicId = imgUrl.match(/\/upload\/(?:v\d+\/)?([^.]+)/)[1];
+        if (publicId != "cupcake_qwji5x") {
+          cloudinary.uploader.destroy(publicId, function (err, res) {
+            if (err) {
+              console.log(err);
+            }
+          });
+        }
 
         profileImage = image.secure_url;
       }
@@ -71,7 +84,6 @@ async function updateUserById(req, res, next) {
       return res.status(400).send(err);
     }
   }
-  console.log("404");
   return res.status(404).send(new Error("Not logged in."));
 }
 
