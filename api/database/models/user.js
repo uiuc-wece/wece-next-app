@@ -15,6 +15,11 @@ const ThirdPartyProviderSchema = new mongoose.Schema({
   providerData: { type: {}, default: null },
 });
 
+const PasswordResetTokenSchema = new mongoose.Schema({
+  token: { type: String },
+  created: { type: Date, default: Date.now() },
+});
+
 // Define our user schema
 const UserSchema = new mongoose.Schema(
   {
@@ -23,6 +28,7 @@ const UserSchema = new mongoose.Schema(
     email: { type: String, required: true },
     emailIsVerified: { type: Boolean, default: false },
     password: { type: String }, // user defined, encrypted
+    passwordResetToken: PasswordResetTokenSchema,
     thirdPartyAuth: [ThirdPartyProviderSchema],
     accountType: {
       type: String,
