@@ -31,6 +31,7 @@ async function register(req, res, next) {
     lastName: lastName,
     accountType: accountType,
     totalPoints: 0,
+    joinDate: Date.now(),
     profileImage:
       "https://res.cloudinary.com/weceuiuc/image/upload/v1609464442/cupcake_qwji5x.jpg",
   });

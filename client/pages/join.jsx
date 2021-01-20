@@ -55,7 +55,6 @@ export default function Join() {
         email: email,
         password: password,
         accountType: "MEMBER",
-        joinDate: Date.now(),
       });
 
       Promise.all([subscribeRequest, registerRequest])
@@ -172,53 +171,6 @@ export default function Join() {
                   Passwords do not match.
                 </Form.Control.Feedback>
               </Form.Group>
-              {/* <Form.Group controlId="formCommitteeInput">
-                <Form.Label>
-                  Check the committees you are interested in:
-                </Form.Label>
-                <Form.Check
-                  type="checkbox"
-                  name="academic"
-                  value="academic"
-                  label="Academic"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="infrastructure"
-                  value="infrastructure"
-                  label="Infrastructure"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="marketing"
-                  value="marketing"
-                  label="Marketing"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="mentorship"
-                  value="mentorship"
-                  label="Mentorship"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="outreach"
-                  value="outreach"
-                  label="Outreach"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="social"
-                  value="social"
-                  label="Social"
-                />
-                <Form.Check
-                  type="checkbox"
-                  name="technical"
-                  value="technical"
-                  label="Technical"
-                />
-              </Form.Group> */}
               <Button className={styles["submit-form"]} type="submit">
                 Submit
               </Button>
