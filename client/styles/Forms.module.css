@@ -1,10 +1,10 @@
-#submit-form {
-  padding: 5px 40px;
-  background-color: var(--neutral-color-light);
-  color: var(--dark-text-color);
+.submit-form {
+  padding: 5px 40px !important;
+  background-color: var(--neutral-color-light) !important;
+  color: var(--dark-text-color) !important;
 }
 
-#submit-form:hover {
-  background-color: var(--accent-color);
-  color: var(--light-text-color);
+.submit-form:hover {
+  background-color: var(--accent-color) !important;
+  color: var(--light-text-color) !important;
 }

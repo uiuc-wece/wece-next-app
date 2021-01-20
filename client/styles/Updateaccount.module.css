@@ -1,0 +1,56 @@
+.title {
+  text-align: left;
+  font-size: 20px;
+  color: var(--neutral-color-light);
+}
+
+.form-divider {
+  border-top: 1px solid var(--neutral-color);
+}
+
+.form-label {
+  font-size: 1em;
+}
+
+.form-input > input {
+  border: none;
+  background-color: var(--dark-background-color) !important;
+  color: var(--neutral-color-light) !important;
+  opacity: 0.8;
+}
+
+.form-input > select {
+  border: 1.5px solid var(--neutral-color-shadow);
+  background-color: var(--dark-background-color) !important;
+  color: var(--neutral-color-light) !important;
+  opacity: 0.8;
+}
+
+.submit-button {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .form-input > input {
+    font-size: 0.7em;
+  }
+
+  .form-input > select {
+    font-size: 0.8em;
+  }
+
+  .form-label {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 0.9em;
+  }
+
+  .form-label {
+    font-size: 0.85em;
+  }
+}
