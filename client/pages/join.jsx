@@ -55,7 +55,6 @@ export default function Join() {
         email: email,
         password: password,
         accountType: "MEMBER",
-        joinDate: Date.now(),
       });
 
       Promise.all([subscribeRequest, registerRequest])
