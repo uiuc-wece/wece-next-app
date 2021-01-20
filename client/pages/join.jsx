@@ -219,7 +219,7 @@ export default function Join() {
                   label="Technical"
                 />
               </Form.Group> */}
-              <Button id={styles["submit-form"]} type="submit">
+              <Button className={styles["submit-form"]} type="submit">
                 Submit
               </Button>
             </Form>

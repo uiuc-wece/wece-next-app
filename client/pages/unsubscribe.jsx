@@ -78,7 +78,7 @@ export default function Unsubscribe() {
                   Please enter your email.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Button id={styles["submit-form"]} type="submit">
+              <Button className={styles["submit-form"]} type="submit">
                 Submit
               </Button>
             </Form>
