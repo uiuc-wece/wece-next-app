@@ -31,7 +31,6 @@ async function register(req, res, next) {
     lastName: lastName,
     accountType: accountType,
     totalPoints: 0,
-    joinDate: Date.now(),
     profileImage:
       "https://res.cloudinary.com/weceuiuc/image/upload/v1609464442/cupcake_qwji5x.jpg",
   });
@@ -40,7 +39,6 @@ async function register(req, res, next) {
     // Check if user exists
     const user = await User.findOne({ email: email });
     if (user) {
-      console.log(user);
       return res.status(409).send("User already exists.");
     }
     // Hash password before saving in database
