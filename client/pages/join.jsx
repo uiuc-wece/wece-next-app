@@ -59,14 +59,16 @@ export default function Join() {
       });
 
       Promise.all([subscribeRequest, registerRequest])
-        .then((responses) => {
+        .then((_) => {
           setSuccessMessage(
             "You have successfully created a WECE account and subscribed to the WECE newsletter!"
           );
           toggleSubscribed();
         })
         .catch((errors) => {
-          setErrorMessage(errors.response.data);
+          if (Object.keys(errors.response.data).length > 0) {
+            setErrorMessage(errors.response.data);
+          }
           toggleError();
         })
         .finally(() => {

@@ -48,7 +48,9 @@ const ProfileWidget = () => {
           refreshAuth();
         })
         .catch((err) => {
-          console.log(err.response.data);
+          if (Object.keys(err.response.data).length > 0) {
+            console.log(err.response.data);
+          }
         })
         .finally(() => {
           toggle();
