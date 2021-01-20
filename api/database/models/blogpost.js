@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 var BlogpostSchema = new mongoose.Schema({
   title: { type: String },
@@ -8,4 +8,5 @@ var BlogpostSchema = new mongoose.Schema({
   content: { type: String },
 });
 
-export default mongoose.model("Blogpost", BlogpostSchema);
+const Blogpost = mongoose.model("Blogpost", BlogpostSchema);
+module.exports = Blogpost;

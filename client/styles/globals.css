@@ -11,8 +11,10 @@ html {
   --accent-2-text-color: #285428;
   --neutral-color-light: #ffffff;
   --neutral-color: #dee3e3;
+  --neutral-color-shadow-light: #d5d6d6;
   --neutral-color-shadow: #bec3c3;
   --dark-background-color: #022b3a;
+  --dark-background-color-muted: #0e3e4f;
   --light-text-color: #ffffff;
   --dark-text-color: #022b3a;
 
@@ -77,6 +79,11 @@ a:hover {
   text-decoration: none;
 }
 
+.material-icons {
+  font-size: 20px !important;
+  color: var(--accent-2-color);
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 32px;
@@ -96,6 +103,25 @@ a:hover {
   }
   h6 {
     font-size: 14px;
+  }
+
+  .material-icons {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .section {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .material-icons {
+    font-size: 14px !important;
   }
 }
 
@@ -117,6 +143,10 @@ a:hover {
   }
   h6 {
     font-size: 1.25em !important;
+  }
+
+  .material-icons {
+    font-size: 20px !important;
   }
 }
 
@@ -141,5 +171,9 @@ a:hover {
   }
   .section {
     padding: 0 10vw;
+  }
+
+  .material-icons {
+    font-size: 24px !important;
   }
 }

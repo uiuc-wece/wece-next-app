@@ -1,0 +1,83 @@
+.side-nav {
+  background-color: var(--accent-2-color);
+  color: var(--neutral-color-light);
+  transition: all 0.6s ease-in-out;
+  width: 200px;
+  z-index: 998;
+  padding-top: 100px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.side-nav.active {
+  margin-left: -150px;
+}
+
+.profile {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--accent-2-color-shadow);
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  height: 80px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border: 3px solid var(--neutral-color-light);
+}
+
+.name {
+  height: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-item {
+  background-color: var(--accent-2-color-light);
+  padding-left: 20px !important;
+  width: 100%;
+  color: var(--dark-text-color);
+  transition: all 0.2s ease-in-out;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-item > p {
+  margin: 0 5px !important;
+}
+
+.side-nav.active > .menu > .menu-item {
+  justify-content: flex-end;
+  padding-right: 14px !important;
+}
+
+.menu-item:hover {
+  background-color: var(--neutral-color-light);
+  color: var(--dark-text-color);
+}
+
+.toggle {
+  background-color: var(--accent-2-color);
+}
+
+.toggle > p {
+  font-size: 14px;
+}
