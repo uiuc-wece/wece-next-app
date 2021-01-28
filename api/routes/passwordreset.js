@@ -21,8 +21,7 @@ async function sendPasswordResetEmail(req, res) {
     templateId: "d-dd0e0b29f2a844fbbef441dd50dfe29a",
     dynamicTemplateData: {
       password_code: code,
-      // password_link: "https://wece.ece.illinois.edu/resetpassword",
-      password_link: "https://wece-next-app.weceuiuc.vercel.app/resetpassword",
+      password_link: "https://wece.ece.illinois.edu/resetpassword",
     },
   };
   try {
