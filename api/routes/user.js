@@ -1,6 +1,7 @@
 const bcrypt = require("bcryptjs");
 const { v2: cloudinary } = require("cloudinary");
 var User = require("../database/models/user.js");
+var Event = require("../database/models/event.js");
 
 async function getAllUsers(req, res, next) {
   const users = await User.find({}).sort({ joinDate: "asc" });
@@ -87,9 +88,87 @@ async function updateUserById(req, res, next) {
   return res.status(404).send(new Error("Not logged in."));
 }
 
+async function saveEventToUser(req, res, next) {
+  if (req.user) {
+    try {
+      const userId = req.params.id;
+      let { eventId } = req.body;
+
+      const user = await User.findById(userId);
+      if (user.eventsSaved) {
+        user.eventsSaved.push(eventId);
+      } else {
+        user.eventsSaved = [eventId];
+      }
+      await user.save();
+
+      const event = await Event.findById(eventId);
+      if (event.userSaves) {
+        event.userSaves.push({ user: req.user.id, email: req.user.email });
+      } else {
+        event.userSaves = [{ user: req.user.id, email: req.user.email }];
+      }
+      await event.save();
+
+      return res.status(200).send();
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  return res.status(404).send(new Error("Not logged in."));
+}
+
+async function removeEventFromUser(req, res, next) {
+  if (req.user) {
+    try {
+      const userId = req.params.id;
+      let { eventId } = req.body;
+
+      const user = await User.findById(userId);
+      const filtered = user.eventsSaved.filter((e) => e != eventId);
+      user.eventsSaved = filtered;
+      await user.save();
+
+      const event = await Event.findById(eventId);
+      const userFiltered = event.userSaves.filter((u) => u.user != req.user.id);
+      event.userSaves = userFiltered;
+      await event.save();
+      return res.status(200).send();
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  return res.status(404).send(new Error("Not logged in."));
+}
+
+async function attendEvent(req, res, next) {
+  if (req.user) {
+    try {
+      const userId = req.params.id;
+      let { eventId } = req.body;
+
+      const user = await User.findById(userId);
+      if (user.eventsAttended) {
+        user.eventsAttended.push(eventId);
+      } else {
+        user.eventsAttended = [eventId];
+      }
+
+      await user.save();
+      return res.status(200).send();
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  return res.status(404).send(new Error("Not logged in."));
+}
+
 module.exports = {
   getAllUsers: getAllUsers,
   getUser: getUser,
   updateUser: updateUser,
   updateUserById: updateUserById,
+  saveEventToUser,
+  removeEventFromUser,
+  attendEvent,
 };
