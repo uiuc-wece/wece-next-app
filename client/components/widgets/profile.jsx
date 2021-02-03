@@ -32,7 +32,7 @@ const ProfileWidget = () => {
 
   const toggle = () => setModal(!modal);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     const updateUrl = base_url + "/user";
     if (profileImageRef.current.files[0]) {
       const formData = new FormData();
