@@ -8,8 +8,15 @@ import {
   BiUserCircle,
   BiHomeAlt,
 } from "react-icons/bi";
+import {
+  FaRegCalendarAlt,
+  FaRegCalendarCheck,
+  FaRegCalendarPlus,
+} from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
+import { RiAdminLine } from "react-icons/ri";
 import styles from "../styles/Sidenav.module.css";
+import Accordion from "react-bootstrap/Accordion";
 import Image from "react-bootstrap/Image";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -87,16 +94,64 @@ const SideNavbar = () => {
             {active ? <BiRightArrow /> : <BiLeftArrow />}{" "}
             {active ? "" : <p>Collapse</p>}
           </Nav.Link>
+          <hr className={styles["nav-divider"]} />
           <Nav.Link className={styles["menu-item"]} href="/account">
             <BiHomeAlt /> {active ? "" : <p>Home</p>}
           </Nav.Link>
           <Nav.Link className={styles["menu-item"]} href="/profile">
             <BiUserCircle /> {active ? "" : <p>Profile</p>}
           </Nav.Link>
+          <Nav.Link className={styles["menu-item"]} href="/myevents">
+            <FaRegCalendarCheck /> {active ? "" : <p>My Events</p>}
+          </Nav.Link>
+          <hr className={styles["nav-divider"]} />
+          {accountType === "ADMIN" ||
+          accountType === "BOARD" ||
+          accountType === "CHAIR" ? (
+            <Accordion className={styles["accordion"]}>
+              <Accordion.Toggle className={styles["menu-item"]} eventKey="0">
+                <RiAdminLine />
+                {active ? "" : <p>Admin Tools</p>}
+              </Accordion.Toggle>
+              <Accordion.Collapse
+                className={styles["accordion-collapse"]}
+                eventKey="0"
+              >
+                <Nav className={`flex-column ${styles["accordion-nav"]}`}>
+                  {accountType === "ADMIN" || accountType === "BOARD" ? (
+                    <Nav.Link
+                      className={`${styles["menu-item"]} ${styles["collapse-item"]}`}
+                      href="/members"
+                    >
+                      <FiUsers /> {active ? "" : <p>Members</p>}
+                    </Nav.Link>
+                  ) : (
+                    ""
+                  )}
+                  {accountType === "ADMIN" ? (
+                    <Nav.Link
+                      className={`${styles["menu-item"]} ${styles["collapse-item"]}`}
+                      href="/allevents"
+                    >
+                      <FaRegCalendarAlt /> {active ? "" : <p>All Events</p>}
+                    </Nav.Link>
+                  ) : (
+                    ""
+                  )}
+                  <Nav.Link
+                    className={`${styles["menu-item"]} ${styles["collapse-item"]}`}
+                    href="/eventmanager"
+                  >
+                    <FaRegCalendarPlus /> {active ? "" : <p>Event Manager</p>}
+                  </Nav.Link>
+                </Nav>
+              </Accordion.Collapse>
+            </Accordion>
+          ) : (
+            ""
+          )}
           {accountType === "ADMIN" || accountType === "BOARD" ? (
-            <Nav.Link className={styles["menu-item"]} href="/members">
-              <FiUsers /> {active ? "" : <p>Members</p>}
-            </Nav.Link>
+            <hr className={styles["nav-divider"]} />
           ) : (
             ""
           )}
