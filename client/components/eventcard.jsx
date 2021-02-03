@@ -33,6 +33,7 @@ export default function EventCard({
   token,
   hosts,
   committees,
+  attendees,
   points,
   eventImage,
   users,
@@ -43,9 +44,11 @@ export default function EventCard({
   const userId = useSelector((state) => state._id);
   const accountType = useSelector((state) => state.accountType);
   const [validated, setValidated] = useState(false);
+  const [tokenValidated, setTokenValidated] = useState(false);
   const [modalEdit, setModalEdit] = useState(false);
   const [modalDelete, setModalDelete] = useState(false);
   const [modalMore, setModalMore] = useState(false);
+  const [modalToken, setModalToken] = useState(false);
   const [newTitle, setNewTitle] = useState(title);
   const [newStartDate, setNewStartDate] = useState(startDate);
   const [newEndDate, setNewEndDate] = useState(endDate);
@@ -64,6 +67,12 @@ export default function EventCard({
   const [day, setDay] = useState();
   const [startTime, setStartTime] = useState("");
   const [heartHover, setHeartHover] = useState(false);
+  const [codeValues, setCodeValue] = useState({
+    code1: "",
+    code2: "",
+    code3: "",
+    code4: "",
+  });
 
   const getMonth = (date) => {
     const monthNames = [
@@ -111,7 +120,7 @@ export default function EventCard({
 
   const tokenExpiration = () => {
     let createdDate = new Date(token.created);
-    const now = new Date();
+    const now = Date.now();
     const diffTime = Math.abs(now - createdDate);
     if (diffTime / (1000 * 60) > 60) {
       return null;
@@ -142,6 +151,15 @@ export default function EventCard({
       </Popover>
     );
   };
+
+  const checkTokenPopover = (
+    <Popover>
+      <Popover.Title as="p">Enter token</Popover.Title>
+      <Popover.Content>
+        Enter 4-digit token to get event points.
+      </Popover.Content>
+    </Popover>
+  );
 
   const editPopover = (
     <Popover>
@@ -194,6 +212,8 @@ export default function EventCard({
   const toggleDelete = () => setModalDelete(!modalDelete);
 
   const toggleMore = () => setModalMore(!modalMore);
+
+  const toggleToken = () => setModalToken(!modalToken);
 
   const reduceFormValues = (formElements) => {
     const arrElements = Array.prototype.slice.call(formElements);
@@ -333,6 +353,75 @@ export default function EventCard({
       });
   };
 
+  const handleChange = (e) => {
+    const { maxLength, value, name } = e.target;
+    const [fieldName, fieldIndex] = name.split("-");
+
+    // Check if they hit the max character length
+    if (value.length >= maxLength) {
+      // Check if it's not the last input field
+      if (parseInt(fieldIndex, 10) < 4) {
+        // Get the next input field
+        const nextSibling = document.querySelector(
+          `input[name=code-${parseInt(fieldIndex, 10) + 1}]`
+        );
+
+        // If found, focus the next field
+        if (nextSibling !== null) {
+          nextSibling.focus();
+        }
+      }
+
+      setCodeValue({ ...codeValues, [`code${fieldIndex}`]: value });
+    }
+  };
+
+  const handleCheckToken = (event) => {
+    const checkTokenUrl = base_url + "/event/" + id + "/checktoken";
+
+    const form = event.currentTarget;
+    if (event.currentTarget.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      setTokenValidated(true);
+    } else {
+      event.preventDefault();
+      setTokenValidated(true);
+
+      const inputs = form.querySelectorAll("input");
+      inputs.forEach((input) => (input.disabled = true));
+
+      const code =
+        codeValues["code1"] +
+        codeValues["code2"] +
+        codeValues["code3"] +
+        codeValues["code4"];
+
+      const checkToken = async () =>
+        await axios
+          .put(
+            checkTokenUrl,
+            { code: code },
+            {
+              headers: {
+                "Content-Type": "application/json",
+              },
+              withCredentials: true,
+            }
+          )
+          .then(() => {
+            refreshAuth();
+          })
+          .catch((err) => {
+            if (Object.keys(err.response.data).length > 0) {
+              console.log(err.response.data);
+            }
+          })
+          .finally(() => toggleToken());
+      checkToken();
+    }
+  };
+
   const saveEvent = () => {
     const saveUrl = base_url + "/user/" + userId + "/saveevent";
     axios
@@ -409,6 +498,14 @@ export default function EventCard({
                 </div>
               </OverlayTrigger>
             )
+          ) : viewMode ? (
+            <OverlayTrigger placement="bottom" overlay={checkTokenPopover}>
+              <div
+                className={`${styles["token-button"]} ${styles["top-button"]}`}
+              >
+                <CgPassword onClick={toggleToken} />
+              </div>
+            </OverlayTrigger>
           ) : (
             ""
           )}
@@ -487,6 +584,64 @@ export default function EventCard({
           <Button className={styles["delete"]} onClick={handleDelete}>
             Delete
           </Button>
+        </Modal.Body>
+      </Modal>
+      <Modal show={modalToken} onHide={toggleToken}>
+        <Modal.Header closeButton>Enter Event Token</Modal.Header>
+        <Modal.Body>
+          <Form
+            id="code-form"
+            name="code-form"
+            noValidate
+            validated={tokenValidated}
+            onSubmit={handleCheckToken}
+          >
+            <Form.Row className={styles["event-code"]}>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="code-1"
+                  maxLength="1"
+                  htmlSize="1"
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="code-2"
+                  maxLength="1"
+                  htmlSize="1"
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="code-3"
+                  maxLength="1"
+                  htmlSize="1"
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  required
+                  type="text"
+                  name="code-4"
+                  maxLength="1"
+                  htmlSize="1"
+                  onChange={handleChange}
+                />
+              </Form.Group>
+            </Form.Row>
+            <Button className={styles["submit-form"]} type="submit">
+              Submit
+            </Button>
+          </Form>
         </Modal.Body>
       </Modal>
       <Modal show={modalMore} onHide={toggleMore}>
@@ -586,6 +741,20 @@ export default function EventCard({
               {hosts.map((h) => h.label).join(", ")}
             </Col>
           </Row>
+          {accountType == "ADMIN" ||
+          accountType == "BOARD" ||
+          accountType == "CHAIR" ? (
+            <Row>
+              <Col xs={12} md={4} className={styles["more-key"]}>
+                Attendees
+              </Col>
+              <Col xs={12} md={8} className={styles["more-value"]}>
+                {attendees ? attendees.join(", ") : ""}
+              </Col>
+            </Row>
+          ) : (
+            ""
+          )}
           <hr />
           {accountType == "ADMIN" ||
           accountType == "BOARD" ||
