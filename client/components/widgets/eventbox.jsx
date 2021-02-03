@@ -87,7 +87,7 @@ const EventBox = ({
       </Popover.Title>
       <Popover.Content>
         {showSavedOnly
-          ? "View your saved events from the WECE events page."
+          ? "View your saved and attended events from the WECE events page."
           : "Manage events you have created."}
       </Popover.Content>
     </Popover>
@@ -108,6 +108,7 @@ const EventBox = ({
         token={event.token}
         hosts={event.hosts}
         committees={event.committees}
+        attendees={event.attendees}
         points={event.points}
         eventImage={event.eventImage}
         users={users}
