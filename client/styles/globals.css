@@ -34,6 +34,15 @@ html {
   font-family: "Roboto";
 }
 
+.loading-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 #container {
   min-height: 100vh;
   position: relative;
