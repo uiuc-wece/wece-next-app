@@ -1,10 +1,19 @@
+.title {
+  text-align: left;
+  font-size: 20px;
+  color: var(--neutral-color-light);
+  margin-bottom: 16px;
+}
+
 .arrow {
   font-size: 24px;
   cursor: pointer;
 }
 
 .create-container {
-  width: 100%;
+  position: relative;
+  top: -42px;
+  float: right;
   text-align: right;
   display: flex;
   flex-direction: row;
