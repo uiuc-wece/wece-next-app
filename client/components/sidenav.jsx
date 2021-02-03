@@ -131,7 +131,7 @@ const SideNavbar = () => {
                   {accountType === "ADMIN" ? (
                     <Nav.Link
                       className={`${styles["menu-item"]} ${styles["collapse-item"]}`}
-                      href="/events"
+                      href="/allevents"
                     >
                       <FaRegCalendarAlt /> {active ? "" : <p>Events</p>}
                     </Nav.Link>
