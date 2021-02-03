@@ -25,14 +25,16 @@ const MyEvents = () => {
       .get(eventsUrl, { withCredentials: true })
       .then((res) => {
         const allEvents = res.data;
-        const savedEventsUrl = base_url + "/user/savedevents";
-        axios.get(savedEventsUrl, { withCredentials: true }).then((res) => {
-          const saved = res.data;
-          let filtered = allEvents.filter(function (e) {
-            return saved.indexOf(e._id) !== -1;
+        const savedAttendedEventsUrl = base_url + "/user/savedattendedevents";
+        axios
+          .get(savedAttendedEventsUrl, { withCredentials: true })
+          .then((res) => {
+            const saved = res.data;
+            let filtered = allEvents.filter(function (e) {
+              return saved.indexOf(e._id) !== -1;
+            });
+            setEvents(filtered);
           });
-          setEvents(filtered);
-        });
       })
       .catch((err) => {
         console.log(err);
