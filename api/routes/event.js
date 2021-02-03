@@ -10,6 +10,16 @@ function generateToken() {
   return result;
 }
 
+function hasExpired(token) {
+  const createdDate = new Date(token.created);
+  const now = Date.now();
+  const diffTime = Math.abs(now - createdDate);
+  if (diffTime / (1000 * 60) > 60) {
+    return true;
+  }
+  return false;
+}
+
 async function getAllEvents(req, res, next) {
   const events = await Event.find({});
   return res.status(200).send(events.reverse());
@@ -71,6 +81,54 @@ async function createToken(req, res, next) {
     }
   }
   return res.status(404).send(new Error("Not logged in."));
+}
+
+async function checkToken(req, res, next) {
+  if (req.user) {
+    const id = req.params.id;
+    const userId = req.user.id;
+    const email = req.user.email;
+    const { code } = req.body;
+    try {
+      const event = await Event.findById(id);
+      const token = event.token;
+      const points = event.points;
+      if (hasExpired(token)) {
+        return res.status(401).send("Token expired.");
+      } else {
+        if (code === token.token) {
+          const user = await User.findById(userId);
+          if (user.eventsAttended) {
+            if (!user.eventsAttended.includes(id)) {
+              user.eventsAttended.push(id);
+              user.totalPoints += points;
+              await user.save();
+            }
+          } else {
+            user.eventsAttended = [id];
+            user.totalPoints += points;
+            await user.save();
+          }
+
+          if (event.attendees) {
+            if (!event.attendees.includes(email)) {
+              event.attendees.push(email);
+              await event.save();
+            }
+          } else {
+            event.attendees = [email];
+            await event.save();
+          }
+
+          return res.status(200).send("Token matches.");
+        } else {
+          return res.status(404).send("Wrong token");
+        }
+      }
+    } catch (err) {
+      return res.status(500).send(err);
+    }
+  }
 }
 
 async function updateEventById(req, res, next) {
@@ -148,6 +206,7 @@ module.exports = {
   getEventById,
   createEvent,
   createToken,
+  checkToken,
   updateEventById,
   deleteById,
 };
