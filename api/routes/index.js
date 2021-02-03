@@ -8,6 +8,7 @@ const { addSubscriber, unsubscribe } = require("./mailerlite.js");
 const {
   getUser,
   getEventsSaved,
+  getEventsSavedAndAttended,
   getEventsCreated,
   updateUser,
   updateUserById,
@@ -21,6 +22,7 @@ const {
   getEventById,
   createEvent,
   createToken,
+  checkToken,
   updateEventById,
   deleteById,
 } = require("./event.js");
@@ -48,6 +50,7 @@ router.get("/users", requireChairStatus, getAllUsers);
 router.get("/user", getUser);
 router.get("/user/savedevents", getEventsSaved);
 router.get("/user/createdevents", getEventsCreated);
+router.get("/user/savedattendedevents", getEventsSavedAndAttended);
 router.put("/user", upload.single("profileImage"), updateUser);
 router.put("/user/:id", requireBoardStatus, updateUserById);
 router.put("/user/:id/saveevent", saveEventToUser);
@@ -58,6 +61,7 @@ router.get("/events", getAllEvents);
 router.get("/event", getEventById);
 router.post("/event", requireChairStatus, createEvent);
 router.put("/event/:id/token", requireChairStatus, createToken);
+router.put("/event/:id/checktoken", checkToken);
 router.put(
   "/event/:id",
   [requireChairStatus, upload.single("eventImage")],

@@ -15,6 +15,21 @@ function getUser(req, res, next) {
   return res.status(404).send(new Error("Not logged in."));
 }
 
+async function getEventsSavedAndAttended(req, res, next) {
+  if (req.user) {
+    try {
+      const user = await User.findById(req.user.id);
+      const saved = user.eventsSaved;
+      const attended = user.eventsAttended;
+      let union = [...new Set([...saved, ...attended])];
+      return res.status(200).send(union);
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  return res.status(404).send("Not logged in.");
+}
+
 async function getEventsSaved(req, res, next) {
   if (req.user) {
     try {
@@ -194,6 +209,7 @@ module.exports = {
   getAllUsers,
   getUser,
   getEventsSaved,
+  getEventsSavedAndAttended,
   getEventsCreated,
   updateUser,
   updateUserById,
