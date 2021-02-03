@@ -10,16 +10,25 @@ import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 import MultiSelect from "react-multi-select-component";
 import ScrollMenu from "react-horizontal-scrolling-menu";
 import { BsFillPlusSquareFill } from "react-icons/bs";
 import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
+import { MdInfoOutline } from "react-icons/md";
 
 import { base_url } from "../../constants.js";
+import { refreshAuth } from "../../apihelper.js";
 
-const EventBox = ({ viewMode }) => {
+const EventBox = ({
+  boxTitle,
+  events,
+  viewMode,
+  showSavedOnly,
+  handleUpdate,
+}) => {
   const eventsSaved = useSelector((state) => state.eventsSaved);
-  const [events, setEvents] = useState([]);
   const [menu, setMenu] = useState();
   const [users, setUsers] = useState([]);
 
@@ -38,18 +47,6 @@ const EventBox = ({ viewMode }) => {
   const [points, setPoints] = useState(0);
   const eventImageRef = useRef();
 
-  const getEvents = async () => {
-    const eventsUrl = base_url + "/events";
-    await axios
-      .get(eventsUrl, { withCredentials: true })
-      .then((res) => {
-        setEvents(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
   const getUsers = () => {
     const usersUrl = base_url + "/users";
     axios
@@ -67,7 +64,6 @@ const EventBox = ({ viewMode }) => {
   };
 
   useEffect(() => {
-    getEvents();
     getUsers();
   }, []);
 
@@ -84,9 +80,18 @@ const EventBox = ({ viewMode }) => {
     setMenu(Menu);
   }, [events]);
 
-  function handleUpdate() {
-    getEvents();
-  }
+  const infoPopover = (
+    <Popover>
+      <Popover.Title as="p">
+        {viewMode ? "View Events" : "Manage Events"}
+      </Popover.Title>
+      <Popover.Content>
+        {showSavedOnly
+          ? "View your saved events from the WECE events page."
+          : "Manage events you have created."}
+      </Popover.Content>
+    </Popover>
+  );
 
   const MenuItem = ({ event }) => {
     return (
@@ -186,6 +191,7 @@ const EventBox = ({ viewMode }) => {
           withCredentials: true,
         })
         .then((res) => {
+          refreshAuth();
           getEvents();
 
           if (eventImageRef.current.files[0]) {
@@ -227,12 +233,22 @@ const EventBox = ({ viewMode }) => {
 
   return (
     <AccountWidget>
-      <div className={styles["create-container"]} onClick={toggle}>
-        <span className={styles["create-text"]}>
-          Create New Event{" "}
-          <BsFillPlusSquareFill className={styles["create-icon"]} />
-        </span>
+      <div className={styles["title"]}>
+        {boxTitle}{" "}
+        <OverlayTrigger placement="bottom" overlay={infoPopover}>
+          <MdInfoOutline />
+        </OverlayTrigger>
       </div>
+      {!viewMode ? (
+        <div className={styles["create-container"]}>
+          <span className={styles["create-text"]} onClick={toggle}>
+            Create New Event{" "}
+            <BsFillPlusSquareFill className={styles["create-icon"]} />
+          </span>
+        </div>
+      ) : (
+        ""
+      )}
       <ScrollMenu
         data={menu}
         arrowLeft={ArrowLeft}
