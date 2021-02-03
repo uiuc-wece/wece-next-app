@@ -1,198 +1,51 @@
-import AccountLayout from "../components/accountlayout";
-import AccountWidget from "../components/accountwidget";
-import styles from "../styles/Members.module.css";
+import Layout from "../components/layout";
+import SectionHead from "../components/sectionhead";
+import EventBox from "../components/widgets/eventbox";
+import styles from "../styles/Calendar.module.css";
 
-import Container from "react-bootstrap/Container";
-import MaterialTable from "material-table";
-import { ThemeProvider } from "@material-ui/core/styles";
-
-import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import axios from "axios";
+import Container from "react-bootstrap/Container";
 
-import { base_url, theme } from "../constants.js";
+import { base_url } from "../constants.js";
 
-const Events = () => {
+export default function Events() {
   const [events, setEvents] = useState([]);
-  const authenticated = useSelector((state) => state.authenticated);
 
-  if (!authenticated) {
-    const router = useRouter();
-    router.push("/login");
-  }
-
-  useEffect(() => {
+  const getEvents = async () => {
     const eventsUrl = base_url + "/events";
-    axios
-      .get(eventsUrl, {
-        withCredentials: true,
-      })
+    await axios
+      .get(eventsUrl, { withCredentials: true })
       .then((res) => {
-        console.log(res.data);
         setEvents(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
-
-  const updateRow = (newData, oldData) => {
-    return new Promise((resolve, reject) => {
-      const updateUrl = base_url + "/event/" + oldData._id;
-      axios
-        .put(updateUrl, newData, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        })
-        .then(() => {
-          // after updating event, fetch all events
-          const eventsUrl = base_url + "/events";
-          axios
-            .get(eventsUrl, {
-              withCredentials: true,
-            })
-            .then((res) => {
-              setEvents(res.data);
-            })
-            .catch((err) => {
-              console.log(err);
-            });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      resolve();
-    });
   };
 
-  return (
-    <AccountLayout>
-      <div className="container">
-        <div className="content">
-          <Container fluid className={`section ${styles["member-section"]}`}>
-            <AccountWidget>
-              <div className={styles["member-table"]}>
-                <ThemeProvider theme={theme}>
-                  <MaterialTable
-                    columns={[
-                      {
-                        title: "Image",
-                        field: "eventImage",
-                        filtering: false,
-                        render: (data) => (
-                          <img
-                            src={data.eventImage}
-                            style={{
-                              width: 60,
-                              height: 40,
-                              objectFit: "cover",
-                              borderRadius: "10%",
-                              border: "2px solid white",
-                            }}
-                          />
-                        ),
-                      },
-                      {
-                        title: "Title",
-                        field: "title",
-                      },
-                      {
-                        title: "Author",
-                        field: "author",
-                        editable: "never",
-                      },
-                      {
-                        title: "Created",
-                        field: "created",
-                        type: "date",
-                        editable: "never",
-                      },
-                      {
-                        title: "Start date",
-                        field: "startDate",
-                        type: "datetime",
-                      },
-                      {
-                        title: "End date",
-                        field: "endDate",
-                        type: "datetime",
-                      },
-                      {
-                        title: "Recurring",
-                        field: "recurring",
-                        type: "boolean",
-                      },
-                      {
-                        title: "Location",
-                        field: "location",
-                      },
-                      {
-                        title: "Description",
-                        field: "description",
-                      },
-                      {
-                        title: "Web Link",
-                        field: "webConferenceLink",
-                      },
-                      {
-                        title: "Link",
-                        field: "actionLink",
-                      },
-                      {
-                        title: "Points",
-                        field: "points",
-                      },
-                      {
-                        title: "Token",
-                        field: "token",
-                        render: (rowData) => <p>{rowData.token.token}</p>,
-                        editable: "never",
-                      },
-                      {
-                        title: "Hosts",
-                        field: "hosts",
-                        render: (rowData) => (
-                          <p>{rowData.hosts.map((h) => h.label).join(", ")}</p>
-                        ),
-                        editable: "never",
-                      },
-                      {
-                        title: "Committees",
-                        field: "committees",
-                        render: (rowData) => (
-                          <p>
-                            {rowData.committees.map((c) => c.label).join(",")}
-                          </p>
-                        ),
-                        editable: "never",
-                      },
-                      {
-                        title: "Attendees",
-                        field: "attendees",
-                        editable: "never",
-                      },
-                    ]}
-                    data={events}
-                    options={{
-                      filtering: true,
-                    }}
-                    title="Events"
-                    editable={{
-                      onRowUpdate: updateRow,
-                    }}
-                    style={{ boxShadow: "none" }}
-                  />
-                </ThemeProvider>
-              </div>
-            </AccountWidget>
-          </Container>
-        </div>
-      </div>
-    </AccountLayout>
-  );
-};
+  useEffect(() => {
+    getEvents();
+  }, []);
 
-export default Events;
+  function handleUpdate() {
+    getEvents();
+  }
+
+  return (
+    <Layout>
+      <div className="content">
+        <Container className="section">
+          <SectionHead title="Events_" top={true} />
+          <EventBox
+            boxTitle={""}
+            events={events}
+            viewMode={true}
+            showSavedOnly={false}
+            handleUpdate={handleUpdate}
+          />
+        </Container>
+      </div>
+    </Layout>
+  );
+}

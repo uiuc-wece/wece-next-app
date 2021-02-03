@@ -94,7 +94,7 @@ const CustomNavbar = () => {
                 Committees
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/calendar">Events</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
