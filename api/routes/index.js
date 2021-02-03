@@ -7,6 +7,8 @@ const upload = multer({ dest: "/tmp" });
 const { addSubscriber, unsubscribe } = require("./mailerlite.js");
 const {
   getUser,
+  getEventsSaved,
+  getEventsCreated,
   updateUser,
   updateUserById,
   getAllUsers,
@@ -44,6 +46,8 @@ router.put("/subscriber", unsubscribe);
 
 router.get("/users", requireChairStatus, getAllUsers);
 router.get("/user", getUser);
+router.get("/user/savedevents", getEventsSaved);
+router.get("/user/createdevents", getEventsCreated);
 router.put("/user", upload.single("profileImage"), updateUser);
 router.put("/user/:id", requireBoardStatus, updateUserById);
 router.put("/user/:id/saveevent", saveEventToUser);

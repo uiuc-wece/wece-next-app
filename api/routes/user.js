@@ -15,6 +15,30 @@ function getUser(req, res, next) {
   return res.status(404).send(new Error("Not logged in."));
 }
 
+async function getEventsSaved(req, res, next) {
+  if (req.user) {
+    try {
+      const user = await User.findById(req.user.id);
+      return res.status(200).send(user.eventsSaved);
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  return res.status(404).send("Not logged in.");
+}
+
+async function getEventsCreated(req, res, next) {
+  if (req.user) {
+    try {
+      const user = await User.findById(req.user.id);
+      return res.status(200).send(user.eventsCreated);
+    } catch (err) {
+      return res.status(400).send(err);
+    }
+  }
+  return res.status(404).send("Not logged in.");
+}
+
 async function updateUser(req, res, next) {
   if (req.user) {
     try {
@@ -96,7 +120,9 @@ async function saveEventToUser(req, res, next) {
 
       const user = await User.findById(userId);
       if (user.eventsSaved) {
-        user.eventsSaved.push(eventId);
+        if (!user.eventsSaved.includes(eventId)) {
+          user.eventsSaved.push(eventId);
+        }
       } else {
         user.eventsSaved = [eventId];
       }
@@ -104,7 +130,8 @@ async function saveEventToUser(req, res, next) {
 
       const event = await Event.findById(eventId);
       if (event.userSaves) {
-        event.userSaves.push({ user: req.user.id, email: req.user.email });
+        if (!event.userSaves.some((obj) => obj.user === req.user.id))
+          event.userSaves.push({ user: req.user.id, email: req.user.email });
       } else {
         event.userSaves = [{ user: req.user.id, email: req.user.email }];
       }
@@ -164,10 +191,12 @@ async function attendEvent(req, res, next) {
 }
 
 module.exports = {
-  getAllUsers: getAllUsers,
-  getUser: getUser,
-  updateUser: updateUser,
-  updateUserById: updateUserById,
+  getAllUsers,
+  getUser,
+  getEventsSaved,
+  getEventsCreated,
+  updateUser,
+  updateUserById,
   saveEventToUser,
   removeEventFromUser,
   attendEvent,
