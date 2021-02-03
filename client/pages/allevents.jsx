@@ -3,6 +3,7 @@ import AccountWidget from "../components/accountwidget";
 import styles from "../styles/Members.module.css";
 
 import Container from "react-bootstrap/Container";
+import Loader from "react-loader-spinner";
 import MaterialTable from "material-table";
 import { ThemeProvider } from "@material-ui/core/styles";
 
@@ -14,6 +15,7 @@ import axios from "axios";
 import { base_url, theme } from "../constants.js";
 
 const AllEvents = () => {
+  const [loading, setLoading] = useState(true);
   const [events, setEvents] = useState([]);
   const authenticated = useSelector((state) => state.authenticated);
 
@@ -34,7 +36,8 @@ const AllEvents = () => {
       })
       .catch((err) => {
         console.log(err);
-      });
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   const updateRow = (newData, oldData) => {
@@ -76,115 +79,128 @@ const AllEvents = () => {
             <AccountWidget>
               <div className={styles["member-table"]}>
                 <ThemeProvider theme={theme}>
-                  <MaterialTable
-                    columns={[
-                      {
-                        title: "Image",
-                        field: "eventImage",
-                        filtering: false,
-                        render: (data) => (
-                          <img
-                            src={data.eventImage}
-                            style={{
-                              width: 60,
-                              height: 40,
-                              objectFit: "cover",
-                              borderRadius: "10%",
-                              border: "2px solid white",
-                            }}
-                          />
-                        ),
-                      },
-                      {
-                        title: "Title",
-                        field: "title",
-                      },
-                      {
-                        title: "Author",
-                        field: "author",
-                        editable: "never",
-                      },
-                      {
-                        title: "Created",
-                        field: "created",
-                        type: "date",
-                        editable: "never",
-                      },
-                      {
-                        title: "Start date",
-                        field: "startDate",
-                        type: "datetime",
-                      },
-                      {
-                        title: "End date",
-                        field: "endDate",
-                        type: "datetime",
-                      },
-                      {
-                        title: "Recurring",
-                        field: "recurring",
-                        type: "boolean",
-                      },
-                      {
-                        title: "Location",
-                        field: "location",
-                      },
-                      {
-                        title: "Description",
-                        field: "description",
-                      },
-                      {
-                        title: "Web Link",
-                        field: "webConferenceLink",
-                      },
-                      {
-                        title: "Link",
-                        field: "actionLink",
-                      },
-                      {
-                        title: "Points",
-                        field: "points",
-                      },
-                      {
-                        title: "Token",
-                        field: "token",
-                        render: (rowData) => <p>{rowData.token.token}</p>,
-                        editable: "never",
-                      },
-                      {
-                        title: "Hosts",
-                        field: "hosts",
-                        render: (rowData) => (
-                          <p>{rowData.hosts.map((h) => h.label).join(", ")}</p>
-                        ),
-                        editable: "never",
-                      },
-                      {
-                        title: "Committees",
-                        field: "committees",
-                        render: (rowData) => (
-                          <p>
-                            {rowData.committees.map((c) => c.label).join(",")}
-                          </p>
-                        ),
-                        editable: "never",
-                      },
-                      {
-                        title: "Attendees",
-                        field: "attendees",
-                        editable: "never",
-                      },
-                    ]}
-                    data={events}
-                    options={{
-                      filtering: true,
-                    }}
-                    title="Events"
-                    editable={{
-                      onRowUpdate: updateRow,
-                    }}
-                    style={{ boxShadow: "none" }}
-                  />
+                  {loading ? (
+                    <div className="loading-container">
+                      <Loader
+                        type="Oval"
+                        color="#ace8ac"
+                        height={50}
+                        width={50}
+                      />
+                    </div>
+                  ) : (
+                    <MaterialTable
+                      columns={[
+                        {
+                          title: "Image",
+                          field: "eventImage",
+                          filtering: false,
+                          render: (data) => (
+                            <img
+                              src={data.eventImage}
+                              style={{
+                                width: 60,
+                                height: 40,
+                                objectFit: "cover",
+                                borderRadius: "10%",
+                                border: "2px solid white",
+                              }}
+                            />
+                          ),
+                        },
+                        {
+                          title: "Title",
+                          field: "title",
+                        },
+                        {
+                          title: "Author",
+                          field: "author",
+                          editable: "never",
+                        },
+                        {
+                          title: "Created",
+                          field: "created",
+                          type: "date",
+                          editable: "never",
+                        },
+                        {
+                          title: "Start date",
+                          field: "startDate",
+                          type: "datetime",
+                        },
+                        {
+                          title: "End date",
+                          field: "endDate",
+                          type: "datetime",
+                        },
+                        {
+                          title: "Recurring",
+                          field: "recurring",
+                          type: "boolean",
+                        },
+                        {
+                          title: "Location",
+                          field: "location",
+                        },
+                        {
+                          title: "Description",
+                          field: "description",
+                        },
+                        {
+                          title: "Web Link",
+                          field: "webConferenceLink",
+                        },
+                        {
+                          title: "Link",
+                          field: "actionLink",
+                        },
+                        {
+                          title: "Points",
+                          field: "points",
+                        },
+                        {
+                          title: "Token",
+                          field: "token",
+                          render: (rowData) => <p>{rowData.token.token}</p>,
+                          editable: "never",
+                        },
+                        {
+                          title: "Hosts",
+                          field: "hosts",
+                          render: (rowData) => (
+                            <p>
+                              {rowData.hosts.map((h) => h.label).join(", ")}
+                            </p>
+                          ),
+                          editable: "never",
+                        },
+                        {
+                          title: "Committees",
+                          field: "committees",
+                          render: (rowData) => (
+                            <p>
+                              {rowData.committees.map((c) => c.label).join(",")}
+                            </p>
+                          ),
+                          editable: "never",
+                        },
+                        {
+                          title: "Attendees",
+                          field: "attendees",
+                          editable: "never",
+                        },
+                      ]}
+                      data={events}
+                      options={{
+                        filtering: true,
+                      }}
+                      title="Events"
+                      editable={{
+                        onRowUpdate: updateRow,
+                      }}
+                      style={{ boxShadow: "none" }}
+                    />
+                  )}
                 </ThemeProvider>
               </div>
             </AccountWidget>
