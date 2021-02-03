@@ -44,6 +44,8 @@ const UserSchema = new mongoose.Schema(
     graduationDate: { type: Date },
     totalPoints: { type: Number },
     eventsAttended: [String], // list of event keys
+    eventsCreated: [String], // list of event keys
+    eventsSaved: [String],
     committees: [String],
     blogposts: [String], // list of blogpost ids
     profileImage: { type: String },
