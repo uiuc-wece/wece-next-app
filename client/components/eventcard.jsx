@@ -490,7 +490,7 @@ export default function EventCard({
         </Modal.Body>
       </Modal>
       <Modal show={modalMore} onHide={toggleMore}>
-        <Modal.Header>{title}</Modal.Header>
+        <Modal.Header closeButton>{title}</Modal.Header>
         <Modal.Body>
           <Row>
             <Col xs={12} md={4} className={styles["more-key"]}>
