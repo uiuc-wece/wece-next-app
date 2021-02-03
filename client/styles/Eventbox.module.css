@@ -1,8 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .title {
   text-align: left;
   font-size: 20px;
   color: var(--neutral-color-light);
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  margin-right: 16px;
 }
 
 .arrow {
@@ -11,13 +20,9 @@
 }
 
 .create-container {
-  position: relative;
-  top: -42px;
-  float: right;
-  text-align: right;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 16px;
 }

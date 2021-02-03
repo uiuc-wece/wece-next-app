@@ -234,27 +234,29 @@ const EventBox = ({
 
   return (
     <AccountWidget>
-      {boxTitle != "" ? (
-        <div className={styles["title"]}>
-          {boxTitle}{" "}
-          <OverlayTrigger placement="bottom" overlay={infoPopover}>
-            <MdInfoOutline />
-          </OverlayTrigger>
-        </div>
-      ) : (
-        ""
-      )}
+      <div className={styles["header"]}>
+        {boxTitle != "" ? (
+          <div className={styles["title"]}>
+            {boxTitle}{" "}
+            <OverlayTrigger placement="bottom" overlay={infoPopover}>
+              <MdInfoOutline />
+            </OverlayTrigger>
+          </div>
+        ) : (
+          ""
+        )}
 
-      {!viewMode ? (
-        <div className={styles["create-container"]}>
-          <span className={styles["create-text"]} onClick={toggle}>
-            Create New Event{" "}
-            <BsFillPlusSquareFill className={styles["create-icon"]} />
-          </span>
-        </div>
-      ) : (
-        ""
-      )}
+        {!viewMode ? (
+          <div className={styles["create-container"]}>
+            <span className={styles["create-text"]} onClick={toggle}>
+              Create New Event{" "}
+              <BsFillPlusSquareFill className={styles["create-icon"]} />
+            </span>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
       <ScrollMenu
         data={menu}
         arrowLeft={ArrowLeft}
