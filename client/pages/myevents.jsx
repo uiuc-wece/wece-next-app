@@ -2,6 +2,7 @@ import AccountLayout from "../components/accountlayout";
 import EventBox from "../components/widgets/eventbox";
 
 import Container from "react-bootstrap/Container";
+import Loader from "react-loader-spinner";
 
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
@@ -11,6 +12,7 @@ import axios from "axios";
 import { base_url } from "../constants.js";
 
 const MyEvents = () => {
+  const [loading, setLoading] = useState(true);
   const authenticated = useSelector((state) => state.authenticated);
   const [events, setEvents] = useState([]);
 
@@ -38,7 +40,8 @@ const MyEvents = () => {
       })
       .catch((err) => {
         console.log(err);
-      });
+      })
+      .finally(() => setLoading(false));
   };
 
   useEffect(() => {
@@ -54,13 +57,19 @@ const MyEvents = () => {
       <div className="container">
         <div className="content">
           <Container fluid className="section">
-            <EventBox
-              boxTitle={"My Events"}
-              events={events}
-              viewMode={true}
-              showSavedOnly={true}
-              handleUpdate={handleUpdate}
-            />
+            {loading ? (
+              <div className="loading-container">
+                <Loader type="Oval" color="#ace8ac" height={50} width={50} />
+              </div>
+            ) : (
+              <EventBox
+                boxTitle={"My Events"}
+                events={events}
+                viewMode={true}
+                showSavedOnly={true}
+                handleUpdate={handleUpdate}
+              />
+            )}
           </Container>
         </div>
       </div>
