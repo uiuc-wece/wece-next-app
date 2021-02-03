@@ -233,12 +233,17 @@ const EventBox = ({
 
   return (
     <AccountWidget>
-      <div className={styles["title"]}>
-        {boxTitle}{" "}
-        <OverlayTrigger placement="bottom" overlay={infoPopover}>
-          <MdInfoOutline />
-        </OverlayTrigger>
-      </div>
+      {boxTitle != "" ? (
+        <div className={styles["title"]}>
+          {boxTitle}{" "}
+          <OverlayTrigger placement="bottom" overlay={infoPopover}>
+            <MdInfoOutline />
+          </OverlayTrigger>
+        </div>
+      ) : (
+        ""
+      )}
+
       {!viewMode ? (
         <div className={styles["create-container"]}>
           <span className={styles["create-text"]} onClick={toggle}>
