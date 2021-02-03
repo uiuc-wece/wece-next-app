@@ -51,6 +51,46 @@
   color: var(--accent-2-color);
 }
 
+.event-code {
+  margin-bottom: 20px;
+}
+
+.event-code input {
+  font-size: 2em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  background-image: none !important;
+  padding-right: 0.75em !important;
+}
+
+.event-code div {
+  margin: 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  .event-code input {
+    font-size: 1em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    background-image: none !important;
+    padding-right: 0.75em !important;
+  }
+
+  .event-code div {
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .event-code input {
+    font-size: 0.8em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    background-image: none !important;
+    padding-right: 0.75em !important;
+  }
+}
+
 .event-image {
   width: 120px;
   height: 80px;
@@ -172,4 +212,15 @@
 
 .token {
   color: var(--accent-color);
+}
+
+.submit-form {
+  padding: 5px 40px !important;
+  background-color: var(--neutral-color-light) !important;
+  color: var(--dark-text-color) !important;
+}
+
+.submit-form:hover {
+  background-color: var(--accent-color) !important;
+  color: var(--light-text-color) !important;
 }
