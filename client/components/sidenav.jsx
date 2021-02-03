@@ -133,7 +133,7 @@ const SideNavbar = () => {
                       className={`${styles["menu-item"]} ${styles["collapse-item"]}`}
                       href="/allevents"
                     >
-                      <FaRegCalendarAlt /> {active ? "" : <p>Events</p>}
+                      <FaRegCalendarAlt /> {active ? "" : <p>All Events</p>}
                     </Nav.Link>
                   ) : (
                     ""
