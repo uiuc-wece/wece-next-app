@@ -161,7 +161,9 @@ const AllEvents = () => {
                         {
                           title: "Token",
                           field: "token",
-                          render: (rowData) => <p>{rowData.token.token}</p>,
+                          render: (rowData) => (
+                            <p>{rowData.token ? rowData.token.token : ""}</p>
+                          ),
                           editable: "never",
                         },
                         {
