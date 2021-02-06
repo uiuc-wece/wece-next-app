@@ -189,6 +189,9 @@ const AllEvents = () => {
                         {
                           title: "Attendees",
                           field: "attendees",
+                          render: (rowData) => (
+                            <p>{rowData.attendees.join(", ")}</p>
+                          ),
                           editable: "never",
                         },
                       ]}
