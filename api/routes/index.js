@@ -46,11 +46,6 @@ const {
 router.post("/subscriber", addSubscriber);
 router.put("/subscriber", unsubscribe);
 
-router.get("/user/:id", getUser);
-router.delete("/user/:id", deleteUser);
-router.post("/user", createUser);
-router.put("/user/:id", updateUser);
-
 router.get("/users", requireChairStatus, getAllUsers);
 router.get("/user", getUser);
 router.get("/user/savedevents", getEventsSaved);
