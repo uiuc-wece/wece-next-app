@@ -1,0 +1,27 @@
+.member-section {
+  margin: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.member-table td {
+  padding: 5px !important;
+}
+
+@media only screen and (max-width: 450px) {
+  .member-table h6 {
+    font-size: 16px !important;
+  }
+  .member-table th {
+    padding: 4px !important;
+  }
+
+  .member-table td {
+    font-size: 12px !important;
+    padding: 2px !important;
+  }
+
+  .member-table input {
+    font-size: 12px !important;
+  }
+}

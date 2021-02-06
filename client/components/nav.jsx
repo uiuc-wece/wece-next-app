@@ -1,9 +1,22 @@
+import React from "react";
+import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
 import styles from "../styles/Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { logout } from "../apihelper.js";
 
-export default function CustomNavbar() {
+const CustomNavbar = () => {
+  const authenticated = useSelector((state) => state.authenticated);
+  const firstName = useSelector((state) => state.firstName);
+
+  const router = useRouter();
+  const logoutUser = () => {
+    logout();
+    router.push("/");
+  };
+
   return (
     <>
       <Navbar
@@ -81,7 +94,7 @@ export default function CustomNavbar() {
                 Committees
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/calendar">Events</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
@@ -104,9 +117,40 @@ export default function CustomNavbar() {
             </NavDropdown>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
+            {!authenticated && (
+              <Nav.Link href="/login" className={styles["login"]}>
+                Login
+              </Nav.Link>
+            )}
+            {authenticated && (
+              <NavDropdown
+                title="Account"
+                className={styles["account-dropdown"]}
+              >
+                <NavDropdown.ItemText className={styles["dropdown-item-text"]}>
+                  {"Welcome " + firstName + "!"}
+                </NavDropdown.ItemText>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  className={styles["dropdown-item"]}
+                  href="/account"
+                >
+                  Dashboard
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item
+                  className={styles["dropdown-item"]}
+                  onClick={logoutUser}
+                >
+                  Logout
+                </NavDropdown.Item>
+              </NavDropdown>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     </>
   );
-}
+};
+
+export default CustomNavbar;
