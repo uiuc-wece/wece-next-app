@@ -1,0 +1,262 @@
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.profile-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 5px solid var(--accent-color);
+}
+
+.camera {
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: var(--accent-color-light);
+  opacity: 0;
+  z-index: 2;
+}
+
+.profile-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.profile-image:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-background-color-muted);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.profile-image:hover {
+  cursor: pointer;
+}
+
+.profile-image:hover:after {
+  opacity: 0.5;
+}
+
+.profile-image:hover .camera {
+  opacity: 0.8;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.email {
+  font-size: 12px;
+  margin-top: 2px;
+  color: var(--neutral-color-shadow);
+}
+
+.account-type {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  color: var(--accent-2-color);
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+}
+
+.education {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.student-status {
+  letter-spacing: 0.1em;
+}
+
+.education-divider {
+  font-size: 1.1em;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: var(--accent-color);
+}
+
+.major {
+  background-color: var(--accent-color-light);
+  border-radius: 6px;
+  font-size: 0.8em;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: var(--accent-text-color);
+}
+
+.graduation {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  color: var(--light-text-color);
+}
+
+.graduation-date {
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 0.9em;
+  border-radius: 6px;
+  background-color: var(--accent-2-color-light);
+  color: var(--accent-2-text-color);
+}
+
+.right-division {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-color-shadow);
+  margin-top: 0.5em;
+}
+
+.points {
+  letter-spacing: 0.1em;
+}
+
+.points-number {
+  color: var(--accent-color);
+}
+
+.image-modal-header {
+  font-family: "Roboto";
+  border-bottom: 1px solid var(--neutral-color-shadow) !important;
+}
+
+.image-modal {
+  font-family: "Roboto";
+}
+
+.image-modal input {
+  letter-spacing: 0.1em;
+}
+
+#submit-form {
+  margin-top: 20px;
+  background-color: var(--accent-color-light);
+  border: 1px solid var(--accent-color-shadow);
+  color: var(--accent-text-color);
+}
+
+#submit-form:hover {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color-shadow);
+}
+
+@media only screen and (max-width: 480px) {
+  .profile-left {
+    margin: 5px;
+  }
+
+  .profile-right {
+    margin: 5px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .education-divider {
+    display: none;
+  }
+
+  .education {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .graduation {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .profile-left {
+    margin: 2px;
+  }
+
+  .profile-right {
+    margin: 2px;
+  }
+
+  .profile-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .email {
+    font-size: 10px;
+  }
+
+  .account-type {
+    font-size: 12px;
+  }
+
+  .education-divider {
+    display: none;
+  }
+
+  .education {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .graduation {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  .points {
+    font-size: 12px;
+  }
+}

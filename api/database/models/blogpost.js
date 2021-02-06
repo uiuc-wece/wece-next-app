@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 var BlogpostSchema = new mongoose.Schema({
   title: { type: String },

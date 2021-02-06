@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title {
+  text-align: left;
+  font-size: 20px;
+  color: var(--neutral-color-light);
+  margin-bottom: 8px;
+  margin-right: 16px;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.create-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.create-text {
+  font-size: 14px;
+  transition: 0.2s all;
+  padding: 2px 6px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 4px;
+}
+
+.create-icon {
+  margin-left: 4px;
+}
+
+.create-text:hover {
+  color: var(--accent-2-color);
+  border: 1px solid var(--accent-2-color);
+  cursor: pointer;
+}
+
+.item {
+  outline: none;
+}

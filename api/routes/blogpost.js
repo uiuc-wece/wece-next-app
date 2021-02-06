@@ -1,8 +1,7 @@
 var Blogpost = require("../database/models/blogpost.js");
 var mongoose = require("mongoose");
 
-async function getBlogpost(req, res, next) 
-{
+async function getBlogpost(req, res, next) {
   const posts = await Blogpost.find({});
 
   try {
@@ -12,20 +11,18 @@ async function getBlogpost(req, res, next)
   }
 }
 
-async function deleteBlogpost(req, res, next) 
-{
+async function deleteBlogpost(req, res, next) {
   try {
-    const post = await Blogpost.findByIdAndDelete(req.params.id)
+    const post = await Blogpost.findByIdAndDelete(req.params.id);
 
-    if (!post) res.status(404).send("No item found")
-    res.status(200).send()
+    if (!post) res.status(404).send("No item found");
+    res.status(200).send();
   } catch (err) {
-    res.status(500).send(err)
+    res.status(500).send(err);
   }
 }
 
-async function createBlogpost(req, res, next) 
-{
+async function createBlogpost(req, res, next) {
   const post = new Blogpost(req.body);
 
   try {
@@ -36,14 +33,13 @@ async function createBlogpost(req, res, next)
   }
 }
 
-async function updateBlogpost(req, res, next) 
-{
+async function updateBlogpost(req, res, next) {
   try {
-    await Blogpost.findByIdAndUpdate(req.params.id, req.body)
-    await Blogpost.save()
-    res.send(post)
+    await Blogpost.findByIdAndUpdate(req.params.id, req.body);
+    await Blogpost.save();
+    res.send(post);
   } catch (err) {
-    res.status(500).send(err)
+    res.status(500).send(err);
   }
 }
 
