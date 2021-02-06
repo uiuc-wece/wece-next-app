@@ -149,6 +149,10 @@
   color: var(--accent-color);
 }
 
+.heart-icon {
+  display: inline-block;
+}
+
 .event-date {
   width: 100px;
   height: 80px;
