@@ -116,7 +116,21 @@ export default function EventCard({
     setMonth(getMonth(jsStartDate));
     setDay(getDay(jsStartDate));
     setStartTime(getTime(jsStartDate));
-  }, [startDate]);
+    let zStart = jsStartDate.getTimezoneOffset() * 60 * 1000;
+    let startLocal = jsStartDate - zStart;
+    startLocal = new Date(startLocal);
+    let isoStart = startLocal.toISOString();
+    isoStart = isoStart.slice(0, 19);
+    setNewStartDate(isoStart);
+
+    let jsEndDate = new Date(endDate);
+    let zEnd = jsEndDate.getTimezoneOffset() * 60 * 1000;
+    let endLocal = jsEndDate - zEnd;
+    endLocal = new Date(endLocal);
+    let isoEnd = endLocal.toISOString();
+    isoEnd = isoEnd.slice(0, 19);
+    setNewEndDate(isoEnd);
+  }, [startDate, endDate]);
 
   const tokenExpiration = () => {
     let createdDate = new Date(token.created);
@@ -194,8 +208,20 @@ export default function EventCard({
 
   const onClose = () => {
     setNewTitle(title);
-    setNewStartDate(startDate);
-    setNewEndDate(endDate);
+    let jsStartDate = new Date(startDate);
+    let zStart = jsStartDate.getTimezoneOffset() * 60 * 1000;
+    let startLocal = jsStartDate - zStart;
+    startLocal = new Date(startLocal);
+    let isoStart = startLocal.toISOString();
+    isoStart = isoStart.slice(0, 19);
+    setNewStartDate(isoStart);
+    let jsEndDate = new Date(endDate);
+    let zEnd = jsEndDate.getTimezoneOffset() * 60 * 1000;
+    let endLocal = jsEndDate - zEnd;
+    endLocal = new Date(endLocal);
+    let isoEnd = endLocal.toISOString();
+    isoEnd = isoEnd.slice(0, 19);
+    setNewEndDate(isoEnd);
     setNewRecurring(recurring);
     setNewDescription(description);
     setNewLocation(location);
@@ -276,8 +302,8 @@ export default function EventCard({
 
       const newEvent = {
         title: newTitle,
-        startDate: newStartDate ? newStartDate : "",
-        endDate: newEndDate ? newEndDate : "",
+        startDate: newStartDate ? new Date(newStartDate) : "",
+        endDate: newEndDate ? new Date(newEndDate) : "",
         recurring: newRecurring,
         location: newLocation,
         webConferenceLink: newWebConferenceLink,
@@ -797,7 +823,7 @@ export default function EventCard({
               <Form.Control
                 type="datetime-local"
                 name="start-time"
-                placeholder={startDate}
+                placeholder={startDate.replace("Z", "")}
                 value={newStartDate}
                 onChange={(e) => setNewStartDate(e.target.value)}
               />
@@ -807,7 +833,7 @@ export default function EventCard({
               <Form.Control
                 type="datetime-local"
                 name="end-time"
-                placeholder={endDate}
+                placeholder={endDate.replace("Z", "")}
                 value={newEndDate}
                 onChange={(e) => setNewEndDate(e.target.value)}
               />
