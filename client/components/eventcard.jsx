@@ -824,7 +824,7 @@ export default function EventCard({
               <Form.Control
                 type="datetime-local"
                 name="start-time"
-                placeholder={startDate.replace("Z", "")}
+                placeholder={startDate}
                 value={newStartDate}
                 onChange={(e) => setNewStartDate(e.target.value)}
               />
@@ -834,7 +834,7 @@ export default function EventCard({
               <Form.Control
                 type="datetime-local"
                 name="end-time"
-                placeholder={endDate.replace("Z", "")}
+                placeholder={endDate}
                 value={newEndDate}
                 onChange={(e) => setNewEndDate(e.target.value)}
               />
