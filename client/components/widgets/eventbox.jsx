@@ -189,12 +189,12 @@ const EventBox = ({
 
       axios
         .post(createUrl, newEvent, {
+          headers: {
+            "Content-Type": "application/json",
+          },
           withCredentials: true,
         })
         .then((res) => {
-          refreshAuth();
-          getEvents();
-
           if (eventImageRef.current.files[0]) {
             const formData = new FormData();
             formData.append("eventImage", eventImageRef.current.files[0]);
@@ -206,7 +206,7 @@ const EventBox = ({
                 withCredentials: true,
               })
               .then(() => {
-                getEvents();
+                handleUpdate();
               })
               .catch((err) => {
                 if (Object.keys(err.response.data).length > 0) {
@@ -218,7 +218,6 @@ const EventBox = ({
                 setValidated(false);
               });
           }
-          toggle();
         })
         .catch((err) => {
           if (Object.keys(err.response.data).length > 0) {
@@ -228,6 +227,9 @@ const EventBox = ({
         .finally(() => {
           inputs.forEach((input) => (input.disabled = false));
           setValidated(false);
+          refreshAuth();
+          handleUpdate();
+          toggle();
         });
     }
   };
