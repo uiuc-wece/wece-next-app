@@ -305,6 +305,7 @@ export default function EventCard({
         startDate: newStartDate ? new Date(newStartDate) : "",
         endDate: newEndDate ? new Date(newEndDate) : "",
         recurring: newRecurring,
+        description: newDescription,
         location: newLocation,
         webConferenceLink: newWebConferenceLink,
         actionLink: newActionLink,
