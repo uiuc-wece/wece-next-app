@@ -44,8 +44,7 @@ async function createBlogpost(req, res, next) {
 async function updateBlogpost(req, res, next) {
   try {
     await Blogpost.findByIdAndUpdate(req.params.id, req.body);
-    await Blogpost.save();
-    res.status(200).send(post);
+    res.status(200).send();
   } catch (err) {
     res.status(500).send(err);
   }

@@ -27,7 +27,8 @@ const {
   deleteById,
 } = require("./event.js");
 const {
-  getBlogpost,
+  getBlogposts,
+  getBlogpostById,
   deleteBlogpost,
   createBlogpost,
   updateBlogpost,
@@ -69,7 +70,8 @@ router.put(
 );
 router.delete("/event/:id", requireChairStatus, deleteById);
 
-router.get("/blogpost", getBlogpost);
+router.get("/blogposts", getBlogposts);
+router.get("/blogpost/:id", getBlogpostById);
 router.delete("/blogpost/:id", deleteBlogpost);
 router.post("/blogpost", createBlogpost);
 router.put("/blogpost/:id", updateBlogpost);
