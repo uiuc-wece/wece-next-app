@@ -175,15 +175,15 @@ const EventBox = ({
 
       const newEvent = {
         title: title,
-        startDate: startDate,
-        endDate: endDate,
+        startDate: startDate ? new Date(startDate) : "",
+        endDate: endDate ? new Date(endDate) : "",
         recurring: recurring,
         description: description,
         location: location,
         webConferenceLink: webConferenceLink,
         actionLink: actionLink,
-        hosts: hosts,
-        committees: committees,
+        hosts: hosts ? hosts : [],
+        committees: committees ? committees : [],
         points: points,
       };
 
