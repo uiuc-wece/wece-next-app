@@ -21,8 +21,8 @@ function hasExpired(token) {
 }
 
 async function getAllEvents(req, res, next) {
-  const events = await Event.find({});
-  return res.status(200).send(events.reverse());
+  const events = await Event.find().sort({ startDate: -1 });
+  return res.status(200).send(events);
 }
 
 async function getEventById(req, res, next) {
