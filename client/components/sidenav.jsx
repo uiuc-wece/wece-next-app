@@ -1,13 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
-import {
-  BiLeftArrow,
-  BiRightArrow,
-  BiLogOutCircle,
-  BiUserCircle,
-  BiHomeAlt,
-} from "react-icons/bi";
+import { BiLogOutCircle, BiUserCircle, BiHomeAlt } from "react-icons/bi";
 import {
   FaRegCalendarAlt,
   FaRegCalendarCheck,
@@ -15,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { RiAdminLine } from "react-icons/ri";
+import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi";
 import styles from "../styles/Sidenav.module.css";
 import Accordion from "react-bootstrap/Accordion";
 import Image from "react-bootstrap/Image";
@@ -91,7 +86,7 @@ const SideNavbar = () => {
             className={`${styles["toggle"]} ${styles["menu-item"]}`}
             onClick={toggleActive}
           >
-            {active ? <BiRightArrow /> : <BiLeftArrow />}{" "}
+            {active ? <HiChevronDoubleRight /> : <HiChevronDoubleLeft />}{" "}
             {active ? "" : <p>Collapse</p>}
           </Nav.Link>
           <hr className={styles["nav-divider"]} />
