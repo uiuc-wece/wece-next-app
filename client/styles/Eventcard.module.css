@@ -109,6 +109,7 @@
 .event-title {
   margin-left: 24px;
   margin-top: 16px;
+  white-space: normal;
 }
 
 .event-title h2 {
