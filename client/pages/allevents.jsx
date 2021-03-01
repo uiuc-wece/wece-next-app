@@ -5,7 +5,7 @@ import styles from "../styles/Members.module.css";
 import Container from "react-bootstrap/Container";
 import Loader from "react-loader-spinner";
 import MaterialTable from "material-table";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
 
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
