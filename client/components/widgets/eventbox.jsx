@@ -64,7 +64,9 @@ const EventBox = ({
   };
 
   useEffect(() => {
-    getUsers();
+    if (!viewMode) {
+      getUsers();
+    }
   }, []);
 
   useEffect(() => {
