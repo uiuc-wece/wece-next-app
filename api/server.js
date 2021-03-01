@@ -4,7 +4,7 @@ const cors = require("cors");
 const createError = require("http-errors");
 const express = require("express");
 const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
+const MongoStore = require("connect-mongo").default;
 const mongoose = require("mongoose");
 const passport = require("./passport/setup");
 
@@ -20,21 +20,21 @@ const port = process.env.PORT || 3003;
 const app = express();
 app.use(cookieParser("WECE"));
 app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  })
+    bodyParser.urlencoded({
+        extended: true,
+    })
 );
 app.use(bodyParser.json());
 app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 
 // Express Session
 app.use(
-  session({
-    secret: "WECE",
-    resave: false,
-    saveUninitialized: true,
-    store: new MongoStore({ mongooseConnection: mongoose.connection }),
-  })
+    session({
+        secret: "WECE",
+        resave: false,
+        saveUninitialized: true,
+        store: MongoStore.create({ mongoUrl: process.env.MONGODB_URL }),
+    })
 );
 
 // Passport middleware
@@ -45,24 +45,24 @@ app.use(passport.session());
 app.use("/api", router);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
-  next(createError(404));
+app.use(function(req, res, next) {
+    next(createError(404));
 });
 
 // error handler
-app.use(function (err, req, res) {
-  const INTERNAL_ERROR_CODE = 500;
+app.use(function(err, req, res) {
+    const INTERNAL_ERROR_CODE = 500;
 
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get("env") === "development" ? err : {};
 
-  // render the error page
-  res.status(err.status || INTERNAL_ERROR_CODE);
-  res.render(err);
+    // render the error page
+    res.status(err.status || INTERNAL_ERROR_CODE);
+    res.render(err);
 });
 
 app.listen(port, (err) => {
-  if (err) throw err;
-  console.log("Server running on port " + port);
+    if (err) throw err;
+    console.log("Server running on port " + port);
 });
