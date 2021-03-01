@@ -1,0 +1,99 @@
+{
+  "date": "030121",
+  "date_string": "March 1, 2021",
+  "events": [
+    {
+      "focus": true,
+      "title": "<h3>Create a WECE Account!</h3>\n",
+      "date_time": "",
+      "location": "",
+      "points": "",
+      "description": "WECE has a new account system on the website. Join to save events, earn points, and access members-only information. To join, click on the link below!\n<br/>\n<br/>\n<b>Incentives for WECE Members:</b>\n<br/>\n<ul>\n<li>5 points: WECE buttons</li>\n<li>7 points: WECE face masks</li>\n<li>10 points: WECE stickers</li>\n<li>15 points: WECE Bundle (WECE shirt + surprise gift)</li>\n<li>20 points: Invitation to a WECE banquet at the end of the year</li>\n<li>The member with the highest number of points by the end of the year will be receiving an invitation to whatever conference WECE is attending that year (whether it may be SWE's or Grace Hopper)</li>\n</ul>",
+      "buttons": [
+        {
+          "text": "Create an account",
+          "link": "https://wece.ece.illinois.edu/join"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE x NWHM x HKN : On the Topic of Feminism</h3>",
+      "date_time": "<h4>March 3, 3-4pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "This event is a part of WECE's National Woman's History Month Series. Join us and HKN as we discuss the topic of feminism!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/83440532268?pwd=V1I3L2JrOVJlTC9Ga2dBUGgzVmJLUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>Web Dev Team Meeting</h3>",
+      "date_time": "<h4>March 6, 1:30-2:30pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join our Web Dev Team meeting to continue with our Blog project! If you're new, join the #web-dev-team channel on Slack and email the Infrastructure Director, Eugenia, at eyc3@illinois.edu.",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/84434775535?pwd=U0tHU3VJMFBqV1hUSHNuRCtrOGk2QT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE x NWHM x HKN : On the Topic of Women in STEM</h3>",
+      "date_time": "<h4>March 10, 3-4pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "This event is a part of WECE's National Woman's History Month Series. Join us and IEEE as we discuss the topic of Women in STEM!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/88511969210?pwd=V0p2dDZTSUk2VXgxeEZrOStNd0djdz09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE x NWHM x iRobotics: On the Topic of Women's Issues</h3>",
+      "date_time": "<h4>March 17, 3-4pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "This event is a part of WECE's National Woman's History Month Series. Join us and iRobotics as we discuss the topic of women's issues!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/84899256965?pwd=UWxJZzNLc0VBRjdodFltM1dQSGtuQT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>March General Meeting</h3>",
+      "date_time": "<h4>March 17, 7-8pm</h4>",
+      "location": "",
+      "points": "<h5>3 points</h5>",
+      "description": "Join us during our March General Meeting and learn about what WECE has been up to!",
+      "buttons": []
+    }
+  ],
+  "other_announcements": [
+    {
+      "title": "Resume Book",
+      "description": "Looking for internships or full-time jobs? Add your resume to our WECE Resume database that we send to all our sponsors. Add it on  <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSe2FYMu-fS3zEB-byGCYTsWr8jcwMARagyIQu3EXnGJq8lybQ/viewform?usp=sf_link\" target=\"_blank\">this Google Form</a>!"
+    },
+    {
+      "title": "Alumni Database",
+      "description": "If you are an alumni, we would love to stay in contact with you! If you would like to help WECE with professional development and help our current members, please fill out <a href=\"https://forms.gle/ETuzRpH7d3fB91tp8\" target=\"_blank\">this form</a>!"
+    },
+    {
+      "title": "Join our WECE Slack Workspace",
+      "description": "WECE uses Slack as a way to streamline communication between WECE members and committees, as well as a place for important announcements and upcoming events! Join our general channel <a href=\"https://join.slack.com/t/wece-uiuc/shared_invite/zt-htevrvxw-UFc8p2zTKfp0r~qv~ho_ow\" target=\"_blank\">here</a>."
+    }
+  ]
+}
