@@ -1,9 +1,11 @@
 import React from "react";
 import EventCard from "../components/eventcard.jsx";
+import Provider from "./Provider.jsx";
 
 export default {
   title: "Components/EventCard",
   component: EventCard,
+  decorators: [(Story) => <Provider story={Story()} />],
 };
 
 const Template = (args) => <EventCard {...args} />;
