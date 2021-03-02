@@ -1,11 +1,14 @@
 import React from "react";
-import listOfTags from "../components/listOfTags.jsx";
+import ListOfTags from "../components/listOfTags.jsx";
 
 export default {
   title: "Components/listOfTags",
-  component: listOfTags,
+  component: ListOfTags,
 };
 
-const Template = (args) => <listOfTags {...args} />;
+const Template = (args) => <ListOfTags {...args} />;
 
 export const Primary = Template.bind({});
+Primary.args = {
+  words: ["Infrastructure", "Outreach", "Academic", "Marketing", "Mentorship", "Social", "Technical"]
+}
