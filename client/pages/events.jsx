@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import SectionHead from "../components/sectionhead";
 import EventBox from "../components/widgets/eventbox";
+import Calendar from "../components/widgets/calendar";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -44,13 +45,16 @@ export default function Events() {
               <Loader type="Oval" color="#ace8ac" height={50} width={50} />
             </div>
           ) : (
-            <EventBox
-              boxTitle={""}
-              events={events}
-              viewMode={true}
-              showSavedOnly={false}
-              handleUpdate={handleUpdate}
-            />
+            <>
+              <Calendar events={events} />
+              <EventBox
+                boxTitle={""}
+                events={events}
+                viewMode={true}
+                showSavedOnly={false}
+                handleUpdate={handleUpdate}
+              />
+            </>
           )}
         </Container>
       </div>
