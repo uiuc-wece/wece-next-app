@@ -1,49 +1,7 @@
 {
-  "date": "030121",
-  "date_string": "March 1, 2021",
+  "date": "030821",
+  "date_string": "March 8, 2021",
   "events": [
-    {
-      "focus": true,
-      "title": "<h3>Create a WECE Account!</h3>\n",
-      "date_time": "",
-      "location": "",
-      "points": "",
-      "description": "WECE has a new account system on the website. Join to save events, earn points, and access members-only information. To join, click on the link below!\n<br/>\n<br/>\n<b>Incentives for WECE Members:</b>\n<br/>\n<ul>\n<li>5 points: WECE buttons</li>\n<li>7 points: WECE face masks</li>\n<li>10 points: WECE stickers</li>\n<li>15 points: WECE Bundle (WECE shirt + surprise gift)</li>\n<li>20 points: Invitation to a WECE banquet at the end of the year</li>\n<li>The member with the highest number of points by the end of the year will be receiving an invitation to whatever conference WECE is attending that year (whether it may be SWE's or Grace Hopper)</li>\n</ul>",
-      "buttons": [
-        {
-          "text": "Create an account",
-          "link": "https://wece.ece.illinois.edu/join"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE x NWHM x HKN : On the Topic of Feminism</h3>",
-      "date_time": "<h4>March 3, 3-4pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "This event is a part of WECE's National Woman's History Month Series. Join us and HKN as we discuss the topic of feminism!",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/83440532268?pwd=V1I3L2JrOVJlTC9Ga2dBUGgzVmJLUT09"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>Web Dev Team Meeting</h3>",
-      "date_time": "<h4>March 6, 1:30-2:30pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Join our Web Dev Team meeting to continue with our Blog project! If you're new, join the #web-dev-team channel on Slack and email the Infrastructure Director, Eugenia, at eyc3@illinois.edu.",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/84434775535?pwd=U0tHU3VJMFBqV1hUSHNuRCtrOGk2QT09"
-        }
-      ]
-    },
     {
       "focus": false,
       "title": "<h3>WECE x NWHM x HKN : On the Topic of Women in STEM</h3>",
@@ -55,6 +13,34 @@
         {
           "text": "Zoom",
           "link": "https://illinois.zoom.us/j/88511969210?pwd=V0p2dDZTSUk2VXgxeEZrOStNd0djdz09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE T-shirt Design Contest - Facebook Launch</h3>",
+      "date_time": "<h4>March 11, 7-8pm</h4>",
+      "location": "",
+      "points": "<h5>1 point</h5>",
+      "description": "Show off your creativity and win the design for this year’s WECE t-shirt!!! Join our Facebook Live to learn more about how you can participate and earn points that could help you win free WECE merch! Contest details will be revealed at the event.",
+      "buttons": [
+        {
+          "text": "Facebook",
+          "link": "https://www.facebook.com/wece.uiuc"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>Web Dev Team Meeting</h3>",
+      "date_time": "<h4>March 13, 1:30-2:30pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join WECE's Web Dev Team meeting to continue working on our WECE Blog project! This week we will work on taking our HTML/CSS code and adding it to our website. If you are new, email Eugenia Chen at eugeniachen123@gmail.com to get started!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/81396327830?pwd=aGFXbk5iVlRIN01xbVROOG1uUnZ4QT09"
         }
       ]
     },
