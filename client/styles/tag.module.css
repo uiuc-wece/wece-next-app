@@ -1,4 +1,4 @@
-.tag_style {
+.tag {
   background: #eee;
   border-radius: 3px 0 0 3px;
   color: #999;
@@ -13,7 +13,7 @@
   -webkit-transition: color 0.2s;
 }
 
-.tag_style::after {
+.tag::after {
   background: #fff;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
@@ -24,12 +24,12 @@
   top: 0;
 }
 
-.tag_style:hover {
+.tag:hover {
   background-color: var(--accent-color-shadow);
   color: white !important;
 }
 
-.tag_style:hover::after {
+.tag:hover::after {
    border-left-color: var(--accent-color-shadow);
 
 }
