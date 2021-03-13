@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const CommentsSchema = new mongoose.Schema({
+export const CommentsSchema = new mongoose.Schema({
+  authorID: { type: String },
   author: { type: String },
   date: { type: Date, default: Date.now() },
   profile_pic:  { 
@@ -11,6 +12,7 @@ const CommentsSchema = new mongoose.Schema({
 
 var FeedpostSchema = new mongoose.Schema({
   title: { type: String },
+  authorID: { type: String },
   author: { type: String },
   date: { type: Date, default: Date.now() },
   profile_pic: { 
