@@ -1,46 +1,18 @@
 {
-  "date": "030821",
-  "date_string": "March 8, 2021",
+  "date": "031621",
+  "date_string": "March 16, 2021",
   "events": [
     {
       "focus": false,
-      "title": "<h3>WECE x NWHM x HKN : On the Topic of Women in STEM</h3>",
-      "date_time": "<h4>March 10, 3-4pm</h4>",
+      "title": "<h3>ECExperience</h3>",
+      "date_time": "<h4>March 15-19</h4>",
       "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "This event is a part of WECE's National Woman's History Month Series. Join us and IEEE as we discuss the topic of Women in STEM!",
+      "points": "",
+      "description": "This week, Monday 15th through Friday 19th, we will be hosting some virtual social events within the ECE community! Join us on discord to stay up to date with events and see below for more info!",
       "buttons": [
         {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/88511969210?pwd=V0p2dDZTSUk2VXgxeEZrOStNd0djdz09"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE T-shirt Design Contest - Facebook Launch</h3>",
-      "date_time": "<h4>March 11, 7-8pm</h4>",
-      "location": "",
-      "points": "<h5>1 point</h5>",
-      "description": "Show off your creativity and win the design for this year’s WECE t-shirt!!! Join our Facebook Live to learn more about how you can participate and earn points that could help you win free WECE merch! Contest details will be revealed at the event.",
-      "buttons": [
-        {
-          "text": "Facebook",
-          "link": "https://www.facebook.com/wece.uiuc"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>Web Dev Team Meeting</h3>",
-      "date_time": "<h4>March 13, 1:30-2:30pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Join WECE's Web Dev Team meeting to continue working on our WECE Blog project! This week we will work on taking our HTML/CSS code and adding it to our website. If you are new, email Eugenia Chen at eugeniachen123@gmail.com to get started!",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/81396327830?pwd=aGFXbk5iVlRIN01xbVROOG1uUnZ4QT09"
+          "text": "Discord",
+          "link": "https://discord.gg/Aed5ntpm"
         }
       ]
     },
@@ -66,6 +38,34 @@
       "points": "<h5>3 points</h5>",
       "description": "Join us during our March General Meeting and learn about what WECE has been up to!",
       "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>Game Night with WiCys</h3>",
+      "date_time": "<h4>March 18, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "We’re going to be playing CodeNames, where you will team up with some other people to uncover your team words, and Bomb Party, where you will use your vocabulary to play hot potato. Come join us for a great time and great people!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/82158238639?pwd=YU9yT2NBOW1OeUo0QVMzNmVyMW5Bdz09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>Lean in: Balanced Lifestyle</h3>",
+      "date_time": "<h4>March 23, 5:30-6:30pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join WECE for a conversation about balanced lifestyles and prioritization.",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/84018751814?pwd=R0xMZ2Y2MklkejMvZVVCaFM0Qlo5QT09"
+        }
+      ]
     }
   ],
   "other_announcements": [
