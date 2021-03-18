@@ -3,11 +3,12 @@ import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Forms.module.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 import { base_url } from "../constants.js";
 
@@ -16,6 +17,12 @@ export default function Join() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [modalSubscribed, setModalSubscribed] = useState(false);
+  const [modalError, setModalError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const toggleSubscribed = () => setModalSubscribed(!modalSubscribed);
+  const toggleError = () => setModalError(!modalError);
 
   const handleSubmit = (event) => {
     const url = base_url + "/subscriber";
@@ -34,18 +41,18 @@ export default function Join() {
       inputs.forEach((input) => (input.disabled = true));
 
       const postJoinRequest = async () => {
-        const result = await axios
+        await axios
           .post(url, {
             firstName: firstName,
             lastName: lastName,
             email: email,
           })
           .then((response) => {
-            alert("You have been subscribed to the newsletter. Thanks!");
-            console.log(response);
+            toggleSubscribed();
           })
           .catch((error) => {
-            alert("Error: " + error.message);
+            setErrorMessage(error.message);
+            toggleError();
           })
           .finally(() => {
             inputs.forEach((input) => (input.disabled = false));
@@ -166,6 +173,16 @@ export default function Join() {
                 Submit
               </Button>
             </Form>
+            <Modal show={modalSubscribed} onHide={toggleSubscribed}>
+              <Modal.Header closeButton>Successfully subscribed</Modal.Header>
+              <Modal.Body>
+                Thank you for subscribing to the WECE newsletter!
+              </Modal.Body>
+            </Modal>
+            <Modal show={modalError} onHide={toggleError}>
+              <Modal.Header closeButton>Error subscribing</Modal.Header>
+              <Modal.Body>{errorMessage}</Modal.Body>
+            </Modal>
           </SectionBody>
         </Container>
       </div>
