@@ -76,6 +76,8 @@
 }
 
 .title {
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
   padding: 5vw;
   position: relative;
@@ -83,16 +85,17 @@
 }
 
 .front-img {
-  display: flex;
-  justify-content: center;
-}
-
-.front-img > img {
+  height: 100%;
   max-width: 50vw;
 }
 
+.front-img > img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 700px) {
-  .front-img > img {
+  .front-img {
     max-width: 28vw;
   }
 }

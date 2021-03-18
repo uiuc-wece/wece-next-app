@@ -1,19 +1,35 @@
-.button {
-    padding-top: 2vw;
-    text-align: center;
-  }
-  
-  .link-btn {
-    padding: 1.5vw 3vw;
-    background-color: var(--accent-color);
-    color: var(--light-text-color);
-    border-radius: 2vw;
-    font-family: "IBM Plex Mono";
-    font-size: 3vw;
-  }
-  
-  .link-btn:hover {
-    color: var(--light-text-color);
-    background-color: var(--accent-color-shadow);
-    text-decoration: none;
-  }
+.tag_style {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 15px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag_style::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag_style:hover {
+  background-color: var(--accent-color-shadow);
+  color: white !important;
+}
+
+.tag_style:hover::after {
+   border-left-color: var(--accent-color-shadow);
+
+}

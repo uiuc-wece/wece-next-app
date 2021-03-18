@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node -r dotenv/config server.js -p $PORT",
+    "start": "next",
     "export": "next export",
     "storybook": "start-storybook -p 6006 -s ./ --no-dll",
     "build-storybook": "build-storybook --no-dll"
