@@ -1,11 +1,10 @@
-import styles from "../styles/listOfTags.module.css";
+import styles from "../styles/ListOfTags.module.css";
 import React from "react";
 import Tag from "./tag";
-import listOfTagsStories from "../stories/ListOfTags.stories";
 
 export default function ListOfTags({words}) {
   return(
-    <div className={styles["list_style"]}>
+    <div className={styles["list"]}>
       {
         words.map(word => <Tag word={word}> </Tag>)
       }

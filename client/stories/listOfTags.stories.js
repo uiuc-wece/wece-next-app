@@ -2,7 +2,7 @@ import React from "react";
 import ListOfTags from "../components/listOfTags.jsx";
 
 export default {
-  title: "Components/listOfTags",
+  title: "Components/ListOfTags",
   component: ListOfTags,
 };
 
