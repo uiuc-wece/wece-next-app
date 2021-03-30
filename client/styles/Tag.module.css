@@ -1,7 +1,7 @@
 .tag {
   background: #eee;
   border-radius: 3px 0 0 3px;
-  color: #999;
+  color: var(--dark-background-color) !important;
   font-family: "IBM Plex Mono", monospace;
   display: inline-block;
   height: 26px;
@@ -14,7 +14,7 @@
 }
 
 .tag::after {
-  background: #fff;
+  background: var(--dark-background-color);
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
   border-top: 13px solid transparent;
@@ -26,7 +26,7 @@
 
 .tag:hover {
   background-color: var(--accent-color-shadow);
-  color: white !important;
+  color: white;
 }
 
 .tag:hover::after {
