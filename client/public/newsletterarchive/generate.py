@@ -1146,6 +1146,9 @@ for idx, event in enumerate(events):
   focus = data["events"][idx]["focus"]
 
   if focus:
+    if event_ct != 0:
+      events_string += """                                  </div>
+      """
     events_string += """                                  <div class="row">
     """
     events_string += event
