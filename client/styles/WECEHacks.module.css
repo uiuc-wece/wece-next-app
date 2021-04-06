@@ -1,0 +1,230 @@
+.side-nav {
+  text-transform: uppercase;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 128px;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  color: #E88FF7;
+  cursor: pointer;
+}
+
+.side-nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+}
+
+.side-nav-item:focus {
+  outline: 0;
+}
+
+.side-nav .active .circle {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.side-nav .active p {
+  color: #fff;
+}
+
+.side-nav-item:hover .circle {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.side-nav-item:hover p {
+  color: #fff;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border: 2px solid #E88FF7;
+  transition: all 0.2s;
+}
+
+.side-nav-item p {
+  margin: 0;
+  margin-right: 10px;
+  width: fit-content;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+  .side-nav {
+    margin-right: 64px;
+  }
+
+  .side-nav-item p {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .side-nav {
+    display: none;
+  }
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.half-screen {
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .half-screen {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .half-screen {
+    padding-right: 0px;
+  }
+}
+
+.lettering-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+.wece {
+  font-family: 'Train One', cursive;
+  color: #E88FF7;
+  text-shadow: 0 0 3vw #A276A9;
+}
+
+.wece h1 {
+  font-size: 5em !important;
+}
+
+@media screen and (max-width: 600px) {
+  .wece h1 {
+    font-size: 3em !important;
+  }
+}
+
+.wece {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #A274DD, 0 0 3vw #A274DD, 0 0 10vw #A274DD, 0 0 10vw #A274DD, 0 0 .4vw #E88FF7, .5vw .5vw .1vw #A274DD;
+    color: #E88FF7;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #7646B4, 0 0 1.5vw #7646B4, 0 0 5vw #7646B4, 0 0 5vw #7646B4, 0 0 .2vw #7646B4, .5vw .5vw .1vw #A276A9;
+    color: #A276A9;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.hacks {
+  font-family: 'Fredoka One', cursive;
+  color: #2365C0;
+  text-shadow: 0 0 3vw #1856AC;
+}
+
+.hacks h1 {
+  font-size: 3em !important;
+}
+
+@media screen and (max-width: 600px) {
+  .hacks h1 {
+    font-size: 1.5em !important;
+  }
+}
+
+.hacks {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #2365C0, 0 0 3vw #2365C0, 0 0 10vw #2365C0, 0 0 10vw #2365C0, 0 0 .4vw #8EDBFF, .5vw .5vw .1vw #48A1CB;
+    color: #8EDBFF;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #19437C, 0 0 1.5vw #19437C, 0 0 5vw #19437C, 0 0 5vw #19437C, 0 0 .2vw #19437C, .5vw .5vw .1vw #284E82;
+    color: #48A1CB;
+  }
+}
+
+.caption {
+  margin-top: 20px;
+  color: #7F7092;
+}
+
+@media screen and (max-width: 600px) {
+  .caption h6 {
+    font-size: .7em;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.blue-section {
+  background-color: #8EDBFF;
+}
+
+.title {
+  font-family: 'Train One', cursive;
+  font-size: 2em;
+  margin: 1em;
+  letter-spacing: 0.15em;
+  color: #8EDBFF;
+  text-shadow: 0 0 1vw #2365C0, 0 0 3vw #2365C0, 0 0 10vw #2365C0, 0 0 10vw #2365C0, 0 0 .4vw #8EDBFF, .5vw .5vw .1vw #48A1CB;
+}
+
+.text-box {
+  background-color: #7F7092;
+  color: #1B1523;
+  width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .text-box {
+    width: 80%;
+  }
+}
