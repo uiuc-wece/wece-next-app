@@ -5,6 +5,7 @@ import CustomNavbar from "./nav";
 
 export default function Layout({
   children,
+  background_color = "#022b3a",
   title = "Women in ECE | University of Illinois at Urbana-Champaign",
 }) {
   return (
@@ -24,9 +25,11 @@ export default function Layout({
           crossOrigin="anonymous"
         />
       </Head>
-      <div className="page">
+      <div className="page" style={{ backgroundColor: background_color }}>
         <div id="container">
-          <CustomNavbar></CustomNavbar>
+          <CustomNavbar
+            background_color={background_color}
+          ></CustomNavbar>
           {children}
           <Footer></Footer>
         </div>
