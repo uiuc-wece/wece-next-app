@@ -1,41 +1,9 @@
 {
-  "date": "033021",
-  "date_string": "March 30, 2021",
+  "date": "040621",
+  "date_string": "April 6, 2021",
   "events": [
     {
-      "focus": false,
-      "title": "<h3>WECE x NWHM x ECESAC: On the Topic of Women's Intersectionality</h3>",
-      "date_time": "<h4>March 31, 3-4pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "This event is a part of WECE's National Woman's History Month Series. Join us and ECESAC as we discuss the topic of a Women's Intersectionality!",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/89796741708?pwd=UTJ5VDdjUkRpMmNIUTV2WnRLaExQZz09"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>DIY Stickers w/Mentorship Committee</h3>",
-      "date_time": "<h4>April 3, 3-4pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Feeling stressed about school and want a mental health break? Join the Mentorship committee for a DIY stickers event! We will be sending out sticker paper and other supplies so you can destress and talk while make cute stickers! It's a win-win.",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/88044061654?pwd=MHBiMFJCM2dWNFRTSjlVRGRucnZqZz09"
-        },
-        {
-          "text": "Campus Groups",
-          "link": "http://cglink.me/2ek/r1047448"
-        }
-      ]
-    },
-    {
-      "focus": false,
+      "focus": true,
       "title": "<h3>WECE Bloom</h3>",
       "date_time": "<h4>April 9, 3:30-5pm</h4>",
       "location": "",

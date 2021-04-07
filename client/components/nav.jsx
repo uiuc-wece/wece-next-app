@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { logout } from "../apihelper.js";
 
-const CustomNavbar = () => {
+const CustomNavbar = ({ background_color = "#022b3a"}) => {
   const authenticated = useSelector((state) => state.authenticated);
   const firstName = useSelector((state) => state.firstName);
 
@@ -24,6 +24,7 @@ const CustomNavbar = () => {
         expand="lg"
         fixed="top"
         className={styles["navbar"]}
+        style={{backgroundColor: background_color}}
       >
         <div className={styles["left-navbar"]}>
           <Navbar.Brand href="/" className={styles["wece-brand"]}>

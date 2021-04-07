@@ -1,6 +1,6 @@
 .navbar {
   color: #dee3e3 !important;
-  background-color: var(--dark-text-color) !important;
+  background-color: var(--dark-text-color);
   font-family: "IBM Plex Mono";
   font-size: 0.8em;
   border-bottom: 2px solid var(--accent-2-color);
