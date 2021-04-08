@@ -260,6 +260,19 @@ export default function WECEHacks() {
                 Yes! This hackathon is open to everyone. If you enjoy it, we
                 encourage you to stop by some of our other WECE events.
               </p>
+              <br />
+              <p>
+                <b>Can I still sign up if I don't have a team?</b>
+              </p>
+              <p>
+                Yes! We will have team-matching for those who sign up
+                individually.
+              </p>
+              <br />
+              <p>
+                <b>When is the deadline to sign up?</b>
+              </p>
+              <p>Please register by April 24th at 11:59PM CST.</p>
             </div>
           </div>
         </Element>
