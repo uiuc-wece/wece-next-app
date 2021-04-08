@@ -1,18 +1,31 @@
-import {
-  Link,
-  Element,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll"
-import {useEffect} from "react";
+import { Link, Element, scrollSpy } from "react-scroll";
+import { ReactTypeformEmbed } from "react-typeform-embed";
+import { useEffect, useState, useCallback } from "react";
 import Layout from "../components/layout";
 import styles from "../styles/WECEHacks.module.css";
 
+import Button from "react-bootstrap/Button";
 
 export default function WECEHacks() {
+  const [typeForm, setTypeForm] = useState(null);
+
   useEffect(() => {
     scrollSpy.update();
-  }, [])
+  }, []);
+
+  const typeFormRef = useCallback((tf) => {
+    console.log(tf);
+    if (tf !== null) {
+      setTypeForm(tf);
+    }
+  }, []);
+
+  const openForm = () => {
+    console.log("click");
+    if (typeForm) {
+      typeForm.typeform.open();
+    }
+  };
 
   return (
     <Layout background_color="#362C43">
@@ -78,6 +91,15 @@ export default function WECEHacks() {
           <div className={styles["circle"]} />
         </Link>
       </div>
+      <ReactTypeformEmbed
+        style={{ display: "none" }}
+        popup
+        autoOpen={false}
+        url="https://1z0014l9lxo.typeform.com/to/zhtdsCmx"
+        hideHeaders
+        hideFooter
+        ref={typeFormRef}
+      />
       <div className={styles["pages"]}>
         <Element name="home" className={styles["section"]}>
           <div className={styles["lettering-wrapper"]}>
@@ -151,7 +173,13 @@ export default function WECEHacks() {
         >
           <div className={styles["section-content"]}>
             <div className={styles["title"]}>sign up</div>
-            <div className={styles["text-box"]}>Sign up</div>
+            <Button
+              variant="lights"
+              className={styles["button"]}
+              onClick={openForm}
+            >
+              Register now
+            </Button>
           </div>
         </Element>
         <Element
@@ -160,7 +188,23 @@ export default function WECEHacks() {
         >
           <div className={styles["section-content"]}>
             <div className={styles["title"]}>faq</div>
-            <div className={styles["text-box"]}>Sign up</div>
+            <div className={styles["text-box"]}>
+              <p>
+                <b>Will the event be virtual?</b>
+              </p>
+              <p>
+                Yes! The event will be hosted entirely on Discord, so you can
+                join from wherever you are.
+              </p>
+              <br />
+              <p>
+                <b>Can I join if I'm not in WECE?</b>
+              </p>
+              <p>
+                Yes! This hackathon is open to everyone. If you enjoy it, we
+                encourage you to stop by some of our other WECE events.
+              </p>
+            </div>
           </div>
         </Element>
       </div>
