@@ -217,10 +217,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 
-.blue-section {
-  background-color: #8edbff;
-}
-
 .title {
   font-family: "Train One", cursive;
   font-size: 2em;
@@ -232,8 +228,8 @@
 }
 
 .text-box {
-  background-color: #7f7092;
-  color: #1b1523;
+  background-color: #534566;
+  color: #efe8f8;
   width: 50%;
   padding: 20px;
   border-radius: 8px;
@@ -264,4 +260,23 @@
 .button:focus,
 .button:active {
   background-color: #a276a9;
+}
+
+.about-icon-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-icon-wrapper {
+  margin: 8px;
+}
+
+.about-icon img {
+  width: 60px;
+}
+
+.about-icon-text {
+  width: 100px;
+  margin-top: 8px;
+  font-weight: 600;
 }
