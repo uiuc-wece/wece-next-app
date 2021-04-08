@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import styles from "../styles/WECEHacks.module.css";
 
 import Button from "react-bootstrap/Button";
+import CustomCursor from "custom-cursor-react";
+import "custom-cursor-react/dist/index.css";
 
 export default function WECEHacks() {
   const [typeForm, setTypeForm] = useState(null);
@@ -29,7 +31,18 @@ export default function WECEHacks() {
 
   return (
     <Layout background_color="#362C43">
-      <div className={styles["side-nav"]}>
+      <CustomCursor
+        customClass={styles["cursor"]}
+        targets={["#nav", "#button"]}
+        targetScale={2}
+        dimensions={8}
+        strokeColor="#8edbff"
+        strokeWidth={8}
+        fill="#D7F2FF"
+        smoothness={{ movement: 1, scale: 0.6, opacity: 0.8 }}
+        opacity={1}
+      />
+      <div id="nav" className={styles["side-nav"]}>
         <Link
           to="home"
           activeClass={styles["active"]}
@@ -174,6 +187,7 @@ export default function WECEHacks() {
           <div className={styles["section-content"]}>
             <div className={styles["title"]}>sign up</div>
             <Button
+              id="button"
               variant="lights"
               className={styles["button"]}
               onClick={openForm}

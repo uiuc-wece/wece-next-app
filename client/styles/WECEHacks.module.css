@@ -1,3 +1,10 @@
+.cursor {
+  border-radius: 100%;
+  box-shadow: 0 0 1.5rem #48a1cb, 0 0 1rem #48a1cb, 0 0 0.2rem #48a1cb,
+    0 0 0.4rem #48a1cb;
+  color: #d7f2ff;
+}
+
 .side-nav {
   text-transform: uppercase;
   position: fixed;
@@ -8,7 +15,7 @@
   font-size: 0.8em;
   letter-spacing: 0.1em;
   color: #e88ff7;
-  cursor: pointer;
+  cursor: none;
 }
 
 .side-nav-item {
@@ -71,6 +78,10 @@
   .side-nav {
     display: none;
   }
+}
+
+.pages {
+  cursor: none;
 }
 
 .section {
@@ -246,6 +257,7 @@
   background-color: #e88ff7;
   color: #1b1523;
   border: none;
+  cursor: none !important;
 }
 
 .button:hover,
