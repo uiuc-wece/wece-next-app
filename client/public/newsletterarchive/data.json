@@ -1,85 +1,20 @@
 {
-  "date": "041221",
-  "date_string": "April 12, 2021",
+  "date": "041321",
+  "date_string": "April 13, 2021",
   "events": [
     {
-      "focus": false,
+      "focus": true,
       "title": "<h3>WECE Exec Board Applications</h3>",
-      "date_time": "<h4>Deadline: April 13th at 11:59pm</h4>",
+      "date_time": "<h4>Deadline: TONIGHT, April 13th at 11:59pm</h4>",
       "location": "",
       "points": "",
-      "description": "Apply to be a part of our executive board for 2021-2022! We are looking for a president, 2 external vice presidents, internal vice president, treasurer, and secretary! Experience on WECE board or recommendation from the current board is recommended.",
+      "description": "Apply to be a part of our executive board for 2021-2022! We are looking for a president, 2 external vice presidents, internal vice president, treasurer, and secretary! Experience on WECE board or recommendation from the current board is recommended. Please apply if you are interested in expanding your leadership capabilities and being more invovled in WECE!",
       "buttons": [
         {
           "text": "Apply",
           "link": "https://docs.google.com/forms/d/e/1FAIpQLSdsPiKGU2Wf1NIZIw1Pd7OD5XPBEJlEBDsK43dZiGVDyPbYGA/viewform"
         }
       ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE Board Applications</h3>",
-      "date_time": "<h4>Deadline: April 25th at 11:59pm</h4>",
-      "location": "",
-      "points": "",
-      "description": "Join the WECE board and head one of our committees! Our director positions are for Academic, Infrastructure, Marketing, Mentorship, Outreach, Social, and Technical.",
-      "buttons": [
-        {
-          "text": "Apply",
-          "link": "https://docs.google.com/document/d/1mE3lb9M6mz9__yokFEBzkIJiYGZqgdS01JH0THZN5dA/edit?fbclid=IwAR3ZtPXsTF5YsJm-KVvNxaKfdUy4_uAlcG1Q3CrX_iyMY8O492Ulc5lOmxk#heading=h.6vuxbrz4my2i"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>Web Dev Team Meeting</h3>",
-      "date_time": "<h4>April 17, 1:30-2:30pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Join the WECE Web Dev Team meeting to see everyone's progress on the blog project!",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/84263696379?pwd=bkVFTytEb0pwT1NrU3F6Q2ZRSXhrdz09"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE April General Meeting</h3>",
-      "date_time": "<h4>April 21, 7-8pm</h4>",
-      "location": "",
-      "points": "<h5>3 points</h5>",
-      "description": "Join us for our April GM for our event announcements and exciting news about the end of the year for WECE!",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/84156569280?pwd=dVRTYUpibVYwVzZMeW5lMVBybWRBUT09"
-        }
-      ]
-    },
-    {
-      "focus": true,
-      "title": "<h3>Spotify Data Investigation with Python</h3>",
-      "date_time": "<h4>April 20, 5-6:30pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Curious about how spotify wrapped makes its conclusions? Want to delve deeper into your music history? Or just want to delve deeper into python and turning large data files into meaningful conclusions? Join us for the Spotify Data Investigation workshop! If you want to learn about your own spotify listening history, we recommend you request your data through settings in advance, as it can take up to 30 days for spotify to send you the data. Don't worry, we will have sample datasets during the workshop so if you do not use spotify or your data hasn't been sent yet you can still learn, and just use the programs we develop on your data later!",
-      "buttons": [
-        {
-          "text": "Campus Groups",
-          "link": "http://cglink.me/2ek/r1060424"
-        }
-      ]
-    },
-    {
-      "focus": true,
-      "title": "<h3>WECE Week</h3>",
-      "date_time": "<h4>April 26-May 1</h4>",
-      "location": "",
-      "points": "",
-      "description": "<b>Monday (Mentorship) April 26th:</b><br/>Lean-in: Reflecting on a Unique Year @11am-12pm CST<br/><br/>Virtual escape room @6-7pm CST<br/><br/><b>Tuesday (Technical) April 27th:</b><br/>Introduction to Hackathons Workshop @5-6pm CST<br/><br/><b>Wednesday (Academic) April 28th:</b><br/>ECE Advising Presentation & Q/A @5-6PM CST<br/><br/><b>Thursday (Marketing) April 29th:</b><br/>Fun presentation! @6-7 PM CST<br/><br/><b>Friday (Social) April 30th:</b><br/>WECE Spring Family Feud @4-5pm CST<br/><br/><b>Saturday (Infrastructure) May 1st:</b><br/>Hackathon @9am-9pm CST",
-      "buttons": []
     }
   ],
   "other_announcements": [
