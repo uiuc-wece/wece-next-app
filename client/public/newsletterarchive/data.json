@@ -1,20 +1,116 @@
 {
-  "date": "041321",
-  "date_string": "April 13, 2021",
+  "date": "041921",
+  "date_string": "April 19, 2021",
   "events": [
     {
       "focus": true,
-      "title": "<h3>WECE Exec Board Applications</h3>",
-      "date_time": "<h4>Deadline: TONIGHT, April 13th at 11:59pm</h4>",
+      "title": "<h3>WECE Board Applications</h3>",
+      "date_time": "<h4>Deadline: April 25th at 11:59pm</h4>",
       "location": "",
       "points": "",
-      "description": "Apply to be a part of our executive board for 2021-2022! We are looking for a president, 2 external vice presidents, internal vice president, treasurer, and secretary! Experience on WECE board or recommendation from the current board is recommended. Please apply if you are interested in expanding your leadership capabilities and being more invovled in WECE!",
+      "description": "Join the WECE board and head one of our committees! Our director positions are for Academic, Infrastructure, Marketing, Mentorship, Outreach, Social, and Technical committees. If you are looking to gain leadership experience, be more involved in WECE, and make a difference in the ECE community, we highly encourage you to apply! If you have any questions on what being a director is like, feel free to message any of the current directors on Slack.",
       "buttons": [
         {
           "text": "Apply",
-          "link": "https://docs.google.com/forms/d/e/1FAIpQLSdsPiKGU2Wf1NIZIw1Pd7OD5XPBEJlEBDsK43dZiGVDyPbYGA/viewform"
+          "link": "https://docs.google.com/document/d/1mE3lb9M6mz9__yokFEBzkIJiYGZqgdS01JH0THZN5dA/edit?fbclid=IwAR3ZtPXsTF5YsJm-KVvNxaKfdUy4_uAlcG1Q3CrX_iyMY8O492Ulc5lOmxk#heading=h.6vuxbrz4my2i"
         }
       ]
+    },
+    {
+      "focus": true,
+      "title": "<h3>Spotify Data Investigation with Python</h3>",
+      "date_time": "<h4>April 20, 5-6:30pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Curious about how spotify wrapped makes its conclusions? Want to delve deeper into your music history? Or just want to delve deeper into python and turning large data files into meaningful conclusions? Join us for the Spotify Data Investigation workshop! If you want to learn about your own spotify listening history, we recommend you request your data through settings in advance, as it can take up to 30 days for spotify to send you the data. Don't worry, we will have sample datasets during the workshop so if you do not use spotify or your data hasn't been sent yet you can still learn, and just use the programs we develop on your data later!",
+      "buttons": [
+        {
+          "text": "Campus Groups",
+          "link": "http://cglink.me/2ek/r1060424"
+        }
+      ]
+    },
+    {
+      "focus": true,
+      "title": "<h3>WECE Hacks</h3>",
+      "date_time": "<h4>May 1, 9am-9pm; Deadline to apply: <b>April 24, 11:59pm</b></h4>",
+      "location": "",
+      "points": "<h5>4 points</h5>",
+      "description": "WECE is having our first-ever virtual hackathon focused on web development. WECE Hacks will be a day filled with workshops, mentorship, social events, team-bonding, and more! Join for our bootcamp to attend workshops and social events without submitting a project for the competition, or sign up with a team to compete in either the beginner or intermediate divisions for the hackathon. The mission of this event is to empower women in our community who might otherwise face barriers to entry in other hackathons, but we open this hackathon to all UIUC students. See you there!",
+      "buttons": [
+        {
+          "text": "Our website",
+          "link": "https://wece.ece.illinois.edu/wecehacks"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE April General Meeting</h3>",
+      "date_time": "<h4>April 21, 7-8pm</h4>",
+      "location": "",
+      "points": "<h5>3 points</h5>",
+      "description": "Join us for our April GM for our event announcements and exciting news about the end of the year for WECE!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/84156569280?pwd=dVRTYUpibVYwVzZMeW5lMVBybWRBUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Lean In; Reflecting on a New Year</h3>",
+      "date_time": "<h4>April 26, 11am-12pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join us as we reflect on one of the most unique years any of us have had.",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Virtual Escape Room</h3>",
+      "date_time": "<h4>April 26, 6-7pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "During this event, attendees will be put in a group to try to get out of a virtual escape room!",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Intro to Hackathons Workshop</h3>",
+      "date_time": "<h4>April 27, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "This workshop led by our technical committee is aimed towards beginners interested in getting involved in hackathons. During the workshop we will be doing a brainstorming exercise to get us prepared for WECE Hacks. This event is also a great place to meet future group members!",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: ECE Advising Presentation + Q & A</h3>",
+      "date_time": "<h4>April 28, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Ask our resident advisor Joan Brown, as well as other advisors in ECE, all of your questions! We will be discussing what classes to take, how to spend your summer being productive, covid pass/no pass, and research opportunities.",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Fun Presentations!</h3>",
+      "date_time": "<h4>April 29, 6-7pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join the marketing committee in making fun presentations about crazy conspiracies!!",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Family Feud</h3>",
+      "date_time": "<h4>April 29, 4-5pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "After collecting student responses, we will be competing in a family feud event to see who know ECE Illinois best!",
+      "buttons": []
     }
   ],
   "other_announcements": [
