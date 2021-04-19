@@ -10,7 +10,7 @@
 
 .header {
   font-family: "IBM Plex Mono";
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -18,66 +18,68 @@
 .featured-post {
   margin: auto;
   margin-bottom: 20px;
-  width: 1000px;
-  max-width: 80vw;
-  height: 600px;
+  width: 100%;
+  border-radius: 16px;
   background-color: var(--accent-color);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
-@media only screen and (max-width: 1400px) {
-  .featured-post {
-    width: 800px;
-    height: 500px;
-  }
+.featured-post .tag h3 {
+  font-size: 12px !important;
+  margin-bottom: 16px;
+  width: fit-content;
+  background-color: var(--accent-text-color);
+  padding: 2px 16px;
+  border-radius: 16px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .featured-post {
-    width: 600px;
-    height: 500px;
-  }
+.featured-post .content {
+  width: 100%;
+  height: 100%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
 }
 
-@media only screen and (max-width: 600px) {
-  .featured-post {
-    width: 500px;
-    height: 400px;
-  }
+.featured-post .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media only screen and (max-width: 480px) {
-  .featured-post {
-    width: 300px;
-    height: 200px;
-  }
+.featured-post .text {
+  padding: 16px;
 }
 
-@media only screen and (max-width: 480px) {
-  .featured-post {
-    width: 280px;
-    height: 200px;
-  }
+.featured-post .heading {
+  margin-bottom: 8px;
 }
 
-@media only screen and (max-width: 400px) {
-  .featured-post {
-    width: 240px;
-    height: 200px;
-  }
+.featured-post .author h5 {
+  font-size: 16px !important;
+  color: var(--dark-text-color);
+  margin-bottom: 16px;
 }
 
-@media only screen and (max-width: 350px) {
-  .featured-post {
-    width: 200px;
-    height: 100px;
-  }
+.featured-post .description p {
+  color: var(--dark-text-color);
+  font-size: 14px !important;
 }
 
-@media only screen and (max-width: 300px) {
-  .featured-post {
-    width: 170px;
-    height: 100px;
-  }
+.featured-post .read-more {
+  color: var(--accent-color-light);
+  font-size: 14px;
+  width: fit-content;
+}
+
+.featured-post .read-more-arrow {
+  color: var(--accent-color-light);
+  font-size: 16px;
+  margin-left: 4px;
 }
 
 .searchbar {
@@ -120,8 +122,62 @@
 
 .post {
   width: 100%;
-  height: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: var(--accent-2-color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: var(--accent-2-color-shadow);
+}
+
+.post .tag h3 {
+  display: inline-block;
+  font-size: 12px !important;
+  margin-bottom: 16px;
+  width: fit-content;
+  background-color: var(--accent-2-text-color);
+  padding: 2px 16px;
+  border-radius: 16px;
+  margin-right: 4px;
+}
+
+.post .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.post .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post .text {
+  padding: 16px;
+}
+
+.post .heading {
+  margin-bottom: 8px;
+}
+
+.post .author h5 {
+  font-size: 16px !important;
+  color: var(--dark-text-color);
+  margin-bottom: 16px;
+}
+
+.post .description p {
+  color: var(--dark-text-color);
+  font-size: 14px !important;
+}
+
+.post .read-more {
+  color: var(--accent-2-color-light);
+  font-size: 14px;
+  width: fit-content;
+}
+
+.post .read-more-arrow {
+  color: var(--accent-2-color-light);
+  font-size: 16px;
+  margin-left: 4px;
 }
