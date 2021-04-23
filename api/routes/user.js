@@ -205,6 +205,43 @@ async function attendEvent(req, res, next) {
   return res.status(404).send(new Error("Not logged in."));
 }
 
+async function addPointsManually(req, res, next) {
+  const userId = req.params.id;
+  const { email, eventId } = req.body;
+
+  try {
+    const event = await Event.findById(eventId);
+    const points = event.points;
+    const user = await User.findById(userId);
+
+    if (user.eventsAttended) {
+      if (!user.eventsAttended.includes(eventId)) {
+        user.eventsAttended.push(eventId);
+        user.totalPoints += points;
+        await user.save();
+      }
+    } else {
+      user.eventsAttended = [eventId];
+      user.totalPoints += points;
+      await user.save();
+    }
+
+    if (event.attendees) {
+      if (!event.attendees.includes(email)) {
+        event.attendees.push(email);
+        await event.save();
+      }
+    } else {
+      event.attendees = [email];
+      await event.save();
+    }
+
+    return res.status(200).send("Points added.");
+  } catch (err) {
+    return res.status(500).send(err);
+  }
+}
+
 module.exports = {
   getAllUsers,
   getUser,
@@ -216,4 +253,5 @@ module.exports = {
   saveEventToUser,
   removeEventFromUser,
   attendEvent,
+  addPointsManually,
 };
