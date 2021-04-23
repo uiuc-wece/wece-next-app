@@ -1,6 +1,6 @@
 {
-  "date": "041921",
-  "date_string": "April 19, 2021",
+  "date": "042321",
+  "date_string": "April 23, 2021",
   "events": [
     {
       "focus": true,
@@ -13,20 +13,6 @@
         {
           "text": "Apply",
           "link": "https://docs.google.com/document/d/1mE3lb9M6mz9__yokFEBzkIJiYGZqgdS01JH0THZN5dA/edit?fbclid=IwAR3ZtPXsTF5YsJm-KVvNxaKfdUy4_uAlcG1Q3CrX_iyMY8O492Ulc5lOmxk#heading=h.6vuxbrz4my2i"
-        }
-      ]
-    },
-    {
-      "focus": true,
-      "title": "<h3>Spotify Data Investigation with Python</h3>",
-      "date_time": "<h4>April 20, 5-6:30pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Curious about how spotify wrapped makes its conclusions? Want to delve deeper into your music history? Or just want to delve deeper into python and turning large data files into meaningful conclusions? Join us for the Spotify Data Investigation workshop! If you want to learn about your own spotify listening history, we recommend you request your data through settings in advance, as it can take up to 30 days for spotify to send you the data. Don't worry, we will have sample datasets during the workshop so if you do not use spotify or your data hasn't been sent yet you can still learn, and just use the programs we develop on your data later!",
-      "buttons": [
-        {
-          "text": "Campus Groups",
-          "link": "http://cglink.me/2ek/r1060424"
         }
       ]
     },
@@ -46,67 +32,8 @@
     },
     {
       "focus": false,
-      "title": "<h3>WECE April General Meeting</h3>",
-      "date_time": "<h4>April 21, 7-8pm</h4>",
-      "location": "",
-      "points": "<h5>3 points</h5>",
-      "description": "Join us for our April GM for our event announcements and exciting news about the end of the year for WECE!",
-      "buttons": [
-        {
-          "text": "Zoom",
-          "link": "https://illinois.zoom.us/j/84156569280?pwd=dVRTYUpibVYwVzZMeW5lMVBybWRBUT09"
-        }
-      ]
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE Week: Lean In; Reflecting on a New Year</h3>",
-      "date_time": "<h4>April 26, 11am-12pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Join us as we reflect on one of the most unique years any of us have had.",
-      "buttons": []
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE Week: Virtual Escape Room</h3>",
-      "date_time": "<h4>April 26, 6-7pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "During this event, attendees will be put in a group to try to get out of a virtual escape room!",
-      "buttons": []
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE Week: Intro to Hackathons Workshop</h3>",
-      "date_time": "<h4>April 27, 5-6pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "This workshop led by our technical committee is aimed towards beginners interested in getting involved in hackathons. During the workshop we will be doing a brainstorming exercise to get us prepared for WECE Hacks. This event is also a great place to meet future group members!",
-      "buttons": []
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE Week: ECE Advising Presentation + Q & A</h3>",
-      "date_time": "<h4>April 28, 5-6pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Ask our resident advisor Joan Brown, as well as other advisors in ECE, all of your questions! We will be discussing what classes to take, how to spend your summer being productive, covid pass/no pass, and research opportunities.",
-      "buttons": []
-    },
-    {
-      "focus": false,
-      "title": "<h3>WECE Week: Fun Presentations!</h3>",
-      "date_time": "<h4>April 29, 6-7pm</h4>",
-      "location": "",
-      "points": "<h5>2 points</h5>",
-      "description": "Join the marketing committee in making fun presentations about crazy conspiracies!!",
-      "buttons": []
-    },
-    {
-      "focus": false,
       "title": "<h3>WECE Week: Family Feud</h3>",
-      "date_time": "<h4>April 29, 4-5pm</h4>",
+      "date_time": "<h4>CORRECTION: April 30, 4-5pm</h4>",
       "location": "",
       "points": "<h5>2 points</h5>",
       "description": "After collecting student responses, we will be competing in a family feud event to see who know ECE Illinois best!",
