@@ -7,6 +7,7 @@ import {
   FaRegCalendarCheck,
   FaRegCalendarPlus,
 } from "react-icons/fa";
+import { CgPassword } from "react-icons/cg";
 import { FiUsers } from "react-icons/fi";
 import { RiAdminLine } from "react-icons/ri";
 import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi";
@@ -139,6 +140,16 @@ const SideNavbar = () => {
                   >
                     <FaRegCalendarPlus /> {active ? "" : <p>Event Manager</p>}
                   </Nav.Link>
+                  {accountType === "ADMIN" || accountType === "BOARD" ? (
+                    <Nav.Link
+                      className={`${styles["menu-item"]} ${styles["collapse-item"]}`}
+                      href="/pointsupdate"
+                    >
+                      <CgPassword /> {active ? "" : <p>Points Updater</p>}
+                    </Nav.Link>
+                  ) : (
+                    ""
+                  )}
                 </Nav>
               </Accordion.Collapse>
             </Accordion>
