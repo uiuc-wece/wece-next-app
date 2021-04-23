@@ -16,6 +16,7 @@ const {
   saveEventToUser,
   removeEventFromUser,
   attendEvent,
+  addPointsManually,
 } = require("./user.js");
 const {
   getAllEvents,
@@ -57,6 +58,7 @@ router.put("/user/:id", requireBoardStatus, updateUserById);
 router.put("/user/:id/saveevent", saveEventToUser);
 router.put("/user/:id/unsaveevent", removeEventFromUser);
 router.put("/user/:id/attendevent", attendEvent);
+router.put("/user/:id/addpoints", requireBoardStatus, addPointsManually);
 
 router.get("/events", getAllEvents);
 router.get("/event", getEventById);
