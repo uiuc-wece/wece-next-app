@@ -1,43 +1,99 @@
 {
-  "date": "042321",
-  "date_string": "April 23, 2021",
+  "date": "042621",
+  "date_string": "April 26, 2021",
   "events": [
     {
-      "focus": true,
-      "title": "<h3>WECE Board Applications</h3>",
-      "date_time": "<h4>Deadline: April 25th at 11:59pm</h4>",
+      "focus": false,
+      "title": "<h3>WECE Week: Lean In; Reflecting on a New Year</h3>",
+      "date_time": "<h4>April 26, 11am-12pm</h4>",
       "location": "",
-      "points": "",
-      "description": "Join the WECE board and head one of our committees! Our director positions are for Academic, Infrastructure, Marketing, Mentorship, Outreach, Social, and Technical committees. If you are looking to gain leadership experience, be more involved in WECE, and make a difference in the ECE community, we highly encourage you to apply! If you have any questions on what being a director is like, feel free to message any of the current directors on Slack.",
+      "points": "<h5>2 points</h5>",
+      "description": "Join us as we reflect on one of the most unique years any of us have had.",
       "buttons": [
         {
-          "text": "Apply",
-          "link": "https://docs.google.com/document/d/1mE3lb9M6mz9__yokFEBzkIJiYGZqgdS01JH0THZN5dA/edit?fbclid=IwAR3ZtPXsTF5YsJm-KVvNxaKfdUy4_uAlcG1Q3CrX_iyMY8O492Ulc5lOmxk#heading=h.6vuxbrz4my2i"
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/6506303185?pwd=ODNpMVpjclFrZVk3VjVqMmV1OHlqUT09"
         }
       ]
     },
     {
-      "focus": true,
-      "title": "<h3>WECE Hacks</h3>",
-      "date_time": "<h4>May 1, 9am-9pm; Deadline to apply: <b>April 24, 11:59pm</b></h4>",
+      "focus": false,
+      "title": "<h3>WECE Week: Virtual Escape Room</h3>",
+      "date_time": "<h4>April 26, 6-7pm</h4>",
       "location": "",
-      "points": "<h5>4 points</h5>",
-      "description": "WECE is having our first-ever virtual hackathon focused on web development. WECE Hacks will be a day filled with workshops, mentorship, social events, team-bonding, and more! Join for our bootcamp to attend workshops and social events without submitting a project for the competition, or sign up with a team to compete in either the beginner or intermediate divisions for the hackathon. The mission of this event is to empower women in our community who might otherwise face barriers to entry in other hackathons, but we open this hackathon to all UIUC students. See you there!",
+      "points": "<h5>2 points</h5>",
+      "description": "During this event, attendees will be put in a group to try to get out of a virtual escape room!",
       "buttons": [
         {
-          "text": "Our website",
-          "link": "https://wece.ece.illinois.edu/wecehacks"
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/87854005353?pwd=cUl1em1NeVVCazRCaE1uZDZYc3NiUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Intro to Hackathons Workshop</h3>",
+      "date_time": "<h4>April 27, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "This workshop led by our technical committee is aimed towards beginners interested in getting involved in hackathons. During the workshop we will be doing a brainstorming exercise to get us prepared for WECE Hacks. This event is also a great place to meet future group members!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/92625549117?pwd=d0JBQVZoczFuOFJLd0kzcEhRdC9sUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: ECE Advising Presentation + Q & A</h3>",
+      "date_time": "<h4>April 28, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Ask our resident advisor Joan Brown, as well as other advisors in ECE, all of your questions! We will be discussing what classes to take, how to spend your summer being productive, covid pass/no pass, and research opportunities.",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Crazy Conspiracies!</h3>",
+      "date_time": "<h4>April 29, 6-7pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join the marketing committee in making fun presentations about crazy conspiracies!!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://www.google.com/url?q=https://illinois.zoom.us/j/4057799512?pwd%3DbWRhVmtlMDJIRWNNNFlHUmRWZ3lKZz09&sa=D&source=calendar&usd=2&usg=AOvVaw2ECdNgkXFtLckcB5SWmTEt"
         }
       ]
     },
     {
       "focus": false,
       "title": "<h3>WECE Week: Family Feud</h3>",
-      "date_time": "<h4>CORRECTION: April 30, 4-5pm</h4>",
+      "date_time": "<h4>April 30, 4-5pm</h4>",
       "location": "",
       "points": "<h5>2 points</h5>",
       "description": "After collecting student responses, we will be competing in a family feud event to see who know ECE Illinois best!",
-      "buttons": []
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/89974101070?pwd=KzIvRXNiVTI2U0Q5eC9aMkp2NGFZQT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: WECE Hacks</h3>",
+      "date_time": "<h4>May 1, 9am-9pm</h4>",
+      "location": "",
+      "points": "<h5>4 points</h5>",
+      "description": "WECE is having our first-ever virtual hackathon focused on web development. WECE Hacks will be a day filled with workshops, mentorship, social events, team-bonding, and more!",
+      "buttons": [
+        {
+          "text": "Our website",
+          "link": "https://wece.ece.illinois.edu/wecehacks"
+        }
+      ]
     }
   ],
   "other_announcements": [
