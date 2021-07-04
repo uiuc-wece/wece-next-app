@@ -1,0 +1,18 @@
+.recent-body {
+    background-color: var(--neutral-color);
+    padding: 4vw 8vw;
+    margin: 4vw;
+    font-family: "Roboto";
+
+}
+
+.recent-postpreview {
+    padding: 1em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.recent-title{
+    font-family: Roboto;
+    
+}
