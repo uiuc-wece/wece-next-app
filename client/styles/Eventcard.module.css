@@ -1,0 +1,231 @@
+.event-card {
+  width: 300px;
+  height: 280px;
+  color: var(--light-text-color);
+  margin: 0 16px;
+}
+
+.event-card-body {
+  width: 300px;
+  height: 280px;
+  border-radius: 24px;
+  background-color: var(--dark-background-color-muted-light);
+  padding: 8px;
+  z-index: 2;
+}
+
+.top-buttons {
+  float: right;
+  margin: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-button {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 4px;
+  margin: 3px;
+  border-radius: 4px;
+  border: 1px var(--light-text-color) solid;
+  transition: 0.2s all;
+}
+
+.token-button:hover {
+  border: 1px var(--accent-2-color) solid;
+  color: var(--accent-2-color);
+}
+
+.edit-button:hover {
+  border: 1px var(--accent-2-color) solid;
+  color: var(--accent-2-color);
+}
+
+.delete-button:hover {
+  border: 1px var(--accent-color) solid;
+  color: var(--accent-color);
+}
+
+.more-button:hover {
+  border: 1px var(--accent-2-color) solid;
+  color: var(--accent-2-color);
+}
+
+.event-code {
+  margin-bottom: 20px;
+}
+
+.event-code input {
+  font-size: 2em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  background-image: none !important;
+  padding-right: 0.75em !important;
+}
+
+.event-code div {
+  margin: 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  .event-code input {
+    font-size: 1em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    background-image: none !important;
+    padding-right: 0.75em !important;
+  }
+
+  .event-code div {
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .event-code input {
+    font-size: 0.8em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    background-image: none !important;
+    padding-right: 0.75em !important;
+  }
+}
+
+.event-image {
+  width: 120px;
+  height: 80px;
+  margin-top: 8px;
+  margin-left: 24px;
+}
+
+.event-image img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.event-title {
+  margin-left: 24px;
+  margin-top: 16px;
+  white-space: normal;
+}
+
+.event-title h2 {
+  font-size: 24px !important;
+}
+
+.event-time {
+  margin-left: 24px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.event-bottom {
+  z-index: 1;
+  position: relative;
+  bottom: 64px;
+  width: 300px;
+}
+
+.event-points {
+  position: relative;
+  text-align: right;
+  right: 16px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--neutral-color);
+}
+
+.points-number {
+  color: var(--accent-color);
+  font-size: 16px;
+}
+
+.event-heart {
+  position: relative;
+  text-align: right;
+  right: 16px;
+  color: var(--accent-color);
+}
+
+.heart-icon {
+  display: inline-block;
+}
+
+.event-date {
+  width: 100px;
+  height: 80px;
+  border-radius: 12px;
+  background-color: var(--accent-color-light);
+  position: relative;
+  left: 32px;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--accent-text-color);
+}
+
+.event-month {
+  letter-spacing: 0.4em;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.event-day {
+  letter-spacing: 0.2em;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.cancel {
+  padding: 5px 40px !important;
+  color: var(--dark-text-color) !important;
+  background-color: var(--neutral-color) !important;
+  border: var(--neutral-color) 1px solid !important;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
+.cancel:hover {
+  opacity: 1;
+}
+
+.delete {
+  padding: 5px 40px !important;
+  color: var(--dark-text-color) !important;
+  background-color: var(--accent-color) !important;
+  border: var(--accent-color-light) 1px solid !important;
+  margin-left: 8px;
+}
+
+.delete:hover {
+  background-color: var(--accent-color-shadow) !important;
+}
+
+.more-key {
+  color: var(--dark-text-color);
+  opacity: 0.7;
+}
+
+.more-value {
+  color: var(--dark-text-color);
+}
+
+.token {
+  color: var(--accent-color);
+}
+
+.submit-form {
+  padding: 5px 40px !important;
+  background-color: var(--neutral-color-light) !important;
+  color: var(--dark-text-color) !important;
+}
+
+.submit-form:hover {
+  background-color: var(--accent-color) !important;
+  color: var(--light-text-color) !important;
+}

@@ -1,0 +1,28 @@
+.account-widget {
+  overflow: visible;
+}
+
+.points-update-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.points-update-wrapper form {
+  width: 100%;
+}
+
+.multi-select div,
+.multi-select input {
+  color: var(--dark-text-color);
+}
+
+.success {
+  font-size: 3em;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.success:hover {
+  color: var(--accent-2-color);
+}
