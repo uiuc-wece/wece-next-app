@@ -1,3 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+.wece-hacks-wrapper {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  padding: 10px;
+  background-color: #362c43;
+  font-family: "Source Sans Pro", sans-serif;
+  z-index: 100;
+}
+
+.wece-hacks-wrapper a {
+  text-decoration: none;
+}
+
+.wece-hacks-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.wece-hacks-content:hover {
+  transform: scale(1.1);
+}
+
+.wece-hacks-content:hover .wece-hacks-icon {
+  color: #e88ff7;
+  transform: scale(1.1);
+}
+
+.wece-hacks-icon {
+  padding-left: 4px;
+  color: #a276a9;
+}
+
+.wece-hacks-icon {
+  padding-bottom: 1px;
+}
+
 .lines {
   position: absolute;
   top: 100px;
@@ -76,6 +120,8 @@
 }
 
 .title {
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
   padding: 5vw;
   position: relative;
@@ -83,16 +129,18 @@
 }
 
 .front-img {
-  display: flex;
-  justify-content: center;
-}
-
-.front-img > img {
+  margin-top: 50px;
+  height: 100%;
   max-width: 50vw;
 }
 
+.front-img > img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 700px) {
-  .front-img > img {
+  .front-img {
     max-width: 28vw;
   }
 }

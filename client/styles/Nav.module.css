@@ -1,6 +1,6 @@
 .navbar {
   color: #dee3e3 !important;
-  background-color: var(--dark-text-color) !important;
+  background-color: var(--dark-text-color);
   font-family: "IBM Plex Mono";
   font-size: 0.8em;
   border-bottom: 2px solid var(--accent-2-color);
@@ -16,10 +16,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .wece-brand {
-    width: 80px;
-  }
-
   .wece-brand > img {
     width: 70px;
     height: auto;
@@ -36,15 +32,16 @@
 
 .left-navbar {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
   margin-left: 30px;
 }
 
 .left-navbar-imgs {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin-left: 20px;
@@ -52,6 +49,25 @@
 
 .left-navbar-link {
   margin-right: 15px;
+}
+
+@media screen and (max-width: 300px) {
+  .left-navbar {
+    margin-left: 10px !important;
+  }
+
+  .left-navbar-imgs {
+    margin-left: 5px !important;
+  }
+
+  .left-navbar-link {
+    margin-right: 10px !important;
+  }
+
+  .left-navbar-link > img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -87,13 +103,43 @@
   opacity: 1;
 }
 
+.dropdown-item-text {
+  color: var(--dark-text-color) !important;
+  font-size: 0.8em;
+}
+
 .dropdown-item {
-  color: var(--dark-text-color);
+  color: var(--dark-text-color) !important;
   font-size: 0.8em;
 }
 
 .dropdown-item:hover {
-  background-color: var(--accent-color-light);
+  background-color: var(--accent-color-light) !important;
+}
+
+.login {
+  background-color: var(--accent-2-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: var(--dark-text-color) !important;
+}
+
+.account-dropdown > a {
+  display: inline-block !important;
+  background-color: var(--accent-2-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  color: var(--dark-text-color) !important;
+}
+
+.account-dropdown > div {
+  left: auto;
+  right: 0;
 }
 
 .sticky-top {

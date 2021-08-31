@@ -1,0 +1,113 @@
+{
+  "date": "042621",
+  "date_string": "April 26, 2021",
+  "events": [
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Lean In; Reflecting on a New Year</h3>",
+      "date_time": "<h4>April 26, 11am-12pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join us as we reflect on one of the most unique years any of us have had.",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/6506303185?pwd=ODNpMVpjclFrZVk3VjVqMmV1OHlqUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Virtual Escape Room</h3>",
+      "date_time": "<h4>April 26, 6-7pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "During this event, attendees will be put in a group to try to get out of a virtual escape room!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/87854005353?pwd=cUl1em1NeVVCazRCaE1uZDZYc3NiUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Intro to Hackathons Workshop</h3>",
+      "date_time": "<h4>April 27, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "This workshop led by our technical committee is aimed towards beginners interested in getting involved in hackathons. During the workshop we will be doing a brainstorming exercise to get us prepared for WECE Hacks. This event is also a great place to meet future group members!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/92625549117?pwd=d0JBQVZoczFuOFJLd0kzcEhRdC9sUT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: ECE Advising Presentation + Q & A</h3>",
+      "date_time": "<h4>April 28, 5-6pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Ask our resident advisor Joan Brown, as well as other advisors in ECE, all of your questions! We will be discussing what classes to take, how to spend your summer being productive, covid pass/no pass, and research opportunities.",
+      "buttons": []
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Crazy Conspiracies!</h3>",
+      "date_time": "<h4>April 29, 6-7pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "Join the marketing committee in making fun presentations about crazy conspiracies!!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://www.google.com/url?q=https://illinois.zoom.us/j/4057799512?pwd%3DbWRhVmtlMDJIRWNNNFlHUmRWZ3lKZz09&sa=D&source=calendar&usd=2&usg=AOvVaw2ECdNgkXFtLckcB5SWmTEt"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: Family Feud</h3>",
+      "date_time": "<h4>April 30, 4-5pm</h4>",
+      "location": "",
+      "points": "<h5>2 points</h5>",
+      "description": "After collecting student responses, we will be competing in a family feud event to see who know ECE Illinois best!",
+      "buttons": [
+        {
+          "text": "Zoom",
+          "link": "https://illinois.zoom.us/j/89974101070?pwd=KzIvRXNiVTI2U0Q5eC9aMkp2NGFZQT09"
+        }
+      ]
+    },
+    {
+      "focus": false,
+      "title": "<h3>WECE Week: WECE Hacks</h3>",
+      "date_time": "<h4>May 1, 9am-9pm</h4>",
+      "location": "",
+      "points": "<h5>4 points</h5>",
+      "description": "WECE is having our first-ever virtual hackathon focused on web development. WECE Hacks will be a day filled with workshops, mentorship, social events, team-bonding, and more!",
+      "buttons": [
+        {
+          "text": "Our website",
+          "link": "https://wece.ece.illinois.edu/wecehacks"
+        }
+      ]
+    }
+  ],
+  "other_announcements": [
+    {
+      "title": "Resume Book",
+      "description": "Looking for internships or full-time jobs? Add your resume to our WECE Resume database that we send to all our sponsors. Add it on  <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSe2FYMu-fS3zEB-byGCYTsWr8jcwMARagyIQu3EXnGJq8lybQ/viewform?usp=sf_link\" target=\"_blank\">this Google Form</a>!"
+    },
+    {
+      "title": "Alumni Database",
+      "description": "If you are an alumni, we would love to stay in contact with you! If you would like to help WECE with professional development and help our current members, please fill out <a href=\"https://forms.gle/ETuzRpH7d3fB91tp8\" target=\"_blank\">this form</a>!"
+    },
+    {
+      "title": "Join our WECE Slack Workspace",
+      "description": "WECE uses Slack as a way to streamline communication between WECE members and committees, as well as a place for important announcements and upcoming events! Join our general channel <a href=\"https://join.slack.com/t/wece-uiuc/shared_invite/zt-htevrvxw-UFc8p2zTKfp0r~qv~ho_ow\" target=\"_blank\">here</a>."
+    }
+  ]
+}
