@@ -33,6 +33,14 @@ const {
   createBlogpost,
   updateBlogpost,
 } = require("./blogpost.js");
+const {
+  getFeedposts,
+  getFeedpostById,
+  deleteFeedpost,
+  createFeedpost,
+  updateFeedpost,
+  updateFeedpostComment,
+} = require("./feedpost.js");
 const { login, register, logout } = require("./auth.js");
 const {
   requireBoardStatus,
@@ -75,6 +83,13 @@ router.get("/blogpost/:id", getBlogpostById);
 router.delete("/blogpost/:id", deleteBlogpost);
 router.post("/blogpost", createBlogpost);
 router.put("/blogpost/:id", updateBlogpost);
+
+router.get("/feedposts", getFeedposts);
+router.get("/feedpost/:id", getFeedpostById);
+router.delete("/feedpost/:id", deleteFeedpost);
+router.post("/feedpost", createFeedpost);
+router.put("/feedpost/:id", updateFeedpost);
+router.put("/feedpost/:id", updateFeedpostComment);
 
 router.post("/login", login);
 router.post("/register", register);

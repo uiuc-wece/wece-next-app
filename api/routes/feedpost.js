@@ -1,5 +1,5 @@
-var Feedpost,
-  { CommentsSchema } = require("../database/models/feedpost.js");
+var Feedpost = require("../database/models/feedpost.js");
+var { CommentsSchema } = require("../database/models/feedpost.js");
 var mongoose = require("mongoose");
 
 async function getFeedposts(req, res, next) {
@@ -37,6 +37,7 @@ async function createFeedpost(req, res, next) {
     await post.save();
     res.status(201).send(post);
   } catch (err) {
+    console.log(err);
     res.status(500).send(err);
   }
 }
