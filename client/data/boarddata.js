@@ -142,10 +142,11 @@ export default {
       role: "Technical Director",
       major: "CS + Music",
       year: "Senior",
-      spiritAnimal: "",
-      hobbies: "",
-      quote: "",
-      img: "",
+      spiritAnimal: "Macaroni Penguin",
+      hobbies: "cooking",
+      quote:
+        '"I have found that it is the small things, everyday deeds of ordinary folk that keeps the darkness at bay. Simple acts of love and kindness." -Gandalf',
+      img: "imgs/board/rochelle.jpg",
     },
     {
       name: "Neha Agarwal",
