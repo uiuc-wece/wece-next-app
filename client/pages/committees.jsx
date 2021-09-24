@@ -27,9 +27,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/saisita.JPG"
+                    src="../imgs/board/ariya.jpeg"
                   />
-                  <figcaption>Saisita Maddirala</figcaption>
+                  <figcaption>Ariya Patel</figcaption>
                 </figure>
                 <p>
                   The Academic Committee organizes and hosts workshops and
@@ -45,9 +45,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/eugenia.jpg"
+                    src="../imgs/board/joshmita.jpg"
                   />
-                  <figcaption>Eugenia Chen</figcaption>
+                  <figcaption>Joshmita Chintala</figcaption>
                 </figure>
                 <p>
                   The Infrastructure Commitee develops and updates the WECE
@@ -65,17 +65,17 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/aditi.jpg"
+                    src="../imgs/board/rutu.JPG"
                   />
-                  <figcaption>Aditi Panwar</figcaption>
+                  <figcaption>Rutu Brahmbhatt</figcaption>
                 </figure>
                 <p>
                   The Marketing Committee advertises WECE events and creatively
-                  supports the events through banners, posters and logos. We
+                  supports the events through banners, posters, and logos. We
                   help expand WECE's presence on campus through social media by
                   showcasing the wonderful events we have to help students
                   academically, professionally and personally. We also oversee
-                  the design of WECE logo, apparel, newsletter and the website.
+                  the design of WECE logo, apparel, newsletter, and the website.
                 </p>
               </div>
             </SectionBody>
@@ -87,15 +87,22 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/kelly.JPG"
+                    src="../imgs/board/subha.PNG"
                   />
-                  <figcaption>Kelly Dunleavy</figcaption>
+                  <figcaption>Subha Somaskandan</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/board/chetna.jpg"
+                  />
+                  <figcaption>Chetna Verma</figcaption>
                 </figure>
                 <p>
                   The WECE Mentorship Committee strives to build a welcoming and
                   supportive community within ECE! We foster mentorship through
                   a Peer Mentorship Program, Lean In Discussions, a Professional
-                  Mentorship Program and Graduate Student mentorship.
+                  Mentorship Program, and Graduate Student mentorship.
                 </p>
               </div>
             </SectionBody>
@@ -107,9 +114,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/elisa.JPG"
+                    src="../imgs/board/tala.jpeg"
                   />
-                  <figcaption>Elisa Krause</figcaption>
+                  <figcaption>Tala Aoun</figcaption>
                 </figure>
                 <p>
                   The outreach committee works with the surrounding community to
@@ -125,9 +132,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/maram.jpg"
+                    src="../imgs/board/jennifer.jpeg"
                   />
-                  <figcaption>Maram Safi</figcaption>
+                  <figcaption>Jennifer Chen</figcaption>
                 </figure>
                 <p>
                   Social Committee is all about fostering relationships. Whether
@@ -145,16 +152,16 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/pakhi.JPG"
+                    src="../imgs/board/neha.jpg"
                   />
-                  <figcaption>Pakhi Gupta</figcaption>
+                  <figcaption>Neha Agarwal</figcaption>
                 </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/sarah.jpg"
+                    src="../imgs/board/rochelle.jpg"
                   />
-                  <figcaption>Sarah Angelbeck</figcaption>
+                  <figcaption>Rochelle Tham</figcaption>
                 </figure>
                 <p>
                   The WECE technical committee works on a project which is
