@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { logout } from "../apihelper.js";
 
-const CustomNavbar = ({ background_color = "#022b3a"}) => {
+const CustomNavbar = ({ background_color = "#022b3a" }) => {
   const authenticated = useSelector((state) => state.authenticated);
   const firstName = useSelector((state) => state.firstName);
 
@@ -24,7 +24,7 @@ const CustomNavbar = ({ background_color = "#022b3a"}) => {
         expand="lg"
         fixed="top"
         className={styles["navbar"]}
-        style={{backgroundColor: background_color}}
+        style={{ backgroundColor: background_color }}
       >
         <div className={styles["left-navbar"]}>
           <Navbar.Brand href="/" className={styles["wece-brand"]}>
@@ -99,23 +99,32 @@ const CustomNavbar = ({ background_color = "#022b3a"}) => {
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="/sponsors"
+                href="/sponsors22"
               >
-                2018-19
+                2021-22
               </NavDropdown.Item>
-              {/* <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/resumebook"
-              >
-                Resume Book
-              </NavDropdown.Item> */}
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors21"
               >
                 2020-21
               </NavDropdown.Item>
+              {/*                 */}
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/resumebook"
+              >
+                Resume Book
+              </NavDropdown.Item>
+              {/*  */}
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/sponsors"
+              >
+                2018-19
+              </NavDropdown.Item>
             </NavDropdown>
+            {/* <Nav.Link href="/resumebook">Resume Book</Nav.Link> */}
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
             {!authenticated && (
