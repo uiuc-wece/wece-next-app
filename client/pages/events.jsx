@@ -1,5 +1,7 @@
 import Layout from "../components/layout";
 import SectionHead from "../components/sectionhead";
+import SectionBody from "../components/sectionbody";
+
 import EventBox from "../components/widgets/eventbox";
 
 import { useEffect, useState } from "react";
@@ -52,6 +54,23 @@ export default function Events() {
               handleUpdate={handleUpdate}
             />
           )}
+        </Container>
+
+        <Container fluid className="section">
+          <SectionBody>
+            <p>
+              Events{" "}
+              <a href="https://forms.gle/32M8qpMhVkz7at3j7" target="_blank">
+                sign-in form
+              </a>{" "}
+              if token code does not work!
+            </p>
+            <p>
+              Contact Joshmita Chintala at{" "}
+              <a href="mailto:jchint2@illinois.edu">jchint2@illinois.edu</a> if
+              your points need to be updated!
+            </p>
+          </SectionBody>
         </Container>
       </div>
     </Layout>
