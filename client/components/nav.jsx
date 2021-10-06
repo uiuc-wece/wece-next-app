@@ -99,15 +99,9 @@ const CustomNavbar = ({ background_color = "#022b3a" }) => {
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="/sponsors"
+                href="/sponsors22"
               >
-                2018-19
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/resumebook"
-              >
-                Resume Book
+                2021-22
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
@@ -115,7 +109,15 @@ const CustomNavbar = ({ background_color = "#022b3a" }) => {
               >
                 2020-21
               </NavDropdown.Item>
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/sponsors"
+              >
+                2018-19
+              </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/resumebook">Resume Book </Nav.Link>
+
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
             {!authenticated && (
