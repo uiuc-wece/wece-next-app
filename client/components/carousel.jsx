@@ -32,6 +32,13 @@ export default function EventCarousel() {
           alt="html and css workshop"
         />
       </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="imgs/events/quad_day/IMG_4955.jpg"
+          alt="quad day 2021"
+        />
+      </Carousel.Item>
     </Carousel>
   );
 }
