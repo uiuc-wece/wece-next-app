@@ -2,22 +2,22 @@
 html {
   /* colors */
   --accent-color-light: #fcd5d5;
-  --accent-color: #ff6b6b;
-  --accent-color-shadow: #fc5a5a;
-  --accent-text-color: #ac1313;
-  --accent-2-color-light: #d6fed6;
-  --accent-2-color: #ace8ac;
-  --accent-2-color-shadow: #78c178;
+  --accent-color: #e6abb5;
+  --accent-color-shadow: #a57e85;
+  --accent-text-color: #c9435a;
+  --accent-2-color-light: #fdf1dd;
+  --accent-2-color: #f7e7ce;
+  --accent-2-color-shadow: #f7e7ce;
   --accent-2-text-color: #285428;
   --neutral-color-light: #ffffff;
-  --neutral-color: #dee3e3;
-  --neutral-color-shadow-light: #d5d6d6;
-  --neutral-color-shadow: #bec3c3;
-  --dark-background-color: #022b3a;
-  --dark-background-color-muted: #0e3e4f;
-  --dark-background-color-muted-light: #276073;
+  --neutral-color: #fdf1dd;
+  --neutral-color-shadow-light: #fdf1dd;
+  --neutral-color-shadow: #fdf1dd;
+  --dark-background-color: #2a5236;
+  --dark-background-color-muted: #1f3d28;
+  --dark-background-color-muted-light: #427e54;
   --light-text-color: #ffffff;
-  --dark-text-color: #022b3a;
+  --dark-text-color: #1c3624;
 
   /* font families */
   --sans-serif-font: "Roboto";
@@ -67,7 +67,7 @@ h2 {
 h3 {
   font-family: "IBM Plex Mono";
   font-size: 6vw;
-  color: #ffffff;
+  color: #2a5236;
 }
 
 h4 {
