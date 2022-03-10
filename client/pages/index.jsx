@@ -80,7 +80,7 @@ export default function Home() {
             <p>
               <span
                 style={{
-                  color: "#ff6b6b",
+                  color: "#bf7380",
                   fontWeight: 600,
                   fontFamily: "IBM Plex Mono",
                 }}
