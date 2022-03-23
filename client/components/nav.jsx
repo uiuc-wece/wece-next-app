@@ -96,6 +96,34 @@ const CustomNavbar = ({ background_color2 = "#2a5236" }) => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/events">Events</Nav.Link>
+            <NavDropdown title="Member Resources">
+            <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/googlecal"
+              >
+                WECE Google Calendar
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/gmslides"
+              >
+                GM Slides
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/newsletters"
+              >
+                Newsletters
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/resumebook"
+              >
+                Resume Book
+              </NavDropdown.Item>
+              
+            </NavDropdown>
+
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
@@ -116,7 +144,6 @@ const CustomNavbar = ({ background_color2 = "#2a5236" }) => {
                 2018-19
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/resumebook">Resume Book </Nav.Link>
 
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             <Nav.Link href="/join">Join</Nav.Link>
