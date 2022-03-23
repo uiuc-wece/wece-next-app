@@ -5,13 +5,15 @@
   top: 60px;
   width: 100%;
   padding: 10px;
-  background-color: #362c43;
+  background-color: #b1f4c5;
+  color:#540d6e;
   font-family: "Source Sans Pro", sans-serif;
   z-index: 100;
 }
 
 .wece-hacks-wrapper a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 .wece-hacks-content {
@@ -21,7 +23,7 @@
   align-items: center;
   transition: transform 0.1s;
   cursor: pointer;
-  color: #fff;
+  color: #540d6e;
 }
 
 .wece-hacks-content:hover {
@@ -29,13 +31,13 @@
 }
 
 .wece-hacks-content:hover .wece-hacks-icon {
-  color: #e88ff7;
+  color: #540d6e;
   transform: scale(1.1);
 }
 
 .wece-hacks-icon {
   padding-left: 4px;
-  color: #a276a9;
+  color: #540d6e;
 }
 
 .wece-hacks-icon {
