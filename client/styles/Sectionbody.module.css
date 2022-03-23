@@ -9,8 +9,8 @@
 }
 
 .section-hover-body:hover {
-  background-color: var(--accent-color);
-  color: var(--light-text-color);
+  background-color: var(--accent-2-color-shadow-2);
+  color: var(--dark-background-color);
 }
 
 .section-body p {
