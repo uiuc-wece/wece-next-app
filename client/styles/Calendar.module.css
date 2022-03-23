@@ -1,6 +1,6 @@
 .event-card {
-  color: var(--dark-text-color);
-  background-color: var(--accent-color);
+  color: var(--accent-2-color);
+  background-color: var(--dark-background-color);
   padding: 4vw 8vw;
   margin: 4vw;
   border-radius: 5px;
