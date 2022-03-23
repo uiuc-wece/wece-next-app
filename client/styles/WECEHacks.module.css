@@ -1,8 +1,8 @@
 .cursor {
   border-radius: 100%;
-  box-shadow: 0 0 1.5rem #48a1cb, 0 0 1rem #48a1cb, 0 0 0.2rem #48a1cb,
-    0 0 0.4rem #48a1cb;
-  color: #d7f2ff;
+  box-shadow: 0 0 1.5rem #6fb183, 0 0 1rem #6fb183, 0 0 0.2rem #6fb183,
+    0 0 0.4rem #6fb183;
+  color: #b1f4c5;
 }
 
 .side-nav {
@@ -14,7 +14,7 @@
   margin-right: 128px;
   font-size: 0.8em;
   letter-spacing: 0.1em;
-  color: #e88ff7;
+  color: #540d6e;
   cursor: none;
 }
 
@@ -53,7 +53,7 @@
   width: 8px;
   height: 8px;
   border-radius: 100%;
-  border: 2px solid #e88ff7;
+  border: 2px solid #540d6e;
   transition: all 0.2s;
 }
 
@@ -155,13 +155,13 @@
   0%,
   100% {
     text-shadow: 0 0 1vw #a274dd, 0 0 3vw #a274dd, 0 0 10vw #a274dd,
-      0 0 10vw #a274dd, 0 0 0.4vw #e88ff7, 0.5vw 0.5vw 0.1vw #a274dd;
-    color: #e88ff7;
+      0 0 10vw #a274dd, 0 0 0.4vw #d9b9e8, 0.5vw 0.5vw 0.1vw #a274dd;
+    color: #d9b9e8;
   }
   50% {
-    text-shadow: 0 0 0.5vw #7646b4, 0 0 1.5vw #7646b4, 0 0 5vw #7646b4,
-      0 0 5vw #7646b4, 0 0 0.2vw #7646b4, 0.5vw 0.5vw 0.1vw #a276a9;
-    color: #a276a9;
+    text-shadow: 0 0 0.5vw #905dd3, 0 0 1.5vw #905dd3, 0 0 5vw #905dd3,
+      0 0 5vw #905dd3, 0 0 0.2vw #905dd3, 0.5vw 0.5vw 0.1vw #a276a9;
+    color: #bc8cc4;
   }
 }
 
@@ -169,8 +169,8 @@
 
 .hacks {
   font-family: "Fredoka One", cursive;
-  color: #2365c0;
-  text-shadow: 0 0 3vw #1856ac;
+  color: #b1f4c5;
+  text-shadow: 0 0 3vw #6fb183;
 }
 
 .hacks h1 {
@@ -193,20 +193,20 @@
 @keyframes flux {
   0%,
   100% {
-    text-shadow: 0 0 1vw #2365c0, 0 0 3vw #2365c0, 0 0 10vw #2365c0,
-      0 0 10vw #2365c0, 0 0 0.4vw #8edbff, 0.5vw 0.5vw 0.1vw #48a1cb;
-    color: #8edbff;
+    text-shadow: 0 0 1vw #426b69, 0 0 3vw #426b69, 0 0 10vw #426b69,
+      0 0 10vw #426b69, 0 0 0.4vw #b1f4c5, 0.5vw 0.5vw 0.1vw #6fb183;
+    color: #b1f4c5;
   }
   50% {
-    text-shadow: 0 0 0.5vw #19437c, 0 0 1.5vw #19437c, 0 0 5vw #19437c,
-      0 0 5vw #19437c, 0 0 0.2vw #19437c, 0.5vw 0.5vw 0.1vw #284e82;
-    color: #48a1cb;
+    text-shadow: 0 0 0.5vw #33523d, 0 0 1.5vw #33523d, 0 0 5vw #33523d,
+      0 0 5vw #33523d, 0 0 0.2vw #33523d, 0.5vw 0.5vw 0.1vw #4d7a5b;
+    color: #6fb183;
   }
 }
 
 .caption {
   margin-top: 20px;
-  color: #7f7092;
+  color: #540d6e;
 }
 
 @media screen and (max-width: 600px) {
@@ -222,15 +222,25 @@
   font-size: 2em;
   margin: 1em;
   letter-spacing: 0.15em;
-  color: #8edbff;
-  text-shadow: 0 0 1vw #2365c0, 0 0 3vw #2365c0, 0 0 10vw #2365c0,
-    0 0 10vw #2365c0, 0 0 0.4vw #8edbff, 0.5vw 0.5vw 0.1vw #48a1cb;
+  color: #b1f4c5;
+  text-shadow: 0 0 1vw #426b69, 0 0 3vw #426b69, 0 0 10vw #426b69,
+    0 0 10vw #426b69, 0 0 0.4vw #b1f4c5, 0.5vw 0.5vw 0.1vw #6fb183;
 }
 
 .text-box {
-  background-color: #534566;
-  color: #efe8f8;
+  background-color: #d1a2e7;
+  color: #420b57;
   width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.text-box2{
+  background-color: #d1a2e7;
+  color: #420b57;
+  width: 50%;
+  text-align: center;
   padding: 20px;
   border-radius: 8px;
   font-family: "Source Sans Pro", sans-serif;
@@ -238,6 +248,10 @@
 
 @media screen and (max-width: 600px) {
   .text-box {
+    width: 80%;
+  }
+
+  .text-box2 {
     width: 80%;
   }
 }
@@ -259,7 +273,8 @@
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: #a276a9;
+  background-color: #540d6e;
+  color: #fff;
 }
 
 .about-icon-row {
@@ -268,6 +283,11 @@
 }
 
 .about-icon-wrapper {
+  margin: 8px;
+}
+
+.about-icon-wrapper2 {
+  text-align: center;
   margin: 8px;
 }
 

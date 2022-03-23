@@ -97,12 +97,12 @@ const CustomNavbar = ({ background_color2 = "#2a5236" }) => {
             </NavDropdown>
             <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Member Resources">
-            <NavDropdown.Item
+            {/* <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/googlecal"
               >
                 WECE Google Calendar
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/gmslides"
