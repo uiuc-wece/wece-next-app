@@ -7,6 +7,7 @@ import styles from "../styles/WECEHacks.module.css";
 import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
+import { BiRightArrowCircle } from "react-icons/bi";
 
 export default function WECEHacks() {
   const [typeForm, setTypeForm] = useState(null);
@@ -42,6 +43,18 @@ export default function WECEHacks() {
         smoothness={{ movement: 1, scale: 0.6, opacity: 0.8 }}
         opacity={1}
       />
+      <div className={styles["wece-hacks-wrapper"]}>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmXRpaYpndoNDi_EhmQT3pSJk3793_6XBkAPYIU_bzbJWdg/viewform?usp=sf_link">
+          <div className={styles["wece-hacks-content"]}>
+            <div className={styles["wece-hacks-text"]}>
+              Volunteer to be a mentor or judge for the hackathon here!
+            </div>
+            <div className={styles["wece-hacks-icon"]}>
+              <BiRightArrowCircle />
+            </div>
+          </div>
+        </a>
+      </div>
       <div id="nav" className={styles["side-nav"]}>
         <Link
           to="home"
@@ -175,7 +188,7 @@ export default function WECEHacks() {
                     <img src="imgs/motherboard.png"></img>
                   </div>
                   <div className={styles["about-icon-text"]}>
-                    Hardware available!
+                    Hardware prototyping!
                   </div>
                 </div>
                 <div className={styles["about-icon-wrapper"]}>
@@ -290,13 +303,13 @@ export default function WECEHacks() {
                   <div className={styles["about-icon"]}>
                     <img src="imgs/graduated.png"></img>
                   </div>
-                </div>
+              </div>
               <br />
               <p>
-                <b>Sustainable Cities and Communities</b>
+                <b>Sustainable and Healthy Cities and Communities</b>
               </p>
               <p>
-                Create a project focused on one of the <a href="https://sdgs.un.org/goals/goal11">UN Sustainable Development Goals</a>, which is to make cities and human settlements inclusive, safe, resilient, and sustainable.
+                Create a project focused on one of the <a href="https://sdgs.un.org/goals/goal11">UN Sustainable and Health Development Goals</a>, which is to make cities and human settlements inclusive, safe, resilient, sustainable, and healthy.
               </p>
               <div className={styles["about-icon-wrapper2"]}>
                   <div className={styles["about-icon"]}>
@@ -316,18 +329,43 @@ export default function WECEHacks() {
               <p>
                 <b> Best Overall Hack</b>
               </p>
+              <div className={styles["about-icon-wrapper2"]}>
+                  <div className={styles["about-icon2"]}>
+                    <img src="imgs/sonyheadphones.jpg"></img>
+                  </div>
+              </div>
               <p>
-                <b>Best in Category Sustainable Cities and Communities</b>
+                <b>Best in Category Sustainable and Healthy Cities and Communities</b>
               </p>
+              <div className={styles["about-icon-wrapper2"]}>
+                  <div className={styles["about-icon2"]}>
+                    <img src="imgs/locked.jpg"></img>
+                  </div>
+              </div>
               <p>
                 <b>Best in Category Quality of Life for College Students</b>
               </p>
+              <div className={styles["about-icon-wrapper2"]}>
+                  <div className={styles["about-icon2"]}>
+                    <img src="imgs/locked.jpg"></img>
+                  </div>
+              </div>
               <p>
                 <b>Best Beginner Hack</b>
               </p>
+              <div className={styles["about-icon-wrapper2"]}>
+                  <div className={styles["about-icon2"]}>
+                    <img src="imgs/locked.jpg"></img>
+                  </div>
+              </div>
               <p>
                 <b>Honorable Mention</b>
               </p>
+              <div className={styles["about-icon-wrapper2"]}>
+                  <div className={styles["about-icon2"]}>
+                    <img src="imgs/locked.jpg"></img>
+                  </div>
+              </div>
             </div>
           </div>
         </Element>
@@ -342,7 +380,7 @@ export default function WECEHacks() {
                 <b>Where will the event be held?</b>
               </p>
               <p>
-                The event will be hosted in the ECE building as well as Discord. Participants are required to attend the Kickoff and there are optional in-person workshops. Food and workspaces are also provided. Mentors will be present both virually and in person!
+                The event will be hosted in the ECE building as well as Discord. Participants are required to attend the Kickoff and there are optional in-person workshops. Food, swag, and workspaces are also provided. Mentors will be present both virtually and in person!
               </p>
               <br />
               <p>
@@ -370,7 +408,7 @@ export default function WECEHacks() {
               <p>
                 <b>When is the deadline to sign up?</b>
               </p>
-              <p>Please register by April 15th at 11:59PM CST.</p>
+              <p>Please register by <b>April 15th</b> at 11:59PM CST.</p>
             </div>
           </div>
         </Element>

@@ -49,6 +49,18 @@ export default function Home() {
           </div>
         </a>
       </div>
+      <div className={styles["wece-hacks-wrapper2"]}>
+        <a href="https://forms.gle/HsKcwvb58bkm6yie8">
+          <div className={styles["wece-hacks-content"]}>
+            <div className={styles["wece-hacks-text"]}>
+              RSVP for the Networking Banquet here!
+            </div>
+            <div className={styles["wece-hacks-icon"]}>
+              <BiRightArrowCircle />
+            </div>
+          </div>
+        </a>
+      </div>
       <div className="content">
         <div className={styles["top"]}>
           <Container>
