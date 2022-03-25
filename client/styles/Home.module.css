@@ -11,6 +11,17 @@
   z-index: 100;
 }
 
+.wece-hacks-wrapper2 {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  padding: 10px;
+  background-color: #b1f4c5;
+  color:#540d6e;
+  font-family: "Source Sans Pro", sans-serif;
+  z-index: 100;
+}
+
 .wece-hacks-wrapper a {
   text-decoration: none;
   font-weight: bold;
