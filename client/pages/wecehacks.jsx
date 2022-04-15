@@ -339,7 +339,7 @@ export default function WECEHacks() {
               </p>
               <div className={styles["about-icon-wrapper2"]}>
                   <div className={styles["about-icon2"]}>
-                    <img src="imgs/locked.jpg"></img>
+                    <img src="imgs/sprout.jpg"></img>
                   </div>
               </div>
               <p>
@@ -347,7 +347,7 @@ export default function WECEHacks() {
               </p>
               <div className={styles["about-icon-wrapper2"]}>
                   <div className={styles["about-icon2"]}>
-                    <img src="imgs/locked.jpg"></img>
+                    <img src="imgs/keyboard.jpg"></img>
                   </div>
               </div>
               <p>
@@ -355,7 +355,7 @@ export default function WECEHacks() {
               </p>
               <div className={styles["about-icon-wrapper2"]}>
                   <div className={styles["about-icon2"]}>
-                    <img src="imgs/locked.jpg"></img>
+                    <img src="imgs/diffuser.jpg"></img>
                   </div>
               </div>
               <p>
@@ -363,7 +363,7 @@ export default function WECEHacks() {
               </p>
               <div className={styles["about-icon-wrapper2"]}>
                   <div className={styles["about-icon2"]}>
-                    <img src="imgs/locked.jpg"></img>
+                    <img src="imgs/kingfisher.jpg"></img>
                   </div>
               </div>
             </div>
