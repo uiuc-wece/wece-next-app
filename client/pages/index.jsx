@@ -37,30 +37,6 @@ export default function Home() {
   return (
     <Layout>
       <LinesSvg />
-      {/* <div className={styles["wece-hacks-wrapper"]}>
-        <a href="/wecehacks">
-          <div className={styles["wece-hacks-content"]}>
-            <div className={styles["wece-hacks-text"]}>
-              Sign up for WECE Hacks on April 30th - May 1st!
-            </div>
-            <div className={styles["wece-hacks-icon"]}>
-              <BiRightArrowCircle />
-            </div>
-          </div>
-        </a>
-      </div>
-      <div className={styles["wece-hacks-wrapper2"]}>
-        <a href="https://forms.gle/HsKcwvb58bkm6yie8">
-          <div className={styles["wece-hacks-content"]}>
-            <div className={styles["wece-hacks-text"]}>
-              RSVP for the Networking Banquet here!
-            </div>
-            <div className={styles["wece-hacks-icon"]}>
-              <BiRightArrowCircle />
-            </div>
-          </div>
-        </a>
-      </div> */}
       <div className="content">
         <div className={styles["top"]}>
           <Container>
@@ -92,21 +68,21 @@ export default function Home() {
             <p>
               <span
                 style={{
-                  color: "#bf7380",
+                  color: "#bf7380", // text color of the first phrase in the paragraph
                   fontWeight: 600,
                   fontFamily: "IBM Plex Mono",
                 }}
               >
-                We are WECE
+                We are WECE, the Women in Electrical and Computer Engineering
               </span>{" "}
               - a student organization at the University of Illinois at
               Urbana-Champaign dedicated to supporting women within the
-              Electrical and Computer Engineering department. We welcome members
+              Illinois ECE department. We welcome members
               of all genders to be active in the group, and we strive to build
               communities amongst ourselves by hosting social, technical,
-              outreach, and professional events.
+              outreach, and professional events!
             </p>
-            <SectionButton buttonText="Learn More" buttonLink="about" />
+            <SectionButton buttonText="Explore WECE" buttonLink="about" />
           </SectionBody>
           <SectionHead title="Events_" top={false} />
           <SectionBody>
@@ -115,35 +91,23 @@ export default function Home() {
           <SectionHead title="Committees_" top={false} />
           <SectionBody>
             <p>
-              WECE has SEVEN different committees you can join and be a part of!
-              Get involved with technical projects, mentor elementary students,
-              plan fun events, and more!
+              WECE has SEVEN different committees that dedicate themselves to 
+              organize events, socials, and other activities! Explore building and 
+              harware with Technical, Learn Software with Infrastructure, and mentor
+              students through Mentorship! 
             </p>
             <SectionButton buttonText="Learn More" buttonLink="committees" />
           </SectionBody>
-          <SectionHead title="Join Us_" top={false} />
+          <SectionHead title="Stay Connected_" top={false} />
           <SectionBody>
             <p>
               If you are interested in learning more about WECE, fill out the
               form below to get added to our mailing list! An email with events
-              and updates will be sent out every week.
+              and updates will be sent out every week throughout the academic year.
             </p>
-            <SectionButton buttonText="Join us!" buttonLink="join" />
+            <SectionButton buttonText="Sign Up" buttonLink="join" />
           </SectionBody>
         </Container>
-        {/*<Container fluid className="section">
-                <div className={styles["section-head"]}>
-                    <div className="section-title">
-                    <h3 className={styles["text-center"]}>Upcoming Events_</h3>
-                    </div>
-                </div>
-                <div className="section-body">
-                    <p></p>
-                    <div className="button">
-                    <a href="calendar.html" className="link-btn">Learn More</a>
-                    </div>
-                </div>
-            </Container>*/}
       </div>
     </Layout>
   );
