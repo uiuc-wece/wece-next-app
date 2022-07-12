@@ -15,7 +15,7 @@ export default function ContactUs() {
             hoverEffect={true}
             link="mailto:wece.uiuc@gmail.com?subject=WECE%20Contact%20Us"
           >
-            <h2 className={styles["contact-title"]}>Email us!</h2>
+            <h2 className={styles["contact-title"]}>Email</h2>
             <p className={styles["contact-desc"]}>
               Contact us with any questions at wece.uiuc@gmail.com
             </p>

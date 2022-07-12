@@ -79,12 +79,13 @@ export default function Join() {
 
   return (
     <Layout>
+      <br />
       <div className="content">
         <Container className="section">
           <SectionHead title="Join WECE_" top={true} />
           <SectionBody>
             <p>
-              Sign up here to create an account, get weekly newsletters with
+              Sign up here to create an account, get weekly newsletters with <br />
               general meetings, upcoming events, and more.
             </p>
             <Form
@@ -94,10 +95,17 @@ export default function Join() {
               onSubmit={handleSubmit}
             >
               <Form.Group>
-                <Form.Label>Email</Form.Label>
+                <Form.Label
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
+                >Email</Form.Label>
                 <Form.Control
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
                   required
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Enter Email"
                   value={email}
@@ -110,8 +118,15 @@ export default function Join() {
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group>
-                <Form.Label>First Name</Form.Label>
+                <Form.Label
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
+                >First Name</Form.Label>
                 <Form.Control
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
                   required
                   type="text"
                   name="first name"
@@ -125,8 +140,15 @@ export default function Join() {
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group>
-                <Form.Label>Last Name</Form.Label>
+                <Form.Label
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
+                >Last Name</Form.Label>
                 <Form.Control
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
                   required
                   type="text"
                   name="last name"
@@ -140,8 +162,15 @@ export default function Join() {
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group>
-                <Form.Label>Password</Form.Label>
+                <Form.Label
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
+                >Password</Form.Label>
                 <Form.Control
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
                   required
                   type="password"
                   name="password"
@@ -155,8 +184,15 @@ export default function Join() {
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group>
-                <Form.Label>Confirm Password</Form.Label>
+                <Form.Label
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
+                >Confirm Password</Form.Label>
                 <Form.Control
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                }}
                   required
                   type="password"
                   name="confirm password"
@@ -171,9 +207,18 @@ export default function Join() {
                   Passwords do not match.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Button className={styles["submit-form"]} type="submit">
-                Submit
+              <br />
+              <div align="center">
+              <Button 
+                  className={styles["submit-form"]} 
+                  type="submit"
+                  style={{
+                    fontFamily: "Chivo, sans-serif",
+                    border: "none",
+                }}>
+                Add me to the WECE newsletter and create my WECE account!
               </Button>
+              </div>
             </Form>
             <Modal show={modalSubscribed} onHide={toggleSubscribed}>
               <Modal.Header closeButton>Success</Modal.Header>
