@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap'); 
+
 /* variables */
 html {
   /* colors */
@@ -21,7 +23,7 @@ html {
   --dark-text-color: #1c3624;
 
   /* font families */
-  --sans-serif-font: "Roboto";
+  --sans-serif-font: "'Chivo', sans-serif";
   --serif-font: "IBM Plex Mono";
 }
 
