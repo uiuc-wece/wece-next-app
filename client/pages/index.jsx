@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import { BiRightArrowCircle } from "react-icons/bi";
+// import { BiRightArrowCircle } from "react-icons/bi";
 
 export default function Home() {
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <Layout>
       <LinesSvg />
-      <div className={styles["wece-hacks-wrapper"]}>
+      {/* <div className={styles["wece-hacks-wrapper"]}>
         <a href="/wecehacks">
           <div className={styles["wece-hacks-content"]}>
             <div className={styles["wece-hacks-text"]}>
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
         </a>
-      </div>
+      </div> */}
       <div className="content">
         <div className={styles["top"]}>
           <Container>
