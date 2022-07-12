@@ -6,6 +6,7 @@ import styles from "../styles/Calendar.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Container from "react-bootstrap/Container";
+import SectionBody from "../components/sectionbody";
 
 export default function Calendar() {
   const [events, setEvents] = useState([]);
@@ -111,7 +112,13 @@ export default function Calendar() {
                     </div>
                   </a>
                 ))
-              : null}
+              : null} 
+              {/* Use this during the summer when there are no events! */}
+              <SectionBody>
+                <p>
+                  There are no events scheduled for this month. Check back later! <br/> We are working hard to get more events to the calendar.
+                </p>
+              </SectionBody>
           </div>
         </Container>
       </div>
