@@ -3,7 +3,7 @@
   padding: 5px;
   display: block;
   width: 300px;
-  height: 450px;
+  height: 410px;
   cursor: pointer;
   white-space: wrap;
 }
@@ -27,14 +27,13 @@
 }
 
 .card-inner {
-  
   position: absolute;
 }
 
 .exec-pic {
   border-radius: 20px;
   width: 300px;
-  height: 450px;
+  height: 380px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.5s ease-in;
@@ -49,14 +48,14 @@
   left: 0;
   background: #ffffff;
   width: 300px;
-  height: 100px;
+  height: 125px;
   color: #000000;
   text-align: left;
 }
 
 .active .exec-text {
   width: 500px;
-  height: 450px;
+  height: 380px;
   border-radius: 20px;
   background: var(--dark-background-color);
   color: var(--accent-2-color);
@@ -76,7 +75,7 @@
 
 .exec-name {
   position: absolute;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   padding-left: 30px;
   bottom: 0;
   left: 0;
@@ -85,7 +84,7 @@
 
 .exec-desc {
   position: absolute;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-left: 30px;
   bottom: 0;
   left: 0;
@@ -146,18 +145,18 @@
   }
 
   .exec-pic {
-    width: 250px;
-    height: 375px;
+    width: 270px;
+    height: 340px;
   }
 
   .exec-text {
-    width: 250px;
-    height: 80px;
+    width: 270px;
+    height: 100px;
   }
 
   .active .exec-text {
     width: 350px;
-    height: 375px;
+    height: 340px;
     max-width: 80vw;
   }
 
@@ -175,7 +174,7 @@
   }
 
   .exec-desc {
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     padding-left: 20px;
   }
 
