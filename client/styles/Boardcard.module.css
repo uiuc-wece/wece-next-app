@@ -119,10 +119,11 @@
 
 .flip-text h6 {
   font-size: 1em !important;
+  font-family: "Chivo";
 }
 
 .flip-about {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .flip-category {
@@ -135,8 +136,9 @@
 @media screen and (max-width: 700px) {
   .img-card {
     margin: 10px auto;
-    width: 250px;
-    height: 375px;
+    width: 64vw;
+    height: 530px;
+    
   }
 
   .active.img-card {
@@ -145,18 +147,18 @@
   }
 
   .exec-pic {
-    width: 270px;
-    height: 340px;
+    width: 350px;
+    height: 500px;
   }
 
   .exec-text {
-    width: 270px;
-    height: 100px;
+    width: 350px;
+    height: 85px;
   }
 
   .active .exec-text {
     width: 350px;
-    height: 340px;
+    height: 100%;
     max-width: 80vw;
   }
 

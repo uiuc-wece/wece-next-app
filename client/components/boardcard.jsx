@@ -29,20 +29,7 @@ export default function BoardCard({
             <h6>{year}</h6>
             <div className={styles["flip-about"]}>
               <h5>About Me</h5>
-              <h6>
-                <span className={styles["flip-category"]}></span>{" "}
-                {about}
-              </h6>
-              <h6>
-                <span className={styles["flip-category"]}>Hobbies:</span>{" "}
-                {contact}
-              </h6>
-              <h6>
-                <span className={styles["flip-category"]}>
-                  Favorite inspirational quote:
-                </span>{" "}
-                {}
-              </h6>
+              <h6>{about}</h6>
             </div>
           </div>
         </div>

@@ -23,9 +23,9 @@ export default function Board() {
                     role={member.role}
                     major={member.major}
                     year={member.year}
-                    spiritAnimal={member.spiritAnimal}
-                    hobbies={member.hobbies}
-                    quote={member.quote}
+                    about={member.about}
+                    contact={member.contact}
+                    linkedin={member.linkedin}
                     img={member.img}
                   />
                 ))}
