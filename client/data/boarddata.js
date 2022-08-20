@@ -21,7 +21,7 @@ export default {
       img: "imgs/board/saaniya.jpeg",
     },
     {
-      name: "Pakhi Gupta",
+      name: "Emily Chen",
       role: "External Vice President",
       major: "Computer Engineering",
       year: "Senior",
@@ -35,11 +35,11 @@ export default {
       role: "Internal Vice President",
       major: "Electrical Engineering",
       year: "Senior",
-      about: "deer",
+      about: "Hi! I'm Sania and I'm a senior studying EE, specializing in power and energy. Some of my hobbies include bothering my family, eating, gaming, gardening, and being a big ball of energy. If you ever wanna talk nerd stuff, I gotchu. Some of my other RSOs in the past were Solar Car and EVConcept. I joined WECE my sophomore year and my involvement within WECE was the EOH project and just last year, I was the mentorship workshop chair. I hope to get to know everyone and create strong relationships! :)",
       contact:
         "drinking iced coffee, going out to eat brunch, playing tennis, watching New Girl, and spending time with the people I love",
-      linkedin: '"Better an oops than a what if!"',
-      img: "imgs/board/navi.jpeg",
+      linkedin: 'https://www.linkedin.com/in/sania-h-6b1b871b6',
+      img: "imgs/board/sania.png",
     },
     {
       name: "Cathy Boman",
@@ -70,7 +70,7 @@ export default {
       year: "Sophomore",
       about: "Hi! I’m currently a sophomore in EE. I’m originally from LA, and I love surfing, stargazing, the outdoors, spontaneous adventures, and spending time with people. In the ECE department, I’m interested in semiconductor circuit design and power management. I’m also involved in the Illini Formula Electric circuit design subteam.",
       contact: "mailto:rawnies2@illinois.edu",
-      linkedin: 'www.linkedin.com/in/rawnie',
+      linkedin: 'https://www.linkedin.com/in/rawnie',
       img: "imgs/board/rawnie.JPG",
     },
     {
@@ -91,7 +91,7 @@ export default {
       about: "Hi everyone! My name is Emily Xu, and I am a sophomore majoring in Computer Engineering. I joined WECE in my freshmen year as a marketing chair. I love to draw, paint, listen to music, and play video games. I also love spending time with my friends! I am interested in learning about AI and working with the software side of Computer Engineering.",
       contact: "mailto:exu7@illinois.edu",
       linkedin:
-        'www.linkedin.com/in/emily-xu-0001921b3',
+        'https://www.linkedin.com/in/emily-xu-0001921b3',
       img: "imgs/board/emily.jpg",
     },
     {
@@ -110,7 +110,7 @@ export default {
       role: "Mentorship Director",
       major: "Electrical Engineering",
       year: "Junior",
-      about: "Hello! My name is Subha (rhymes with Tuba) and I'm a junior in Electrical Engineering! I love to read, go on walks, watch Chicago sports, and watch movies! On campus, I am involved with Engineering Ambassadors and was a lab assistant and counselor for WYSE Camps (Worldwide Youth and Science in Engineering). I interned at Burns & McDonnell the past summer and worked in substation design, and it was such a rewarding experience. My interests are in power and energy, and I'm also planning to do a concentration during my time here. I joined WECE my first semester (Fall 2020) and it has been such a good time! Mt favorite experience in WECE has definitely been Engineering Open House! While I was not on the technical side of things, I staffed our booth and it was so awesome representing WECE and all the amazing things we do. Please feel free to reach out to me if you have any questions or just wanna chat! :)",
+      about: "Hello! My name is Subha (rhymes with Tuba) and I'm a junior in Electrical Engineering! I love to read, go on walks, watch Chicago sports, and watch movies! On campus, I am involved with Engineering Ambassadors and was a lab assistant and counselor for WYSE Camps (Worldwide Youth and Science in Engineering). I interned at Burns & McDonnell the past summer and worked in substation design, and it was such a rewarding experience. Please feel free to reach out to me if you have any questions or just wanna chat! :)",
       contact: "mailto:sbs8@illinois.edu",
       linkedin: 'https://www.linkedin.com/in/subha-somaskandan-a10874248',
       img: "imgs/board/subha.JPG",
@@ -126,7 +126,7 @@ export default {
       img: "imgs/board/tala.jpeg",
     },
     {
-      name: "Jennifer Chen",
+      name: "Apurva Perla",
       role: "Social Director",
       major: "Electrical Engineering",
       year: "Sophomore",
@@ -143,7 +143,7 @@ export default {
       about: "Hey! I’m Kaitlin and I’m a sophomore in electrical engineering. I joined WECE in the fall of my freshman year where I had a blast building the smart glasses we designed for the technical project. Outside of WECE, one of the things I like to do is read. I have recently gotten into Greek Mythology stories since taking a course at UIUC. I also like to bake as I have a huge sweet tooth. My favorite recipe I’ve made so far is lemon bars, the perfect balance between sweet and sour!",
       contact: "mailto:kgowens2@illinois.edu",
       linkedin:
-        'www.linkedin.com/in/kaitlin-gowens-240229238',
+        'https://www.linkedin.com/in/kaitlin-gowens-240229238',
       img: "imgs/board/Kaitlin.jpg",
     },
     {
@@ -151,9 +151,9 @@ export default {
       role: "Technical Director",
       major: "Computer Engineering",
       year: "Senior",
-      about: "Whale",
+      about: "Hi! My name is Neha, and I'm a Senior majoring in Computer Engineering. I've been a part of WECE since my freshman year, and I've loved the opportunity to learn new skills and meet amazing new people. In my free time, I also love to bake and make jewelry. Please feel free to reach out for any reason!",
       contact: "Dancing, baking",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/neha-agarwal-06458019b",
       img: "imgs/board/neha.jpg",
     },
   ],
