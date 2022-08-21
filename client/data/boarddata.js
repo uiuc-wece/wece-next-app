@@ -14,11 +14,11 @@ export default {
       role: "External Vice President",
       major: "Computer Engineering",
       year: "Sophomore",
-      about: "sloth",
-      contact: "embroidery, hiking, rock climbing, finding cute coffee shops",
+      about: "Major: Computer Engineering, I Joined WECE in my Freshman Year, My best experience of WECE so far was the Tote Bag event for WECE Week, Fun: Spending time with friends, Interned at Kahua Inc, Interested in the intersection of Big data and Quantum Computing",
+      contact: "mailto:parvati3@illinois.edu",
       linkedin:
-        '"If people are doubting how far you can go, go so far that you can’t hear them anymore." – Michele Ruiz',
-      img: "imgs/board/saaniya.jpeg",
+        'https://www.linkedin.com/in/parvati-menon-uiuc/',
+      img: "imgs/board/parvati.jpeg",
     },
     {
       name: "Emily Chen",
@@ -99,11 +99,11 @@ export default {
       role: "Marketing Director",
       major: "Computer Engineering",
       year: "Sophomore",
-      about: "turtle",
-      contact: "dancing, painting, watching Brooklyn Nine-Nine",
+      about: "Hello, I'm Li! I'm studying computer engineering, but I also love to create art. I joined WECE as a marketing director to bridge the gap between my interests in computer engineering and design. I'm currently also involved with the Philippine Student Association, and also like to dance. I've always been interested in UI/UX design, but I'm most intrigued by sustainable technology and AI.",
+      contact: "jpadi4@illinois.edu",
       linkedin:
-        '"Winners are not those who never fail, but those who never quit." - Edwin Louis Cole',
-      img: "imgs/board/rutu.JPG",
+        'https://www.linkedin.com/in/li-padilla-3b7b25242',
+      img: "imgs/board/li.jpeg",
     },
     {
       name: "Subha Somaskandan",
