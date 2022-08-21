@@ -3,9 +3,9 @@
   padding: 5px;
   display: block;
   width: 300px;
-  height: 450px;
+  height: 410px;
   cursor: pointer;
-  /* white-space: nowrap; */
+  white-space: wrap;
 }
 
 .img-card:hover .exec-pic {
@@ -23,18 +23,17 @@
 }
 
 .active.img-card {
-  width: 500px;
+  width: 450px;
 }
 
 .card-inner {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
 }
 
 .exec-pic {
   border-radius: 20px;
   width: 300px;
-  height: 450px;
+  height: 380px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.5s ease-in;
@@ -49,14 +48,14 @@
   left: 0;
   background: #ffffff;
   width: 300px;
-  height: 100px;
+  height: 125px;
   color: #000000;
   text-align: left;
 }
 
 .active .exec-text {
   width: 500px;
-  height: 450px;
+  height: 380px;
   border-radius: 20px;
   background: var(--dark-background-color);
   color: var(--accent-2-color);
@@ -76,7 +75,7 @@
 
 .exec-name {
   position: absolute;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   padding-left: 30px;
   bottom: 0;
   left: 0;
@@ -85,11 +84,11 @@
 
 .exec-desc {
   position: absolute;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-left: 30px;
   bottom: 0;
   left: 0;
-  font-family: "Roboto";
+  font-family: "Chivo";
 }
 
 .flip-card {
@@ -120,10 +119,11 @@
 
 .flip-text h6 {
   font-size: 1em !important;
+  font-family: "Chivo";
 }
 
 .flip-about {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .flip-category {
@@ -136,8 +136,9 @@
 @media screen and (max-width: 700px) {
   .img-card {
     margin: 10px auto;
-    width: 250px;
-    height: 375px;
+    width: 64vw;
+    height: 530px;
+    
   }
 
   .active.img-card {
@@ -146,18 +147,18 @@
   }
 
   .exec-pic {
-    width: 250px;
-    height: 375px;
+    width: 350px;
+    height: 500px;
   }
 
   .exec-text {
-    width: 250px;
-    height: 80px;
+    width: 350px;
+    height: 85px;
   }
 
   .active .exec-text {
     width: 350px;
-    height: 375px;
+    height: 100%;
     max-width: 80vw;
   }
 
@@ -175,7 +176,7 @@
   }
 
   .exec-desc {
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     padding-left: 20px;
   }
 
