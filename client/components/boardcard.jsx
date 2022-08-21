@@ -6,9 +6,9 @@ export default function BoardCard({
   role,
   major,
   year,
-  spiritAnimal,
-  hobbies,
-  quote,
+  about,
+  contact,
+  linkedin,
   img,
 }) {
   const flipCard = (event) => {
@@ -29,20 +29,7 @@ export default function BoardCard({
             <h6>{year}</h6>
             <div className={styles["flip-about"]}>
               <h5>About Me</h5>
-              <h6>
-                <span className={styles["flip-category"]}>Spirit Animal:</span>{" "}
-                {spiritAnimal}
-              </h6>
-              <h6>
-                <span className={styles["flip-category"]}>Hobbies:</span>{" "}
-                {hobbies}
-              </h6>
-              <h6>
-                <span className={styles["flip-category"]}>
-                  Favorite inspirational quote:
-                </span>{" "}
-                {quote}
-              </h6>
+              <h6>{about}</h6>
             </div>
           </div>
         </div>
