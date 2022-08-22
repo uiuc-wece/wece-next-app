@@ -5,9 +5,9 @@ export default {
       role: "President",
       major: "Computer Engineering",
       year: "Senior",
-      about: "blue whale",
+      about: "!!",
       contact: "",
-      img: "imgs/board/maram.jpg",
+      img: "imgs/board/tala.jpeg",
     },
     {
       name: "Parvati Menon",
