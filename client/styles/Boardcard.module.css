@@ -6,6 +6,7 @@
   height: 410px;
   cursor: pointer;
   white-space: wrap;
+  min-width: 300;
 }
 
 .img-card:hover .exec-pic {
@@ -138,7 +139,7 @@
     margin: 10px auto;
     width: 64vw;
     height: 530px;
-    
+    min-width: 300px;
   }
 
   .active.img-card {
