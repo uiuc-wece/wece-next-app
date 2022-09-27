@@ -114,11 +114,11 @@ export default function Calendar() {
                 ))
               : null} 
               {/* Use this during the summer when there are no events! */}
-              <SectionBody>
+              {/* <SectionBody>
                 <p>
                   There are no events scheduled for this month. Check back later! <br/> We are working hard to get more events to the calendar.
                 </p>
-              </SectionBody>
+              </SectionBody> */}
           </div>
         </Container>
       </div>
