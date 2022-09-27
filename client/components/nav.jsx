@@ -115,12 +115,12 @@ const CustomNavbar = ({ background_color2 = "#2a5236" }) => {
               >
                 Newsletters
               </NavDropdown.Item>
-              <NavDropdown.Item
+              {/* <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/resumebook"
               >
                 Resume Book
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               
             </NavDropdown>
 
@@ -143,12 +143,12 @@ const CustomNavbar = ({ background_color2 = "#2a5236" }) => {
               >
                 2018-19
               </NavDropdown.Item>
-              <NavDropdown.Item
+              {/* <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/wecehacks"
               >
                 wecehacks
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
 
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
