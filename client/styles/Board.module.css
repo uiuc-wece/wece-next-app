@@ -1,3 +1,4 @@
 .section {
   padding: 2em 2vw 0;
+  min-width: 200px;
 }
