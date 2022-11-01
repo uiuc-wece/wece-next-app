@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
+
 import React from "react";
 // import { useSelector } from "react-redux";
-import { useRouter } from "next/router";
 import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -8,8 +9,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
-
-  const router = useRouter();
 
   return (
     <>
