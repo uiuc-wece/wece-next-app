@@ -2,14 +2,13 @@
 
 import React from "react";
 // import { useSelector } from "react-redux";
-import styles from "../styles/WECEHacks.module.css";
+import styles from "../styles/WECEhacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
-
   return (
     <>
       <Navbar
@@ -27,17 +26,12 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
               alt="wece-logo-white"
             />
           </Navbar.Brand>
-          <Nav className={styles["left-navbar-imgs"]}>
-            
-           
-          </Nav>
+          <Nav className={styles["left-navbar-imgs"]}></Nav>
         </div>
         <Navbar.Toggle className={styles["custom-toggler"]} />
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
             <Nav.Link href="/events">Events</Nav.Link>
-           
- 
 
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
@@ -59,7 +53,6 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
                 2018-19
               </NavDropdown.Item>
             </NavDropdown>
-           
           </Nav>
         </Navbar.Collapse>
       </Navbar>

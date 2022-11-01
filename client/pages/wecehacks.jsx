@@ -3,7 +3,7 @@ import { scrollSpy } from "react-scroll";
 // import { ReactTypeformEmbed } from "react-typeform-embed";
 import { useEffect } from "react";
 import WECEHacksLayout from "../components/wecehacksLayout";
-import styles from "../styles/WECEHacks.module.css";
+import styles from "../styles/WECEhacks.module.css";
 
 import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
@@ -34,8 +34,7 @@ export default function WECEHacks() {
 
   return (
     <WECEHacksLayout background_color="#a890fe">
-
-      <CustomCursor // custom cursor component 
+      <CustomCursor // custom cursor component
         customClass={styles["cursor"]}
         targets={["#nav", "#button"]}
         targetScale={2}
@@ -58,20 +57,27 @@ export default function WECEHacks() {
           </div>
         </a>
       </div> */}
-      
 
       <div className={styles["pages"]}>
-      <div className={styles["wecehacks-logo-wrapper"]}>
-          <img className={styles["wece-hacks-text"]}src="/../../imgs/wece-hacks-text.png" alt="wecehacks-logo" />
+        <div className={styles["wecehacks-logo-wrapper"]}>
+          <img
+            className={styles["wece-hacks-text"]}
+            src="/../../imgs/wece-hacks-text.png"
+            alt="wecehacks-logo"
+          />
         </div>
-      <SectionHead
-      title="Coming Soon_" top={false} wecehacks={true}
-     />
-     <div className={styles["wecehacks-center-wrapper"]}>
-     <Button className={styles["wecehacks-button"]} variant="outline-light" style={{
-        fontFamily: "Press Start 2P, cursive"
-     }}>Notify Me</Button>
-      </div>
+        <SectionHead title="Coming Soon_" top={false} wecehacks={true} />
+        <div className={styles["wecehacks-center-wrapper"]}>
+          <Button
+            className={styles["wecehacks-button"]}
+            variant="outline-light"
+            style={{
+              fontFamily: "Press Start 2P, cursive",
+            }}
+          >
+            Notify Me
+          </Button>
+        </div>
       </div>
     </WECEHacksLayout>
   );
