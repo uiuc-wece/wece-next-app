@@ -1,12 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
-import styles from "../styles/Nav.module.css";
+import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-const WECEHacksNav = ({ background_color2 = "#2a5236" }) => {
+// this changes the color of the navbar
+const WECEHacksNav = ({ background_color2 = "transparent" }) => {
 
   const router = useRouter();
 
@@ -16,7 +17,7 @@ const WECEHacksNav = ({ background_color2 = "#2a5236" }) => {
         variant="dark"
         expand="lg"
         fixed="top"
-        className={styles["navbar"]}
+        className={styles["nav-wece-hacks"]}
         style={{ backgroundColor: background_color2 }}
       >
         <div className={styles["left-navbar"]}>
