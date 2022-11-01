@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Footer from "../../components/footer";
-import WECEHacksNav from "../../components/outreach/OutreachNavBar";
+import OutreachNavBar from "../../components/outreach/OutreachNavBar";
 
 export default function OutreachHome({
   children,
@@ -27,9 +27,7 @@ export default function OutreachHome({
       </Head>
       <div className="page" style={{ backgroundColor: background_color }}>
         <div id="container">
-          <WECEHacksNav
-            background_color={background_color}
-          ></WECEHacksNav>
+          <OutreachNavBar background_color={background_color}></OutreachNavBar>
           {children}
           <Footer></Footer>
         </div>
