@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import Head from "next/head";
 import Footer from "./footer";
@@ -27,9 +29,7 @@ export default function Layout({
       </Head>
       <div className="page" style={{ backgroundColor: background_color }}>
         <div id="container">
-          <CustomNavbar
-            background_color={background_color}
-          ></CustomNavbar>
+          <CustomNavbar background_color={background_color}></CustomNavbar>
           {children}
           <Footer></Footer>
         </div>

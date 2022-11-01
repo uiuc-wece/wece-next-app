@@ -1,35 +1,36 @@
-import { Link, Element, scrollSpy } from "react-scroll";
-import { ReactTypeformEmbed } from "react-typeform-embed";
-import { useEffect, useState, useCallback } from "react";
+import React from "react";
+import { scrollSpy } from "react-scroll";
+// import { ReactTypeformEmbed } from "react-typeform-embed";
+import { useEffect } from "react";
 import WECEHacksLayout from "../components/wecehacksLayout";
 import styles from "../styles/WECEHacks.module.css";
 
 import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
-import { BiRightArrowCircle } from "react-icons/bi";
+// import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
 
 export default function WECEHacks() {
-  const [typeForm, setTypeForm] = useState(null);
+  // const [typeForm, setTypeForm] = useState(null);
 
   useEffect(() => {
     scrollSpy.update();
   }, []);
 
-  const typeFormRef = useCallback((tf) => {
-    console.log(tf);
-    if (tf !== null) {
-      setTypeForm(tf);
-    }
-  }, []);
+  // const typeFormRef = useCallback((tf) => {
+  //   console.log(tf);
+  //   if (tf !== null) {
+  //     setTypeForm(tf);
+  //   }
+  // }, []);
 
-  const openForm = () => {
-    console.log("click");
-    if (typeForm) {
-      typeForm.typeform.open();
-    }
-  };
+  // const openForm = () => {
+  //   console.log("click");
+  //   if (typeForm) {
+  //     typeForm.typeform.open();
+  //   }
+  // };
 
   return (
     <WECEHacksLayout background_color="#a890fe">
