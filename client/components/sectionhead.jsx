@@ -5,7 +5,7 @@ function SectionTop({ children }) {
   return <div className={styles["section-top"]}>{children}</div>;
 }
 
-export default function SectionHead({ title, top }) {
+export default function SectionHead({ title, top, wecehacks }) {
   if (top) {
     return (
       <SectionTop>
@@ -15,6 +15,14 @@ export default function SectionHead({ title, top }) {
           </div>
         </div>
       </SectionTop>
+    );
+  } else if (wecehacks) {
+    return (
+      <div className={styles["wecehacks-section-head"]}>
+        <div className={styles["wecehacks-section-title"]}>
+          <h3>{title}</h3>
+        </div>
+      </div>
     );
   } else {
     return (
