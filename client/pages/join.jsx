@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../components/layout";
 import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
@@ -58,7 +59,7 @@ export default function Join() {
       });
 
       Promise.all([subscribeRequest, registerRequest])
-        .then((_) => {
+        .then(() => {
           setSuccessMessage(
             "You have successfully created a WECE account and subscribed to the WECE newsletter!"
           );
@@ -208,7 +209,7 @@ export default function Join() {
                 </Form.Control.Feedback>
               </Form.Group>
               <br />
-              <div align="center">
+              <div >
               <Button 
                   className={styles["submit-form"]} 
                   type="submit"
