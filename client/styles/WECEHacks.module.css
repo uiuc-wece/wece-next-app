@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Press+Start+2P&display=swap");
 /* .cursor {
   border-radius: 100%;
   box-shadow: 0 0 1.5rem #6fb183, 0 0 1rem #6fb183, 0 0 0.2rem #6fb183,
     0 0 0.4rem #6fb183;
   color: #b1f4c5;
 } */
-.wecehacks-center-wrapper{
+.wecehacks-center-wrapper {
   display: flex;
   justify-content: center;
   padding-top: 3vh;
   padding-bottom: 3vh;
- }
+}
 .wecehacks-button {
   border-radius: 8px !important;
   border: 2px solid white !important;
@@ -25,8 +25,13 @@
 }
 /* gradient background for WECEHacks  */
 .bg-wece-hacks {
-  background: rgb(244,126,126,1);
-  background: linear-gradient(180deg, rgba(168,144,254,1) 0%, rgba(198,143,202,1) 66%, rgba(244,126,126,1) 100%);
+  background: rgb(244, 126, 126, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(168, 144, 254, 1) 0%,
+    rgba(198, 143, 202, 1) 66%,
+    rgba(244, 126, 126, 1) 100%
+  );
 }
 
 .nav-wece-hacks {
@@ -34,16 +39,15 @@
   font-size: 0.8em;
 }
 
-.wecehacks-logo-wrapper{
- display: flex;
- justify-content: center;
- padding-top: 15vh;
+.wecehacks-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
 }
 
 .wecehacks-logo-wrapper > img {
   width: 70vw;
   justify-content: center;
-
 }
 
 @media screen and (max-width: 400px) {
@@ -62,7 +66,7 @@
   width: 100%;
   padding: 10px;
   background-color: #b1f4c5;
-  color:#540d6e;
+  color: #540d6e;
   font-family: "Source Sans Pro", sans-serif;
   z-index: 100;
 }
@@ -222,7 +226,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 .wece {
   font-family: "Train One", cursive;
@@ -331,7 +335,7 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.text-box2{
+.text-box2 {
   background-color: #d1a2e7;
   color: #420b57;
   width: 50%;
