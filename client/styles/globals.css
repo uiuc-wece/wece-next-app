@@ -6,21 +6,21 @@ html {
   --accent-color-light: #fcd5d5;
   --accent-color: #e6abb5;
   --accent-color-shadow: #a57e85;
-  --accent-text-color: #c9435a;
+  --accent-text-color: #DF9697;
   --accent-2-color-light: #fdf1dd;
   --accent-2-color: #f7e7ce;
   --accent-2-color-shadow: #f7e7ce;
   --accent-2-color-shadow-2:#e6d0ae;
-  --accent-2-text-color: #285428;
+  --accent-2-text-color: #6060ad;
   --neutral-color-light: #ffffff;
-  --neutral-color: #fdf1dd;
+  --neutral-color: #EEDEC9;
   --neutral-color-shadow-light: #fdf1dd;
   --neutral-color-shadow: #fdf1dd;
-  --dark-background-color: #2a5236;
-  --dark-background-color-muted: #1f3d28;
-  --dark-background-color-muted-light: #427e54;
+  --dark-background-color: #9D9DFF;
+  --dark-background-color-muted: #c6c6f1;
+  --dark-background-color-muted-light: #cecef4;
   --light-text-color: #ffffff;
-  --dark-text-color: #1c3624;
+  --dark-text-color: #837d76;
 
   /* font families */
   --sans-serif-font: "'Chivo', sans-serif";

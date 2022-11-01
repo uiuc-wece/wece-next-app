@@ -5,7 +5,7 @@ import CustomNavbar from "./nav";
 
 export default function Layout({
   children,
-  background_color = "#e6abb5",
+  background_color = "#F7BDBE",
   title = "Women in ECE | University of Illinois at Urbana-Champaign",
 }) {
   return (
