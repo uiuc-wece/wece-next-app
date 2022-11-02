@@ -2,7 +2,7 @@
 
 import React from "react";
 // import { useSelector } from "react-redux";
-import styles from "../styles/WECEhacks.module.css";
+import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
