@@ -31,9 +31,9 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Toggle className={styles["custom-toggler"]} />
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
-            <Nav.Link href="/events">Events</Nav.Link>
+            {/* <Nav.Link href="/events">Events</Nav.Link> */}
 
-            <NavDropdown title="Sponsors">
+            {/* <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors22"
@@ -52,7 +52,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
               >
                 2018-19
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

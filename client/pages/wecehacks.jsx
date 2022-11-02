@@ -70,6 +70,7 @@ export default function WECEHacks() {
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
+            href="https://forms.gle/3WdcHSGjdRYK3ygq6"
             variant="outline-light"
             style={{
               fontFamily: "Press Start 2P, cursive",
