@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import WECEHacksFooter from "./wecehacksFooter";
 import WECEHacksNav from "./wecehacksNav";
-import styles from "../styles/WECEhacks.module.css";
+import styles from "../styles/WECEHacks.module.css";
 
 export default function WECEHacksLayout({
   children,
@@ -26,14 +26,11 @@ export default function WECEHacksLayout({
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossOrigin="anonymous"
         />
-        
       </Head>
 
       <div className={styles["bg-wece-hacks"]}>
         <div id="container">
-          <WECEHacksNav
-            background_color={background_color}
-          ></WECEHacksNav>
+          <WECEHacksNav background_color={background_color}></WECEHacksNav>
           {children}
         </div>
         <WECEHacksFooter></WECEHacksFooter>

@@ -3,7 +3,7 @@ import { scrollSpy } from "react-scroll";
 // import { ReactTypeformEmbed } from "react-typeform-embed";
 import { useEffect } from "react";
 import WECEHacksLayout from "../components/wecehacksLayout";
-import styles from "../styles/WECEhacks.module.css";
+import styles from "../styles/WECEHacks.module.css";
 
 import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
