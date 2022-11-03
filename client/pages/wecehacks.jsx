@@ -31,14 +31,14 @@ export default function WECEHacks() {
   };
 
   return (
-    <WECEHacksLayout background_color="#C68FCA">
+    <WECEHacksLayout background_color="#A890FE">
 
       <CustomCursor // custom cursor component 
         customClass={styles["cursor"]}
         targets={["#nav", "#button"]}
         targetScale={2}
         dimensions={8}
-        strokeColor="#b1f4c5"
+        strokeColor="#c68fca"
         strokeWidth={8}
         fill="#6fb183"
         smoothness={{ movement: 1, scale: 0.6, opacity: 0.8 }}
@@ -55,7 +55,7 @@ export default function WECEHacks() {
             </div>
           </div>
         </a>
-      </div> */}
+  </div> */}
       
       <div id="nav" className={styles["side-nav"]}>
         <Link
@@ -115,8 +115,6 @@ export default function WECEHacks() {
           tabIndex="5"
           className={styles["side-nav-item"]}
         >
-          <p>Themes</p>
-          <div className={styles["circle"]} />
         </Link>
         <Link
           to="prizes"
@@ -127,7 +125,7 @@ export default function WECEHacks() {
           tabIndex="5"
           className={styles["side-nav-item"]}
         >
-          <p>Prizes</p>
+          <p>AWARDS</p>
           <div className={styles["circle"]} />
         </Link>
         <Link
@@ -162,7 +160,7 @@ export default function WECEHacks() {
             <div className={styles["title"]}>about</div>
             <div className={styles["text-box"]}>
               <p>
-              WECE is hosting its returning hackathon WECEHacks, which will be hybrid this year! The mission of this event is to have a fun hardware and app-development-focused hackathon that is primarily for empowering women in our community who might otherwise face barriers to entry in other hackathons. Our event will run for two days with a series of workshops for a variety of skill-levels and a competition where teams will submit a project related to the themes of this year!
+              WECE is hosting its returning hackathon WECEHacks.
               </p>
               <div className={styles["about-icon-row"]}>
                 <div className={styles["about-icon-wrapper"]}>
@@ -224,7 +222,7 @@ export default function WECEHacks() {
                 <b>Saturday</b>
               </p>
               <p>
-                <b>9am</b> – Kickoff
+                <b>9am</b> – wake up
               </p>
               <p>
                 <b>9:45am</b> - Workspaces open

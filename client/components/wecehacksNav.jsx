@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-const WECEHacksNav = ({ background_color2 = "#2a5236" }) => {
+const WECEHacksNav = ({ background_color2 = "#ea8d8d" }) => {
 
   const router = useRouter();
 
@@ -40,6 +40,12 @@ const WECEHacksNav = ({ background_color2 = "#2a5236" }) => {
  
 
             <NavDropdown title="Sponsors">
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/sponsors22"
+              >
+                2022-23
+              </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors22"
