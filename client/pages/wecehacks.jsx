@@ -10,6 +10,7 @@ import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
+import WECEHacksTeam from "../components/wecehacksTeam";
 
 export default function WECEHacks() {
   // const [typeForm, setTypeForm] = useState(null);
@@ -80,6 +81,7 @@ export default function WECEHacks() {
           </Button>
         </div>
       </div>
+      <WECEHacksTeam />
     </WECEHacksLayout>
   );
 }
