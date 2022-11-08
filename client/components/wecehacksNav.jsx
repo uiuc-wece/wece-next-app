@@ -14,7 +14,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
       <Navbar
         variant="dark"
         expand="lg"
-        fixed="top"
+        sticky = "bottom"
         className={styles["nav-wece-hacks"]}
         style={{ backgroundColor: background_color2 }}
       >
