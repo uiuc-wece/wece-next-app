@@ -12,8 +12,8 @@
   justify-content: center;
 }
 
-.wecehacks-section-title h3{
-  font-size: 3vw;
+.wecehacks-section-title h3 {
+  font-size: 2em;
   overflow: hidden;
   border-right: 0.05em solid var(--dark-background-color-muted);
   white-space: nowrap;
