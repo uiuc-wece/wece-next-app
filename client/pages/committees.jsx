@@ -14,9 +14,10 @@ export default function Committees() {
           <SectionHead title="Committees_" top={true} />
           <SectionBody>
             <p>
-              WECE has seven great committees you can join and participate in!
-              Read more to find out what each of them do :) If you would like to
-              join, fill out your committee preferences below!
+              WECE has seven amazing committees for you to join and participate in!<br></br>
+              Keep reading to find out what each of them do.<br></br>
+              If you're interested in joining, fill out your committee preferences below! <br></br>
+              We can't wait to work with you :)
             </p>
             <SectionButton buttonText="Join" buttonLink="/join" />
           </SectionBody>
@@ -27,9 +28,30 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/ariya.jpeg"
+                    src="../imgs/board/rawnie.JPG"
                   />
-                  <figcaption>Ariya Patel</figcaption>
+                  <figcaption>Rawnie Singh</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Tanvika Boyineni</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Alayna Wenting</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Ishanvi Lakhani</figcaption>
                 </figure>
                 <p>
                   The Academic Committee organizes and hosts workshops and
@@ -45,9 +67,23 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/joshmita.jpg"
+                    src="../imgs/board/ellie.jpeg"
                   />
-                  <figcaption>Joshmita Chintala</figcaption>
+                  <figcaption>Ellie Popoca</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Apoorva Sannasi</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Emily Liu</figcaption>
                 </figure>
                 <p>
                   The Infrastructure Commitee develops and updates the WECE
@@ -65,9 +101,37 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/rutu.JPG"
+                    src="../imgs/board/li.jpeg"
                   />
-                  <figcaption>Rutu Brahmbhatt</figcaption>
+                  <figcaption>Li Padilla</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/board/emily.jpg"
+                  />
+                  <figcaption>Emily Xu</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Bhavana Chintala</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Estela Medrano</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Fiona Cashin</figcaption>
                 </figure>
                 <p>
                   The Marketing Committee advertises WECE events and creatively
@@ -87,16 +151,37 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/subha.PNG"
+                    src="../imgs/board/subha.JPG"
                   />
                   <figcaption>Subha Somaskandan</figcaption>
                 </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/chetna.jpg"
+                    src="../imgs/wece-logo-black.png"
                   />
-                  <figcaption>Chetna Verma</figcaption>
+                  <figcaption>Ananya Kommalapati</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Nicole Viz</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Megha Esturi</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Ramya Reddy</figcaption>
                 </figure>
                 <p>
                   The WECE Mentorship Committee strives to build a welcoming and
@@ -114,9 +199,30 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/tala.jpeg"
+                    src="../imgs/board/matilde.jpeg"
                   />
-                  <figcaption>Tala Aoun</figcaption>
+                  <figcaption>Matilde Figueroa-Carillo</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Anjali Aravindhan</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Neha Joseph</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Jenny Kim</figcaption>
                 </figure>
                 <p>
                   The outreach committee works with the surrounding community to
@@ -132,9 +238,23 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/jennifer.jpeg"
+                    src="../imgs/board/apurva.jpg"
                   />
-                  <figcaption>Jennifer Chen</figcaption>
+                  <figcaption>Apurva Perla</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Varsha Mullangi</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Aleena Majeed</figcaption>
                 </figure>
                 <p>
                   Social Committee is all about fostering relationships. Whether
@@ -159,9 +279,37 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/rochelle.jpg"
+                    src="../imgs/board/Kaitlin.jpg"
                   />
-                  <figcaption>Rochelle Tham</figcaption>
+                  <figcaption>Kaitlin Gowens</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Shrey Sharma</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Amber Wilt</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Gauthami Yenne</figcaption>
+                </figure> 
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/wece-logo-black.png"
+                  />
+                  <figcaption>Sneh Chandak</figcaption>
                 </figure>
                 <p>
                   The WECE technical committee works on a project which is
