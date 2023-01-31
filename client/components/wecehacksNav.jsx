@@ -23,7 +23,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
               src="imgs/wece-logo-h-white.png"
               height="30px"
               alt="wece-logo-white" 
-              
+      
             />
           </Navbar.Brand>
           <Nav className={styles["left-navbar-imgs"]}></Nav>
