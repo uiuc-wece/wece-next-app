@@ -12,7 +12,8 @@
     "build-storybook": "build-storybook --no-dll"
   },
   "dependencies": {
-    "@svgr/webpack": "^5.5.0",
+    "@react-native-async-storage/async-storage": "^1.17.11",
+    "@svgr/webpack": "^6.5.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "custom-cursor-react": "^1.0.5",
@@ -35,7 +36,8 @@
     "react-typeform-embed": "^0.2.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
@@ -49,6 +51,7 @@
     "eslint-plugin-react": "^7.31.10",
     "jquery": "^3.5.1",
     "prettier": "^2.5.1",
-    "react-is": "^17.0.1"
+    "react-is": "^17.0.1",
+    "webpack-cli": "^5.0.1"
   }
 }
