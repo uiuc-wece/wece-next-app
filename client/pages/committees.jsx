@@ -12,15 +12,19 @@ export default function Committees() {
       <div className="content">
         <Container className="section">
           <SectionHead title="Committees_" top={true} />
-          <SectionBody>
-            <p>
-              WECE has seven amazing committees for you to join and participate in!<br></br>
-              Keep reading to find out what each of them do.<br></br>
-              If you're interested in joining, fill out your committee preferences below! <br></br>
-              We can't wait to work with you :)
-            </p>
-            <SectionButton buttonText="Join" buttonLink="/join" />
-          </SectionBody>
+          <p
+            style={{
+              fontFamily: "Chivo",
+              textAlign: "center",
+              marginTop: "1rem",
+              color: "#6366f1",
+              marginInline: "10px",
+            }}
+          >
+            WECE has seven committees for you to join and participate in!
+            <br />
+            Interested in being a part of a commitee? Be sure to join our slack!
+          </p>
           <div className={styles["committee-text"]}>
             <h4>Academic</h4>
             <SectionBody>
@@ -42,14 +46,7 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
-                  />
-                  <figcaption>Alayna Wenting</figcaption>
-                </figure>
-                <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U043TQ9AJPL-c4233fa4f7d2-512"
                   />
                   <figcaption>Ishanvi Lakhani</figcaption>
                 </figure>
@@ -74,14 +71,14 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U043HNYA554-gd70628192e0-512"
                   />
                   <figcaption>Apoorva Sannasi</figcaption>
                 </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U043H2W8516-3d2f2425d66d-512"
                   />
                   <figcaption>Emily Liu</figcaption>
                 </figure>
@@ -122,7 +119,7 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U04309B275X-44d16726b289-512"
                   />
                   <figcaption>Estela Medrano</figcaption>
                 </figure>
@@ -206,21 +203,18 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U041U146W9E-e6754bb55835-512"
                   />
                   <figcaption>Anjali Aravindhan</figcaption>
                 </figure>
                 <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
-                  />
+                  <img className={styles["committee-img"]} src="" />
                   <figcaption>Neha Joseph</figcaption>
                 </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U043Z9CGUQK-7ee348cd2d65-512"
                   />
                   <figcaption>Jenny Kim</figcaption>
                 </figure>
@@ -245,14 +239,14 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U0418GV301M-6e874c5c0ac0-512"
                   />
                   <figcaption>Varsha Mullangi</figcaption>
                 </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/wece-logo-black.png"
+                    src="https://ca.slack-edge.com/T7ETU07L5-U02FFH3V27Q-98043df093cc-512"
                   />
                   <figcaption>Aleena Majeed</figcaption>
                 </figure>
@@ -303,7 +297,7 @@ export default function Committees() {
                     src="../imgs/wece-logo-black.png"
                   />
                   <figcaption>Gauthami Yenne</figcaption>
-                </figure> 
+                </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
