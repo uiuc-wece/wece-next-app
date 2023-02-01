@@ -17,10 +17,10 @@ jobs:
       - name: check out repo
         uses: actions/checkout@v2
 
-      - name: use Node.js ${{ matrix.node-version }}
+      - name: use Node.js v16.13.2
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: v16.13.2
 
       - name: server - NPM install
         working-directory: ./api
