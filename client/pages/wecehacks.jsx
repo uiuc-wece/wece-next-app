@@ -67,7 +67,7 @@ export default function WECEHacks() {
             alt="wecehacks-logo"
           />
         </div>
-        <SectionHead title="Coming Soon_" top={false} wecehacks={true} />
+        <SectionHead title="April 8-9, 2022" top={false} wecehacks={true} />
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
