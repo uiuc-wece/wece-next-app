@@ -57,19 +57,18 @@
 
 .wecehacks-logo-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 15vh;
 }
 
-.wecehacks-logo-wrapper > img {
-  width: 70vw;
-  justify-content: center;
+.wece-hacks-text {
+  width: 50vh;
 }
 
-@media screen and (max-width: 400px) {
-  .wecehacks-logo-wrapper {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 500px) {
+  .wece-hacks-text {
+    width: 400px;
   }
 }
 
@@ -461,4 +460,34 @@
 
 .about-icon2 img {
   width: 150px;
+}
+
+.wece-hacks-bee {
+  display: flex;
+  width: 200px;
+}
+
+img.wece-hacks-bee {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+img.wece-hacks-bee {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80px);
+  }
 }
