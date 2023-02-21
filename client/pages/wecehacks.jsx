@@ -62,12 +62,17 @@ export default function WECEHacks() {
       <div className={styles["pages"]}>
         <div className={styles["wecehacks-logo-wrapper"]}>
           <img
+            className={styles["wece-hacks-bee"]}
+            src="/../../imgs/Asset 2.png"
+            alt="wecehacks bee logo"
+          />
+          <img
             className={styles["wece-hacks-text"]}
             src="/../../imgs/wece-hacks-text.png"
             alt="wecehacks-logo"
           />
         </div>
-        <SectionHead title="Coming Soon_" top={false} wecehacks={true} />
+        <SectionHead title="April 8-9, 2022" top={false} wecehacks={true} />
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
