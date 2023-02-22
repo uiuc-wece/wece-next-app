@@ -83,6 +83,12 @@
   color: white;
 }
 
+.wecehacks-countdown-header {
+  font-family: "IBM Plex Mono";
+  font-size: 3em;
+  color: white;
+}
+
 .wecehacks-text-body {
   font-family: "Chivo";
   font-size: 1em;

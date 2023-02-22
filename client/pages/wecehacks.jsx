@@ -11,6 +11,7 @@ import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
 import WECEHacksTeam from "../components/wecehacksTeam";
+import Countdown from "../components/countdown";
 
 export default function WECEHacks() {
   // const [typeForm, setTypeForm] = useState(null);
@@ -71,8 +72,14 @@ export default function WECEHacks() {
             src="/../../imgs/wece-hacks-text.png"
             alt="wecehacks-logo"
           />
+          <p className={styles["wecehacks-countdown-header"]}>
+              <br />
+              Countdown to WECE Hacks!
+          </p>
+          <Countdown />
+          <p> <br /> </p>
         </div>
-        <SectionHead title="April 8-9, 2022" top={false} wecehacks={true} />
+        <SectionHead title="April 8-9, 2023" top={false} wecehacks={true} />
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
