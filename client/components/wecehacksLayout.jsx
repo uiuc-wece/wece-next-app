@@ -39,11 +39,17 @@ export default function WECEHacksLayout({
             display: "grid",
             height: "100%",
             overflow: "hidden",
+            paddingTop: "60px",
           }}
         >
           <img
             className={styles["wecehacks-bush-footer"]}
             src="../imgs/wecehacks/WH_BushFooter_Pixel.png"
+          ></img>
+
+          <img
+            className={styles["wecehacks-bus"]}
+            src="../imgs/wecehacks/WH_BusStop_Pixel.png"
           ></img>
         </div>
       </div>
