@@ -204,7 +204,7 @@ export default function WECEHacksTeam() {
               Sneha <br /> Chaliki
             </p>
             <p className={styles["wecehacks-text-body"]}>
-              Organizer (she/her), Freshman @ UIUC studying Computer Science
+              Organizer (she/her), Freshman @ UIUC studying Computer Science.
               <br /> In her free time she likes to watch TV, listen to music,
               and work out!
             </p>
