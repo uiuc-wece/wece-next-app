@@ -34,6 +34,18 @@ export default function WECEHacksLayout({
           {children}
         </div>
         <WECEHacksFooter></WECEHacksFooter>
+        <div
+          style={{
+            display: "grid",
+            height: "100%",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            className={styles["wecehacks-bush-footer"]}
+            src="../imgs/wecehacks/WH_BushFooter_Pixel.png"
+          ></img>
+        </div>
       </div>
     </>
   );
