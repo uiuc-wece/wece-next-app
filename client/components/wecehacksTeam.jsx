@@ -198,7 +198,7 @@ export default function WECEHacksTeam() {
           <div className={styles["wecehacks-col"]}>
             <img
               className={styles["wecehacks-team-picture"]}
-              src="../imgs/wecehacks/sneha.jpeg"
+              src="../imgs/wecehacks/Sneha.jpeg"
             ></img>
             <p className={styles["wecehacks-text-header"]}>
               Sneha <br /> Chaliki
