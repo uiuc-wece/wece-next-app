@@ -127,6 +127,8 @@
 .wecehacks-team-picture {
   width: 25vh;
   padding-bottom: 2vh;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .wecehacks-text-header {
@@ -135,10 +137,18 @@
   color: white;
 }
 
-.wecehacks-countdown-header {
+.wecehacks-countdown-nums {
   font-family: "IBM Plex Mono";
-  font-size: 3em;
+  font-size: 2rem;
+  color: papayawhip;
+  letter-spacing: 2rem;
+}
+
+.wecehacks-countdown-header {
+  font-family: "Chivo";
+  font-size: 1.1rem;
   color: white;
+  word-spacing: 8rem;
 }
 
 .wecehacks-text-body {
@@ -147,10 +157,39 @@
   color: papayawhip;
 }
 
+/* When  reaching this max smaller screen size, it will adjust */
+@media screen and (max-width: 900px) {
+  .wecehacks-countdown-nums {
+    font-size: 1.8em;
+    letter-spacing: 1.5rem;
+  }
+
+  .wecehacks-countdown-header {
+    word-spacing: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wecehacks-countdown-nums {
+    font-size: 1.5em;
+    letter-spacing: 1rem;
+  }
+
+  .wecehacks-countdown-header {
+    word-spacing: 3rem;
+  }
+}
+
 .wecehacks-text-h2 {
   font-family: "IBM Plex Mono";
   font-size: 20px;
   color: white;
+}
+
+.wecehacks-text-h3 {
+  font-family: "Chivo";
+  font-size: 2rem;
+  color: rgb(255, 231, 211);
 }
 
 .wecehacks-col {

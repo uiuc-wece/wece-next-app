@@ -72,11 +72,6 @@ export default function WECEHacks() {
             src="/../../imgs/wece-hacks-text.png"
             alt="wecehacks-logo"
           />
-          <p className={styles["wecehacks-countdown-header"]}>
-            <br />
-            Countdown to WECE Hacks!
-          </p>
-          <Countdown />
           <p>
             {" "}
             <br />{" "}
@@ -94,19 +89,42 @@ export default function WECEHacks() {
           >
             Notify Me
           </Button>
+
           <div>
-            <h2
-              className={styles["wecehacks-text-h2"]}
+            <h3
+              className={styles["wecehacks-text-h3"]}
               style={{
-                marginInline: "2em",
-                marginTop: "20px",
+                marginInline: "3em",
+                marginTop: "50px",
                 textAlign: "center",
               }}
             >
               WECEHacks is The University of Illinois' Electrical and Computer
               Engineering Department's hackathon! We are a 24-hour hackathon,
               inspriring you to create something new and exciting.
-            </h2>
+            </h3>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                paddingTop: "5em",
+              }}
+            >
+              <Countdown />
+              <p className={styles["wecehacks-countdown-header"]}>
+                days hours mins secs
+              </p>
+              <p
+                style={{
+                  fontSize: "1.5em",
+                  fontFamily: "IBM Plex Mono, monospace",
+                  color: "#ecd5ed",
+                }}
+              >
+                until WECEHacks begins.
+              </p>
+            </div>
           </div>
         </div>
       </div>
