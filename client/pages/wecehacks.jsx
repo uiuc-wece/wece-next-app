@@ -11,6 +11,7 @@ import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
 import WECEHacksTeam from "../components/wecehacksTeam";
+import WECEHacksClouds from "../components/wecehacksClouds";
 
 export default function WECEHacks() {
   // const [typeForm, setTypeForm] = useState(null);
@@ -58,7 +59,6 @@ export default function WECEHacks() {
           </div>
         </a>
       </div> */}
-
       <div className={styles["pages"]}>
         <div className={styles["wecehacks-logo-wrapper"]}>
           <img
@@ -84,6 +84,20 @@ export default function WECEHacks() {
           >
             Notify Me
           </Button>
+          <div>
+            <h2
+              className={styles["wecehacks-text-h2"]}
+              style={{
+                marginInline: "2em",
+                marginTop: "20px",
+                textAlign: "center",
+              }}
+            >
+              WECEHacks is The University of Illinois' Electrical and Computer
+              Engineering Department's hackathon! We are a 24-hour hackathon,
+              inspriring you to create something new and exciting.
+            </h2>
+          </div>
         </div>
       </div>
       <WECEHacksTeam />

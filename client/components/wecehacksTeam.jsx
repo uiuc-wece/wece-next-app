@@ -195,6 +195,30 @@ export default function WECEHacksTeam() {
               bgColor="pink"
             />
           </div>
+          <div className={styles["wecehacks-col"]}>
+            <img
+              className={styles["wecehacks-team-picture"]}
+              src="../imgs/wecehacks/sneha.jpeg"
+            ></img>
+            <p className={styles["wecehacks-text-header"]}>
+              Sneha <br /> Chaliki
+            </p>
+            <p className={styles["wecehacks-text-body"]}>
+              Organizer (she/her), Freshman @ UIUC studying Computer Science.
+              <br /> In her free time she likes to watch TV, listen to music,
+              and work out!
+            </p>
+            <SocialIcon
+              style={{
+                width: "3em",
+                height: "3em",
+              }}
+              network="linkedin"
+              url="https://www.instagram.com/wecehac.ks/"
+              fgColor="white"
+              bgColor="pink"
+            />
+          </div>
         </Row>
       </Container>
     </>

@@ -41,6 +41,8 @@
 }
 /* gradient background for WECEHacks  */
 .bg-wece-hacks {
+  position: relative;
+  overflow: hidden;
   background: rgb(244, 126, 126, 1);
   background: linear-gradient(
     180deg,
@@ -66,9 +68,59 @@
   width: 50vh;
 }
 
+.wecehacks-bush-footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1;
+  height: 100px;
+  object-fit: cover;
+  object-position: 0 100%;
+}
+
+.wecehacks-bus {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  width: 25%;
+  z-index: 2;
+}
+
 @media screen and (max-width: 500px) {
   .wece-hacks-text {
     width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wecehacks-col {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wecehacks-col {
+    padding-bottom: 5vh;
+  }
+
+  .wecehacks-bush-footer {
+    height: 80px;
+    width: 200%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wecehacks-bush-footer {
+    height: 70px;
+    width: 250%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wecehacks-bus {
+    width: 30%;
   }
 }
 
@@ -89,23 +141,17 @@
   color: papayawhip;
 }
 
+.wecehacks-text-h2 {
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  color: white;
+}
+
 .wecehacks-col {
   display: flex;
   flex-direction: column;
   max-width: 260px;
   flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1200px) {
-  .wecehacks-col {
-    padding-right: 20px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .wecehacks-col {
-    padding-bottom: 5vh;
-  }
 }
 
 .wecehacks-team-wrapper {
