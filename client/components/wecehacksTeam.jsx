@@ -77,7 +77,7 @@ export default function WECEHacksTeam() {
             </p>
             <p className={styles["wecehacks-text-body"]}>
               Lead (she/her), Sophomore @ UIUC studying Computer Science. When
-              she gets the chance to, She loves doing her own nail art and
+              she gets the chance to, she loves doing her own nail art and
               reading! She loves studying in the morning, but you're more likely
               to find her on a late night walk with friends!!!
             </p>
