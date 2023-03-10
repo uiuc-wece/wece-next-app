@@ -5,11 +5,17 @@ import OutreachNavBar from "../../components/outreach/OutreachNavBar";
 
 export default function OutreachHome({
   children,
-  background_color = "#cecef4",
+  background_color = "#e6d3f2",
   title = "WECE @ Outreach | University of Illinois at Urbana-Champaign",
 }) {
   return (
     <>
+      {/* 
+      ---------------
+      This is the metadata for the Outreach page- No need to fix or change! 
+      ---------------
+       */}
+
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -25,10 +31,9 @@ export default function OutreachHome({
           crossOrigin="anonymous"
         />
       </Head>
-      <div className="page" style={{ backgroundColor: background_color }}>
+      <div style={{ backgroundColor: background_color }}>
         <div id="container">
           <OutreachNavBar background_color={background_color}></OutreachNavBar>
-          {children}
           <Footer></Footer>
         </div>
       </div>
