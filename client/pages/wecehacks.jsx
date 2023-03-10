@@ -95,7 +95,7 @@ export default function WECEHacks() {
             >
               WECEHacks is The University of Illinois' Electrical and Computer
               Engineering Department's hackathon! We are a 24-hour hackathon,
-              inspriring you to create something new and exciting.
+              inspiring you to create something new and exciting.
             </h2>
           </div>
         </div>
