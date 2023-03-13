@@ -55,6 +55,7 @@
 .nav-wece-hacks {
   font-family: "IBM Plex Mono";
   font-size: 0.8em;
+  color: "#ecd5ed";
 }
 
 .wecehacks-logo-wrapper {
@@ -83,7 +84,7 @@
 .wecehacks-bus {
   position: absolute;
   bottom: 0px;
-  left: 70px;
+  left: 55px;
   width: 25%;
   z-index: 2;
 }
@@ -98,10 +99,18 @@
   .wecehacks-col {
     padding-right: 20px;
   }
+
+  .schedule-col {
+    padding-right: 30px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .wecehacks-col {
+    padding-bottom: 5vh;
+  }
+
+  .schedule-col {
     padding-bottom: 5vh;
   }
 
@@ -124,6 +133,13 @@
   .wecehacks-bus {
     width: 30%;
   }
+}
+
+.schedule-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  flex-wrap: wrap;
 }
 
 .wecehacks-team-picture {
@@ -560,6 +576,21 @@
   width: 150px;
 }
 
+.wece-hacks-schedule-bee {
+  display: flex;
+  width: 150px;
+}
+
+img.wece-hacks-schedule-bee {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+img.wece-hacks-schedule-bee {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
 img.wece-hacks-bee {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
@@ -584,3 +615,20 @@ img.wece-hacks-bee {
     transform: translateY(-50px);
   }
 }
+
+.event-card {
+  color: white;
+  background-color: rgba(255,255,255, 0.4);
+  padding: 4vw 8vw;
+  margin: 4vw;
+  border-radius: 15px;
+  word-wrap: break-word;
+}
+
+.schedule-title-wrapper {
+  display: flex;
+  padding-top: 8vh;
+  justify-content: center;
+  align-items: center;
+}
+

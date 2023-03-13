@@ -5,6 +5,7 @@ import React from "react";
 import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { NavDropdown } from "react-bootstrap";
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
@@ -32,6 +33,8 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
             {/* <Nav.Link href="/events">Events</Nav.Link> */}
+            <Nav.Link href="/wecehacks">WECE Hacks Page</Nav.Link>
+            <Nav.Link href="/schedule">Schedule</Nav.Link>
 
             {/* <NavDropdown title="Sponsors">
               <NavDropdown.Item
