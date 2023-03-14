@@ -33,7 +33,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
             {/* <Nav.Link href="/events">Events</Nav.Link> */}
-            <Nav.Link href="/wecehacks">WECE Hacks Page</Nav.Link>
+            <Nav.Link href="/wecehacks">Home</Nav.Link>
             <Nav.Link href="/schedule">Schedule</Nav.Link>
 
             {/* <NavDropdown title="Sponsors">

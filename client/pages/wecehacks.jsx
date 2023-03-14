@@ -13,6 +13,7 @@ import SectionHead from "../components/sectionhead";
 import WECEHacksTeam from "../components/wecehacksTeam";
 import Countdown from "../components/countdown";
 import WECEHacksClouds from "../components/wecehacksClouds";
+import ScheduleTable from "../components/wecehacksschedule";
 
 export default function WECEHacks() {
   // const [typeForm, setTypeForm] = useState(null);
@@ -126,7 +127,9 @@ export default function WECEHacks() {
             inspriring you to create something new and exciting.
           </h3>
         </div>
-      </div>
+        <br/>
+        </div>
+        <ScheduleTable />
       <WECEHacksTeam />
     </WECEHacksLayout>
   );

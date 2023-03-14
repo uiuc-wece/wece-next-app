@@ -638,3 +638,37 @@ img.wece-hacks-bee {
   align-items: center;
 }
 
+.schedule {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-table {
+  border: 2px solid rgb(255, 231, 211);
+  background: linear-gradient(0deg, rgba(168,144,254,0.5) 0%, rgba(198,143,202,0.5) 66%, rgba(244,126,126,0.5) 100%);
+  width: 180vh;
+  display: inline-flexbox;
+}
+  
+.table-title {
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  color: white;
+  border-bottom: 2px solid rgb(255, 231, 211);
+  /* border-right: 1px solid rgb(255, 231, 211); */
+  height: 40px;
+  width: 100px;
+}
+  
+.table-data {
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid rgb(255, 231, 211);
+  border-right: 1px solid rgb(255, 231, 211);
+  height: 40px;
+  width: 200px;
+}
