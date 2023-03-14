@@ -30,6 +30,16 @@ export default function WECEHacksFooter() {
         </div>
         <div className={styles["wecehacks-navbar-text-right"]}>
           <p>© WECEHacks Team 2023</p>
+          <a
+            style={{
+              color: "#FED8DF",
+              fontSize: "1.2em",
+              textDecoration: "underline",
+            }}
+            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          >
+            MLH Code of Conduct
+          </a>
           <p>
             Women in Electrical and Computer Engineering <br />
             <p>1016 ECEB, 306 North Wright Street, Urbana, IL 61801</p>
