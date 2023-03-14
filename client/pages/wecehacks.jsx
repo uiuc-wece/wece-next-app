@@ -13,6 +13,8 @@ import SectionHead from "../components/sectionhead";
 import WECEHacksTeam from "../components/wecehacksTeam";
 import Countdown from "../components/countdown";
 import WECEHacksClouds from "../components/wecehacksClouds";
+import WECEHacksFAQ from "../components/wecehacksFAQ";
+import { accordionData } from "../data/accordionData";
 
 export default function WECEHacks() {
   // const [typeForm, setTypeForm] = useState(null);
@@ -60,6 +62,7 @@ export default function WECEHacks() {
           </div>
         </a>
       </div> */}
+      <WECEHacksFAQ />
       <div className={styles["pages"]}>
         <div className={styles["wecehacks-logo-wrapper"]}>
           <img
@@ -127,6 +130,7 @@ export default function WECEHacks() {
           </h3>
         </div>
       </div>
+
       <WECEHacksTeam />
     </WECEHacksLayout>
   );
