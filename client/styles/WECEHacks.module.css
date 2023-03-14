@@ -210,6 +210,12 @@
   color: rgb(255, 231, 211);
 }
 
+.schedule-text-h3 {
+  font-family: "IBM Plex Mono";
+  font-size: 2rem;
+  color: rgb(255, 231, 211);
+}
+
 .wecehacks-col {
   display: flex;
   flex-direction: column;

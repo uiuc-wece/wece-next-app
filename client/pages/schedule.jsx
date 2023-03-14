@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import WECEHacksLayout from "../components/wecehacksLayout";
 import styles from "../styles/WECEHacks.module.css";
 
-import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
 import SectionHead from "../components/sectionhead";
@@ -46,7 +45,7 @@ export default function Schedule() {
         <div id="events">
             <Container className="section">
             <div className={styles["wecehacks-center-wrapper"]}>
-                <h3 className={styles["wecehacks-text-h3"]}>Day 1</h3>
+                <h3 className={styles["schedule-text-h3"]}>Day 1: April 8</h3>
             </div>
             <div id="day 1 events">
                 <div className={styles["event-card"]}>
@@ -54,7 +53,7 @@ export default function Schedule() {
                     <h6>11:00 am</h6>
                 </div>
                 <div className={styles["event-card"]}>
-                    <h4>Hacking Starts ✨</h4>
+                    <h4>Hacking Starts</h4>
                     <h6>12:00 pm</h6>
                 </div>
                 <div className={styles["event-card"]}>
@@ -91,7 +90,7 @@ export default function Schedule() {
                 </div>
             </div>
             <div className={styles["wecehacks-center-wrapper"]}>
-                <h3 className={styles["wecehacks-text-h3"]}>Day 2</h3>
+                <h3 className={styles["schedule-text-h3"]}>Day 2: April 9</h3>
             </div>
             <div id="day 2 events">
                 <div className={styles["event-card"]}>
