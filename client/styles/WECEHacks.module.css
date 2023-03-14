@@ -31,7 +31,7 @@
   border-radius: 8px !important;
   border: 2px solid white !important;
   font-family: "IBM Plex Mono";
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .wecehacks-button:hover {
@@ -42,10 +42,9 @@
 /* gradient background for WECEHacks  */
 .bg-wece-hacks {
   position: relative;
-  overflow: hidden;
   background: rgb(244, 126, 126, 1);
   background: linear-gradient(
-    180deg,
+    -45deg,
     rgba(168, 144, 254, 1) 0%,
     rgba(198, 143, 202, 1) 66%,
     rgba(244, 126, 126, 1) 100%
