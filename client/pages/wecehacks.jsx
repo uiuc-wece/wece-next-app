@@ -11,6 +11,7 @@ import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
 import WECEHacksTeam from "../components/wecehacksTeam";
+import WECEHacksSponsors from "../components/wecehacksSponsors";
 import Countdown from "../components/countdown";
 import WECEHacksClouds from "../components/wecehacksClouds";
 import ScheduleTable from "../components/wecehacksschedule";
@@ -130,6 +131,7 @@ export default function WECEHacks() {
         <br/>
         </div>
         <ScheduleTable />
+      <WECEHacksSponsors />
       <WECEHacksTeam />
     </WECEHacksLayout>
   );
