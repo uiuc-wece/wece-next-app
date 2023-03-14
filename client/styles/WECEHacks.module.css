@@ -70,6 +70,14 @@
   width: 50vh;
 }
 
+.wecehacks-mlh-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  margin-right: 190px;
+}
+
 .wecehacks-bush-footer {
   position: absolute;
   bottom: 0px;
@@ -109,6 +117,10 @@
     height: 80px;
     width: 200%;
     object-fit: cover;
+  }
+
+  .wecehacks-mlh-banner {
+    margin-right: 80px;
   }
 }
 
@@ -179,6 +191,10 @@
 
   .wecehacks-countdown-header {
     word-spacing: 3rem;
+  }
+  .wecehacks-mlh-banner {
+    width: 90px;
+    margin-right: 75px;
   }
 }
 
