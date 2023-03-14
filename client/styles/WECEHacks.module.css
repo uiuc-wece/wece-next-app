@@ -73,10 +73,10 @@
 
 .wecehacks-mlh-banner {
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
   width: 120px;
-  margin-right: 190px;
+  margin-right: 10px;
 }
 
 .wecehacks-bush-footer {
@@ -663,7 +663,7 @@ img.wece-hacks-bee {
 
 .schedule-table {
   border: 2px solid rgb(255, 231, 211);
-  background: linear-gradient(0deg, rgba(168,144,254,0.5) 0%, rgba(198,143,202,0.5) 66%, rgba(244,126,126,0.5) 100%);
+  background: linear-gradient(0deg, rgba(244,126,126,0.5) 0%, rgba(198,143,202,0.5) 66%, rgba(168,144,254,0.5)100%);
   width: 180vh;
   display: inline-flexbox;
 }
