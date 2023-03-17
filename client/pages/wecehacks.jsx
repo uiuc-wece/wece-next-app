@@ -11,6 +11,7 @@ import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
 import WECEHacksTeam from "../components/wecehacksTeam";
+import WECEHacksSponsors from "../components/wecehacksSponsors";
 import Countdown from "../components/countdown";
 import WECEHacksClouds from "../components/wecehacksClouds";
 import WECEHacksFAQ from "../components/wecehacksFAQ";
@@ -84,13 +85,13 @@ export default function WECEHacks() {
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
-            href="https://forms.gle/3WdcHSGjdRYK3ygq6"
+            href="https://1z0014l9lxo.typeform.com/to/EnRuP1ej"
             variant="outline-light"
             style={{
               fontFamily: "Press Start 2P, cursive",
             }}
           >
-            Notify Me
+            Register Now
           </Button>
         </div>
         <div
@@ -131,6 +132,7 @@ export default function WECEHacks() {
         </div>
       </div>
 
+      <WECEHacksSponsors />
       <WECEHacksTeam />
     </WECEHacksLayout>
   );

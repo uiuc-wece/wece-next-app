@@ -34,6 +34,12 @@ export default function WECEHacksLayout({
           {children}
         </div>
         <WECEHacksFooter></WECEHacksFooter>
+        <a id="mlh-trust-badge" href="https://mlh.io/seasons/2023/events">
+          <img
+            className={styles["wecehacks-mlh-banner"]}
+            src="../imgs/wecehacks/mlh-banner.png"
+          ></img>
+        </a>
         <div
           style={{
             display: "grid",

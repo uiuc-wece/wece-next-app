@@ -31,7 +31,7 @@
   border-radius: 8px !important;
   border: 2px solid white !important;
   font-family: "IBM Plex Mono";
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .wecehacks-button:hover {
@@ -45,7 +45,7 @@
   overflow: hidden;
   background: rgb(244, 126, 126, 1);
   background: linear-gradient(
-    180deg,
+    -45deg,
     rgba(168, 144, 254, 1) 0%,
     rgba(198, 143, 202, 1) 66%,
     rgba(244, 126, 126, 1) 100%
@@ -68,6 +68,14 @@
   position: relative;
   top: -10px;
   width: 50vh;
+}
+
+.wecehacks-mlh-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  margin-right: 190px;
 }
 
 .wecehacks-bush-footer {
@@ -109,6 +117,10 @@
     height: 80px;
     width: 200%;
     object-fit: cover;
+  }
+
+  .wecehacks-mlh-banner {
+    margin-right: 80px;
   }
 }
 
@@ -179,6 +191,10 @@
 
   .wecehacks-countdown-header {
     word-spacing: 3rem;
+  }
+  .wecehacks-mlh-banner {
+    width: 90px;
+    margin-right: 75px;
   }
 }
 

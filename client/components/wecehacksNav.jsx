@@ -5,6 +5,7 @@ import React from "react";
 import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
@@ -13,7 +14,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
       <Navbar
         variant="dark"
         expand="lg"
-        sticky = "bottom"
+        sticky="bottom"
         className={styles["nav-wece-hacks"]}
         style={{ backgroundColor: background_color2 }}
       >
@@ -22,8 +23,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
             <img
               src="imgs/wece-logo-h-white.png"
               height="30px"
-              alt="wece-logo-white" 
-      
+              alt="wece-logo-white"
             />
           </Navbar.Brand>
           <Nav className={styles["left-navbar-imgs"]}></Nav>
@@ -31,9 +31,9 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Toggle className={styles["custom-toggler"]} />
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
-            {/* <Nav.Link href="/events">Events</Nav.Link> */}
+            <Nav.Link href="/events">Events</Nav.Link>
 
-            {/* <NavDropdown title="Sponsors">
+            <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors22"
@@ -52,7 +52,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
               >
                 2018-19
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
