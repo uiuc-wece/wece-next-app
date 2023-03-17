@@ -32,30 +32,8 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
             {/* <Nav.Link href="/events">Events</Nav.Link> */}
-            <Nav.Link href="/wecehacks">Home</Nav.Link>
             <Nav.Link href="/schedule">Schedule</Nav.Link>
             <Nav.Link href="/events">Events</Nav.Link>
-
-            <NavDropdown title="Sponsors">
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors22"
-              >
-                2021-22
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors21"
-              >
-                2020-21
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors"
-              >
-                2018-19
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
