@@ -83,13 +83,13 @@ export default function WECEHacks() {
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
-            href="https://forms.gle/3WdcHSGjdRYK3ygq6"
+            href="https://1z0014l9lxo.typeform.com/to/EnRuP1ej"
             variant="outline-light"
             style={{
               fontFamily: "Press Start 2P, cursive",
             }}
           >
-            Notify Me
+            Register Now
           </Button>
         </div>
         <div
@@ -125,7 +125,7 @@ export default function WECEHacks() {
           >
             WECEHacks is The University of Illinois' Electrical and Computer
             Engineering Department's hackathon! We are a 24-hour hackathon,
-            inspriring you to create something new and exciting.
+            inspiring you to create something new and exciting.
           </h3>
         </div>
         <br/>
