@@ -1,6 +1,6 @@
 export const accordionData = [
   {
-    question: "What is a WECEHacks?",
+    question: "What is the WECEHacks Hackathon?",
     answer:
       "WECEHacks is a 24-hour event where UIUC and other undergraduate students come together to learn, build, and share their experience in software and hardware. We are focused on providing a safe space for historically marginalized groups to learn and grow in the tech industry.",
   },

@@ -63,7 +63,6 @@ export default function WECEHacks() {
           </div>
         </a>
       </div> */}
-      <WECEHacksFAQ />
       <div className={styles["pages"]}>
         <div className={styles["wecehacks-logo-wrapper"]}>
           <img
@@ -123,6 +122,7 @@ export default function WECEHacks() {
               marginInline: "3em",
               marginTop: "50px",
               textAlign: "center",
+              marginBottom: "3em",
             }}
           >
             WECEHacks is The University of Illinois' Electrical and Computer
@@ -131,6 +131,13 @@ export default function WECEHacks() {
           </h3>
         </div>
       </div>
+      <SectionHead title="FAQ" top={false} wecehacks={true} />
+
+      <ul className={styles["accordion"]}>
+        {accordionData.map(({ question, answer }) => (
+          <WECEHacksFAQ question={question} answer={answer} />
+        ))}
+      </ul>
 
       <WECEHacksSponsors />
       <WECEHacksTeam />
