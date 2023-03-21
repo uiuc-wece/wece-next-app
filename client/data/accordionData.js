@@ -27,5 +27,8 @@ export const accordionData = [
     question: "How can I continue learning and growing after WECEHacks?",
     answer: "Participating in WECEHacks is just the beginning of your learning journey. Keep in touch with the connections you made during the event and continue to learn coding languages such as HTML/CSS. Consider attending or volunteering at future WECEHacks and continue to build your portfolio and network.",
   },
-
+  {
+    question: "Interested in hardware?",
+    answer: "During the event, there will be workshops dedicated on learning how to install Arduino IDE on your PC, an intro to Raspberry Pi, and even learn how to use a motion sensor device!",
+  },
 ];
