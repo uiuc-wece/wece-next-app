@@ -7,7 +7,7 @@ import styles from "../styles/WECEHacks.module.css";
 
 import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
-import "custom-cursor-react/dist/index.css";
+//import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
 
@@ -34,7 +34,7 @@ export default function WECEHacks() {
 
   return (
     <WECEHacksLayout background_color="#a890fe">
-      <CustomCursor // custom cursor component
+      {/* <CustomCursor // custom cursor component
         customClass={styles["cursor"]}
         targets={["#nav", "#button"]}
         targetScale={2}
@@ -44,7 +44,7 @@ export default function WECEHacks() {
         fill="#6fb183"
         smoothness={{ movement: 1, scale: 0.6, opacity: 0.8 }}
         opacity={1}
-      />
+      /> */}
       {/* <div className={styles["wece-hacks-wrapper"]}>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmXRpaYpndoNDi_EhmQT3pSJk3793_6XBkAPYIU_bzbJWdg/viewform?usp=sf_link">
           <div className={styles["wece-hacks-content"]}>
