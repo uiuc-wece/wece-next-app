@@ -7,7 +7,7 @@ export const accordionData = [
   {
     question: "What if I don't know how to code?",
     answer:
-      "WECEHacks is a beginner-friendly event! We will have workshops and mentors to help you get started. We will also have a beginner track for those who are new to coding.",
+      "WECEHacks is a beginner-friendly event! We will have workshops and mentors to help you get started. We will also have a beginner track for those who are new to coding, and we encourage hackers to form diverse teams that can bring a range of perspectives and skills to the table. Even if you don't have coding experience, you can still contribute to a team by providing creative ideas, user research, or project management skills.",
   },
   {
     question: "Can I design at a hackathon?",
