@@ -24,7 +24,8 @@ export const accordionData = [
     answer: "You can check out our hacker guides on getting to Champaign, IL!",
   },
   {
-    question: "How can I continue learning and growing after WECEHacks?"
+    question: "How can I continue learning and growing after WECEHacks?",
     answer: "Participating in WECEHacks is just the beginning of your learning journey. Keep in touch with the connections you made during the event and continue to learn coding languages such as HTML/CSS. Consider attending or volunteering at future WECEHacks and continue to build your portfolio and network.",
   },
+
 ];
