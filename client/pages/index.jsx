@@ -1,3 +1,4 @@
+import React from "react";
 import EventCarousel from "../components/carousel";
 import Layout from "../components/layout";
 import LinesSvg from "../components/lines.svg";
@@ -110,5 +111,6 @@ export default function Home() {
         </Container>
       </div>
     </Layout>
+    
   );
 }

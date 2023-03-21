@@ -5,6 +5,25 @@
   justify-content: center;
 }
 
+.wecehacks-section-head {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wecehacks-section-title h3{
+  font-size: 3vw;
+  overflow: hidden;
+  border-right: 0.05em solid var(--dark-background-color-muted);
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-top: 2vw;
+  letter-spacing: 0.2em;
+  animation: typing 3.5s steps(22, end) infinite,
+    blink-caret 3.5s step-end infinite;
+  color: var(--accent-color-light);
+}
 .section-top {
   padding-top: 8vw;
 }
@@ -18,12 +37,13 @@
 .section-title h3 {
   font-size: 6vw;
   overflow: hidden;
-  border-right: 0.05em solid var(--light-text-color);
+  border-right: 0.05em solid var(--dark-background-color-muted);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.2em;
   animation: typing 3.5s steps(22, end) infinite,
     blink-caret 3.5s step-end infinite;
+  color: var(--accent-2-text-color);
 }
 
 /* https://css-tricks.com/snippets/css/typewriter-effect/ */

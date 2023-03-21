@@ -1,45 +1,44 @@
-/* eslint-disable react/prop-types */
-
 import React from "react";
-// import { useSelector } from "react-redux";
-import styles from "../styles/WECEHacks.module.css";
+import { useRouter } from "next/router";
+import styles from "../../styles/Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-// this changes the color of the navbar
-const WECEHacksNav = ({ background_color2 = "transparent" }) => {
+const OutreachNavBar = ({ background_color2 = "#9D9DFF" }) => {
+
+  const router = useRouter();
+
   return (
     <>
       <Navbar
         variant="dark"
         expand="lg"
         fixed="top"
-        className={styles["nav-wece-hacks"]}
+        className={styles["navbar"]}
         style={{ backgroundColor: background_color2 }}
       >
         <div className={styles["left-navbar"]}>
           <Navbar.Brand href="/" className={styles["wece-brand"]}>
             <img
-              src="imgs/wece-logo-h-white.png"
+              src="/../../imgs/wece-logo-h-white.png"
               height="30px"
               alt="wece-logo-white"
             />
           </Navbar.Brand>
-          <Nav className={styles["left-navbar-imgs"]}></Nav>
+          <Nav className={styles["left-navbar-imgs"]}>
+            
+           
+          </Nav>
         </div>
         <Navbar.Toggle className={styles["custom-toggler"]} />
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
-            {/* <Nav.Link href="/events">Events</Nav.Link> */}
+            <Nav.Link href="/events">Events</Nav.Link>
+           
+ 
 
-            {/* <NavDropdown title="Sponsors">
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors22"
-              >
-                2022-23
-              </NavDropdown.Item>
+            <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors22"
@@ -58,7 +57,8 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
               >
                 2018-19
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown>
+           
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -66,4 +66,4 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
   );
 };
 
-export default WECEHacksNav;
+export default OutreachNavBar;

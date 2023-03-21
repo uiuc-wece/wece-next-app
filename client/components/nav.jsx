@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { logout } from "../apihelper.js";
 
-const CustomNavbar = ({ background_color2 = "#2a5236" }) => {
+const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
   const authenticated = useSelector((state) => state.authenticated);
   const firstName = useSelector((state) => state.firstName);
 

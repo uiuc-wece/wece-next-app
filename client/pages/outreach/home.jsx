@@ -1,14 +1,12 @@
-/* eslint-disable react/prop-types */
-
 import React from "react";
 import Head from "next/head";
-import Footer from "./footer";
-import CustomNavbar from "./nav";
+import Footer from "../../components/footer";
+import OutreachNavBar from "../../components/outreach/OutreachNavBar";
 
-export default function Layout({
+export default function OutreachHome({
   children,
-  background_color = "#F7BDBE",
-  title = "Women in ECE | University of Illinois at Urbana-Champaign",
+  background_color = "#cecef4",
+  title = "WECE @ Outreach | University of Illinois at Urbana-Champaign",
 }) {
   return (
     <>
@@ -29,7 +27,7 @@ export default function Layout({
       </Head>
       <div className="page" style={{ backgroundColor: background_color }}>
         <div id="container">
-          <CustomNavbar background_color={background_color}></CustomNavbar>
+          <OutreachNavBar background_color={background_color}></OutreachNavBar>
           {children}
           <Footer></Footer>
         </div>

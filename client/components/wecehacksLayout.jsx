@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Head from "next/head";
-import Footer from "./footer";
+import WECEHacksFooter from "./wecehacksFooter";
 import WECEHacksNav from "./wecehacksNav";
+import styles from "../styles/WECEHacks.module.css";
 
 export default function WECEHacksLayout({
   children,
-  background_color = "#C68FCA",
+  background_color = "radial-gradient(circle, rgba(168,144,254,1) 0%, rgba(198,143,202,1) 66%, rgba(244,126,126,1) 100%)",
   title = "WECEHacks 23 | University of Illinois at Urbana-Champaign",
 }) {
   return (
@@ -25,14 +27,13 @@ export default function WECEHacksLayout({
           crossOrigin="anonymous"
         />
       </Head>
-      <div className="page" style={{ backgroundColor: background_color }}>
+
+      <div className={styles["bg-wece-hacks"]}>
         <div id="container">
-          <WECEHacksNav
-            background_color={background_color}
-          ></WECEHacksNav>
+          <WECEHacksNav background_color={background_color}></WECEHacksNav>
           {children}
-          <Footer></Footer>
         </div>
+        <WECEHacksFooter></WECEHacksFooter>
       </div>
     </>
   );

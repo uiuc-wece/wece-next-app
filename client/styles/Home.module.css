@@ -64,13 +64,13 @@
 }
 
 .top {
-  background-color: #e6abb5;
+  background-color: #9D9DFF;
   background-image: linear-gradient(
-    160deg,
-    #2a5236 4%,
-    #2a5236 13%,
-    #a7757e 44%,
-    #e6abb5 80%
+    180deg,
+    #9D9DFF 4%,
+    #9D9DFF 13%,
+    #DF9697 44%,
+    #F7BDBE 80%
   );
 }
 
