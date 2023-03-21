@@ -29,6 +29,6 @@ export const accordionData = [
   },
   {
     question: "Interested in hardware?",
-    answer: "During the event, there will be workshops dedicated on learning how to install Arduino IDE on your PC, an intro to Raspberry Pi, and even learn how to use a motion sensor device!",
+    answer: "During the event, there will be workshops dedicated on learning how to install Arduino IDE on your PC, an intro to Raspberry Pi, and even learn how to use a motion sensor device! You can checkout hardware using your student ID.",
   },
 ];
