@@ -37,7 +37,7 @@ export const accordionData = [
   },
   {
     question: "What do you mean by 'minority gender'?",
-    answer: "By "minority gender", we mean individuals who identify as women, non-binary, genderqueer, gender non-conforming, or any other gender identity that is not traditionally represented in the tech industry.",
+    answer: "By 'minority gender', we mean individuals who identify as women, non-binary, genderqueer, gender non-conforming, or any other gender identity that is not traditionally represented in the tech industry.",
   },
   {
     question: "What kind of projects can we work on?",
