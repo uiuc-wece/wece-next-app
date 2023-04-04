@@ -5,7 +5,7 @@ import React from "react";
 import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { NavDropdown } from "react-bootstrap";
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
@@ -31,28 +31,9 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Toggle className={styles["custom-toggler"]} />
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
+            {/* <Nav.Link href="/events">Events</Nav.Link> */}
+            <Nav.Link href="/schedule">Schedule</Nav.Link>
             <Nav.Link href="/events">Events</Nav.Link>
-
-            <NavDropdown title="Sponsors">
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors22"
-              >
-                2021-22
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors21"
-              >
-                2020-21
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className={styles["dropdown-item"]}
-                href="/sponsors"
-              >
-                2018-19
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
