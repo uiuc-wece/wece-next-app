@@ -4,6 +4,7 @@ import styles from "../styles/Footer.module.css";
 
 export default function WECEHacksFooter() {
   return (
+<<<<<<< HEAD
     <div className={styles["wecehacks-footer"]} >
       <div className={styles["wecehacks-footer-content"]}>
       <div className={styles["wecehacks-navbar-text-left"]}> 
@@ -33,6 +34,50 @@ export default function WECEHacksFooter() {
         </p>
         </div>
         </div>
+=======
+    <div className={styles["wecehacks-footer"]}>
+      <div className={styles["wecehacks-footer-content"]}>
+        <div className={styles["wecehacks-navbar-text-left"]}>
+          <SocialIcon
+            style={{
+              width: "4em",
+              height: "4em",
+            }}
+            network="instagram"
+            url="https://www.instagram.com/wecehac.ks/"
+            fgColor="white"
+            bgColor="transparent"
+          />
+          <SocialIcon
+            style={{
+              width: "4em",
+              height: "4em",
+            }}
+            network="email"
+            url="mailto:wece.uiuc@gmail.com"
+            fgColor="white"
+            bgColor="transparent"
+          />
+        </div>
+        <div className={styles["wecehacks-navbar-text-right"]}>
+          <p>© WECEHacks Team 2023</p>
+          <a
+            style={{
+              color: "#FED8DF",
+              fontSize: "1.2em",
+              textDecoration: "underline",
+            }}
+            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          >
+            MLH Code of Conduct
+          </a>
+          <p>
+            Women in Electrical and Computer Engineering <br />
+            <p>1016 ECEB, 306 North Wright Street, Urbana, IL 61801</p>
+          </p>
+        </div>
+      </div>
+>>>>>>> a65bda2757d5d7856c2d8f811b9f2b5424d45a77
     </div>
   );
 }

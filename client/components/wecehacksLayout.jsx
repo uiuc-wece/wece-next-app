@@ -32,6 +32,34 @@ export default function WECEHacksLayout({
         <div id="container">
           <WECEHacksNav background_color={background_color}></WECEHacksNav>
           {children}
+<<<<<<< HEAD
+=======
+        </div>
+        <WECEHacksFooter></WECEHacksFooter>
+        <a id="mlh-trust-badge" href="https://mlh.io/seasons/2023/events">
+          <img
+            className={styles["wecehacks-mlh-banner"]}
+            src="../imgs/wecehacks/mlh-banner.png"
+          ></img>
+        </a>
+        <div
+          style={{
+            display: "grid",
+            height: "100%",
+            overflow: "hidden",
+            paddingTop: "60px",
+          }}
+        >
+          <img
+            className={styles["wecehacks-bush-footer"]}
+            src="../imgs/wecehacks/WH_BushFooter_Pixel.png"
+          ></img>
+
+          <img
+            className={styles["wecehacks-bus"]}
+            src="../imgs/wecehacks/WH_BusStop_Pixel.png"
+          ></img>
+>>>>>>> a65bda2757d5d7856c2d8f811b9f2b5424d45a77
         </div>
         <WECEHacksFooter></WECEHacksFooter>
       </div>

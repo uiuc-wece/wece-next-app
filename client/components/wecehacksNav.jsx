@@ -5,7 +5,11 @@ import React from "react";
 import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+<<<<<<< HEAD
 import NavDropdown from "react-bootstrap/NavDropdown";
+=======
+import { NavDropdown } from "react-bootstrap";
+>>>>>>> a65bda2757d5d7856c2d8f811b9f2b5424d45a77
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
@@ -14,7 +18,11 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
       <Navbar
         variant="dark"
         expand="lg"
+<<<<<<< HEAD
         fixed="top"
+=======
+        sticky="bottom"
+>>>>>>> a65bda2757d5d7856c2d8f811b9f2b5424d45a77
         className={styles["nav-wece-hacks"]}
         style={{ backgroundColor: background_color2 }}
       >
@@ -32,6 +40,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
             {/* <Nav.Link href="/events">Events</Nav.Link> */}
+<<<<<<< HEAD
 
             {/* <NavDropdown title="Sponsors">
               <NavDropdown.Item
@@ -59,6 +68,10 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
                 2018-19
               </NavDropdown.Item>
             </NavDropdown> */}
+=======
+            <Nav.Link href="/schedule">Schedule</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
+>>>>>>> a65bda2757d5d7856c2d8f811b9f2b5424d45a77
           </Nav>
         </Navbar.Collapse>
       </Navbar>

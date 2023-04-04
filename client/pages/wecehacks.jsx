@@ -7,9 +7,16 @@ import styles from "../styles/WECEHacks.module.css";
 
 import Button from "react-bootstrap/Button";
 import CustomCursor from "custom-cursor-react";
-//import "custom-cursor-react/dist/index.css";
+import "custom-cursor-react/dist/index.css";
 // import { BiRightArrowCircle } from "react-icons/bi";
 import SectionHead from "../components/sectionhead";
+import WECEHacksTeam from "../components/wecehacksTeam";
+import WECEHacksSponsors from "../components/wecehacksSponsors";
+import Countdown from "../components/countdown";
+import WECEHacksClouds from "../components/wecehacksClouds";
+import ScheduleTable from "../components/wecehacksschedule";
+import WECEHacksFAQ from "../components/wecehacksFAQ";
+import { accordionData } from "../data/accordionData";
 
 export default function WECEHacks() {
   // const [typeForm, setTypeForm] = useState(null);
@@ -57,29 +64,85 @@ export default function WECEHacks() {
           </div>
         </a>
       </div> */}
-
       <div className={styles["pages"]}>
         <div className={styles["wecehacks-logo-wrapper"]}>
+          <img
+            className={styles["wece-hacks-bee"]}
+            src="/../../imgs/Asset 2.png"
+            alt="wecehacks bee logo"
+          />
           <img
             className={styles["wece-hacks-text"]}
             src="/../../imgs/wece-hacks-text.png"
             alt="wecehacks-logo"
           />
+          {/* <p>
+            {" "}
+            <br />{" "}
+          </p> */}
         </div>
-        <SectionHead title="Coming Soon_" top={false} wecehacks={true} />
+        <SectionHead title="April 8-9, 2023" top={false} wecehacks={true} />
         <div className={styles["wecehacks-center-wrapper"]}>
           <Button
             className={styles["wecehacks-button"]}
-            href="https://forms.gle/3WdcHSGjdRYK3ygq6"
+            href="https://1z0014l9lxo.typeform.com/to/EnRuP1ej"
             variant="outline-light"
             style={{
               fontFamily: "Press Start 2P, cursive",
             }}
           >
-            Notify Me
+            Register Now
           </Button>
         </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "5em",
+          }}
+        >
+          <Countdown />
+          <p className={styles["wecehacks-countdown-header"]}>
+            days hours mins secs
+          </p>
+          <p
+            style={{
+              fontSize: "1.5em",
+              fontFamily: "IBM Plex Mono, monospace",
+              color: "#ecd5ed",
+            }}
+          >
+            until WECEHacks begins.
+          </p>
+        </div>
+        <div>
+          <h3
+            className={styles["wecehacks-text-h3"]}
+            style={{
+              marginInline: "3em",
+              marginTop: "50px",
+              textAlign: "center",
+            }}
+          >
+            WECEHacks is The University of Illinois' Electrical and Computer
+            Engineering Department's hackathon! We are a 24-hour hackathon,
+            inspiring you to create something new and exciting.
+          </h3>
+        </div>
+        <br />
+        <ScheduleTable />
       </div>
+      <SectionHead title="FAQ" top={false} wecehacks={true} />
+
+      <ul className={styles["accordion"]}>
+        {accordionData.map(({ question, answer }) => (
+          <WECEHacksFAQ question={question} answer={answer} />
+        ))}
+      </ul>
+
+      <WECEHacksSponsors />
+      <WECEHacksTeam />
     </WECEHacksLayout>
   );
 }
