@@ -14,6 +14,7 @@ import WECEHacksTeam from "../components/wecehacksTeam";
 import WECEHacksSponsors from "../components/wecehacksSponsors";
 import Countdown from "../components/countdown";
 import WECEHacksClouds from "../components/wecehacksClouds";
+import ScheduleTable from "../components/wecehacksschedule";
 import WECEHacksFAQ from "../components/wecehacksFAQ";
 import { accordionData } from "../data/accordionData";
 
@@ -122,7 +123,6 @@ export default function WECEHacks() {
               marginInline: "3em",
               marginTop: "50px",
               textAlign: "center",
-              marginBottom: "3em",
             }}
           >
             WECEHacks is The University of Illinois' Electrical and Computer
@@ -130,6 +130,8 @@ export default function WECEHacks() {
             inspiring you to create something new and exciting.
           </h3>
         </div>
+        <br />
+        <ScheduleTable />
       </div>
       <SectionHead title="FAQ" top={false} wecehacks={true} />
 
