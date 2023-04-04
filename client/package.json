@@ -18,7 +18,10 @@
     "bootstrap": "^4.6.0",
     "custom-cursor-react": "^1.0.5",
     "eslint": "^8.7.0",
+<<<<<<< HEAD
+=======
     "framer-motion": "^10.0.1",
+>>>>>>> a65bda2757d5d7856c2d8f811b9f2b5424d45a77
     "gsap": "^3.6.1",
     "material-table": "^1.69.2",
     "next": "^10.0.7",

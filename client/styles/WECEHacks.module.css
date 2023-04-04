@@ -318,7 +318,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.1s;
-  cursor: pointer;
+  /*cursor: pointer;*/
   color: #540d6e;
 }
 
@@ -349,7 +349,7 @@
   font-size: 0.8em;
   letter-spacing: 0.1em;
   color: #540d6e;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 .side-nav-item {
@@ -415,7 +415,7 @@
 }
 
 .pages {
-  cursor: none;
+  /*cursor: none;*/
 }
 
 .section {
@@ -602,7 +602,7 @@
   background-color: #e88ff7;
   color: #1b1523;
   border: none;
-  cursor: none !important;
+  /*cursor: none !important;*/
 }
 
 .button:hover,
