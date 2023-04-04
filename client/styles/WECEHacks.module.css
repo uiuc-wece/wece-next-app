@@ -5,6 +5,48 @@
     0 0 0.4rem #6fb183;
   color: #b1f4c5;
 } */
+/* .accordion {
+  max-width: 768px;
+} */
+
+.accordion {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin-inline: 10%;
+}
+.accordion-item {
+  list-style: none;
+  padding-bottom: 30px;
+}
+.accordion-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f47e7e;
+  color: white;
+  padding: 1em;
+}
+.accordion-toggle:hover {
+  background-color: #e0849f;
+}
+.accordion-toggle h3 {
+  margin: 0;
+  color: white;
+}
+
+.accordion-toggle p {
+  font-size: 25px;
+  font-family: "Chivo";
+}
+.accordion-content {
+  background-color: #ea8d8d;
+  padding: 1em;
+  font-family: "Chivo";
+  color: white;
+}
 
 .wecehacks-center-wrapper {
   display: flex;
