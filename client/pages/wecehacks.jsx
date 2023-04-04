@@ -123,7 +123,6 @@ export default function WECEHacks() {
               marginInline: "3em",
               marginTop: "50px",
               textAlign: "center",
-              marginBottom: "3em",
             }}
           >
             WECEHacks is The University of Illinois' Electrical and Computer

@@ -9,16 +9,20 @@ export default function ScheduleTable() {
       <div
         className={styles["wecehacks-center-wrapper"]}
         style={{
-          marginTop: "40px",
+          marginTop: "20px",
         }}
       >
-        <h3 className={styles["schedule-text-h3"]}>Day 1: April 8, 2023</h3>
+        <h3 className={styles["schedule-text-h3"]}>April 8, 2023</h3>
       </div>
       <div className={styles["schedule"]} id="schedule">
         <table className={styles["schedule-table"]}>
           <tr>
             <th className={styles["table-title"]}>Time</th>
             <th className={styles["table-title"]}>Event</th>
+          </tr>
+          <tr>
+            <td className={styles["table-data"]}>9:00 am</td>
+            <td className={styles["table-data"]}>Check In Starts!</td>
           </tr>
           <tr>
             <td className={styles["table-data"]}>11:00 am</td>
@@ -34,19 +38,15 @@ export default function ScheduleTable() {
           </tr>
           <tr>
             <td className={styles["table-data"]}>2:00 pm</td>
-            <td className={styles["table-data"]}>Workshop</td>
+            <td className={styles["table-data"]}>Intro to Web Making 101</td>
           </tr>
           <tr>
             <td className={styles["table-data"]}>3:00 pm</td>
-            <td className={styles["table-data"]}>SNYK MLH Event</td>
+            <td className={styles["table-data"]}>SNYK CTF MLH Event</td>
           </tr>
           <tr>
-            <td className={styles["table-data"]}>4:00 pm</td>
-            <td className={styles["table-data"]}>Workshop</td>
-          </tr>
-          <tr>
-            <td className={styles["table-data"]}>6:00 pm</td>
-            <td className={styles["table-data"]}>Workshop</td>
+            <td className={styles["table-data"]}>5:30 pm</td>
+            <td className={styles["table-data"]}>Intro to Hardware Workshop</td>
           </tr>
           <tr>
             <td className={styles["table-data"]}>7:00 pm</td>
@@ -54,11 +54,11 @@ export default function ScheduleTable() {
           </tr>
           <tr>
             <td className={styles["table-data"]}>8:00 pm</td>
-            <td className={styles["table-data"]}>MLH Mini Event</td>
+            <td className={styles["table-data"]}>MLH !Light Event</td>
           </tr>
           <tr>
             <td className={styles["table-data"]}>9:00 pm</td>
-            <td className={styles["table-data"]}>ECEB Closes</td>
+            <td className={styles["table-data"]}>Boba Social!</td>
           </tr>
         </table>
       </div>
@@ -68,7 +68,7 @@ export default function ScheduleTable() {
           marginTop: "40px",
         }}
       >
-        <h3 className={styles["schedule-text-h3"]}>Day 2: April 9, 2023</h3>
+        <h3 className={styles["schedule-text-h3"]}>April 9, 2023</h3>
       </div>
       <div className={styles["schedule"]} id="schedule">
         <table className={styles["schedule-table"]}>
