@@ -17,7 +17,7 @@ export default function gmslides() {
               </p>
               <p>
                 <a href="https://docs.google.com/presentation/d/11MD2HiB8lX89Yom06Pmb-qnt3z2i1LLv06dnFcnIB3s/edit?usp=sharing" target="_blank">
-                  New Slides
+                  August
                 </a>
               </p>
             </SectionBody>
