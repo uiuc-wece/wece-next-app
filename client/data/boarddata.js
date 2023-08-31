@@ -1,13 +1,13 @@
 export default {
   board: [
     {
-      name: "Tala Aoun",
+      name: "Subha Somaskandan",
       role: "President",
-      major: "Computer Engineering",
+      major: "Electrical Engineering",
       year: "Senior",
-      about: "I play the piano, bake and read books, I am interested Cybersecurity, I joined WECE as a freshman in 2019, My best memory of WECE is getting to work with kids from Next generation school and teach them how to build simple circuits!",
-      contact: "taoun2@illinois.edu",
-      img: "imgs/board/tala.jpeg",
+      about: "Hello! My name is Subha (rhymes with Tuba) and I'm a senior in Electrical Engineering! I love to read, go on walks, watch Chicago sports, and watch movies! On campus, I am involved with Engineering Ambassadors and was a lab assistant and counselor for WYSE Camps (Worldwide Youth and Science in Engineering). I interned at Burns & McDonnell the past summer and worked in substation design, and it was such a rewarding experience. Please feel free to reach out to me if you have any questions or just wanna chat! :)",
+      contact: "sbs8@illinois.edu",
+      img: "imgs/board/subha.jpeg",
     },
     {
       name: "Parvati Menon",
