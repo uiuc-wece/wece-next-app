@@ -27,7 +27,7 @@ export default {
       year: "Junior",
       about: "Hi! I’m currently a sophomore in EE. I’m originally from LA, and I love surfing, stargazing, the outdoors, spontaneous adventures, and spending time with people. In the ECE department, I’m interested in semiconductor circuit design and power management. I’m also involved in the Illini Formula Electric circuit design subteam.",
       contact: "mailto:rawnies2@illinois.edu",
-      img: "imgs/board/rawnie.PNG",
+      img: "imgs/board/rawnie.JPG",
     },
     {
       name: "Sania Huq",
