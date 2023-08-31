@@ -13,8 +13,8 @@ export default {
       name: "Parvati Menon",
       role: "External Vice President",
       major: "Computer Engineering",
-      year: "Sophomore",
-      about: "Major: Computer Engineering, I Joined WECE in my Freshman Year, My best experience of WECE so far was the Tote Bag event for WECE Week, Fun: Spending time with friends, Interned at Kahua Inc, Interested in the intersection of Big data and Quantum Computing",
+      year: "Junior",
+      about: "I Joined WECE in my Freshman Year, My best experience of WECE so far was the Tote Bag event for WECE Week, Fun: Spending time with friends, Interned at Kahua Inc, Interested in the intersection of Big data and Quantum Computing",
       contact: "mailto:parvati3@illinois.edu",
       linkedin:
         'https://www.linkedin.com/in/parvati-menon-uiuc/',
