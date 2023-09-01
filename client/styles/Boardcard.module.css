@@ -11,8 +11,8 @@
 
 .img-card:hover .exec-pic {
   /* opacity: 0.8; */
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  /* -webkit-filter: grayscale(0%); */
+  /* filter: grayscale(0%); */
   transition: 0.5s ease-in;
 }
 
@@ -35,8 +35,8 @@
   border-radius: 20px;
   width: 300px;
   height: 380px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%); */
+  /* filter: grayscale(100%); */
   transition: 0.5s ease-in;
 }
 
