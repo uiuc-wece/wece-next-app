@@ -73,7 +73,7 @@ export default {
       year: "Sophomore",
       about: "",
       contact: "mailto:alaynal2@illinois.edu",
-      img: "imgs/board/alaynali",
+      img: "imgs/board/alaynali.JPG",
     },
     {
       name: "Gabriela Hinostroza Perez",
