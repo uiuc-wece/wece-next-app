@@ -82,7 +82,7 @@ export default {
       year: "Junior",
       about: "",
       contact: "mailto:gh14@illinois.edu",
-      img: "imgs/board/gabbyedit.JPG",
+      img: "imgs/board/gabby.JPG",
     },
     {
       name: "Emily Xu",
