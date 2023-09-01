@@ -31,6 +31,15 @@
   position: absolute;
 }
 
+.exec-pic {
+  border-radius: 20px;
+  width: 300px;
+  height: 380px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.5s ease-in;
+}
+
 .exec-text {
   -webkit-transition: background 0.3s, color 0.3s ease-in;
   transition: background 0.3s, color 0.3s ease-in;
@@ -136,6 +145,11 @@
   .active.img-card {
     width: 350px;
     max-width: 80vw;
+  }
+
+  .exec-pic {
+    width: 350px;
+    height: 500px;
   }
 
   .exec-text {
