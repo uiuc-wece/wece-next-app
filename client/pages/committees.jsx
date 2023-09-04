@@ -72,9 +72,16 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/rutu.JPG"
+                    src="../imgs/board/emily.jpg"
                   />
-                  <figcaption>Rutu Brahmbhatt</figcaption>
+                  <figcaption>Emily Xu</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/board/estela.jpg"
+                  />
+                  <figcaption>Estela Medrano</figcaption>
                 </figure>
                 <p>
                   The Marketing Committee advertises WECE events and creatively
