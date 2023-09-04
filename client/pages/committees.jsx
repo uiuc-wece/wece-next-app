@@ -121,9 +121,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/tala.jpeg"
+                    src="../imgs/board/matilde.jpeg"
                   />
-                  <figcaption>Tala Aoun</figcaption>
+                  <figcaption>Matilde Figueroa-Carrillo</figcaption>
                 </figure>
                 <p>
                   The outreach committee works with the surrounding community to
@@ -139,9 +139,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/jennifer.jpeg"
+                    src="../imgs/board/varsha.JPG"
                   />
-                  <figcaption>Jennifer Chen</figcaption>
+                  <figcaption>Varsha Mullangi</figcaption>
                 </figure>
                 <p>
                   Social Committee is all about fostering relationships. Whether
