@@ -101,16 +101,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/subha.PNG"
+                    src="../imgs/board/nicoleviz.jpeg"
                   />
-                  <figcaption>Subha Somaskandan</figcaption>
-                </figure>
-                <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/board/chetna.jpg"
-                  />
-                  <figcaption>Chetna Verma</figcaption>
+                  <figcaption>Nicole Viz</figcaption>
                 </figure>
                 <p>
                   The WECE Mentorship Committee strives to build a welcoming and
