@@ -27,9 +27,16 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/ariya.jpeg"
+                    src="../imgs/board/alaynali.JPG"
                   />
-                  <figcaption>Ariya Patel</figcaption>
+                  <figcaption>Alayna Li</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/board/kelly.jpeg"
+                  />
+                  <figcaption>Kelly Chang</figcaption>
                 </figure>
                 <p>
                   The Academic Committee organizes and hosts workshops and
