@@ -52,9 +52,9 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/joshmita.jpg"
+                    src="../imgs/board/gabbyedit.JPG"
                   />
-                  <figcaption>Joshmita Chintala</figcaption>
+                  <figcaption>Gabriela Hinostroza Perez</figcaption>
                 </figure>
                 <p>
                   The Infrastructure Commitee develops and updates the WECE
