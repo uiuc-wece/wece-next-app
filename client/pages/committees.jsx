@@ -159,16 +159,16 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/neha.jpg"
+                    src="../imgs/board/shreya.JPG"
                   />
-                  <figcaption>Neha Agarwal</figcaption>
+                  <figcaption>Shreya Sharma</figcaption>
                 </figure>
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/rochelle.jpg"
+                    src="../imgs/board/kaitlingowens.JPG"
                   />
-                  <figcaption>Rochelle Tham</figcaption>
+                  <figcaption>Kaitlin Gowens</figcaption>
                 </figure>
                 <p>
                   The WECE technical committee works on a project which is
