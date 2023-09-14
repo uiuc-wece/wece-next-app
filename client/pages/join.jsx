@@ -29,7 +29,7 @@ export default function Join() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-    
+
     if (form.checkValidity() === false) {
       setValidated(true);
       return;
@@ -54,7 +54,9 @@ export default function Join() {
       ]);
 
       if (subscribeResponse.status === 200 && registerResponse.status === 200) {
-        setSuccessMessage("You have successfully created a WECE account and subscribed to the WECE newsletter!");
+        setSuccessMessage(
+          "You have successfully created a WECE account and subscribed to the WECE newsletter!"
+        );
         toggleSubscribed();
       } else {
         setErrorMessage("An error occurred during registration.");
@@ -139,10 +141,7 @@ export default function Join() {
                 />
               </Form.Group>
 
-              <Button
-                className={styles["submit-form"]}
-                type="submit"
-              >
+              <Button className={styles["submit-form"]} type="submit">
                 Submit
               </Button>
             </Form>
