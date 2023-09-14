@@ -84,14 +84,22 @@ export default function Join() {
               validated={validated}
               onSubmit={handleSubmit}
             >
-              {/* Form fields go here */}
+              {/* Add your form fields here */}
+              <Form.Group>
+                <Form.Label>First Name</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="First Name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+              </Form.Group>
+              {/* Add other form fields like Last Name, Email, Major, Password, and Confirm Password */}
               {/* ... */}
               <Button
                 className={styles["submit-form"]}
                 type="submit"
-                style={{
-                  fontFamily: "Chivo, sans-serif",
-                }}
               >
                 Submit
               </Button>
