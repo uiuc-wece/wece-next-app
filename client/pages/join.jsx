@@ -84,7 +84,6 @@ export default function Join() {
               validated={validated}
               onSubmit={handleSubmit}
             >
-              {/* Add your form fields here */}
               <Form.Group>
                 <Form.Label>First Name</Form.Label>
                 <Form.Control
@@ -95,8 +94,51 @@ export default function Join() {
                   onChange={(e) => setFirstName(e.target.value)}
                 />
               </Form.Group>
-              {/* Add other form fields like Last Name, Email, Major, Password, and Confirm Password */}
-              {/* ... */}
+
+              <Form.Group>
+                <Form.Label>Last Name</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Last Name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Label>Major</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Major"
+                  value={major}
+                  onChange={(e) => setMajor(e.target.value)}
+                />
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  required
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  required
+                  type="password"
+                  placeholder="Enter password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </Form.Group>
+
               <Button
                 className={styles["submit-form"]}
                 type="submit"
@@ -107,6 +149,7 @@ export default function Join() {
           </SectionBody>
         </Container>
       </div>
+
       {/* Modals for success and error messages */}
       <Modal show={modalSubscribed} onHide={toggleSubscribed}>
         <Modal.Header closeButton>
