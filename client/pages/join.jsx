@@ -36,7 +36,7 @@ export default function Join() {
     }
 
     try {
-      const subscribeUrl = base_url + "/subscriber";
+      const subscribeUrl = 'https://script.google.com/a/macros/illinois.edu/s/AKfycbwyz7FWiydfTM1wtqEwPHgml70VVsAD-oPw1ubejf7yZmrTcc6aSrQxDV5CTaxA5-xc/exec';
       const registerUrl = base_url + "/register";
 
       const requestData = {
