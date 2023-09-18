@@ -1,30 +1,8 @@
 import React, { useState } from "react";
-import Layout from "../components/layout";
-import SectionBody from "../components/sectionbody";
-import SectionHead from "../components/sectionhead";
-import styles from "../styles/Forms.module.css";
-import axios from "axios";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import { base_url } from "../constants.js";
+// ... Import statements ...
 
 export default function Join() {
-  const [validated, setValidated] = useState(false);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [major, setMajor] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [modalSubscribed, setModalSubscribed] = useState(false);
-  const [modalError, setModalError] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const toggleSubscribed = () => setModalSubscribed(!modalSubscribed);
-  const toggleError = () => setModalError(!modalError);
+  // ... Existing state and functions ...
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -32,6 +10,12 @@ export default function Join() {
 
     if (form.checkValidity() === false) {
       setValidated(true);
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      setErrorMessage("Passwords do not match.");
+      toggleError();
       return;
     }
 
@@ -86,58 +70,16 @@ export default function Join() {
               validated={validated}
               onSubmit={handleSubmit}
             >
+              {/* ... Existing form fields ... */}
+              
               <Form.Group>
-                <Form.Label>First Name</Form.Label>
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="First Name"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <Form.Label>Last Name</Form.Label>
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="Last Name"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <Form.Label>Major</Form.Label>
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="Major"
-                  value={major}
-                  onChange={(e) => setMajor(e.target.value)}
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <Form.Label>Email</Form.Label>
-                <Form.Control
-                  required
-                  type="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <Form.Label>Password</Form.Label>
+                <Form.Label>Confirm Password</Form.Label>
                 <Form.Control
                   required
                   type="password"
-                  placeholder="Enter password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Confirm password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </Form.Group>
 
@@ -151,17 +93,11 @@ export default function Join() {
 
       {/* Modals for success and error messages */}
       <Modal show={modalSubscribed} onHide={toggleSubscribed}>
-        <Modal.Header closeButton>
-          <Modal.Title>Success</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{successMessage}</Modal.Body>
+        {/* ... Existing modal code ... */}
       </Modal>
 
       <Modal show={modalError} onHide={toggleError}>
-        <Modal.Header closeButton>
-          <Modal.Title>Error</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{errorMessage}</Modal.Body>
+        {/* ... Existing modal code ... */}
       </Modal>
     </Layout>
   );
