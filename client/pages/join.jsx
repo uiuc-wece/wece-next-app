@@ -18,9 +18,9 @@ export default function Join() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [major, setMajor] = useState(""); // New state for major
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [major, setMajor] = useState(""); // New state for major
   const [modalSubscribed, setModalSubscribed] = useState(false);
   const [modalError, setModalError] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
@@ -55,8 +55,8 @@ export default function Join() {
         firstName: firstName,
         lastName: lastName,
         email: email,
-        password: password,
         major: major, // Include major in the request
+        password: password,
         accountType: "MEMBER",
       });
 
@@ -176,6 +176,29 @@ export default function Join() {
                     fontFamily: "Chivo, sans-serif",
                   }}
                 >
+                  Major
+                </Form.Label>
+                <Form.Control
+                  style={{
+                    fontFamily: "Chivo, sans-serif",
+                  }}
+                  required
+                  type="text"
+                  name="major"
+                  placeholder="Enter Major"
+                  value={major}
+                  onChange={(e) => setMajor(e.target.value)}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your major.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group>
+                <Form.Label
+                  style={{
+                    fontFamily: "Chivo, sans-serif",
+                  }}
+                >
                   Password
                 </Form.Label>
                 <Form.Control
@@ -218,29 +241,6 @@ export default function Join() {
                 />
                 <Form.Control.Feedback type="invalid">
                   Passwords do not match.
-                </Form.Control.Feedback>
-              </Form.Group>
-              <Form.Group>
-                <Form.Label
-                  style={{
-                    fontFamily: "Chivo, sans-serif",
-                  }}
-                >
-                  Major
-                </Form.Label>
-                <Form.Control
-                  style={{
-                    fontFamily: "Chivo, sans-serif",
-                  }}
-                  required
-                  type="text"
-                  name="major"
-                  placeholder="Enter Major"
-                  value={major}
-                  onChange={(e) => setMajor(e.target.value)}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please enter your major.
                 </Form.Control.Feedback>
               </Form.Group>
               <br />
