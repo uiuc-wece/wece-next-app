@@ -2,7 +2,6 @@ import Layout from "../components/layout";
 import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Sponsors.module.css";
-
 import Container from "react-bootstrap/Container";
 
 export default function Sponsors() {
@@ -13,64 +12,51 @@ export default function Sponsors() {
           <SectionHead title="WECE Sponsors_" top={true} />
 
           <h2 className={styles["sponsor-level"]}>Platinum level $2000+</h2>
-          <SectionBody hoverEffect={true} link="https://www.chevron.com/technology/technology-ventures">
-          <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/chevron.png"
-                  />
-          </div>
-          </SectionBody>
-          <SectionBody hoverEffect={true} link="https://www.intel.com/">
+          <SectionBody hoverEffect={true} link="https://www.chevron.com/">
             <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/intel.png"
-                  />
-          </div>
+              <img
+                className={styles["sponsor-img"]}
+                src="../imgs/chevron.png"
+              />
+            </div>
           </SectionBody>
+          <SectionBody hoverEffect={true} link="https://www.statefarm.com/">
+            <div>
+              <img
+                className={styles["sponsor-img"]}
+                src="../imgs/statefarm.png"
+              />
+            </div>
+          </SectionBody>
+
           <h2 className={styles["sponsor-level"]}>Gold level $1000+</h2>
-          <SectionBody hoverEffect={true} link="https://www.accenture.com">
-          <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/accenture.png"
-                  />
-          </div>
+          <SectionBody hoverEffect={true} link="https://www.spectrum.com/">
+            <div>
+              <img
+                className={styles["sponsor-img"]}
+                src="../imgs/spectrum.png"
+              />
+            </div>
           </SectionBody>
 
           <h2 className={styles["sponsor-level"]}>Silver level $500+</h2>
-          <SectionBody hoverEffect={true} link="https://www.anduril.com/">
+          <SectionBody hoverEffect={true} link="https://www.accenture.com">
             <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/anduril.png"
-                  />
-          </div>
+              <img
+                className={styles["sponsor-img"]}
+                src="../imgs/accenture.png"
+              />
+            </div>
           </SectionBody>
-          <SectionBody hoverEffect={true} link="https://www.janestreet.com/">
-          <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/janestreet.png"
-                  />
-          </div>          </SectionBody>
+
           <h2 className={styles["sponsor-level"]}>Bronze level </h2>
-          <SectionBody hoverEffect={true} link="https://www.palantir.com/">
-          <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/palantir.png"
-                  />
-          </div>
-          </SectionBody>
-          <SectionBody hoverEffect={true} link="https://www.capitalone.com/">
-          <div>
-                  <img
-                    className={styles["sponsor-img"]}
-                    src="../imgs/capitalone.png"
-                  />
-          </div>
+          <SectionBody hoverEffect={true} link="https://www.ulsolutions.com/">
+            <div>
+              <img
+                className={styles["sponsor-img"]}
+                src="../imgs/ulsolutions.png"
+              />
+            </div>
           </SectionBody>
         </Container>
       </div>
