@@ -53,7 +53,7 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             >
               <img
                 className={styles["nav-img"]}
-                src="imgs/discord-logo.jpg"
+                src="imgs/discord-logo.png"
                 height="25px"
                 alt="discord"
               />
