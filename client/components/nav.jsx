@@ -60,6 +60,18 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             </Nav.Link>
             <Nav.Link
               className={styles["left-navbar-link"]}
+              href="https://discord.gg/rYaXPMJ6"
+              target="_blank"
+            >
+              <img
+                className={styles["nav-img"]}
+                src="discord-logo.png"
+                height="25px"
+                alt="discord"
+              />
+            </Nav.Link>
+            <Nav.Link
+              className={styles["left-navbar-link"]}
               href="https://www.instagram.com/wece.uiuc/"
               target="_blank"
             >
