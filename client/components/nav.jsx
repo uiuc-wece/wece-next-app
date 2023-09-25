@@ -97,6 +97,12 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             </NavDropdown>
             <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Member Resources">
+            {/* <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/googlecal"
+              >
+                WECE Google Calendar
+              </NavDropdown.Item> */}
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/gmslides"
@@ -109,27 +115,40 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
               >
                 Newsletters
               </NavDropdown.Item>
+              {/* <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/resumebook"
+              >
+                Resume Book
+              </NavDropdown.Item> */}
+              
             </NavDropdown>
 
             <NavDropdown title="Sponsors">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="/sponsors22"
+                href="/sponsors23"
               >
-                2022-23
+                2021-22
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="/sponsors23"
+                href="/sponsors22"
               >
                 2020-21
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
-                href="/sponsors"
+                href="/sponsors21"
               >
                 2018-19
               </NavDropdown.Item>
+              {/* <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/wecehacks"
+              >
+                wecehacks
+              </NavDropdown.Item> */}
             </NavDropdown>
 
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
