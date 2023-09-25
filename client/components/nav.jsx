@@ -48,24 +48,12 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             </Nav.Link>
             <Nav.Link
               className={styles["left-navbar-link"]}
-              href="https://www.facebook.com/wece.uiuc"
-              target="_blank"
-            >
-              <img
-                className={styles["nav-img"]}
-                src="imgs/facebook.png"
-                height="25px"
-                alt="facebook"
-              />
-            </Nav.Link>
-            <Nav.Link
-              className={styles["left-navbar-link"]}
               href="https://discord.gg/rYaXPMJ6"
               target="_blank"
             >
               <img
                 className={styles["nav-img"]}
-                src="discord-logo.jpg"
+                src="imgs/discord-logo.jpg"
                 height="25px"
                 alt="discord"
               />
