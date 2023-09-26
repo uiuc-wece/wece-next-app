@@ -26,7 +26,7 @@ export default function ContactUs() {
               <img
                 className={styles["icon"]}
                 alt="discord"
-                src="89b13b996c7ecf9eee5e797a812696a6.jpg"
+                src="/client/public/imgs/89b13b996c7ecf9eee5e797a812696a6.jpg"
               />
             </div>
           </SectionBody>
@@ -40,7 +40,7 @@ export default function ContactUs() {
               <img
                 className={styles["icon"]}
                 alt="instagram"
-                src="data:image/svg+xml;base64,PD94bWw..."
+                src="/client/public/imgs/instagram.png"
               />
             </div>
           </SectionBody>
