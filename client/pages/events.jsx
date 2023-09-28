@@ -87,14 +87,14 @@ export default function Calendar() {
   // Define the paths to all images, including both previous and new ones
   const imagePaths = [
     // Previous images (replace with actual paths)
-    "path/to/previous/image1.png",
-    "path/to/previous/image2.png",
+    "path/to/previous/image1.jpeg",
+    "path/to/previous/image2.jpeg",
     // New images
-    "events/GM/August GM 2023.png",
-    "events/tech talks/UL1.png",
-    "events/tech talks/UL2.png",
-    "events/tech talks/UL3.png",
-    "events/tech talks/UL4.png",
+    "events/GM/August GM 2023.jpeg",
+    "events/tech talks/UL1.jpeg",
+    "events/tech talks/UL2.jpeg",
+    "events/tech talks/UL3.jpeg",
+    "events/tech talks/UL4.jpeg",
   ];
 
   return (
