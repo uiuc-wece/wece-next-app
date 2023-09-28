@@ -56,13 +56,6 @@ export default function Home() {
             </div>
           </Container>
         </div>
-        <div className={styles["staff-pic-popup"]} id="staff-pic-popup">
-          <img
-            className={`${styles["img-center"]} ${styles["staff-pic"]}`}
-            id="staff-pic"
-            src="imgs/board2019-20-green.png"
-          />
-        </div>
         <Container className="section">
           <SectionHead title="About_" top={false} />
           <SectionBody>
@@ -109,8 +102,15 @@ export default function Home() {
             <SectionButton buttonText="Sign Up" buttonLink="join" />
           </SectionBody>
         </Container>
+        {/* Moved the image to the bottom of the page */}
+        <div className={styles["staff-pic-popup"]} id="staff-pic-popup">
+          <img
+            className={`${styles["img-center"]} ${styles["staff-pic"]}`}
+            id="staff-pic"
+            src="imgs/board2019-20-green.png"
+          />
+        </div>
       </div>
     </Layout>
-    
   );
-}
+};
