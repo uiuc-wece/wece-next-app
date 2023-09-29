@@ -1,4 +1,4 @@
-/ the following is the old format of the events page. To incorporate the points method, go way down to line 122 and uncomment that code, but comment this code from line 2-120
+// the following is the old format of the events page. To incorporate the points method, go way down to line 122 and uncomment that code, but comment this code from line 2-120
 import Layout from "../components/layout";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Calendar.module.css";
