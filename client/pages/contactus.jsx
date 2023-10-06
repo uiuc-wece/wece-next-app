@@ -16,7 +16,7 @@ export default function ContactUs() {
               Contact us with any questions at wece.uiuc@gmail.com
             </p>
           </SectionBody>
-          <SectionBody hoverEffect={true} link="https://discord.gg/6hCJBtST">
+          <SectionBody hoverEffect={true} link="https://discord.gg/vGmu3zU8">
             <div className={styles["icon-box"]}>
               <div className="description">
                 <h2 className={styles["contact-title"]}>
