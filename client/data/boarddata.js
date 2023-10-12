@@ -5,7 +5,7 @@ export default {
       role: "President",
       major: "Electrical Engineering",
       year: "Senior",
-      about: "",
+      about: "Hello! My name is Subha, and I'm the current President of WECE! I'm a senior in electrical engineering doing a concentration in power and energy. I've been in WECE since my freshman year, as a mentorship chair, then was mentorship director for the next two years. I've loved the impact we've had on the department and people around us, and I love getting to make a welcoming environment for everyone. In my free time, I enjoy reading, watching tv or movies (some of my favs are the Mentalist, Suits, Friends, and Pitch Perfect), and watching sports.",
       contact: "sbs8@illinois.edu",
       img: "imgs/board/subha.jpeg",
     },
