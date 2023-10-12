@@ -48,7 +48,7 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             </Nav.Link>
             <Nav.Link
               className={styles["left-navbar-link"]}
-              href="https://discord.gg/pWTv3QXRrb"
+              href="https://discord.gg/9kM3XCE4gH"
               target="_blank"
             >
               <img
