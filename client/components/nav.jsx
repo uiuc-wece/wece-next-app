@@ -16,7 +16,7 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
     logout();
     router.push("/");
   };
-
+  
   return (
     <>
       <Navbar
