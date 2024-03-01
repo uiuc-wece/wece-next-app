@@ -13,7 +13,7 @@
 </p>
 
 ## Background 
-We are WECE, the Women in Electrical and Computer Engineering - a student organization at the University of Illinois at Urbana-Champaign dedicated to supporting women within the Illinois ECE department. The webapp was initiated by former Infrastruture Director [Eugenia Chen](https://www.linkedin.com/in/eugenia-chen-3aa251131/) and managed by [Joshmita Chintala](https://www.linkedin.com/in/joshmita-chintala-74a1b01a8/). This site is now maintained by current Infrastructure Director at WECE, [Estrella Popoca](https://www.linkedin.com/in/elliepopoca/). 
+We are WECE, the Women in Electrical and Computer Engineering - a student organization at the University of Illinois at Urbana-Champaign dedicated to supporting women within the Illinois ECE department. The webapp was initiated by former Infrastruture Director [Eugenia Chen](https://www.linkedin.com/in/eugenia-chen-3aa251131/) and managed by [Joshmita Chintala](https://www.linkedin.com/in/joshmita-chintala-74a1b01a8/) and [Estrella Popoca](https://www.linkedin.com/in/elliepopoca/). This site is now maintained by current Infrastructure Director at WECE, Gabriela Hinostroza Perez. 
 
 <br />
 
