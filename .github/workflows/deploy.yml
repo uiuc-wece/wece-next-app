@@ -24,11 +24,15 @@ jobs:
 
       - name: server - NPM install
         working-directory: ./api
-        run: npm install
+        run: |
+          npm install
+          echo "Server - NPM install completed successfully"
 
       - name: client - NPM install
         working-directory: ./client
-        run: npm install
+        run: |
+          npm install
+          echo "Client - NPM install completed successfully"
 
       - name: client - NPM build
         working-directory: ./client
