@@ -14,6 +14,10 @@ const monthSlides = [
     link: "https://docs.google.com/presentation/d/1TykqeuWfRxc9R90Ha06-cYnsF0Y1wgGZkNozWU-4JFA/edit?usp=sharing",
   },
   {
+    month: "February",
+    link: "",
+  },
+  {
     month: "March",
     link: "",
   },
