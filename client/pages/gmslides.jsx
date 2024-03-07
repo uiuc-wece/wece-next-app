@@ -17,10 +17,6 @@ const monthSlides = [
     month: "February",
     link: "",
   },
-  {
-    month: "March",
-    link: "",
-  },
 ];
 
 export default function gmslides() {
