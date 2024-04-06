@@ -16,7 +16,7 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
     logout();
     router.push("/");
   };
-
+  
   return (
     <>
       <Navbar
@@ -112,6 +112,12 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             </NavDropdown>
 
             <NavDropdown title="Sponsors">
+              <NavDropdown.Item
+               className={styles["dropdown-item"]}
+               href="/sponsors24"
+              >
+                2023- 24
+              </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors23"

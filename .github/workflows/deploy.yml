@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -24,11 +24,15 @@ jobs:
 
       - name: server - NPM install
         working-directory: ./api
-        run: npm install
+        run: |
+          npm install
+          echo "Server - NPM install completed successfully"
 
       - name: client - NPM install
         working-directory: ./client
-        run: npm install
+        run: |
+          npm install
+          echo "Client - NPM install completed successfully"
 
       - name: client - NPM build
         working-directory: ./client
@@ -39,7 +43,7 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-args: "--prod"
-          vercel-org-id: ${{ secrets.ORG_ID}}
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
+          vercel-args: "--prod --debug" # Add --debug flag for debugging
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
           working-directory: ./
