@@ -25,7 +25,7 @@ jobs:
       - name: server - NPM install
         working-directory: ./api
         run: |
-          npm install
+          npm install --force --legacy-peer-deps
           echo "Server - NPM install completed successfully"
 
       - name: client - NPM install
