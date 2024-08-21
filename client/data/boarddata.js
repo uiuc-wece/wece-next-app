@@ -116,7 +116,7 @@ export default {
       name: "Matilde Figueroa-Carrillo",
       role: "Outreach Director",
       major: "Electrical Engineering",
-      year: "Junior",
+      year: "Senior",
       about: "Hi! My name is Matilde Figueroa-Carrillo, nice to meet you! I'm a junior majoring in Electrical Engineering and minoring in Materials Science and Engineering and Semiconductor. WECE has been a great community to have throughout my entire time at UIUC so far. I would definitely say it makes this major more welcoming, and provides support during hard times. I've been the Outreach Director for two years now, and started off as a Mentorship Chair.  If you have any questions about anything that I've mentioned so far, please feel free to contact me anytime. I love helping with making schedules and making plans for the future (like a personal advisor). Anyway, a couple more things about me: I love to dance and play volleyball, I love cooking and trying new foods, and my favorite thing is to listen to music. My favorite ways to destress are to go on walks with friends (with coffee) and just talk about life. That's a little about me and I hope to meet you all soon!",
       contact: "mailto:mfigu4@illinois.edu",
       linkedin: 'https://www.linkedin.com/in/matilde-figueroa-carrillo-4569a1222/',
