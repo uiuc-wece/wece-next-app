@@ -1,10 +1,10 @@
 module.exports = {
-  webpack5: false,
+  // webpack5: false,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
       issuer: {
-        test: /\.(js|ts)x?$/,
+        and: [/\.(js|ts)x?$/],
       },
       use: ["@svgr/webpack"],
     });
