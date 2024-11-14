@@ -5,7 +5,7 @@ module.exports = {
     "../stories/**/*.stories.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  // addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
   webpackFinal: async (config) => {
     // Remove the existing css rule
     config.module.rules = [
