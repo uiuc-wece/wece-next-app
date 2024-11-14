@@ -79,7 +79,7 @@ export default function WECEHacksTeam() {
             <p className={styles["wecehacks-text-body"]}>
               Lead (she/her), Sophomore @ UIUC studying Computer Science. When
               she gets the chance to, she loves doing her own nail art and
-              reading! She loves studying in the morning, but you're more likely
+              reading! She loves studying in the morning, but you are more likely
               to find her on a late night walk with friends!!!
             </p>
             <SocialIcon
@@ -131,7 +131,7 @@ export default function WECEHacksTeam() {
             <p className={styles["wecehacks-text-body"]}>
               Organizer (she/her), Sophomore @ UIUC studying Computer Science.
               <br /> she likes dancing, baking/cooking, and journaling. A fun
-              fact about her is that she can solve a Rubik's cube!
+              fact about her is that she can solve a Rubik cube!
             </p>
             <SocialIcon
               style={{

@@ -87,7 +87,7 @@ export default function Committees() {
                 <p>
                   The Marketing Committee advertises WECE events and creatively
                   supports the events through banners, posters, and logos. We
-                  help expand WECE's presence on campus through social media by
+                  help expand the presence of WCE on campus through social media by
                   showcasing the wonderful events we have to help students
                   academically, professionally and personally. We also oversee
                   the design of WECE logo, apparel, newsletter, and the website.
