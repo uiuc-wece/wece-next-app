@@ -135,7 +135,7 @@ const UpdateAccountWidget = () => {
       requests.push(updateProfileRequest);
 
       Promise.all(requests)
-        .then((res) => {
+        .then(() => {
           setSuccessMessage("You have successfully updated your account.");
           refreshAuth();
           toggleSuccess();

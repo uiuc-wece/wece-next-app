@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import styles from "../styles/WECEHacks.module.css";
 import { SocialIcon } from "react-social-icons";
 import SectionHead from "./sectionhead";
+import Image from 'next/image';
 
 export default function WECEHacksTeam() {
   return (
@@ -19,10 +20,10 @@ export default function WECEHacksTeam() {
       <Container className={styles["wecehacks-center-wrapper"]}>
         <Row className={styles["wecehacks-team-wrapper"]}>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/ellie.jpg"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Ellie <br /> Popoca
             </p>
@@ -43,10 +44,10 @@ export default function WECEHacksTeam() {
             />
           </div>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/cathy.JPG"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Cathy <br /> Boman
             </p>
@@ -68,10 +69,10 @@ export default function WECEHacksTeam() {
             />
           </div>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/apoorva.jpg"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Apoorva <br /> Sannasi
             </p>
@@ -93,10 +94,10 @@ export default function WECEHacksTeam() {
             />
           </div>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/emily.JPG"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Emily <br /> Liu
             </p>
@@ -120,10 +121,10 @@ export default function WECEHacksTeam() {
         </Row>
         <Row className={styles["wecehacks-team-wrapper"]}>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/tiffany.JPG"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Tiffany <br /> Seto
             </p>
@@ -144,10 +145,10 @@ export default function WECEHacksTeam() {
             />
           </div>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/ming.jpg"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Mingxiao <br /> Wang
             </p>
@@ -169,10 +170,10 @@ export default function WECEHacksTeam() {
             />
           </div>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/manushri.jpg"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Manushri <br /> Dilipkumar
             </p>
@@ -196,10 +197,10 @@ export default function WECEHacksTeam() {
             />
           </div>
           <div className={styles["wecehacks-col"]}>
-            <img
+            <Image
               className={styles["wecehacks-team-picture"]}
               src="../imgs/wecehacks/Sneha.jpeg"
-            ></img>
+            />
             <p className={styles["wecehacks-text-header"]}>
               Sneha <br /> Chaliki
             </p>

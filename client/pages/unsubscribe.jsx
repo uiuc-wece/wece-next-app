@@ -32,7 +32,7 @@ export default function Unsubscribe() {
       inputs.forEach((input) => (input.disabled = true));
 
       const postJoinRequest = async () => {
-        const result = await axios
+        await axios
           .put(url, { email: email })
           .then((response) => {
             alert("You have successfully unsubscribed.");

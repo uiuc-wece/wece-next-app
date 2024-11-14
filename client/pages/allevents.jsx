@@ -3,7 +3,7 @@ import AccountWidget from "../components/accountwidget";
 import styles from "../styles/Members.module.css";
 
 import Container from "react-bootstrap/Container";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
 // import MaterialTable from "material-table";
 // import { ThemeProvider } from "@material-ui/styles";
 
@@ -16,8 +16,11 @@ import axios from "axios";
 import { base_url } from "../constants.js";
 
 const AllEvents = () => {
-  const [loading, setLoading] = useState(true);
-  const [events, setEvents] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [events, setEvents] = useState([]);
+
+  const [setLoading] = useState(true);
+  const [setEvents] = useState([]);
   const authenticated = useSelector((state) => state.authenticated);
 
   if (!authenticated) {
@@ -41,36 +44,36 @@ const AllEvents = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  const updateRow = (newData, oldData) => {
-    return new Promise((resolve, reject) => {
-      const updateUrl = base_url + "/event/" + oldData._id;
-      axios
-        .put(updateUrl, newData, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        })
-        .then(() => {
-          // after updating event, fetch all events
-          const eventsUrl = base_url + "/events";
-          axios
-            .get(eventsUrl, {
-              withCredentials: true,
-            })
-            .then((res) => {
-              setEvents(res.data);
-            })
-            .catch((err) => {
-              console.log(err);
-            });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      resolve();
-    });
-  };
+  // const updateRow = (newData, oldData) => {
+  //   return new Promise((resolve, reject) => {
+  //     const updateUrl = base_url + "/event/" + oldData._id;
+  //     axios
+  //       .put(updateUrl, newData, {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         withCredentials: true,
+  //       })
+  //       .then(() => {
+  //         // after updating event, fetch all events
+  //         const eventsUrl = base_url + "/events";
+  //         axios
+  //           .get(eventsUrl, {
+  //             withCredentials: true,
+  //           })
+  //           .then((res) => {
+  //             setEvents(res.data);
+  //           })
+  //           .catch((err) => {
+  //             console.log(err);
+  //           });
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //     resolve();
+  //   });
+  // };
 
   return (
     <AccountLayout>

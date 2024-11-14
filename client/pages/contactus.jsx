@@ -3,6 +3,7 @@ import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Contactus.module.css"; // Import your CSS module
 import Container from "react-bootstrap/Container";
+//import Image from 'next/image';
 
 export default function ContactUs() {
   return (

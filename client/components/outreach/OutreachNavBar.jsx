@@ -1,13 +1,14 @@
 import React from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import styles from "../../styles/Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Image from 'next/image';
 
 const OutreachNavBar = ({ background_color2 = "#9D9DFF" }) => {
 
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <>
@@ -20,7 +21,7 @@ const OutreachNavBar = ({ background_color2 = "#9D9DFF" }) => {
       >
         <div className={styles["left-navbar"]}>
           <Navbar.Brand href="/" className={styles["wece-brand"]}>
-            <img
+            <Image
               src="/../../imgs/wece-logo-h-white.png"
               height="30px"
               alt="wece-logo-white"

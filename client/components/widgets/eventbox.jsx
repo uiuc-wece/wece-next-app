@@ -29,7 +29,8 @@ const EventBox = ({
   handleUpdate,
 }) => {
   const eventsSaved = useSelector((state) => state.eventsSaved);
-  const [menu, setMenu] = useState();
+  // const [menu, setMenu] = useState();
+  const [setMenu] = useState();
   const [users, setUsers] = useState([]);
 
   const [validated, setValidated] = useState(false);
@@ -121,8 +122,8 @@ const EventBox = ({
     );
   };
 
-  const ArrowLeft = <HiArrowCircleLeft className={styles["arrow"]} />;
-  const ArrowRight = <HiArrowCircleRight className={styles["arrow"]} />;
+  // const ArrowLeft = <HiArrowCircleLeft className={styles["arrow"]} />;
+  // const ArrowRight = <HiArrowCircleRight className={styles["arrow"]} />;
 
   const committeeOptions = [
     { label: "Academic", value: "academic" },
@@ -312,7 +313,7 @@ const EventBox = ({
                 label="Recurring"
                 name="recurring"
                 checked={recurring}
-                onChange={(_) => setRecurring(!recurring)}
+                onChange={() => setRecurring(!recurring)}
               />
             </Form.Group>
             <Form.Group>

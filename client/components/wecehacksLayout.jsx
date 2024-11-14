@@ -4,6 +4,7 @@ import Head from "next/head";
 import WECEHacksFooter from "./wecehacksFooter";
 import WECEHacksNav from "./wecehacksNav";
 import styles from "../styles/WECEHacks.module.css";
+import Image from 'next/image';
 
 export default function WECEHacksLayout({
   children,
@@ -17,7 +18,7 @@ export default function WECEHacksLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
-          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto"
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=optional"
           rel="stylesheet"
         />
         <link
@@ -35,10 +36,10 @@ export default function WECEHacksLayout({
         </div>
         <WECEHacksFooter></WECEHacksFooter>
         <a id="mlh-trust-badge" href="https://mlh.io/seasons/2023/events">
-          <img
+          <Image
             className={styles["wecehacks-mlh-banner"]}
             src="../imgs/wecehacks/mlh-banner.png"
-          ></img>
+          />
         </a>
         <div
           style={{
@@ -48,15 +49,15 @@ export default function WECEHacksLayout({
             paddingTop: "60px",
           }}
         >
-          <img
+          <Image
             className={styles["wecehacks-bush-footer"]}
             src="../imgs/wecehacks/WH_BushFooter_Pixel.png"
-          ></img>
+          />
 
-          <img
+          <Image
             className={styles["wecehacks-bus"]}
             src="../imgs/wecehacks/WH_BusStop_Pixel.png"
-          ></img>
+          />
         </div>
       </div>
     </>

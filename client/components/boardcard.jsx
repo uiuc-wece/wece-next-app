@@ -7,8 +7,8 @@ export default function BoardCard({
   major,
   year,
   about,
-  contact,
-  linkedin,
+  // contact,
+  // linkedin,
   img,
 }) {
   const flipCard = (event) => {
@@ -34,6 +34,7 @@ export default function BoardCard({
           </div>
         </div>
         <img className={styles["exec-pic"]} src={img} />
+
         <div className={styles["exec-text"]}>
           <h5 className={styles["exec-name"]}>{name}</h5>
           <h6 className={styles["exec-desc"]}>{role}</h6>
