@@ -382,7 +382,8 @@ export default function EventCard({
 
   const handleChange = (e) => {
     const { maxLength, value, name } = e.target;
-    const [fieldName, fieldIndex] = name.split("-");
+    // const [fieldName, fieldIndex] = name.split("-");
+    const [fieldIndex] = name.split("-");
 
     // Check if they hit the max character length
     if (value.length >= maxLength) {
@@ -727,7 +728,7 @@ export default function EventCard({
               Online Link
             </Col>
             <Col xs={12} md={8} className={styles["more-value"]}>
-              <a href={webConferenceLink} target="_blank">
+              <a href={webConferenceLink} target="_blank" rel="noreferrer">
                 {webConferenceLink}
               </a>
             </Col>
@@ -737,7 +738,7 @@ export default function EventCard({
               Action Link
             </Col>
             <Col xs={12} md={8} className={styles["more-value"]}>
-              <a href={actionLink} target="_blank">
+              <a href={actionLink} target="_blank" rel="noreferrer">
                 {actionLink}
               </a>
             </Col>
@@ -845,7 +846,7 @@ export default function EventCard({
                 label="Recurring"
                 name="recurring"
                 checked={newRecurring}
-                onChange={(_) => setNewRecurring(!newRecurring)}
+                onChange={() => setNewRecurring(!newRecurring)}
               />
             </Form.Group>
             <Form.Group>

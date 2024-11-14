@@ -3,7 +3,7 @@ import styles from "../styles/Sectionbody.module.css";
 
 function SectionLink({ children, link = "" }) {
   return (
-    <a className={styles["section-link"]} href={link} target="_blank">
+    <a className={styles["section-link"]} href={link} target="_blank" rel="noreferrer">
       {children}
     </a>
   );

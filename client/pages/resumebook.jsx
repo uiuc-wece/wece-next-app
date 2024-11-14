@@ -14,7 +14,7 @@ export default function resumebook() {
             <SectionBody>
               <p>
                 Upload your resume to our resume book that we send to sponsors{" "}
-                <a href="https://forms.gle/26xYeYhrop6yeDdH7" target="_blank">
+                <a href="https://forms.gle/26xYeYhrop6yeDdH7" target="_blank" rel="noreferrer">
                   here
                 </a>
                 !

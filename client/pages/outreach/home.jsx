@@ -15,7 +15,7 @@ export default function OutreachHome({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
-          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto"
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=optional"
           rel="stylesheet"
         />
         <link

@@ -96,7 +96,7 @@ export default function Calendar() {
           <div id="events">
             {events
               ? events.map((e, ind) => (
-                  <a key={e.id} href={e.htmlLink} target="_blank">
+                  <a key={e.id} href={e.htmlLink} target="_blank" rel="noreferrer">
                     <div
                       className={
                         ind % 2 == 1

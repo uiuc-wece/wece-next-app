@@ -1,5 +1,6 @@
 <h1 align="center">
-  <a href="https://wece.ece.illinois.edu/"><img src="https://user-images.githubusercontent.com/65576812/178602976-d20bd1cc-31f6-486a-98c2-488a908d2997.png" alt="UIUC WECE Logo" width="300"></a>
+  <a href="https://wece.ece.illinois.edu/"><Image src="https://user-images.githubusercontent.com/65576812/178602976-d20bd1cc-31f6-486a-98c2-488a908d2997.png" alt="UIUC WECE Logo" width="300" />
+</a>
   <br/>
   Women in Electrical and Computer Engineering
   </br>

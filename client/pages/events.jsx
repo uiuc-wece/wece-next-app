@@ -6,7 +6,7 @@ import styles from "../styles/Calendar.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Container from "react-bootstrap/Container";
-import SectionBody from "../components/sectionbody";
+// import SectionBody from "../components/sectionbody";
 
 export default function Calendar() {
   const [events, setEvents] = useState([]);

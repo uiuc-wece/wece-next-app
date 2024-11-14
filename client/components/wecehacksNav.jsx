@@ -5,7 +5,8 @@ import React from "react";
 import styles from "../styles/WECEHacks.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { NavDropdown } from "react-bootstrap";
+// import { NavDropdown } from "react-bootstrap";
+import Image from 'next/image';
 
 // this changes the color of the navbar
 const WECEHacksNav = ({ background_color2 = "transparent" }) => {
@@ -20,7 +21,7 @@ const WECEHacksNav = ({ background_color2 = "transparent" }) => {
       >
         <div className={styles["left-navbar"]}>
           <Navbar.Brand href="/" className={styles["wece-brand"]}>
-            <img
+            <Image
               src="imgs/wece-logo-h-white.png"
               height="30px"
               alt="wece-logo-white"
