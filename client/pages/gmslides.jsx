@@ -34,7 +34,7 @@ export default function gmslides() {
               {monthSlides.map((slide, index) => (
                 <p key={index}>
                   Access past General Meeting slides for{" "}
-                  <a href={slide.link} target="_blank">
+                  <a href={slide.link} target="_blank" rel="noreferrer">
                     {slide.month}
                   </a>
                 </p>

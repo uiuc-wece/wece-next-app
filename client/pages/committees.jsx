@@ -3,6 +3,7 @@ import SectionBody from "../components/sectionbody";
 import SectionButton from "../components/sectionbutton";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Committees.module.css";
+//import Image from 'next/image';
 
 import Container from "react-bootstrap/Container";
 

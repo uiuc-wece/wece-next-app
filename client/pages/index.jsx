@@ -9,7 +9,9 @@ import styles from "../styles/Home.module.css";
 
 import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
+//import Image from 'next/image';
+
 // import { BiRightArrowCircle } from "react-icons/bi";
 
 export default function Home() {
@@ -43,7 +45,7 @@ export default function Home() {
           <Container>
             <div className={styles.title}>
               <div className={styles["front-img"]}>
-                <Image src="imgs/wece-logo-white.png" alt="wece-logo-white" />
+                <img src="imgs/wece-logo-white.png" alt="wece-logo-white" />
               </div>
             </div>
             <div className={styles.subheading}>

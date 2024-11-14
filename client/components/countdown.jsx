@@ -22,7 +22,7 @@ const Countdown = () => {
     };
   };
 
-  const startTimer = (e) => {
+  const startTimer = () => {
     let { total, days, hours, minutes, seconds } = getTimeRemaining(e);
     if (total >= 0) {
       setTimer(

@@ -1,6 +1,6 @@
 import AccountLayout from "../components/accountlayout";
 import AccountWidget from "../components/accountwidget";
-import SectionHead from "../components/sectionhead";
+// import SectionHead from "../components/sectionhead";
 import styles from "../styles/Account.module.css";
 
 import Container from "react-bootstrap/Container";

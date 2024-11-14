@@ -3,7 +3,7 @@ import AccountWidget from "../components/accountwidget";
 import styles from "../styles/Members.module.css";
 
 import Container from "react-bootstrap/Container";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
 // import MaterialTable from "material-table";
 // import { ThemeProvider } from "@material-ui/core/styles";
 
@@ -16,8 +16,11 @@ import axios from "axios";
 import { base_url } from "../constants.js";
 
 const Members = () => {
-  const [loading, setLoading] = useState(true);
-  const [users, setUsers] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [users, setUsers] = useState([]);
+
+  const [setLoading] = useState(true);
+  const [setUsers] = useState([]);
   const authenticated = useSelector((state) => state.authenticated);
 
   if (!authenticated) {
@@ -40,67 +43,67 @@ const Members = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  const updateRow = (newData, oldData) => {
-    return new Promise((resolve, reject) => {
-      const updateUrl = base_url + "/user/" + oldData._id;
-      axios
-        .put(updateUrl, newData, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          withCredentials: true,
-        })
-        .then(() => {
-          // after updating user, fetch all users
-          const usersUrl = base_url + "/users";
-          axios
-            .get(usersUrl, {
-              withCredentials: true,
-            })
-            .then((res) => {
-              setUsers(res.data);
-            })
-            .catch((err) => {
-              console.log(err);
-            });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      resolve();
-    });
-  };
+  // const updateRow = (newData, oldData) => {
+  //   return new Promise((resolve, reject) => {
+  //     const updateUrl = base_url + "/user/" + oldData._id;
+  //     axios
+  //       .put(updateUrl, newData, {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         withCredentials: true,
+  //       })
+  //       .then(() => {
+  //         // after updating user, fetch all users
+  //         const usersUrl = base_url + "/users";
+  //         axios
+  //           .get(usersUrl, {
+  //             withCredentials: true,
+  //           })
+  //           .then((res) => {
+  //             setUsers(res.data);
+  //           })
+  //           .catch((err) => {
+  //             console.log(err);
+  //           });
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //     resolve();
+  //   });
+  // };
 
-  const editAccountType = (props) => {
-    return (
-      <select
-        name="account type"
-        defaultValue={props.value}
-        onChange={(e) => props.onChange(e.target.value)}
-      >
-        <option value="MEMBER">MEMBER</option>
-        <option value="CHAIR">CHAIR</option>
-        <option value="BOARD">BOARD</option>
-        <option value="ADMIN">ADMIN</option>
-        <option value="SPONSOR">SPONSOR</option>
-      </select>
-    );
-  };
+  // const editAccountType = (props) => {
+  //   return (
+  //     <select
+  //       name="account type"
+  //       defaultValue={props.value}
+  //       onChange={(e) => props.onChange(e.target.value)}
+  //     >
+  //       <option value="MEMBER">MEMBER</option>
+  //       <option value="CHAIR">CHAIR</option>
+  //       <option value="BOARD">BOARD</option>
+  //       <option value="ADMIN">ADMIN</option>
+  //       <option value="SPONSOR">SPONSOR</option>
+  //     </select>
+  //   );
+  // };
 
-  const editStudentStatus = (props) => {
-    return (
-      <select
-        name="student status"
-        defaultValue={props.value}
-        onChange={(e) => props.onChange(e.target.value)}
-      >
-        <option value="UNDERGRADUATE">UNDERGRADUATE</option>
-        <option value="GRADUATE">GRADUATE</option>
-        <option value="ALUMNI">ALUMNI</option>
-        <option value="NONE">NONE</option>
-      </select>
-    );
-  };
+  // const editStudentStatus = (props) => {
+  //   return (
+  //     <select
+  //       name="student status"
+  //       defaultValue={props.value}
+  //       onChange={(e) => props.onChange(e.target.value)}
+  //     >
+  //       <option value="UNDERGRADUATE">UNDERGRADUATE</option>
+  //       <option value="GRADUATE">GRADUATE</option>
+  //       <option value="ALUMNI">ALUMNI</option>
+  //       <option value="NONE">NONE</option>
+  //     </select>
+  //   );
+  // };
 
   return (
     <AccountLayout>
