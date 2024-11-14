@@ -7,7 +7,7 @@ const Countdown = () => {
 
   const [timer, setTimer] = useState("00:00:00");
 
-  const getTimeRemaining = (e) => {
+  const getTimeRemaining = () => {
     const total = Date.parse("April 8, 2023 08:00:00") - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
@@ -23,7 +23,7 @@ const Countdown = () => {
   };
 
   const startTimer = () => {
-    let { total, days, hours, minutes, seconds } = getTimeRemaining(e);
+    let { total, days, hours, minutes, seconds } = getTimeRemaining();
     if (total >= 0) {
       setTimer(
         (days > 9 ? days : "0" + days) +
