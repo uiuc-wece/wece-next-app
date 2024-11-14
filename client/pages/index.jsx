@@ -67,7 +67,7 @@ export default function Home() {
                   fontFamily: "IBM Plex Mono",
                 }}
               >
-                We are WECE, the Women in Electrical and Computer Engineering
+                We are WECE, Women in Electrical and Computer Engineering
               </span>{" "}
               - a student organization at the University of Illinois at
               Urbana-Champaign dedicated to supporting women within the

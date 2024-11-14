@@ -6,8 +6,9 @@ import Link from "next/link";
 export default function SectionButton({ buttonText, buttonLink }) {
   return (
     <div className={styles["button"]}>
-      <Link href={buttonLink}>
-        <a className={styles["link-btn"]}>{buttonText}</a>
+      <Link href={buttonLink} className={styles["link-btn"]}>
+        {buttonText}
+        {/* <a className={styles["link-btn"]}>{buttonText}</a> */}
       </Link>
     </div>
   );
