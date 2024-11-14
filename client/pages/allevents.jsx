@@ -4,15 +4,16 @@ import styles from "../styles/Members.module.css";
 
 import Container from "react-bootstrap/Container";
 import Loader from "react-loader-spinner";
-import MaterialTable from "material-table";
-import { ThemeProvider } from "@material-ui/styles";
+// import MaterialTable from "material-table";
+// import { ThemeProvider } from "@material-ui/styles";
 
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import axios from "axios";
 
-import { base_url, theme } from "../constants.js";
+// import { base_url, theme } from "../constants.js";
+import { base_url } from "../constants.js";
 
 const AllEvents = () => {
   const [loading, setLoading] = useState(true);
@@ -78,7 +79,7 @@ const AllEvents = () => {
           <Container fluid className={`section ${styles["member-section"]}`}>
             <AccountWidget>
               <div className={styles["member-table"]}>
-                <ThemeProvider theme={theme}>
+                {/* <ThemeProvider theme={theme}>
                   {loading ? (
                     <div className="loading-container">
                       <Loader
@@ -206,7 +207,7 @@ const AllEvents = () => {
                       style={{ boxShadow: "none" }}
                     />
                   )}
-                </ThemeProvider>
+                </ThemeProvider> */}
               </div>
             </AccountWidget>
           </Container>

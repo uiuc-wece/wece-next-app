@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import WECEHacksLayout from "../components/wecehacksLayout";
 import styles from "../styles/WECEHacks.module.css";
 
-import CustomCursor from "custom-cursor-react";
-import "custom-cursor-react/dist/index.css";
+// import CustomCursor from "custom-cursor-react";
+// import "custom-cursor-react/dist/index.css";
 import SectionHead from "../components/sectionhead";
 import Container from "react-bootstrap/Container";
 
@@ -16,7 +16,7 @@ export default function Schedule() {
 
   return (
     <WECEHacksLayout background_color="#a890fe">
-      <CustomCursor // custom cursor component
+      {/* <CustomCursor // custom cursor component
         customClass={styles["cursor"]}
         targets={["#nav", "#button"]}
         targetScale={2}
@@ -26,7 +26,7 @@ export default function Schedule() {
         fill="#6fb183"
         smoothness={{ movement: 1, scale: 0.6, opacity: 0.8 }}
         opacity={1}
-      />
+      /> */}
       <div className={styles["pages"]}>
         <div className={styles["schedule-title-wrapper"]}>
           <div className={styles["schedule-col"]}>
