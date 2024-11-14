@@ -6,7 +6,7 @@ export default function ListOfTags({words}) {
   return(
     <div className={styles["list"]}>
       {
-        words.map(word => <Tag word={word}> </Tag>)
+        words.map(word => <Tag key={index} word={word}> </Tag>)
       }
     </div>
   );

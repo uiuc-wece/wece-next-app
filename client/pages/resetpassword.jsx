@@ -50,7 +50,8 @@ const ResetPassword = () => {
 
   const handleChange = (e) => {
     const { maxLength, value, name } = e.target;
-    const [fieldName, fieldIndex] = name.split("-");
+    // const [fieldName, fieldIndex] = name.split("-");
+    const [fieldIndex] = name.split("-");
 
     // Check if they hit the max character length
     if (value.length >= maxLength) {
@@ -108,7 +109,7 @@ const ResetPassword = () => {
             email: email,
             code: code,
           })
-          .then((_) => {
+          .then(() => {
             showResetPassword();
           })
           .catch((error) => {
@@ -149,7 +150,7 @@ const ResetPassword = () => {
             email: email,
             password: password,
           })
-          .then((_) => {
+          .then(() => {
             redirect();
           })
           .catch((error) => {

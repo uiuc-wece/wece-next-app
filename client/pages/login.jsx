@@ -75,7 +75,7 @@ const Login = () => {
               withCredentials: true,
             }
           )
-          .then((_) => {
+          .then(() => {
             toggleLogin();
             refreshAuth();
           })
@@ -133,7 +133,7 @@ const Login = () => {
               withCredentials: true,
             }
           )
-          .then((_) => {
+          .then(() => {
             toggleEmail();
           })
           .catch((error) => {
