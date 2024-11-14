@@ -110,7 +110,7 @@ export default function Schedule() {
               <h6>1:00 pm</h6>
             </div>
             <div className={styles["event-card"]}>
-              <h4>Project Demo's!</h4>
+              <h4>Project Demos!</h4>
               <h6>2:00 pm</h6>
             </div>
             <div className={styles["event-card"]}>
