@@ -13,7 +13,7 @@ import Modal from "react-bootstrap/Modal";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import MultiSelect from "react-multi-select-component";
-import ScrollMenu from "react-horizontal-scrolling-menu";
+// import ScrollMenu from "react-horizontal-scrolling-menu";
 import { BsFillPlusSquareFill } from "react-icons/bs";
 import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
 import { MdInfoOutline } from "react-icons/md";
@@ -261,14 +261,14 @@ const EventBox = ({
           ""
         )}
       </div>
-      <ScrollMenu
+      {/* <ScrollMenu
         data={menu}
         arrowLeft={ArrowLeft}
         arrowRight={ArrowRight}
         wheel={false}
         alignCenter={false}
         itemClass={styles["item"]}
-      />
+      /> */}
       <Modal show={modalCreate} onHide={toggle}>
         <Modal.Header closeButton>Create Event</Modal.Header>
         <Modal.Body>
