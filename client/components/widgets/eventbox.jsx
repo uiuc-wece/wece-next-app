@@ -15,7 +15,7 @@ import Popover from "react-bootstrap/Popover";
 import MultiSelect from "react-multi-select-component";
 // import ScrollMenu from "react-horizontal-scrolling-menu";
 import { BsFillPlusSquareFill } from "react-icons/bs";
-import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
+// import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
 import { MdInfoOutline } from "react-icons/md";
 
 import { base_url } from "../../constants.js";

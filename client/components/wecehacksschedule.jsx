@@ -90,7 +90,7 @@ export default function ScheduleTable() {
           </tr>
           <tr>
             <td className={styles["table-data"]}>2:00 pm</td>
-            <td className={styles["table-data"]}>Project Demo's</td>
+            <td className={styles["table-data"]}>Project Demos</td>
           </tr>
           <tr>
             <td className={styles["table-data"]}>3:00 pm</td>

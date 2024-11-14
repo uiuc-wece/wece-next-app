@@ -16,7 +16,7 @@ export default function SectionBody({
 }) {
   if (link != "") {
     return (
-      <SectionLink children={children} link={link}>
+      <SectionLink link={link}>
         <div
           className={
             hoverEffect
