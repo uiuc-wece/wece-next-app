@@ -5,17 +5,17 @@
   },
   "build": {
     "env": {
-      "API_URL": "@api_url",
-      "MONGODB_URL": "@mongodb_url",
-      "MAILERLITE_API_KEY": "@mailerlite_api_key",
-      "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+      "API_URL": "@API_URL",
+      "MONGODB_URL": "@MONGODB_URL",
+      "MAILERLITE_API_KEY": "@MAILERLITE_API_KEY",
+      "MAILERLITE_GROUP_ID": "@MAILERLITE_GROUP_ID"
     }
   },
   "env": {
-    "API_URL": "@api_url",
-    "MONGODB_URL": "@mongodb_url",
-    "MAILERLITE_API_KEY": "@mailerlite_api_key",
-    "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+    "API_URL": "@API_URL",
+    "MONGODB_URL": "@MONGODB_URL",
+    "MAILERLITE_API_KEY": "@MAILERLITE_API_KEY",
+    "MAILERLITE_GROUP_ID": "@MAILERLITE_GROUP_ID"
   },
   "builds": [
     {
