@@ -15,7 +15,7 @@ export default function AccountLayout({
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=optional"
           rel="stylesheet"
         />
@@ -28,7 +28,7 @@ export default function AccountLayout({
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
+        /> */}
       </Head>
       <div className="page">
         <div id="container">
