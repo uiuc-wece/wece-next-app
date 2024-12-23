@@ -6,16 +6,16 @@
   "build": {
     "env": {
       "API_URL": "NEW_API_URL",
-      "MONGODB_URL": "@mongodb_url",
-      "MAILERLITE_API_KEY": "@mailerlite_api_key",
-      "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+      "MONGODB_URL": "MONGODB_URL",
+      "MAILERLITE_API_KEY": "MAILERLITE_API_KEY",
+      "MAILERLITE_GROUP_ID": "MAILERLITE_GROUP_ID"
     }
   },
   "env": {
     "API_URL": "NEW_API_URL",
-    "MONGODB_URL": "@mongodb_url",
-    "MAILERLITE_API_KEY": "@mailerlite_api_key",
-    "MAILERLITE_GROUP_ID": "@mailerlite_group_id"
+    "MONGODB_URL": "MONGODB_URL",
+    "MAILERLITE_API_KEY": "MAILERLITE_API_KEY",
+    "MAILERLITE_GROUP_ID": "MAILERLITE_GROUP_ID"
   },
   "builds": [
     {
