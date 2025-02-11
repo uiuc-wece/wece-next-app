@@ -27,10 +27,10 @@ export default function BoardCard({
           <div className={styles["flip-text"]}>
             <h5>{major}</h5>
             <h6>{year}</h6>
-            <div className={styles["flip-about"]}>
+            {/* <div className={styles["flip-about"]}>
               <h5>About Me</h5>
               <h6>{about}</h6>
-            </div>
+            </div> */}
           </div>
         </div>
         <img className={styles["exec-pic"]} src={img} />

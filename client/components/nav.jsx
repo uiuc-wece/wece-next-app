@@ -116,25 +116,25 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
                className={styles["dropdown-item"]}
                href="/sponsors24"
               >
-                2023- 24
+                2024-25
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors23"
               >
-                2022-23
+                2023-24
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors22"
               >
-                2020-21
+                2022-23
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors21"
               >
-                2018-19
+                2021-22
               </NavDropdown.Item>
             </NavDropdown>
 
