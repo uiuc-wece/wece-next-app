@@ -6,7 +6,7 @@ export default function BoardCard({
   role,
   major,
   year,
-  about,
+  // about,
   // contact,
   // linkedin,
   img,
