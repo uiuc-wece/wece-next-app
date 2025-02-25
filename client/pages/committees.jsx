@@ -28,16 +28,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/alaynali.JPG"
+                    src="../imgs/committeeStickers/Academic.png"
                   />
-                  <figcaption>Alayna Li</figcaption>
-                </figure>
-                <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/board/kelly.jpeg"
-                  />
-                  <figcaption>Kelly Chang</figcaption>
                 </figure>
                 <p>
                   The Academic Committee organizes and hosts workshops and
@@ -53,9 +45,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/gabbyedit.JPG"
+                    src="../imgs/committeeStickers/Infrastructure.png"
                   />
-                  <figcaption>Gabriela Hinostroza Perez</figcaption>
                 </figure>
                 <p>
                   The Infrastructure Commitee develops and updates the WECE
@@ -73,16 +64,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/emily.jpg"
+                    src="../imgs/committeeStickers/Marketing.png"
                   />
-                  <figcaption>Emily Xu</figcaption>
-                </figure>
-                <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/board/estela.jpg"
-                  />
-                  <figcaption>Estela Medrano</figcaption>
                 </figure>
                 <p>
                   The Marketing Committee advertises WECE events and creatively
@@ -102,9 +85,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/nicoleviz.jpeg"
+                    src="../imgs/committeeStickers/Mentorship.png"
                   />
-                  <figcaption>Nicole Viz</figcaption>
                 </figure>
                 <p>
                   The WECE Mentorship Committee strives to build a welcoming and
@@ -122,9 +104,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/matilde.jpeg"
+                    src="../imgs/committeeStickers/Outreach.png"
                   />
-                  <figcaption>Matilde Figueroa-Carrillo</figcaption>
                 </figure>
                 <p>
                   The outreach committee works with the surrounding community to
@@ -140,9 +121,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/varsha.JPG"
+                    src="../imgs/committeeStickers/Social.png"
                   />
-                  <figcaption>Varsha Mullangi</figcaption>
                 </figure>
                 <p>
                   Social Committee is all about fostering relationships. Whether
@@ -160,16 +140,8 @@ export default function Committees() {
                 <figure>
                   <img
                     className={styles["committee-img"]}
-                    src="../imgs/board/shreya.JPG"
+                    src="../imgs/committeeStickers/Technical.png"
                   />
-                  <figcaption>Shreya Sharma</figcaption>
-                </figure>
-                <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/board/kaitlingowens.JPG"
-                  />
-                  <figcaption>Kaitlin Gowens</figcaption>
                 </figure>
                 <p>
                   The WECE technical committee works on a project which is
@@ -178,6 +150,23 @@ export default function Committees() {
                   teach skills relevant in the industry. We aim to provide
                   valuable technical experiences for promoting involvement and
                   building resume.
+                </p>
+              </div>
+            </SectionBody>
+          </div>
+          <div className={styles["committee-text"]}>
+            <h4>WECEHacks</h4>
+            <SectionBody>
+              <div className={styles["section-flex"]}>
+                <figure>
+                  <img
+                    className={styles["committee-img"]}
+                    src="../imgs/committeeStickers/WECEHacks.png"
+                  />
+                </figure>
+                <p>
+                  The WECEHacks committee works organizing WECE's official
+                  yearly hackathon in the spring.
                 </p>
               </div>
             </SectionBody>

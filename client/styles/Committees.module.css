@@ -15,12 +15,12 @@
 }
 
 .committee-img {
-  border-radius: 100%;
+  border-radius: 0%;
   object-fit: cover;
   object-position: center;
-  width: 150px;
-  height: 150px;
-  padding: 15px;
+  /* width: 100px; */
+  height: 200px;
+  /* padding: 15px; */
 }
 
 .committee-text {
@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 1000px) {
   .committee-img {
-    width: 200px;
+    /* width: 600px; */
     height: 200px;
   }
   .committee-text {
