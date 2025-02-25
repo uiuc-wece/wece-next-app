@@ -165,7 +165,7 @@ export default function Committees() {
                   />
                 </figure>
                 <p>
-                  The WECEHacks committee works organizing WECE's official
+                  The WECEHacks committee works organizing the official WECE
                   yearly hackathon in the spring.
                 </p>
               </div>
