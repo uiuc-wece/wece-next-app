@@ -1,11 +1,11 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useRouter } from "next/router";
+//import { useSelector } from "react-redux";
+//import { useRouter } from "next/router";
 import styles from "../styles/Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { logout } from "../apihelper.js";
+//import { logout } from "../apihelper.js";
 
 const CustomNavbar = (
   // { background_color2 = "#9D9DFF" }
@@ -15,7 +15,7 @@ const CustomNavbar = (
   //const authenticated = useSelector((state) => state.authenticated);
   //const firstName = useSelector((state) => state.firstName);
 
-  const router = useRouter();
+  //const router = useRouter();
   // const logoutUser = () => {
   //   logout();
   //   router.push("/");
