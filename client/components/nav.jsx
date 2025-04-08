@@ -12,14 +12,14 @@ const CustomNavbar = (
   { background_color2 = "#2D1F3E" }
 
 ) => {
-  const authenticated = useSelector((state) => state.authenticated);
-  const firstName = useSelector((state) => state.firstName);
+  //const authenticated = useSelector((state) => state.authenticated);
+  //const firstName = useSelector((state) => state.firstName);
 
   const router = useRouter();
-  const logoutUser = () => {
-    logout();
-    router.push("/");
-  };
+  // const logoutUser = () => {
+  //   logout();
+  //   router.push("/");
+  // };
   
   return (
     <>
