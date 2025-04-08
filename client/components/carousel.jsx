@@ -35,56 +35,56 @@ export default function EventCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/quad_day/IMG_4955.JPG"
+          src="imgs/events/quad_day/weceBooth25.jpeg"
           alt="quad day 2021"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/GM/august-21.jpg"
+          src="imgs/events/GM/weceConSelfie25.jpeg"
           alt="August 2021 General Meeting"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/retreat/retreat-group-photo-2.jpg"
+          src="imgs/events/tech talks/coffeeChat25_2.jpeg"
           alt="Retreat in Kickapoo Park"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/retreat/retreat-kayak.JPG"
+          src="imgs/events/mentorship/weceMentor25.jpeg"
           alt="Kanooing in Kickapoo Park"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/icecream_social/icecream-social-2.jpg"
+          src="imgs/events/quad_day/eohBooth25.jpeg"
           alt="Group photo at the ice cream social"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/icecream_social/icecream-social-1.jpg"
+          src="imgs/events/tech talks/weceHacks25.jpeg"
           alt="Ice cream social at Scott Park"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/mentorship/relaxing-with-ross-2021-1.JPG"
+          src="imgs/events/tech talks/coffeeChat25_1.jpeg"
           alt="Bob Ross Painting  2021"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="imgs/events/mentorship/relaxing-with-ross-2021-2.JPG"
+          src="imgs/events/GM/weceMeeting25.jpeg"
           alt="Bob Ross Painting  2021"
         />
       </Carousel.Item>
