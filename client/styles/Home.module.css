@@ -65,13 +65,19 @@
 }
 
 .top {
-  background-color: #9D9DFF;
+  /* background-color: #9D9DFF; */
+  background-color: #734A9F;
   background-image: linear-gradient(
     180deg,
-    #9D9DFF 4%,
+    /* #9D9DFF 4%,
     #9D9DFF 13%,
     #DF9697 44%,
-    #F7BDBE 80%
+    #F7BDBE 80% */
+    #2D1F3E 4%,
+    #4e3868 13%,
+    #9066be 44%,
+    #a784cd 60%,
+    #bb94e4 80%
   );
 }
 
@@ -85,7 +91,7 @@
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: var(--accent-2-color-shadow);
+  stroke: var(--accent-3-color-shadow);
   opacity: 0.8;
   stroke-width: 0.3em;
   stroke-miterlimit: 5;

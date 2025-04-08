@@ -64,7 +64,8 @@ export default function Home() {
             <p>
               <span
                 style={{
-                  color: "#bf7380", // text color of the first phrase in the paragraph
+                  //color: "#bf7380", // text color of the first phrase in the paragraph,
+                  color: "#734a9f",
                   fontWeight: 600,
                   fontFamily: "IBM Plex Mono",
                 }}
@@ -109,7 +110,8 @@ export default function Home() {
           <img
             className={`${styles["img-center"]} ${styles["staff-pic"]}`}
             id="staff-pic"
-            src="imgs/board2019-20-green.png"
+            //src="imgs/board2019-20-green.png"
+            src="imgs/weceGroupPic25.png"
           />
         </div>
       </div>

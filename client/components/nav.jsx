@@ -7,7 +7,11 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { logout } from "../apihelper.js";
 
-const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
+const CustomNavbar = (
+  // { background_color2 = "#9D9DFF" }
+  { background_color2 = "#2D1F3E" }
+
+) => {
   const authenticated = useSelector((state) => state.authenticated);
   const firstName = useSelector((state) => state.firstName);
 
@@ -103,12 +107,12 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
               >
                 GM Slides
               </NavDropdown.Item>
-              <NavDropdown.Item
+              {/* <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/newsletters"
               >
                 Newsletters
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
 
             <NavDropdown title="Sponsors">
@@ -139,8 +143,8 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
             </NavDropdown>
 
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
-            <Nav.Link href="/join">Join</Nav.Link>
-            {!authenticated && (
+            {/* <Nav.Link href="/join">Join</Nav.Link> */}
+            {/* {!authenticated && (
               <Nav.Link href="/login" className={styles["login"]}>
                 Login
               </Nav.Link>
@@ -168,7 +172,7 @@ const CustomNavbar = ({ background_color2 = "#9D9DFF" }) => {
                   Logout
                 </NavDropdown.Item>
               </NavDropdown>
-            )}
+            )} */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

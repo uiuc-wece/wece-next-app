@@ -27,7 +27,7 @@ export default function ContactUs() {
               <img
                 className={styles["icon"]}
                 alt="discord"
-                src="/client/public/imgs/89b13b996c7ecf9eee5e797a812696a6.jpg"
+                src="imgs/weceDiscord.png"
               />
             </div>
           </SectionBody>
@@ -41,7 +41,7 @@ export default function ContactUs() {
               <img
                 className={styles["icon"]}
                 alt="instagram"
-                src="/client/public/imgs/instagram.png"
+                src="imgs/weceInsta.png"
               />
             </div>
           </SectionBody>
