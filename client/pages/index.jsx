@@ -111,7 +111,7 @@ export default function Home() {
             className={`${styles["img-center"]} ${styles["staff-pic"]}`}
             id="staff-pic"
             //src="imgs/board2019-20-green.png"
-            src="imgs/weceGroupPic25.png"
+            src="imgs/weceGroupPic25.PNG"
           />
         </div>
       </div>
