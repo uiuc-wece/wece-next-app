@@ -109,7 +109,10 @@ export default function Committees() {
                 </figure>
                 <p>
                   The outreach committee works with the surrounding community to
-                  teach kids about ECE!
+                  teach kids about ECE.
+                </p>
+                <p>
+                <a href="https://ai-manoj12.github.io/outreach-website/">Visit the outreach website!</a>
                 </p>
               </div>
             </SectionBody>
@@ -167,6 +170,18 @@ export default function Committees() {
                 <p>
                   The WECEHacks committee works organizing the official WECE
                   yearly hackathon in the spring.
+                </p>
+              </div>
+            </SectionBody>
+          </div>
+          <div className={styles["committee-text"]}>
+            <h4>GradWECE</h4>
+            <SectionBody>
+              <div className={styles["section-flex"]}>
+                <figure>
+                </figure>
+                <p>
+                  The GradWECE committee is dedicated to the grad students who are a part of WECE.
                 </p>
               </div>
             </SectionBody>

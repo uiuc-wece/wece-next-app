@@ -20,14 +20,6 @@ export default function Sponsors() {
               />
             </div>
           </SectionBody>
-          <SectionBody hoverEffect={true} link="https://www.collinsaerospace.com/">
-            <div>
-              <img
-                className={styles["sponsor-img"]}
-                src="../imgs/24-25sponsors/collinsaero.png"
-              />
-            </div>
-          </SectionBody>
           <SectionBody hoverEffect={true} link="https://www.marvell.com/">
             <div>
               <img

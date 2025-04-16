@@ -98,6 +98,13 @@ const CustomNavbar = (
               >
                 Committees
               </NavDropdown.Item>
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/advisors"
+              >
+                Advisors
+              </NavDropdown.Item>
+              
             </NavDropdown>
             <Nav.Link href="/events">Events</Nav.Link>
             <NavDropdown title="Member Resources">
