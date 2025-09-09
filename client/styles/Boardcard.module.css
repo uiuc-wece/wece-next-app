@@ -1,7 +1,7 @@
 .img-card {
   margin: 20px auto;
   padding: 5px;
-  display: block;
+  display: inline-block;
   width: 273px;
   height: 410px;
   cursor: pointer;
