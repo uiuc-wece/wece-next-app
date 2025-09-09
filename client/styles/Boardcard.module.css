@@ -2,11 +2,11 @@
   margin: 20px auto;
   padding: 5px;
   display: block;
-  width: 300px;
+  width: 273px;
   height: 410px;
   cursor: pointer;
   white-space: wrap;
-  min-width: 300;
+  min-width: 250;
 }
 
 .img-card:hover .exec-pic {
