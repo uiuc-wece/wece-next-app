@@ -48,7 +48,7 @@ export default {
       // about: "",
       contact: "ilanabm2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/Ilana_2025-26.JPG",
+      img: "imgs/board/Ilana_2025-26.jpg",
     },
     {
       name: "Riya Karkhanis",

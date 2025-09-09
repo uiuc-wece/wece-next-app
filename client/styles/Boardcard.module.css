@@ -48,14 +48,14 @@
   bottom: 0;
   left: 0;
   background: #ffffff;
-  width: 300px;
+  width: 273px;
   height: 125px;
   color: #000000;
   text-align: left;
 }
 
 .active .exec-text {
-  width: 500px;
+  width: 273px;
   height: 380px;
   border-radius: 20px;
   background: var(--dark-background-color);
@@ -139,7 +139,7 @@
     margin: 10px auto;
     width: 64vw;
     height: 530px;
-    min-width: 300px;
+    min-width: 250px;
   }
 
   .active.img-card {
