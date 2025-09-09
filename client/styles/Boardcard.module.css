@@ -56,7 +56,7 @@
 
 .active .exec-text {
   width: 500px;
-  height: 380px;
+  height: 410px;
   border-radius: 20px;
   background: var(--dark-background-color);
   color: var(--accent-2-color);
