@@ -98,11 +98,11 @@ export default function Home() {
           <SectionHead title="Stay Connected_" top={false} />
           <SectionBody>
             <p>
-              If you are interested in learning more about WECE, fill out the
-              form below to get added to our mailing list! An email with events
+              If you are interested in learning more about WECE, join
+              our newsletter and the slack! An email with events
               and updates will be sent out every week throughout the academic year.
             </p>
-            <SectionButton buttonText="Sign Up" buttonLink="join" />
+            <SectionButton buttonText="Sign Up" buttonLink="contactus" />
           </SectionBody>
         </Container>
         {/* Moved the image to the bottom of the page */}

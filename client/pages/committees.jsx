@@ -39,25 +39,6 @@ export default function Committees() {
             </SectionBody>
           </div>
           <div className={styles["committee-text"]}>
-            <h4>Infrastructure</h4>
-            <SectionBody>
-              <div className={styles["section-flex"]}>
-                <figure>
-                  <img
-                    className={styles["committee-img"]}
-                    src="../imgs/committeeStickers/Infrastructure.png"
-                  />
-                </figure>
-                <p>
-                  The Infrastructure Commitee develops and updates the WECE
-                  website as well as sends weekly newsletters. In addition, we
-                  are always looking to improve the workflow of WECE through
-                  developing ways to manage our data better!
-                </p>
-              </div>
-            </SectionBody>
-          </div>
-          <div className={styles["committee-text"]}>
             <h4>Marketing</h4>
             <SectionBody>
               <div className={styles["section-flex"]}>
