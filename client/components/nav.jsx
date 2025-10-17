@@ -123,6 +123,13 @@ const CustomNavbar = (
             </NavDropdown>
 
             <NavDropdown title="Sponsors">
+
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
+                href="/sponsors25"
+              >
+                2025-26
+              </NavDropdown.Item>
               <NavDropdown.Item
                className={styles["dropdown-item"]}
                href="/sponsors24"
