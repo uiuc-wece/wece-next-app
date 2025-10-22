@@ -107,6 +107,7 @@ const CustomNavbar = (
               
             </NavDropdown>
             <Nav.Link href="/events">Events</Nav.Link>
+            <Nav.Link href="/ece-acad">Academic Resources</Nav.Link>
             <NavDropdown title="Member Resources">
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
@@ -155,6 +156,10 @@ const CustomNavbar = (
                 2021-22
               </NavDropdown.Item>
             </NavDropdown>
+
+            
+
+            
 
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
             {/* <Nav.Link href="/join">Join</Nav.Link> */}
