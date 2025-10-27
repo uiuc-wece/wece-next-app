@@ -11,7 +11,7 @@ export default function Sponsors() {
         <Container className="section">
           <SectionHead title="WECE Sponsors_" top={true} />
 
-          <h2 className={styles["sponsor-level"]}>Platinum 2000+</h2>
+          <h2 className={styles["sponsor-level"]}>Platinum Level</h2>
           <SectionBody hoverEffect={true} link="https://about.deere.com/">
             <div>
               <img
@@ -25,7 +25,7 @@ export default function Sponsors() {
           </SectionBody>
           
 
-          <h2 className={styles["sponsor-level"]}>Silver level $500+</h2>
+          <h2 className={styles["sponsor-level"]}>Silver Level</h2>
           <SectionBody hoverEffect={true} link="https://www.micron.com/">
             <div>
               <img
@@ -89,7 +89,7 @@ export default function Sponsors() {
 
           
 
-          <h2 className={styles["sponsor-level"]}>Bronze level </h2>
+          <h2 className={styles["sponsor-level"]}>Bronze Level</h2>
           <SectionBody hoverEffect={true} link="https://www.janestreet.com/">
           <div>
                   <img
@@ -132,6 +132,32 @@ export default function Sponsors() {
               />
             </div>
           </SectionBody>
+
+
+          <h2 className={styles["sponsor-level"]}>Single Events</h2>
+          <SectionBody hoverEffect={true} link="https://www.tesla.com/">
+            <div>
+              <img
+                className={styles["sponsor-img"]} style = {{'mixBlendMode': 'multiply'
+                }}
+                src="../imgs/25-26sponsors/tesla.png"
+              />
+            </div>
+          </SectionBody>
+          <SectionBody hoverEffect={true} link="https://www.nvidia.com/en-us/">
+            <div>
+              <img
+                className={styles["sponsor-img"]}
+                style = {{'mixBlendMode': 'multiply'
+                }}
+                src="../imgs/25-26sponsors/nvidia.png"
+              />
+            </div>
+          </SectionBody>
+
+
+
+
         </Container>
       </div>
     </Layout>
