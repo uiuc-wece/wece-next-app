@@ -124,15 +124,6 @@ export default function Sponsors() {
             </div>
           </SectionBody>
 
-          <SectionBody hoverEffect={true} link="https://www.servicenow.com/">
-            <div>
-              <img
-                className={styles["sponsor-img"]}
-                src="../imgs/25-26sponsors/servicenow.png"
-              />
-            </div>
-          </SectionBody>
-
 
           <h2 className={styles["sponsor-level"]}>Single Events</h2>
           <SectionBody hoverEffect={true} link="https://www.tesla.com/">
