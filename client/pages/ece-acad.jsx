@@ -1050,7 +1050,7 @@ export default function GMSlides() {
 
                         For printf:
                         <br/>
-                        Example: printf("This number: %d", 8);
+                        Example: printf(&quot;This number: %d&quot;, 8);
                         <br/>
                         %c: character
                         <br/>
@@ -1065,7 +1065,7 @@ export default function GMSlides() {
 
                         For scanf:
                         <br/>
-                        Example: scanf("%d%d", &amp;A, &amp;B);
+                        Example: scanf(&quot;%d%d&quot;, &amp;A, &amp;B);
                         <br/><br/>
 
                         More Tips:
