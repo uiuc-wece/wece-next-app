@@ -18,6 +18,10 @@ const monthSlides = [
   {
     month: "November 10th, 2025",
     link: "https://docs.google.com/presentation/d/1k6kqIucnMA1yDN_qX5ckx20c3RK53S263VHoHdBMu9Q/edit?usp=sharing",
+  },
+  {
+    month: "December 8th, 2025",
+    link: "https://docs.google.com/presentation/d/1d3jdmyaZjNXAS-f01w4NC5R3p6byJP7rjDxRzDXnvVw/edit?usp=sharing",
   }
 ];
 
