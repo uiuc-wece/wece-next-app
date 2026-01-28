@@ -22,6 +22,10 @@ const monthSlides = [
   {
     month: "December 8th, 2025",
     link: "https://docs.google.com/presentation/d/1d3jdmyaZjNXAS-f01w4NC5R3p6byJP7rjDxRzDXnvVw/edit?usp=sharing",
+  },
+  {
+    month: "January 22nd, 2026",
+    link: "https://www.canva.com/design/DAG-_1WpGEs/dW9KEL3bvIwv5tF5IAuuyg/edit?utm_content=DAG-_1WpGEs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   }
 ];
 
