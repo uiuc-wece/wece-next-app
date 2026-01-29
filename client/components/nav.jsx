@@ -107,6 +107,11 @@ const CustomNavbar = (
               
             </NavDropdown>
             <Nav.Link href="/events">Events</Nav.Link>
+            <Nav.Link href="https://wece-hacks.github.io/index.html"
+              target="_blank"
+              rel="noopener noreferrer">
+              WECEHacks
+            </Nav.Link>
             <Nav.Link href="/ece-acad">Academic Resources</Nav.Link>
             <NavDropdown title="Member Resources">
               <NavDropdown.Item
