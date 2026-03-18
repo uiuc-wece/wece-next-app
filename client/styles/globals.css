@@ -197,3 +197,64 @@ a:hover {
     font-size: 24px !important;
   }
 }
+
+body.night-mode {
+  background-color: #1a0d2e !important;
+  color: white !important;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+html.night-mode {
+  --dark-background-color: #1a0d2e;
+  --dark-text-color: #ffffff;
+  --neutral-color: #2d1f3e;
+  --accent-color: #9d6fd4;
+  --light-text-color: #ffffff;
+  --dark-background-color-muted: #3d2a5e;
+  --dark-background-color-muted-light: #4a3570;
+  background-color: #1a0d2e;
+  color: white;
+}
+
+html.night-mode .page {
+  background-color: #4a3570 !important;
+  color: white !important;
+}
+
+html.night-mode #container {
+  background-color: #4a3570  !important;
+}
+
+html.night-mode body {
+  background-color: #4a3570  !important;
+}
+
+html.night-mode .page {
+  color: white !important;
+}
+
+html.night-mode p {
+  color: white;
+}
+
+html.night-mode h1,
+html.night-mode h2,
+html.night-mode h3,
+html.night-mode h4,
+html.night-mode h5,
+html.night-mode h6 {
+  color: white;
+}
+
+html.night-mode span,
+html.night-mode li,
+html.night-mode a {
+  color: white;
+}
+
+

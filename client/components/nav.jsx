@@ -1,4 +1,5 @@
 import React from "react";
+import { useState , useEffect} from "react";
 //import { useSelector } from "react-redux";
 //import { useRouter } from "next/router";
 import styles from "../styles/Nav.module.css";
@@ -20,6 +21,17 @@ const CustomNavbar = (
   //   logout();
   //   router.push("/");
   // };
+  const [isNightMode, setIsNightMode] = useState(() => {
+  return localStorage.getItem("nightMode") === "true";
+});
+
+  useEffect(() => {
+  if (isNightMode) {
+    document.documentElement.classList.add("night-mode");
+  } else {
+    document.documentElement.classList.remove("night-mode");
+  }
+}, [isNightMode]);
   
   return (
     <>
@@ -30,6 +42,7 @@ const CustomNavbar = (
         className={styles["navbar"]}
         style={{ backgroundColor: background_color2 }}
       >
+      
         <div className={styles["left-navbar"]}>
           <Navbar.Brand href="/" className={styles["wece-brand"]}>
             <img
@@ -75,7 +88,24 @@ const CustomNavbar = (
               />
             </Nav.Link>
           </Nav>
+
+          
         </div>
+        
+        
+        <button className = {styles["night-mode-button"]}
+        onClick={() => {const newMode = !isNightMode;
+        document.documentElement.classList.toggle("night-mode");
+        localStorage.setItem("nightMode", newMode);
+        setIsNightMode(!isNightMode);
+        }}>
+          {isNightMode ? "Day Mode 𖤓" : "Night Mode ⏾"}
+        </button>
+
+        
+
+      
+
         <Navbar.Toggle className={styles["custom-toggler"]} />
         <Navbar.Collapse className={"justify-content-end"}>
           <Nav className={styles["right-navbar"]}>
@@ -112,6 +142,7 @@ const CustomNavbar = (
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/gmslides"
+                style={{ color: "black" }}
               >
                 GM Slides
               </NavDropdown.Item>
@@ -128,30 +159,35 @@ const CustomNavbar = (
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors25"
+                style={{ color: "black" }}
               >
                 2025-26
               </NavDropdown.Item>
               <NavDropdown.Item
                className={styles["dropdown-item"]}
                href="/sponsors24"
+               style={{ color: "black" }}
               >
                 2024-25
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors23"
+                style={{ color: "black" }}
               >
                 2023-24
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors22"
+                style={{ color: "black" }}
               >
                 2022-23
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
                 href="/sponsors21"
+                style={{ color: "black" }}
               >
                 2021-22
               </NavDropdown.Item>
