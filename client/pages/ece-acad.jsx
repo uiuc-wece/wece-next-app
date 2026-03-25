@@ -1,4 +1,4 @@
-import { useState , useEffect} from "react";
+import { useState} from "react";
 import Layout from "../components/layout";
 import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
