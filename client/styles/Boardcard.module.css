@@ -20,7 +20,7 @@
   -webkit-transition: background 0.2s, color 0.2s ease-in;
   transition: background 0.2s, color 0.2s ease-in;
   background: var(--dark-background-color);
-  color: #ffffff;
+  color: black;
 }
 
 .active.img-card {
@@ -68,10 +68,12 @@
 
 .exec-text h5 {
   font-size: 1.5em !important;
+  color: black !important;
 }
 
 .exec-text h6 {
   font-size: 0.9em !important;
+  color: black !important;
 }
 
 .exec-name {

@@ -36,8 +36,8 @@ export default function BoardCard({
         <img className={styles["exec-pic"]} src={img} />
 
         <div className={styles["exec-text"]}>
-          <h5 className={styles["exec-name"]}>{name}</h5>
-          <h6 className={styles["exec-desc"]}>{role}</h6>
+          <h5 className={styles["exec-name"]} style={{ color: "black" }}>{name}</h5>
+          <h6 className={styles["exec-desc"]} style={{ color: "black" }}>{role}</h6>
         </div>
       </div>
     </div>

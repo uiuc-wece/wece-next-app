@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import Layout from "../components/layout";
 import SectionBody from "../components/sectionbody";
 import SectionHead from "../components/sectionhead";
@@ -40,7 +40,7 @@ export default function GMSlides() {
                   onClick={() => setOpen110(!open110)}
                   style={{
                     cursor: "pointer",
-                    color: "#6108aaff",
+                    color: "rgb(155, 71, 224)",
                     fontWeight: "bold",
                     marginBottom: open110 ? "0.5rem" : "1rem",
                   }}
@@ -56,12 +56,16 @@ export default function GMSlides() {
                       backgroundColor: "#fdfbbeff",
                       borderRadius: "0.5rem",
                       border: "1px solid #ddd",
+                      color: "black", 
                     }}
                   >
                     <p
                       onClick={() => setOpenBasicQuantities(!openBasicQuantities)}
+                      style={{ color: "black",}}
                     >
-                      {openBasicQuantities ? "⇩ " : "⇨ "}Basic Quantities 
+                      
+                        {openBasicQuantities ? "⇩ " : "⇨ "}Basic Quantities
+                      
                     </p>
 
                     {openBasicQuantities && <div>
@@ -114,6 +118,7 @@ export default function GMSlides() {
                     
                     <p
                       onClick={() => setSeriesParallel(!openSeriesParallel)}
+                      style={{ color: "black",}}
                     >
                       {openSeriesParallel ? "⇩ " : "⇨ "}Series and Parallel 
                     </p>
@@ -155,6 +160,7 @@ export default function GMSlides() {
 
                     <p
                       onClick={() => setKVL(!openKVL)}
+                      style={{ color: "black",}}
                     >
                       {openKVL ? "⇩ " : "⇨ "}KVL, KCL, and Others... 
                     </p>
@@ -224,6 +230,7 @@ export default function GMSlides() {
 
                     <p
                       onClick={() => setWaveform(!openWaveform)}
+                      style={{ color: "black",}}
                     >
                       {openWaveform ? "⇩ " : "⇨ "}Waveforms and IV Characteristics
                     </p>
@@ -284,6 +291,7 @@ export default function GMSlides() {
 
                     <p
                       onClick={() => setDiode(!openDiode)}
+                      style={{ color: "black",}}
                     >
                       {openDiode ? "⇩ " : "⇨ "}Diodes and BJTs
                     </p>
@@ -344,6 +352,7 @@ export default function GMSlides() {
 
                      <p
                       onClick={() => setCMOS(!openCMOS)}
+                      style={{ color: "black",}}
                     >
                       {openCMOS ? "⇩ " : "⇨ "}CMOS, Photodiodes and Solar Panels 
                     </p>
@@ -411,7 +420,7 @@ export default function GMSlides() {
                   onClick={() => setOpen120(!open120)}
                   style={{
                     cursor: "pointer",
-                    color: "#6108aaff",
+                    color: "rgb(155, 71, 224)",
                     fontWeight: "bold",
                     marginBottom: open120 ? "0.5rem" : "1rem",
                   }}
@@ -427,11 +436,13 @@ export default function GMSlides() {
                       backgroundColor: "#f7d7f9ff",
                       borderRadius: "0.5rem",
                       border: "1px solid #ddd",
+                      color: "black", 
                     }}
                   >
 
                     <p
                       onClick={() => setBinary(!openBinary)}
+                      style={{ color: "black",}}
                     >
                       {openBinary ? "⇩ " : "⇨ "}Binary Numbers and Operations
                     </p>
@@ -522,6 +533,7 @@ export default function GMSlides() {
 
                      <p
                       onClick={() => setBoolean(!openBoolean)}
+                      style={{ color: "black",}}
                     >
                       {openBoolean ? "⇩ " : "⇨ "}Boolean Logic, Gates, and CMOS
                     </p>
@@ -646,6 +658,7 @@ export default function GMSlides() {
                        </div>}
                        <p
                       onClick={() => setFSM(!openFSM)}
+                      style={{ color: "black",}}
                     >
                       {openFSM ? "⇩ " : "⇨ "}Finite State Machines
                     </p>
@@ -692,6 +705,7 @@ export default function GMSlides() {
 
                       <p
                       onClick={() => setMUX(!openMUX)}
+                      style={{ color: "black",}}
                     >
                       {openMUX ? "⇩ " : "⇨ "}MUX, Decoders, and More...
                     </p>
@@ -765,6 +779,7 @@ export default function GMSlides() {
 
                       <p
                       onClick={() => setClock(!openClock)}
+                      style={{ color: "black",}}
                     >
                       {openClock ? "⇩ " : "⇨ "}Latches, Flip-Flops and More...
                     </p>
@@ -836,6 +851,7 @@ export default function GMSlides() {
 
                         <p
                       onClick={() => setMemory(!openMemory)}
+                      style={{ color: "black",}}
                     >
                       {openMemory ? "⇩ " : "⇨ "}LC-3, ISA, and Memory
                     </p>
@@ -977,6 +993,7 @@ export default function GMSlides() {
                       </div>}
                        <p
                       onClick={() => setCoding(!openCoding)}
+                      style={{ color: "black",}}
                     >
                       {openCoding ? "⇩ " : "⇨ "}C-Programming
                     </p>

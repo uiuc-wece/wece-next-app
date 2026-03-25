@@ -1,4 +1,5 @@
 .navbar {
+  min-height: 70px;
   color: #F7BDBE !important;
   background-color: var(--dark-background-color);
   font-family: "IBM Plex Mono";
@@ -146,3 +147,56 @@
   width: 100%;
   top: 0;
 }
+
+.night-mode-button {
+  background: rgba(10, 0, 11, 0.4);
+  border: 1px solid rgba(246, 221, 246, 0.4);
+  border-radius: 8px;
+  color:rgb(247, 243, 247);
+  cursor: pointer;
+  font-size: 0.8em;
+  font-family: "IBM Plex Mono";
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+.night-mode-button:hover {
+  background: rgba(73, 40, 77, 0.4);
+  border: 1px solid rgba(246, 221, 246, 0.4);
+  color:rgb(247, 243, 247);
+}
+
+:global(body.night-mode) .night-mode-button{
+  background: rgba(240, 230, 255, 0.9);
+  color: #2D1F3E;
+  border: 3px solid #2D1F3E;
+}
+
+:global(body.night-mode) .night-mode-button:hover{
+  background: rgba(185, 166, 214, 0.9);
+  color: #2D1F3E;
+  border: 3px solid #2D1F3E;
+}
+
+:global(html.night-mode) .dropdown-item {
+  color: black !important;
+}
+
+:global(html.night-mode) .night-mode-button {
+  background:  rgba(240, 230, 255, 0.9);
+  border: 1px #2D1F3E;
+  color: #2D1F3E;
+}
+
+:global(html.night-mode) .night-mode-button:hover {
+  background:  rgba(206, 184, 238, 0.9);
+  border: 1px #3c2a53;
+  color: #2D1F3E;
+}
+
+
+

@@ -217,3 +217,29 @@
     font-size: 2em;
   }
 }
+
+/* default - stays the same */
+.top {
+  background-color: #734A9F;
+  background-image: linear-gradient(
+    180deg,
+    #2D1F3E 4%,
+    #4e3868 13%,
+    #9066be 44%,
+    #a784cd 60%,
+    #bb94e4 80%
+  );
+}
+
+/* night mode */
+:global(html.night-mode) .top {
+  background-color: #1a0d2e;
+  background-image: linear-gradient(
+    180deg,
+    #0d0618 4%,
+    #1a0d2e 13%,
+    #2d1f3e 44%,
+    #3d2a5e 60%,
+    #4a3570 80%
+  );
+}
