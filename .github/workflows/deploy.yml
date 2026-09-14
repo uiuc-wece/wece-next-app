@@ -32,7 +32,7 @@ jobs:
       - name: client - NPM install
         working-directory: ./client
         run: |
-          npm install
+          npm install --legacy-peers-deps
           echo "Client - NPM install completed successfully"
 
       - name: client - NPM build
