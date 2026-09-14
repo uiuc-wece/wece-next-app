@@ -8,7 +8,7 @@ export default {
       // about: "",
       contact: "riyask2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/riya_26-27.JPG",
+      img: "imgs/board/riya_26-27.jpg",
     },
     {
       name: "Adithi Bikkavilli",
@@ -18,7 +18,7 @@ export default {
       // about: "",
       contact: "adithib2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/adithi_26-27.JPG",
+      img: "imgs/board/adithi_26-27.jpg",
     },
     {
       name: "Zoe Kaiser",
@@ -28,7 +28,7 @@ export default {
       // about: "",
       contact: "zkaiser3@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/zoe_26-27.JPG",
+      img: "imgs/board/zoe_26-27.jpg",
     },
     {
       name: "Sumayyah Ismail",
@@ -38,7 +38,7 @@ export default {
       // about: "",
       contact: "sismail3@illnois.edu",
       // linkedin: "",
-      img: "imgs/board/sumayyah_26-27.JPG",
+      img: "imgs/board/sumayyah_26-27.jpg",
     },
     {
       name: "Ilana Manrose",
@@ -48,7 +48,7 @@ export default {
       // about: "",
       contact: "ilanabm2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/ilana_26-27.jpg",
+      img: "imgs/board/ilana_26-27.JPG",
     },
     {
       name: "Jihoo Kim",
@@ -68,7 +68,7 @@ export default {
       /// about: "",
       contact: "medhaarm2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/medha_26-27.JPG",
+      img: "imgs/board/medha_26-27.jpg",
     },
     {
       name: "Angela Chen",
@@ -78,7 +78,7 @@ export default {
       // about: "",
       contact: "amchen3@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/angela_26-27.JPG",
+      img: "imgs/board/angela_26-27.jpg",
     },
     {
       name: "Helen Yuan",
@@ -88,7 +88,7 @@ export default {
       // about: "",
       contact: "heleny3@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/helen_26-27.JPG",
+      img: "imgs/board/helen_26-27.jpg",
     },
     {
       name: "Caroline Thomas",
@@ -98,7 +98,7 @@ export default {
       // about: "",
       contact: "cthom37@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/caroline_26-27.JPG",
+      img: "imgs/board/caroline_26-27.jpg",
     },
     {
       name: "Rabab Rasheed",
@@ -108,7 +108,7 @@ export default {
       // about: "",
       contact: "rrashe3@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/rabab_26-27.JPG",
+      img: "imgs/board/rabab_26-27.jpg",
     },
     {
       name: "Meiyan Zhu",
@@ -118,7 +118,7 @@ export default {
       // about: "",
       contact: "mzhu37@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/meiyan_26-27.JPG",
+      img: "imgs/board/meiyan_26-27.jpg",
     },
     {
       name: "Siya Patel",
@@ -128,7 +128,7 @@ export default {
       // about: "",
       contact: "siyahp2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/siya_26-27.JPG",
+      img: "imgs/board/siya_26-27.jpg",
     },
     {
       name: "Laasya Aduri",
@@ -138,7 +138,7 @@ export default {
       // about: "",
       contact: "laduri2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/laasya_26-27.JPG",
+      img: "imgs/board/laasya_26-27.jpg",
     },
     {
       name: "Isha Shah",
@@ -148,7 +148,7 @@ export default {
       // about: "",
       contact: "ishaas2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/isha_26-27.JPG",
+      img: "imgs/board/isha_26-27.jpg",
     },
     {
       name: "Kavya Peela",
@@ -158,7 +158,7 @@ export default {
       // about: "",
       contact: "kpeela2@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/kavya_26-27.JPG",
+      img: "imgs/board/kavya_26-27.jpg",
     },
     {
       name: "Annabel Li",
@@ -168,7 +168,7 @@ export default {
       // about: "",
       contact: "ali79@illinois.edu",
       // linkedin: "",
-      img: "imgs/board/annabel_26-27.JPG",
+      img: "imgs/board/annabel_26-27.jpg",
     },
   ],
 };
