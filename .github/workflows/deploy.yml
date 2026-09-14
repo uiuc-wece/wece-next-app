@@ -11,15 +11,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: (24.x)
+        node-version: [24.x]
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
