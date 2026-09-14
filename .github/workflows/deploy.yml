@@ -32,7 +32,7 @@ jobs:
       - name: client - NPM install
         working-directory: ./client
         run: |
-          npm install --legacy-peers-deps
+          npm install --legacy-peer-deps
           echo "Client - NPM install completed successfully"
 
       - name: client - NPM build
@@ -44,7 +44,7 @@ jobs:
       #   with:
       #     vercel-token: ${{ secrets.VERCEL_TOKEN }}
       #     github-token: ${{ secrets.GITHUB_TOKEN }}
-      #     vercel-args: "--prod  --yes" # Add --debug flag for debugging
+      #     vercel-args: "--prod  --yes"
       #     vercel-org-id: ${{ secrets.ORG_ID }}
       #     vercel-project-id: ${{ secrets.PROJECT_ID }}
       #     working-directory: ./
