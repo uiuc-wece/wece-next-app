@@ -1,4 +1,3 @@
-// the following is the old format of the events page. To incorporate the points method, go way down to line 122 and uncomment that code, but comment this code from line 2-120
 import Layout from "../components/layout";
 import SectionHead from "../components/sectionhead";
 import styles from "../styles/Calendar.module.css";
@@ -7,6 +6,37 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Container from "react-bootstrap/Container";
 // import SectionBody from "../components/sectionbody";
+
+// Toggle this to true to preview the page with fake data instead of
+// hitting the Google Calendar API
+const useMockData = true;
+
+const mockEvents = [
+  {
+    id: "mock-event-1",
+    summary: "Trivia Night",
+    locationString: "ECEB, Room 3015",
+    dateString: "Tue Sep 15 2026, 6:00 pm - 7:00 pm",
+  },
+  {
+    id: "mock-event-2",
+    summary: "Cookie Decorating",
+    locationString: "ECEB, Room 3081",
+    dateString: "Wed Sep 16 2026, 6:00 pm - 7:00 pm",
+  },
+  {
+    id: "mock-event-3",
+    summary: "Cider, Donuts, and Tote Bag Painting",
+    locationString: "ECEB, Room 3017",
+    dateString: "Thurs Sep 17 2026, 5:00-7:00 pm",
+  },
+  {
+    id: "mock-event-4",
+    summary: "ECEX Olympics",
+    locationString: "ECEB, Room 2017",
+    dateString: "Fri Sep 18 2026, 5:00-7:00 pm",
+  },
+];
 
 export default function Calendar() {
   const [events, setEvents] = useState([]);
@@ -24,6 +54,11 @@ export default function Calendar() {
     }
 
     const fetchEvents = async () => {
+      if (useMockData) {
+        setEvents(mockEvents);
+        return;
+      }
+
       const cal_id = "pmtthq7beefrulnrjbd9nj9e5s@group.calendar.google.com";
       const api_key = "AIzaSyDCdsXt9s_kxJp3SUjzzHng1Flgbao7jpc";
 
@@ -112,7 +147,7 @@ export default function Calendar() {
                     </div>
                   </a>
                 ))
-              : null} 
+              : null}
               {/* Use this during the summer when there are no events! */}
               {/* <SectionBody>
                 <p>
@@ -125,83 +160,3 @@ export default function Calendar() {
     </Layout>
   );
 }
-
-// the following is the events page format if you would like to incorporate members being able to type in points. comment the above code and uncomment the code below.
-// import Layout from "../components/layout";
-// import SectionHead from "../components/sectionhead";
-// import SectionBody from "../components/sectionbody";
-
-// import EventBox from "../components/widgets/eventbox";
-
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// import Container from "react-bootstrap/Container";
-// import Loader from "react-loader-spinner";
-
-// import { base_url } from "../constants.js";
-
-// export default function Events() {
-//   const [loading, setLoading] = useState(true);
-//   const [events, setEvents] = useState([]);
-
-//   const getEvents = async () => {
-//     const eventsUrl = base_url + "/events";
-//     await axios
-//       .get(eventsUrl, { withCredentials: true })
-//       .then((res) => {
-//         setEvents(res.data);
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//       })
-//       .finally(() => setLoading(false));
-//   };
-
-//   useEffect(() => {
-//     getEvents();
-//   }, []);
-
-//   function handleUpdate() {
-//     getEvents();
-//   }
-
-//   return (
-//     <Layout>
-//       <div className="content">
-//         <Container className="section">
-//           <SectionHead title="Events_" top={true} />
-//           {loading ? (
-//             <div className="loading-container">
-//               <Loader type="Oval" color="#ace8ac" height={50} width={50} />
-//             </div>
-//           ) : (
-//             <EventBox
-//               boxTitle={""}
-//               events={events}
-//               viewMode={true}
-//               showSavedOnly={false}
-//               handleUpdate={handleUpdate}
-//             />
-//           )}
-//         </Container>
-
-//         <Container fluid className="section">
-//           <SectionBody>
-//             <p>
-//               Events{" "}
-//               <a href="https://forms.gle/32M8qpMhVkz7at3j7" target="_blank">
-//                 sign-in form
-//               </a>{" "}
-//               if token code does not work!
-//             </p>
-//             <p>
-//               Contact Joshmita Chintala at{" "}
-//               <a href="mailto:jchint2@illinois.edu">jchint2@illinois.edu</a> if
-//               your points need to be updated!
-//             </p>
-//           </SectionBody>
-//         </Container>
-//       </div>
-//     </Layout>
-//   );
-// }
