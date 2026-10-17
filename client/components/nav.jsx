@@ -163,6 +163,13 @@ const CustomNavbar = (
 
               <NavDropdown.Item
                 className={styles["dropdown-item"]}
+                href="/sponsors26"
+                style={{ color: "black" }}
+              >
+                2026-27
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                className={styles["dropdown-item"]}
                 href="/sponsors25"
                 style={{ color: "black" }}
               >
