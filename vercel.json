@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "framework": "nextjs"
+  "framework": "nextjs",
   "github": {
     "enabled": false
   },
