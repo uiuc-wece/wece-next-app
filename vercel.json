@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "framework": "nextjs"
   "github": {
     "enabled": false
   },
@@ -17,16 +18,17 @@
     "MAILERLITE_API_KEY": "MAILERLITE_API_KEY",
     "MAILERLITE_GROUP_ID": "MAILERLITE_GROUP_ID"
   },
-  "builds": [
-    {
-      "src": "client/package.json",
-      "use": "@vercel/next"
-    },
-    {
-      "src": "api/server.js",
-      "use": "@vercel/node"
-    }
-  ],
+  // "builds": [
+  //   {
+  //     "src": "client/package.json",
+  //     "use": "@vercel/next"
+  //   },
+  //   {
+  //     "src": "api/server.js",
+  //     "use": "@vercel/node"
+  //   }
+  // ],
+  "frameworks": "nextjs"
   "rewrites": [
     {
       "source": "/api/(.*)",
