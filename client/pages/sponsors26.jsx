@@ -11,7 +11,7 @@ export default function Sponsors() {
         <Container className="section">
           <SectionHead title="WECE Sponsors_" top={true} />
 
-          <h2 className={styles["sponsor-level"]}>Platinum Level</h2>
+          <h2 className={styles["sponsor-level"]}>Platinum Leel</h2>
           <SectionBody hoverEffect={true} link="https://www.amd.com/">
             <div>
               <img
